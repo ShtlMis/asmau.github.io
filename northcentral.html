@@ -1,0 +1,5368 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+        <!--tittle>Songhai Health Trust Limited North-Central Healthcare Provider Page</tittle-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Songhai Health Trust Limited</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script scr="index.js" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bolded Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<style>
+body {
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  width: 100%;
+  height: 75%;
+  top: 15%;
+  bottom: 10%;
+  color: none;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: none;
+}
+/* for the website header.
+two image containers */
+.row {
+  width: 100%;
+  display: flex;
+}
+.column {
+  width: 350px;
+  flex: 50%;
+  padding: none;
+  top: 0;
+  margin-top: 1em;
+  height: 100px; 
+  justify-content: space-between;
+}
+.column img {
+ background-color: white;
+ font-size: 22px;
+ width: 350px;
+ height: 100px;
+ bottom: 10%;
+ margin: 0;
+ margin-left: 20px;
+ vertical-align: top;
+}
+
+/*clears float after image container*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* styling the navigation bar */
+nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 10%;
+    height: 5%;
+    margin: none;
+    margin-bottom: 1em;
+}
+  .menu-btn {
+     background-color: white;
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     cursor: pointer;
+     border: none;
+   }
+  .menu-btn:hover {
+     background-color: none;
+  }
+  .links,
+  .links-hidden {
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     border: none;
+     text-decoration: none;
+  }
+  .links-hidden {
+      display: block;
+  }
+  .links:hover,
+  .links-hidden:hover {
+    background-color: white;
+  }
+   .dropdown-menu {
+     position: relative;
+     display: inline-block;
+   }   
+  .dropdown-menu:hover
+  .menu-content {
+    display: block;
+     background-color: none;
+  }  
+   .menu-content {
+     display: none;
+     position: absolute;
+     background-color: none;
+     min-width: 160px;
+     overflow: auto;
+     z-index: 1;
+   } 
+   .menu-content a {
+     color: #000080;
+     padding: 12px 16px;
+     text-decoration: none;
+     display:block;
+  }
+   .dropdown a:hover {
+     background-color: none;
+  }
+.show {
+     display: block;
+ } 
+
+ /* styling for provider tables */
+.region {
+    font-family: 'Cinzel';
+    font-size: 36px;
+    font-weight: 500;
+    color: #000080;
+    text-align: center;
+    margin-top: 2em;
+}
+table {
+  width: 90%;
+  margin-top: 100px;
+  font-size: 18px;
+  border: 1px solid #343a40;
+  justify-content: center;
+  margin-left: 55px;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+td {
+  border: 1px solid #343a40; 
+  padding: 16px 24px;
+  text-align: left;
+}
+thead tr {
+  background-color: #087f5b;
+  color: #fff;
+  height: 3em;
+}
+thead #first {
+width: 25%;
+}
+thead #second {
+width: 5%;
+}
+thead #third {
+width: 20%;
+}
+thead #fourth {
+width: 10%;
+}
+thead #fifth {
+width: 15%;
+}
+thead #sixth {
+width: 15%;
+}
+thead #seventh {
+width: 10%;
+}
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+} 
+.pagination {
+ float: right;
+ color: #000000;
+ font-size: 22px;
+ margin-right: 100px;
+}
+.pagination:hover {
+    color: #000080;
+}
+.pagination li:hover{
+cursor: pointer;
+}
+.pagination li.active {
+    background-color: #327ff2;
+    color: #fff;
+    padding: 5px 3px;
+    align-items: center;
+}
+.pagination li {
+display: inline;
+margin-top: 0;
+}
+table tbody tr {
+        display: none;
+ }
+.container h3 {
+ font-size: 24px;
+ color: #000000;
+ margin-left: 50px;
+}
+.form-group {
+  color: #000000;
+  margin-left: 70px;
+}
+
+/* the footer is fixed to the bottom of the page */
+.row1 {
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  height: 9%;
+  bottom: 1;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  background: #e6f2ef;
+  text-align: center;
+  vertical-align: top;
+  color: #000080;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-text-3:hover {
+  color: #ff8000;
+  transform: scale(1.08);
+}
+.col {
+  flex-basis: 30%;
+  box-sizing: border-box;
+  border: none;
+}
+.footer-title {
+  text-align: left;
+  margin-left: 2em;
+  margin-top: 3em;
+}
+.col h3 { 
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.footer-text-3 {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.footer-bottom {
+  width: 100%;
+  height: 1%;
+  bottom: 0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background: #fff;
+  text-align: center;
+  vertical-align: middle;
+  color: #333;
+}
+.row3 {
+  width: 100%;
+  display: inline;
+}
+.col3-3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 1em;
+}
+.copyright-text {
+  display: inline;
+  width: 50%;
+  margin-left: 0px;
+}
+.media {
+  display: inline;
+  width: 30%;
+}
+.media img {
+  display: inline;
+}
+.media img {
+  background-color: white;
+  color: none;
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  text-align: left;
+  margin: 10px 15px;
+  vertical-align: left;
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+</style>
+<body>
+    <header>
+        <div class="row1">
+            <div class="column" id="company-logo">
+                <img src="images/logo.jpeg" style="float: left">
+            </div>
+            <div class="column" id="contact-no" style="float: right; color: #000080; font-size: 36px; margin-left: 800px;">
+              +(234) 803-351-1011
+       </div>
+        </div>
+        <nav>
+          <div class="navbar">
+              <a class="links" href="index.html">Home</a>
+              <div class="dropdown-menu">
+                <button onclick="plan-list" class="menu-btn">About Us +</button>
+                <div id="dropdown1" class="menu-content">
+                    <a class="links-hidden" href="outline.html">Outline</a>
+                    <a class="links-hidden" href="staffgallery.html">Staff </a>
+                </div>
+                </div>
+              <div class="dropdown-menu">
+              <button onclick="plan-list" class="menu-btn">Health Plans +</button>
+              <div id="dropdown1" class="menu-content">
+                <a class="links-hidden" href="individualplan.html">Individual</a>
+                <a class="links-hidden" href="familyplan.html">Family</a>
+                <a class="links-hidden" href="corporateplan.html">Corporate</a>
+                <a class="links-hidden" href="customizedplan.html">Customized</a>
+            </div>
+            </div>
+            <div class="dropdown-menu">
+            <button onclick="resource-list" class="menu-btn">Resources +</button>
+            <div id="dropdown2" class="menu-content">
+                <a class="links-hidden" href="gallery.html">Gallery</a>
+                  <a class="links-hidden" href="enrollment.html">Enrollment</a>
+                  <a class="links-hidden" href="download.html">Downloads</a>
+                  <a class="links-hidden" href="faqs.html">FAQ</a>
+                  <a class="links-hidden" href="career.html">Careers</a>
+              </div>
+              </div>
+              <a class="links" style="color: #008000;" href="healthprovider.html">Health Providers</a>
+              <a class="links" href="login.html">Log In</a>
+              <a class="links" href="blog.html">Blog</a>
+          </div>
+      </nav>
+    </header>
+    <main>
+    <section class="region1">
+<div class="container">
+    <h2 class="region"> NORTH-CENTRAL </h2>
+    <h3>Select Number Of Rows</h3>
+            <div class="form-group"> 	<!--		Show Numbers Of Rows 		-->
+                 <select class  ="form-control" name="state" id="maxRows">
+                     <option value="5000">Show ALL Rows</option>
+                     <option value="10">10</option>
+                     <option value="15">15</option>
+                     <option value="20">20</option>
+                     <option value="50">50</option>
+                     <option value="70">70</option>
+                     <option value="100">100</option>
+                    </select>
+                 
+              </div>
+
+<table class="table table-striped table-class" id= "table-id">
+    <thead>
+        <tr>
+            <th id="first">Name</th>
+            <th id="second">Status</th>
+            <th id="third">Address</th>
+            <th id="fourth">Phone</th>
+            <th id="fifth">Email</th>
+            <th id="sixth">City</th>
+            <th id="seventh">State</th>
+        </tr>
+      </thead>
+<tbody>
+<tr>
+    <td>GENERAL HOSPITAL, ALIADE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ALAIDE</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>MYOM HOSPITAL</td>
+    <td></td>
+    <td>General Hospital Road, Gboko</td>
+    <td></td>
+    <td></td>
+    <td>GBOKO</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, GBOKO</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>GBOKO</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>BAKI HOSPITAL</td>
+    <td></td>
+    <td>Opp. Base Garden GRA, Gboko</td>
+    <td></td>
+    <td></td>
+    <td>GBOKO</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, KATSINA-ALA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KATSINA-ALA</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>FEDERAL MEDICAL CENTRE - MAKURDI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MAURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL,NORTH BANK</td>
+    <td></td>
+    <td>North Bank, Makurdi</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>MADONNA HEALTH SERVICE LTD</td>
+    <td></td>
+    <td> New Bridge Road, Behind Union Bank Mkd</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>BISHOP MURRAY MEDICAL CENTRE</td>
+    <td></td>
+    <td>Close To St. Theresa Church, High Level Makurdi</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>SANDRA HOSPITAL</td>
+    <td></td>
+    <td>24, J.S. Tarka Road, Opp. Maltino Filling Station,  Makurdi</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>IMMACULATE CONCEPTION HOSPITAL</td>
+    <td></td>
+    <td>Walla Mayo, High Level, Makurdi</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>HEMKO HOSPITAL</td>
+    <td></td>
+    <td>Kanshio, Makurdi</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>EL-SHADDAI SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Plot 2319, Kanshio Makurdi</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>PAMPAS HOSPITALAND MATERNITY</td>
+    <td></td>
+    <td>27, Iyorchia Ayu Road, Wurukum Makurdi</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>QUEEN`S CLINIC</td>
+    <td></td>
+    <td>16, Railway Close, High Level Makurdi</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>GRACE COTTAGE HOSPITAL</td>
+    <td></td>
+    <td>7, David Mark Bye Pass, Makurdi</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, OTUKPO</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>OTUKPO</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>ST. DANIEL`S HOSPITAL</td>
+    <td></td>
+    <td>Behind Elipi Motor Park, Otukpo</td>
+    <td></td>
+    <td></td>
+    <td>OTUKPO</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>45 NIGERIANAIRFORCE HOSPITAL</td>
+    <td></td>
+    <td>Air Force Base, Makurdi, Benue State</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>COTTAGE HOSPITAL/COMPREHENSIVE</td>
+    <td></td>
+    <td>Benue State Police Command, Makurdi</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>BENONIL HOSPITAL</td>
+    <td></td>
+    <td>7, Zion Str Wurukum Makurdi</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>RAHAMA CLINICAND MATERNITY</td>
+    <td></td>
+    <td>12, Brewery Qtrs Opp Benue State University Medical School Gboko Rd Makurdi</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>IHOTU CLINICAND MATERNITY</td>
+    <td></td>
+    <td>63 Upo Road Oturkpo</td>
+    <td></td>
+    <td></td>
+    <td>OTUKPO</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>ST MARY`S HOSPITAL</td>
+    <td></td>
+    <td>Ichama Road, Okpoga</td>
+    <td></td>
+    <td></td>
+    <td>OKPOGA</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>PISHON WOMEN SPECIALIST CLINIC</td>
+    <td></td>
+    <td>12, Silas Ebute Street, Off Modern Market Road, Makurdi, Benue State.</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>DELIGHT SPECIALIST CLINIC & MATERNITY</td>
+    <td></td>
+    <td>No 3, Gilga Street, Beside Benue Investment Building, Otukpo Road,</td>
+    <td></td>
+    <td></td>
+    <td>OTUKPO</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>ST. MONICA`S HOSPITAL</td>
+    <td></td>
+    <td>Opp. St. Anne's Church, Off Adikpo-Vandeikya Road Adikpo Benue State</td>
+    <td></td>
+    <td></td>
+    <td>ADIKPO</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>NKST HOSPITAL</td>
+    <td></td>
+    <td>Mkar- Gboko , Benue State.</td>
+    <td></td>
+    <td></td>
+    <td>MKAR-GBOKO</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>USHAKAA HOSPITAL</td>
+    <td></td>
+    <td>Behind Civil Service Commission Old Otukpo Road, Makurdi Benue State</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>OYARE HOSPITAL AND MATERNITY</td>
+    <td></td>
+    <td>No. 4, Chief Omakpo Avenue Otukpo, Benue State.</td>
+    <td></td>
+    <td></td>
+    <td>OTUKPO</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL OTUKPA</td>
+    <td></td>
+    <td>Ijadoga Otukpo, Benue State.</td>
+    <td></td>
+    <td></td>
+    <td>OTUKPO</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>ST. VINCENT HOSPITAL</td>
+    <td></td>
+    <td>Aliade, Benue State</td>
+    <td></td>
+    <td></td>
+    <td>ALAIDE</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>FIRST FERTILITY HOSPITAL LTD</td>
+    <td></td>
+    <td>Plot BNB 5827, Behind Tile Ankpa Ward Benue State</td>
+    <td></td>
+    <td></td>
+    <td>ANKPA</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>N K S T HOSPITAL, MBAAKON</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MBAAKON</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>MYOM HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>VICTORY HOSPITAL</td>
+    <td></td>
+    <td>Off General Hospital Gboko,Benue State.</td>
+    <td></td>
+    <td></td>
+    <td>GBOKO</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>BENUE STATE UNIVERSITY TEACHING HOSPITAL</td>
+    <td></td>
+    <td>BSUTH Outreach Station, Benue State</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>BENUE STATE UNIVERSITY TEACHING HOSPITAL</td>
+    <td></td>
+    <td>BSUTH Gboko rd. Behind Tile Ankpa Ward Makurdi, Benue State.</td>
+    <td></td>
+    <td></td>
+    <td>MAKURDI</td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>EMORY SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>OJILIMA HOSPITAL SERVICES LTD</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>FOUNDATION MEMORIAL HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>HOMA HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>MULTI-CARE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BENUE</td>
+</tr>
+<tr>
+    <td>ST JOSEPH CLINIC & MATERNITY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BENUE</td>
+</tr>
+</tr>
+<tr>
+    <td>WILDOT CLINIC</td>
+    <td></td>
+    <td>Plot 903 Obafemi Awolowo Way, Utako District.</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>AREWA SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Plot 645, Alex Ekwueme Street, Jabi District, Abuja.</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GWARIMPA GENERAL HOSPITAL</td>
+    <td></td>
+    <td>Gwarinpa,Abuja.</td>
+    <td></td>
+    <td></td>
+    <td>GWARIMPA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>SYBRON MEDICAL CENTRE</td>
+    <td></td>
+    <td>25, Mungo Park close, opp Havista Hotel, Asokoro, Abuja.</td>
+    <td></td>
+    <td></td>
+    <td>ASOKORO</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>PAN-RAF HOSPITAL LTD</td>
+    <td></td>
+    <td>Nyanya Area C, Abuja.</td>
+    <td></td>
+    <td></td>
+    <td>NYANYA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ST PATRICK'S CLINIC & MATERNITY</td>
+    <td></td>
+    <td>Area F, Beside Police Station, Nyanya Abuja.</td>
+    <td></td>
+    <td></td>
+    <td>NYANYA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>JALINGO MEDICAL CLINIC</td>
+    <td></td>
+    <td>Plot 53, Phase Ii, Opp. Area A, Nyanya Abuja.</td>
+    <td></td>
+    <td></td>
+    <td>NYANYA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ALFAD SPECIALIST MEDICAL CENTRE </td>
+    <td></td>
+    <td>Kuje, FCT, Abuja.</td>
+    <td></td>
+    <td></td>
+    <td>KUJE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>MIDLAND CLINIC</td>
+    <td></td>
+    <td>Karu-Site By Bus Stop, Karu, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KARU</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DEVINE MERCY HOSPITAL & DIAGNOSIS</td>
+    <td></td>
+    <td>Plot 93, Phase 2/1 Gado Nasko Street, Kubwa, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KUBWA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>THE COMFORTER CLINIC & DIAGNOSIS</td>
+    <td></td>
+    <td>Plot 1233, 1 (R) 4 Road by AMAC International Market behind CBN Quarters Lugbe</td>
+    <td></td>
+    <td></td>
+    <td>LUGBE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>UNITY CLINIC</td>
+    <td></td>
+    <td>Plot D1 Phase Ii Site One Gado Nasko Road, Kubwa</td>
+    <td></td>
+    <td></td>
+    <td>KUBWA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>SUMIT HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BWARI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>EXPRESS HOSPITAL</td>
+    <td></td>
+    <td>Nysc Road, Kubwa, Abuja</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>KINGS CARE HOSPITAL LTD</td>
+    <td></td>
+    <td>7, Christmas Road, Behind Police Affairs, Kubwa Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KUBWA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>KUBWA CLINIC & MATERNITY</td>
+    <td></td>
+    <td>Plot 159b Kubwa, Behind Channel 8 Restaurant, Kubwa, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KUBWA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>PISON HOSPITAL</td>
+    <td></td>
+    <td>3553 Gado Nasko Road by MTN office, Phase lV, Kubwa</td>
+    <td></td>
+    <td></td>
+    <td>KUBWA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>MIRACLE SEED CLINIC & MATERNITY</td>
+    <td></td>
+    <td>40b Dasuki Street, Phase Ll, Site 2, Kubwa, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KUBWA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GRACE OF GOD SPECIALIST MEDICAL CENTRE</td>
+    <td></td>
+    <td>Phrase 2, Site 2, Kubwa, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KUBWA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>KUBWA GENERAL HOSPITAL</td>
+    <td></td>
+    <td>Phase 4 Opp. Gss, Kubwa, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KUBWA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ST. VINCENT CLINIC & MATERNITY</td>
+    <td></td>
+    <td>Daughtrer''s Of Charity, Biyazhin Road, Kubwa</td>
+    <td></td>
+    <td></td>
+    <td>KUBWA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ROYAL LORDS HOSPITAL, CLINICSAN</td>
+    <td></td>
+    <td>Plot 107, Zone 4, Dutse Alhaji, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>DUTSE ALHAJI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>PRIMARY HEALTH CENTRE, GWAGWA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>GWAGWALADA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>RHEMA FOUNDATION HOSPITAL</td>
+    <td></td>
+    <td>Rhema Fountain, Kwali, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KWALI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>STANDARD CARE HOSPITAL & MATERNITY</td>
+    <td></td>
+    <td>T-Junction Opp. Min. Of Finance, Phase 1, FHA, Lugbe, Airport Road, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>LUGBE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>MAITAMA DISTRICT HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MAITAMA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ASOKORO DISTRICT HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ASOKORO</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>WUSE DISTRICT HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>WUSE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ASHER HOSPITALAND MATERNITY</td>
+    <td></td>
+    <td>Plot 1197, Kataamkpe Cadastral Zone B07, Opp NICON Junction, Berger-Kubwa Express way</td>
+    <td></td>
+    <td></td>
+    <td>KATAAMKPE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>SAUKI PRIVATE HOSPITAL</td>
+    <td></td>
+    <td>Plot 90 Zone 6 Yaounde Crescent Wuse</td>
+    <td></td>
+    <td></td>
+    <td>WUSE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, NYANYA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NYANYA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>AL-BAMA CLINICS & MATERNITY</td>
+    <td></td>
+    <td>No. 35 Royal Palm Street, Fed. Housing Estate, Nyanya</td>
+    <td></td>
+    <td></td>
+    <td>NYANYA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>OUR LADY OF FATIMA CATHOLIC HOSPITAL</td>
+    <td></td>
+    <td>Ushafa Rd., Bwari, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>BWARI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>KWALI GENERAL HOSPITAL</td>
+    <td></td>
+    <td>Off Abaji/Lokoja Road, Near Area Council Secretariat, Kwali.</td>
+    <td></td>
+    <td></td>
+    <td>KWALI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ABAJI GENERAL HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ABAJI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL - KARSHI- FCT</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KARSHI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>RUZ MEDICAL CENTRE</td>
+    <td></td>
+    <td>Ubiaja Crescent, Garki, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>GARKI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ROUZ HOSPITALAND MATERNITY LTD</td>
+    <td></td>
+    <td>Apo, Legislative Qtrs, Phase II</td>
+    <td></td>
+    <td></td>
+    <td>APO</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>AMANA MEDICAL CENTRE</td>
+    <td></td>
+    <td>No. 5, Ilorin Street, off Ogbomosho Street, Area 8, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>AREA 8</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>FEREPROD. MEDICAL CENTRE</td>
+    <td></td>
+    <td>Off Ahmadu Bello Way Behind Nepa Sub-Station-2 Cbn Area II,</td>
+    <td></td>
+    <td></td>
+    <td>AREA II</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ALPHA-ZED MEDICAL CLINIC LIMITED</td>
+    <td></td>
+    <td>Angwar-Gwari, Karu, FCT</td>
+    <td></td>
+    <td></td>
+    <td>KARU</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>KUJE PRIMARY HEALTH CENTRE</td>
+    <td></td>
+    <td>Kuje Near Local Govt. Office Kuje, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KUJE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>JILF CLINIC ENT</td>
+    <td></td>
+    <td>Plot D 231 Crescent By 232 Road Kado Estate</td>
+    <td></td>
+    <td></td>
+    <td>KADO ESTATE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>EBONY HOSPITAL</td>
+    <td></td>
+    <td>House No. 76, 3rd Avenue, Gwarinpa Housing Estate, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>GWARIMPA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>LIMI HOSPITAL & MATERNITY LTD.</td>
+    <td></td>
+    <td>Plot 541, Behind Icpc, Central Area, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>CENTRAL AREA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>NATIONALASSEMBLY CLINIC</td>
+    <td></td>
+    <td>Three Arm Zone, Central Area, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>CENTRAL AREA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>STATE HOUSE CLINIC</td>
+    <td></td>
+    <td>(Presidency) Three Arm Zone, Central Area, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>CENTRAL AREA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>SAMI-WADATA CLINICS LTD.</td>
+    <td></td>
+    <td>Plot 766 Bukcanan Crescent, Off Aminu Kano Crescent, Wuse II</td>
+    <td></td>
+    <td></td>
+    <td>WUSE II</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>IDUNA SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Plot 1200 Ndjamena Crescent, Wuse II</td>
+    <td></td>
+    <td></td>
+    <td>WUSE II</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>KINGS CARE HOSPITAL </td>
+    <td></td>
+    <td>Wuse Zone 4, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>WUSE ZONE 4</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>QUEENS CLINICS</td>
+    <td></td>
+    <td>Plot 225, Cotonou Crescent, Wuse Zone 6, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>WUSE ZONE 6</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>BIO-ROYAL HOSPITAL & MATERNIT</td>
+    <td></td>
+    <td>No. 190, Okene/Jebba Close, Garki</td>
+    <td></td>
+    <td></td>
+    <td>GARKI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>INEC STAFF CLINIC</td>
+    <td></td>
+    <td>Area 10, Inec Office, Garki</td>
+    <td></td>
+    <td></td>
+    <td>GARKI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>HOLY TRINITY HOSPITAL LTD.</td>
+    <td></td>
+    <td>Plot 1395, Nnamdi Azikiwe Way, Opp. Cbn/Dantata & Sawoe</td>
+    <td></td>
+    <td></td>
+    <td>NNAMDI AZIKIWE WAY</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DIAMOND MEDICAL CENTRE LTD.</td>
+    <td></td>
+    <td>Plot 42, Beside Mr. Bigs By Model Pri. Sch. Gark II</td>
+    <td></td>
+    <td></td>
+    <td>GARKI II</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>SAVANNAH HOSPITALS LTD.</td>
+    <td></td>
+    <td>Behind City Rock Hotel, Mararaba, Off Nyanya abuja, Km 42, Keffi Road, Mararaba</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DARA MEDICAL CLINICS</td>
+    <td></td>
+    <td>Plot 202, Bacita Close, Off Plateau Street, Area 2 , Garki</td>
+    <td></td>
+    <td></td>
+    <td>GARKI AREA II</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>MINISTRY OF DEFENCE STAFF CLINIC</td>
+    <td></td>
+    <td>Ship House, Olusegun Obasanjo Way, Area 10, Garki</td>
+    <td></td>
+    <td></td>
+    <td>GARKI AREA 10</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>KINECTIC HOSPITAL LIMITED</td>
+    <td></td>
+    <td>Ahoada Close, off Emeka Anyaoku street,  Area Ii, Garki</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ALIBU MEDICAL CENTRE</td>
+    <td></td>
+    <td>Area F, Nyanya Abuja</td>
+    <td></td>
+    <td></td>
+    <td>NYANYA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>LAFIAK HOSPITAL</td>
+    <td></td>
+    <td>Toto Road, Abaji</td>
+    <td></td>
+    <td></td>
+    <td>ABAJI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GWAGWALADA CLINIC & MATERNITY</td>
+    <td></td>
+    <td>Kutunku Along Frcn Road, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KUTUNKU</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>JERAB HOSPITALS</td>
+    <td></td>
+    <td>Plot 145, Kutunku Near Radio House, Gwagwalada, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>GWAGWALADA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>SLIVER FOUNTAIN MEDICAL CENTRE</td>
+    <td></td>
+    <td>Kukwala District, Opp. Kuchingoro, Along Airport Road, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KUKWALA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>AREWA CLINICAND MATERNITY </td>
+    <td></td>
+    <td>Plot F14, By Nepa Office, Karu</td>
+    <td></td>
+    <td></td>
+    <td>KARU</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>NISA PREMIER HOSPITAL</td>
+    <td></td>
+    <td>Plot 618, Alex Ekweme Way, Jabi Abuja</td>
+    <td></td>
+    <td></td>
+    <td>JABI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ABUJA CLINIC, MAITAMA</td>
+    <td></td>
+    <td>Maitama, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>MAITAMA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>NATIONAL HOSPITAL ABUJA</td>
+    <td></td>
+    <td>Central Area</td>
+    <td></td>
+    <td></td>
+    <td>CENTRAL AREA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ALBERT HORSFALL MEDICAL CENTRE</td>
+    <td></td>
+    <td>NIA Hq, off Muritala Mohammed way, near Danata & Sawoe, Garki</td>
+    <td></td>
+    <td></td>
+    <td>GARKI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DEFENCE INTELLIGENCE AGENCY</td>
+    <td></td>
+    <td>Asokoro</td>
+    <td></td>
+    <td></td>
+    <td>ASOKORO</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>LIVING STREAM SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>43/45, Street A, Phase I, off University Rd, Gwagwalada</td>
+    <td></td>
+    <td></td>
+    <td>GWAGWALADA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ANGELIC CARE HOSPITAL & MATERNITY</td>
+    <td></td>
+    <td>19, Ngwa close off Funmilayo Ransome Kuti Road, Garki Area 3, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>GARKI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DSS MEDICAL CENTRE.</td>
+    <td></td>
+    <td>VGC, Opposite National Military Cemetary, Airport Road, Abuja</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>NIGERIA CUSTOMS SERVICE CLINICS</td>
+    <td></td>
+    <td> Wuse Zone 3, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>WUSE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>NIGERIA CUSTOMS SERVICE MEDICAL CENTRE</td>
+    <td></td>
+    <td>Karu Customs Barracks, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KARU</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GUARDS BRIGADE MED. CENTRE</td>
+    <td></td>
+    <td>Yakubu Gowon Barracks, Abuja</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>108 NIGERIAN AIR FORCE HOSPITAL</td>
+    <td></td>
+    <td>NAF Base, Abuja</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>CORNERSTONE SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Plot 1397, Abidjan Street, Zone 3, Wuse, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>WUSE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>CITY HOSPITAL FCT</td>
+    <td></td>
+    <td>Wuse Zone 5, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>WUSE ZONE 5</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DARA MEDICAL CLINICS</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>FEDERAL STAFF CLINIC</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>BWARI GENERAL HOSPITAL</td>
+    <td></td>
+    <td>Kawu Road, Bwari, FCT, ABuja</td>
+    <td></td>
+    <td></td>
+    <td>BWARI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ABUJA CLINIIC, GARKI</td>
+    <td></td>
+    <td>Area 3, Garki, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>GARKI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ABUJA CLINIIC </td>
+    <td></td>
+    <td>Karu, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KARU</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GAND S SPECIALIST CLINIC</td>
+    <td></td>
+    <td>8B Rhine Street (Opp. IBB Way), Maitama</td>
+    <td></td>
+    <td></td>
+    <td>MAITAMA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>SAFFRON HOSPITAL LTD.</td>
+    <td></td>
+    <td>1 KM, Left Off Checkpoint, Abuja-Keffi Expressway, Phase IV, Nyanya, FCT</td>
+    <td></td>
+    <td></td>
+    <td>NYANYA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DHQ MRS </td>
+    <td></td>
+    <td> Mogadishu Cantonment, Abuja</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>BEPOS CLINICAND MATERNITY</td>
+    <td></td>
+    <td>10, Faskari Street Area 3 Garki Abuja</td>
+    <td></td>
+    <td></td>
+    <td>GARKI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>WELL POINT CLINIC</td>
+    <td></td>
+    <td>House 1, Road 45, Off 1st Ave, Gwarinpa</td>
+    <td></td>
+    <td></td>
+    <td>GWARIMPA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>THE CROWN HOSPITAL LTD.</td>
+    <td></td>
+    <td>Behind Police quarters, Gwagwa, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>GWAGWA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>RAINBOW CLINICAND MATERNITY </td>
+    <td></td>
+    <td>Plot 218, Gudu District Apo Qtrs Garki, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>GARKI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>FEDERAL STAFF HOSPITAL</td>
+    <td></td>
+    <td>Airport Road, Jabi</td>
+    <td></td>
+    <td></td>
+    <td>JABI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>EVERLASTING CARE HOSPITAL LTD</td>
+    <td></td>
+    <td>Plot 643 Gimbia Street, Area II, Garki, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>GARKI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>MICHEAL CROSS SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td> Plot FG Church Road, Karu Site, Karu, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KARU</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ST MARY CATHOLIC HOSPITAL</td>
+    <td></td>
+    <td>No 1 FRCN Road, Opposite Police Station Gwagwalada</td>
+    <td></td>
+    <td></td>
+    <td>GWAGWALADA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>PRECIOUS CLINIC & MATERNITY</td>
+    <td></td>
+    <td>House 57, 1st Avenue FHA, Lugbe, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>LUGBE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>KUTUNKU ALHERI CLINIC & MATERNITY</td>
+    <td></td>
+    <td>Along New Millenium Hotel, P.O Box, 7,  New Kutun-Gwagwalada</td>
+    <td></td>
+    <td></td>
+    <td>GWAGWALADA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td> ABUJA UNITY HOSPITAL & MATERNITY</td>
+    <td></td>
+    <td>FHA Phase I Lugbe</td>
+    <td></td>
+    <td></td>
+    <td>LUGBE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>SOPHY HOSPITAL & MATERNITY</td>
+    <td></td>
+    <td>Jukwoyi-Karshi Rd, Jukwoyi, Phase II</td>
+    <td></td>
+    <td></td>
+    <td>JUKWOYI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>NIGERIAN CUSTOMS MEDICAL CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>KUJE GENERAL HOSPITAL</td>
+    <td></td>
+    <td>Kuje, Abuja.</td>
+    <td></td>
+    <td></td>
+    <td>KUJE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DR. HASSANS CLINIC/DIAGNOSTIC</td>
+    <td></td>
+    <td> 9 Njamena Street, off Aminu Kano Crescent, Wuse II, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>WUSE II</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>CITY INTERNATIONAL CLINICS</td>
+    <td></td>
+    <td>Kabayi, Mararaba, Nasarawa State</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>UNIVERSITY OFABUJATEACHING HO</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>MUMEEN MEDICAL CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>FEDERAL ROAD SAFETY COMMISSION</td>
+    <td></td>
+    <td>Plot 18 Cotonou Crescent, Wuse Zone 6, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>WUSE ZONE 6</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ALPHA CLINIC</td>
+    <td></td>
+    <td>332 Alpha Clinic Zone 1, Dutse Alhaji, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>DUTSE ALHAJI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>FAITH MEDICAL CENTRE</td>
+    <td></td>
+    <td>Old Karimo Along Dantata Road, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>OLD KARIMO</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ACCOLADE MEDICAL CLINIC LTD</td>
+    <td></td>
+    <td>Flat 5 Block 1 Kujama Street behind Shopping Center Area 2 Garki Abuja</td>
+    <td></td>
+    <td></td>
+    <td>GARKI AREA II</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>RACHEL HOSPITAL</td>
+    <td></td>
+    <td>Plot 23, Onitsha Street, Off Gimbiya, Garki, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>GARKI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>PAAFAG HOSPITAL & MEDICAL DIAGNOSIS</td>
+    <td></td>
+    <td>FHA Lugbe FHA Estate, Lugbe, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>LUGBE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>NORTHLAND MEDICAL CENTRE</td>
+    <td></td>
+    <td>Okata House Off Old Karu Road, Nyanya, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>NYANYA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DIAMOND CREST HOSPITAL LTD</td>
+    <td></td>
+    <td>Opp. Fed. High Court, Zuma, Abuja</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GARKI HOSPITAL</td>
+    <td></td>
+    <td>Area 8, Garki, Abuja</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ALLISON CLINICAND MATERNITY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>FORTRESS HOSPITAL</td>
+    <td></td>
+    <td>8 Gender Close, Off Gender Street, Wuse Zone 1</td>
+    <td></td>
+    <td></td>
+    <td>WUSE ZONE 1</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>CLINIC CARE MEDICAL SERVICES</td>
+    <td></td>
+    <td>35 Nouakchott  Street, Wuse Zone 1</td>
+    <td></td>
+    <td></td>
+    <td>WUSE ZONE 1</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>NAF SICK BAY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>SISTERS OF NATIVITY HOSPITAL</td>
+    <td></td>
+    <td>Jikwoyi Phase 1, Behind Asaka Cement</td>
+    <td></td>
+    <td></td>
+    <td>JIKWOYI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>PROMESA MEDICAL CENTRE</td>
+    <td></td>
+    <td>House 57, 321 Road off 3rd Avenue, Gwarinpa</td>
+    <td></td>
+    <td></td>
+    <td>GWARIMPA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>KUBWA MUSLIM COMMUNITY HOSPITAL</td>
+    <td></td>
+    <td>Phase 4, Opposite Jumat Mosque Kubwa</td>
+    <td></td>
+    <td></td>
+    <td>KUBWA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>JIKWOYI MEDICAL CENTRE</td>
+    <td></td>
+    <td>3 Esu Jetta Road, Phase 1, Jikwoyi</td>
+    <td></td>
+    <td></td>
+    <td>JUKWOYI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ROYAL SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>2 Kukawa Street, off Gimbiya Street, Area 11, Garki</td>
+    <td></td>
+    <td></td>
+    <td>GARKI AREA 11</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>TOLBERT SPECIALISTS HOSPITALS LTD</td>
+    <td></td>
+    <td>3 Substation Close, off Constitution Avenue, Gaduwa Estate</td>
+    <td></td>
+    <td></td>
+    <td>CENTRAL AREA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>JETHRONE HOSPITALAND DIAGNOST</td>
+    <td></td>
+    <td>Plot 44, NYSC Road, Gbazango</td>
+    <td></td>
+    <td></td>
+    <td>GBAZANGO</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>KENONY CLINIC LIMITED</td>
+    <td></td>
+    <td>Plot B144 Adisa Close 2/2 ?Off Dasuki Road, Kubwa</td>
+    <td></td>
+    <td></td>
+    <td>KUBWA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>PEACECARE CLINIC</td>
+    <td></td>
+    <td>46 3rd Avenue, Opp. Zenith Bank, Gwarinpa</td>
+    <td></td>
+    <td></td>
+    <td>GWARIMPA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>RUBOCHI GENERAL HOSPITAL</td>
+    <td></td>
+    <td>Rubochi Town</td>
+    <td></td>
+    <td></td>
+    <td>RUBUCHI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>FAMILY CARE MULTICLINICS</td>
+    <td></td>
+    <td>9, Lord Lugard Street, Asokoro</td>
+    <td></td>
+    <td></td>
+    <td>ASOKORO</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>PRIMECARE HOSPITALS</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>MEDIMAX HOSPITAL</td>
+    <td></td>
+    <td>11, 612 Road (7th Avenue) Gwarinpa</td>
+    <td></td>
+    <td></td>
+    <td>GWARIMPA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>LAURA HOSPITAL</td>
+    <td></td>
+    <td>Kogo, Bwari</td>
+    <td></td>
+    <td></td>
+    <td>BWARI</td>
+    <td>FCT</td>
+</tr>
+</tr>
+<tr>
+    <td>VINETTE HOSPITALAND MATERNITY</td>
+    <td></td>
+    <td>14, Gindiri Street, Garki 2</td>
+    <td></td>
+    <td></td>
+    <td>GARKI II</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ZENITH MEDICALAND KIDNEY CENTR</td>
+    <td></td>
+    <td>28 Ubiaja Crescent, Garki 2</td>
+    <td></td>
+    <td></td>
+    <td>GARKI II</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>THE PEAKE SPECIALIST HOSPITAL-FC</td>
+    <td></td>
+    <td>No 24, 64 crescent, After Chaley Boy Boulevard, Gwarinpa</td>
+    <td></td>
+    <td></td>
+    <td>GWARIMPA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>PRIMUS INTERNATIONAL SUPER SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Karu New Extension, Behind Customs Quarters, Karu, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>KARU</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>CORNELIAN MATERNITYAND RURAL</td>
+    <td></td>
+    <td>Holy Child Lane, Opposite Loyola Jesuit Maingate, Gidan Mangoro, Abuja-FCT.</td>
+    <td></td>
+    <td></td>
+    <td>GIDAN MANGORO</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GILGAL HOSPITAL</td>
+    <td></td>
+    <td>Plot 1013-1014 Army Post Service Scheme, Kurudu, FCT</td>
+    <td></td>
+    <td></td>
+    <td>KURUDU</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ZAMAN CLINIC & MATERNITY</td>
+    <td></td>
+    <td>25 Road 21B, Babangida Rd. FHA, Lugbe, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>LUGBE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>LIFE POINT MEDICAL CENTRE</td>
+    <td></td>
+    <td>Plot  64, Moses Majekodummi Crescent, Utako District, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>UTAKO</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>LOUIS-PASTUER HOSPITAL LTD</td>
+    <td></td>
+    <td>813C, 64 Crescent, Gwarimpa 2 Estate, Map Global Junction, Abuja</td>
+    <td></td>
+    <td></td>
+    <td>GWARIMPA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>LEAHJADA-JOSEPH MEDICAL CENTRE</td>
+    <td></td>
+    <td>Plot 7, Chris Chukwukelu Street, Behind Central Mosque, Gwagwalada, F.C.T</td>
+    <td></td>
+    <td></td>
+    <td>GWAGWALADA</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>JEHOVA ADONAI EAGLE HOSPITAL</td>
+    <td></td>
+    <td>314, Street B, Phase 1, Gwagwalada, F.C.T</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>LEAHJADA-JOSEPH MEDICAL CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GUINEA SAVANNAH MEDICAL CENTRE</td>
+    <td></td>
+    <td>Communal Center, NNPC Housing Estate Area 2,Garki</td>
+    <td></td>
+    <td></td>
+    <td>GARKI</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>POLICE CANTONMENT CLINIC</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DE ROSE OF SHARON HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>WHITE DOVE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>MODELCARE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>FIRST HOSPITALAND MATERNITY LTD</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>FREEDOMSCAN MEDICAL CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>HAMMERSMITH MEDICAL CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>JEDAM SPRING HOSPITAL LIMITED</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>KODESH HOSPITAL LTD</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>MENOVAS CONSULTANTS CLINIC</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>YABISAM HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>TAHIRA HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GREENACRES HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>SOFT SHELL SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>LONA CITY CARE HOSPITAL NIG LTD</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>FEDERAL STAFF HOSPITAL-GWARINPA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>STEDMED SPECIALIST MEDICAL CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DIOCESE OF KUBWA ANGLICAN HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>EXCEL SPECIALIST HOSPITAL  FERTILITY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ST. CATHERINE`S SPECIALIST HOSPI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>BORIS CLINIC LTD</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>TAPROBANE MEDICAL CENTER</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>RAPHA CONSULTANTAND SPECIALIST</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>TRUST CHARITOS HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>WRISBERG HOSPITAL </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>TUNGAN-MAJE HOPE CLINIC & MATERNITY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>TUNGAN-MAJE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>BODY CHECK INTERNATIONAL CLINIC</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GAFED MEDICAL CENTRE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DE-MARY'S CENTRAL HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>FRESH SPRINGS MEDICAL SERVICES</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ULTRAMED SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ZOPUTA CLINICAND MATERNITY LTD</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>OAKFIELD HEALTH SERVICE LTD</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>MEV SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>DHA SPECIALITY CLINICS LTD</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>MARY FRANCIS HOSPITALS & MED</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>NAVAL MEDICAL CENTRE KUJE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KUJE</td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>AZRIEL PREMIER HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>HILLSHORE CLINIC LTD</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td>DEDA HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>QUEENS SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GEM OF HOPE MEDICAL CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ELVACHI SPECIALIST HOSPITAL (ENT)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ARMY COMMAND HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ALLIANCE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>BISHOPS CROSS SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ARISE & SHINE HOSPITAL LIMITED</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>GRABO FERTILITY CLINIC</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>TRIPLECORD HEALTH LIMITED</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>MUHAMMAD BUHARI POLICE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>FCT</td>
+</tr>
+<tr>
+    <td>ASCL MEDICAL CENTRE, AJAOKUTA</td>
+    <td></td>
+    <td>Ajaokuta Steel Co. Ltd.,  Kogi State</td>
+    <td></td>
+    <td></td>
+    <td>AJAOKUTA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>KOGI STATE UNIVERSITY TEACHING HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL DEKINA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, IDAH</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>IDAH</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>NIGER HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, MOPA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MOPA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, OKENE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>OKENE</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>ECWA HOSPITAL</td>
+    <td></td>
+    <td>Mission Road Egbe</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>FEDERAL MEDICAL CENTER LOKOJA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>LOKOJA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, KABBA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KABBA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, ISANLU</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ISANLU</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, ANKPA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ANKPA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td> ALI OMEZA HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>LOKOJA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>SPECIALIST HOSPITAL, OBANGEDE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>OBAGEDE</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>COTTAGE CLINIC</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ODO ERE</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, AYETORO GBEDE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>AYETORO GBEDE</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>MARIA GORRETE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>AYINGBA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, IYAMOYE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>IYAMOYE</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>GRIMARD CATHOLIC HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ANYIAGBA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>ODOMA CLINICAND MATERNITY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>IDAH</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>DSS CLINIC</td>
+    <td></td>
+    <td>Lokoja, Kogi State</td>
+    <td></td>
+    <td></td>
+    <td>LOKOJA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>FEDERAL POLYTECHNIC MEDICAL CENTRE</td>
+    <td></td>
+    <td>Idah - Ajaka Road, Kogi State</td>
+    <td></td>
+    <td></td>
+    <td>IDAH</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>FED. COLLEGE OF EDUCATION MEDIC</td>
+    <td></td>
+    <td>Okene, Kogi State</td>
+    <td></td>
+    <td></td>
+    <td>OKENE</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>POLY HOSPITALAND MAT.HOME</td>
+    <td></td>
+    <td>janet ekundayo road, Lokoja</td>
+    <td></td>
+    <td></td>
+    <td>LOKOJA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>POLICE CLINIC</td>
+    <td></td>
+    <td>Police State Command, Lokoja</td>
+    <td></td>
+    <td></td>
+    <td>LOKOJA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>FEDERAL UNIVERSITY LOKOJA MEDICAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>LOKOJA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>GOOD SHEPHERD MEDICAL CENTRE</td>
+    <td></td>
+    <td>No 10, Egume /Ankpa Road, Anyigba, Kogi State.</td>
+    <td></td>
+    <td></td>
+    <td>ANYIGBA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>KOGI STATE SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Along Okene-Kabba Road</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>ST. MARGARET `S CLINIC</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>COVENANT CARE CLINICAND MATERNITY</td>
+    <td></td>
+    <td>Flat 91G Ondo Estate (SAE), Ajaokuta, Kogi State.</td>
+    <td></td>
+    <td></td>
+    <td>AJAOKUTA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>PEACE HOSPITAL</td>
+    <td></td>
+    <td>No 1, Peace Crescent, Off Old Egume Rd, Anyigba, Kogi State.</td>
+    <td></td>
+    <td></td>
+    <td>ANYIGBA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>NAGAZI CLINICAND MATERNITY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>BETHEL HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>HILLCREST CLINICAND MATERNITY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>REHOBOTH SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>NEIGHBOUR MULTICARE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>IMMANUEL CLINIC</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>HELPING HANDS WOMEN HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>JOSALU SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>CARECREST SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>AMAZING GRACE HOSPITA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>OUR LADY OF MARCY CATHOLIC HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>LOKOJA CITY CLINICAND MATERNITY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>ROCK `N` GARDEN CLINIC LOKOJA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>HAFSATI HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>CONFLUENCE CITY HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>LOKOJA</td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>A4 MEDICAL CONSULTIUM</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>SHIFAAH HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>KINGS GLORY CLINIC & MATERNITY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KOGI</td>
+</tr>
+<tr>
+    <td>TEMITOPE HOSPITAL</td>
+    <td></td>
+    <td>Sabo Line Isale, Off Amilegbe Road, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>OLA OLU HOSPITAL</td>
+    <td></td>
+    <td>Opp. International Tobacco Coy. Garrage Offa Road, Iiorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>ILORIN CLINICSAND MATERNITY HOSPITAL</td>
+    <td></td>
+    <td>163, Alimi Road, Isale Alore/Abata, Ologe, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>EYITAYO HOSPITAL</td>
+    <td></td>
+    <td>No. 40, Ojo-Iya Road, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>OLALOMI HOSPITAL</td>
+    <td></td>
+    <td>Stadium  Road, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>COTTAGE HOSPITAL, AJASE-IPO</td>
+    <td></td>
+    <td>Ajase Ipo, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>OMOLOLA HOSPITAL</td>
+    <td></td>
+    <td>Opp. Govt. Sec. School, Along Jebba Road, Ilorin.</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>SOBI SPECIALIST  HOSPITAL</td>
+    <td></td>
+    <td>Alagbado Okelele, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>OLAREWAJU HOSPITAL</td>
+    <td></td>
+    <td>Oro Ago Close Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>WALE CLINIC & MATERNITY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>OFFA</td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>UNIVERSITY TEACHING HOSPITAL ILORIN</td>
+    <td></td>
+    <td>Ilorin, Lagos Road, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>DELNIKS HOSPITAL</td>
+    <td></td>
+    <td>Oja Iya Off University Road, Iiorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>FEMIS HOSPITAL</td>
+    <td></td>
+    <td>Unity Road, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>AISAT MEMORIAL HOSPITAL</td>
+    <td></td>
+    <td>Off. Jaigbade Residence, Itamerin, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, OMUARAN</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>OMUARUN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>AIRPORT CLINIC</td>
+    <td></td>
+    <td>Eyenkorin Road, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>ABANISE LOLU HOSPITAL</td>
+    <td></td>
+    <td>Oke Agodi Aromaradu Adeta, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>KIDDIZ CLINIC</td>
+    <td></td>
+    <td>Eastern Reservoirs, Olorunshogo, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>SADIKU HOSPITAL</td>
+    <td></td>
+    <td>16, Abdulwahab Folawuyo, Unity Road, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>TOBI HOSPITAL</td>
+    <td></td>
+    <td>Opp. Stadium Shopping Complex, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+</tr>
+<tr>
+    <td>SABO-OKE MEDICAL CENTRE</td>
+    <td></td>
+    <td>12,Fufu/Okafor Street, Sabo-Oke, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>ADEYEMO HOSPITAL</td>
+    <td></td>
+    <td>Omu-aran, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>OMUARAN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>ANCHORMED HOSPITAL</td>
+    <td></td>
+    <td>University Road, Tanke, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>SURULERE MEDICAL CENTRE</td>
+    <td></td>
+    <td>Off Taiwo Road, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>KOSEMANI HOSPITAL</td>
+    <td></td>
+    <td>Emirs Road, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>OLANIPEKUN HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>OLA-OLU HOSPITAL</td>
+    <td></td>
+    <td>Opposite Int. Tobacco Coy, Garrage Offa Road, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>DSS CLINIC</td>
+    <td></td>
+    <td>Ilorin, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>227 WG MEDICAL CENTRE</td>
+    <td></td>
+    <td>NAF Station, Ilorin, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>SPECIALIST HOSPITAL, OFFA</td>
+    <td></td>
+    <td>Offa Town, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>OFFA</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>AJISAFE HOSPITAL</td>
+    <td></td>
+    <td>GRA Road, Agana Area, Omuaran, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>OMUARAN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>GARINALIMI HOSPITAL</td>
+    <td></td>
+    <td>283, Umaru Saro Road, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>UNIVERSITY OF ILORIN HEALTH CENTRE</td>
+    <td></td>
+    <td>Ilorin, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>ORE OFE CLINICAND MATERNITY</td>
+    <td></td>
+    <td>Isale-Maliki Street, Balogun Funlani Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>ROLAKIM HOSPITAL</td>
+    <td></td>
+    <td>Opposite St Clares Grammar School, Offa</td>
+    <td></td>
+    <td></td>
+    <td>OFFA</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>OLALOMI HOSPITAL</td>
+    <td></td>
+    <td>Irra Rd offa</td>
+    <td></td>
+    <td></td>
+    <td>OFFA</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>ROYAL CARE HOSPITAL</td>
+    <td></td>
+    <td>No 1 Ponyan Rd NNPC Pipeline Gaa-Akanbi Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL KIAMA</td>
+    <td></td>
+    <td>General Hospital Kiama</td>
+    <td></td>
+    <td></td>
+    <td>KIAMA</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>NEW ERA HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>OSI</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>CIVIL SERVICE HOSPITAL</td>
+    <td></td>
+    <td>ILOFA ROAD, ILORIN</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>UITH COMPREHENSIVE HEALTH CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ESIE</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>ADEWOLE COTTAGE HOSPITAL</td>
+    <td></td>
+    <td>ADEWOLE RD, ALONG YEBMOT HOTEL, ILORIN</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>OLUTAYO CLINICAND MATERNITY</td>
+    <td></td>
+    <td>SANGO, ILORIN</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>CIVIL SERVICE HOSPITALAND MATERNITY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>CRESCENT GOLD CROWN HOSPITAL</td>
+    <td></td>
+    <td>Behind Mark Petrol Station, Tanke, Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>BALM HOSPITAL</td>
+    <td></td>
+    <td>296 Bishop Street, GRA Ilorin</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>FOLORUNSHO HOSPITAL</td>
+    <td></td>
+    <td>Oke Odo, Erinle, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>ERINLE</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>LANDMARK UNIVERSITY MEDICAL CENTRE</td>
+    <td></td>
+    <td>Landmark University, Omuaran, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>OMUARAN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>NOTRE DAME MEDICAL CENTRE</td>
+    <td></td>
+    <td>Along Kabba Kajola Road, Amoyo Town, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>AMOYO</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>TIM HOSPITAL</td>
+    <td></td>
+    <td>3, Olukade Close, off Abikan Street, Isale-Aluko, Ilorin, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>YUSJIB INDUSTRIAL MEDICARE</td>
+    <td></td>
+    <td>35, Ajase Ipo Road, (opposite Oando filling station, offa garage), Ilorin, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>MIDLAND FERTILITY CENTER-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>KHADIJAT MEMORIAL HOSPITAL</td>
+    <td></td>
+    <td>Annex 1, Kulende Housing Estate Junction, Beside, Imam Petroleum, Sango, Ilorin, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>OMOLEWA HOSPITAL</td>
+    <td></td>
+    <td>Gaa Odota, Ilorin, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>LIFE FOUNT INTERNATIONAL HOSPITAL</td>
+    <td></td>
+    <td>1a, Ijakadi Street, off Secretariat Roas, Orita Merin, Offa, Kwara State</td>
+    <td></td>
+    <td></td>
+    <td>OFFA</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL ILORIN</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>ADEYI HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>OLANIPEKUN HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>BOAZ MEDICALS</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>OWOLABI-CARE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>MED CARE HOSPITAL, ILORIN </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>ILORIN</td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>MAXI CARE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>MAXI HEALTH HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>LIFELINE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>DIGIT CARE SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>LEAH MEDICAL CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>KHADIJAT MEMORIAL HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>GENTLEMAN ABDULSALAM MEMORIAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>PENTACARE HOSPITAL LIMITED</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KWARA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, AGAIE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>AGAIE</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>FEDERAL MEDICAL CENTRE, BIDA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BIDA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td> MARABA HOSPITAL - BIDA</td>
+    <td></td>
+    <td>Minna Road. Bida</td>
+    <td></td>
+    <td></td>
+    <td>BIDA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>TAIMAKO HOSPITAL</td>
+    <td></td>
+    <td>Se 158 Sabon Gari, Minna</td>
+    <td></td>
+    <td></td>
+    <td>MINNA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>GENERAL HOSIPTAL, MINNA.</td>
+    <td></td>
+    <td>Hospital Road, Minna.</td>
+    <td></td>
+    <td></td>
+    <td>MINNA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>IBB SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Diko Road, Chanchanga, Minna</td>
+    <td></td>
+    <td></td>
+    <td>MINNA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>BAY SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Plot 33, Bay Clinic Road, Tunga, Minna</td>
+    <td></td>
+    <td></td>
+    <td>MINNA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>IMANI SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MINNA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>THE SAVANNAH MEDICAL CONSULTATION</td>
+    <td></td>
+    <td>David Mark Road, after INEC Office, Opposite FMO Agric</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>STANDARD HOSPITAL</td>
+    <td></td>
+    <td>Old Airport Quarters, Minna</td>
+    <td></td>
+    <td></td>
+    <td>MINNA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>UNITY CLINIC</td>
+    <td></td>
+    <td>Bida Road, Kpakungu, Minna</td>
+    <td></td>
+    <td></td>
+    <td>MINNA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, MOKWA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MOKWA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>GOJE MEDICAL CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KONTAGORA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, KONTAGORA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KONTAGORA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>RURAL HOSPITAL, LAPAI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>LAPAI</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>BASE MEDICAL CENTRE, SULEJA</td>
+    <td></td>
+    <td>Suleiman Barau Road, Opp. Rimeview Hotel, Suleja</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>CITIZEN HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>FARY GROUP CLINIC</td>
+    <td></td>
+    <td>105, Suleiman Barau Road, Suleja</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, SULEJA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>MARABA HOSPITAL - SULEJA</td>
+    <td></td>
+    <td>Maganda, Off Suleiman, Barau Road</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>SUZAN MEMORIAL CLINIC & MATERNITY</td>
+    <td></td>
+    <td>Uphill Suleja Near Suleja Club,G.R.A.</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>DELIGHT HOSPITAL</td>
+    <td></td>
+    <td>Plot 66, Suleiman Barau Road, Suleja</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>RURAL HEALTH HOSPITAL, WUSHISHI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>WUSHISHI</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, KUTIGI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KUTIGI</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, NEW BUSSA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NEW BUSSA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>NAF MEDICAL CENTRE</td>
+    <td></td>
+    <td>NAF Station, Minna</td>
+    <td></td>
+    <td></td>
+    <td>KAINJI</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>99 AWS MEDICAL CENTRE</td>
+    <td></td>
+    <td>NAF Base, Kainji</td>
+    <td></td>
+    <td></td>
+    <td>KAINJI</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>TOP MEDICAL CENTRE</td>
+    <td></td>
+    <td>Plot 4 Paiko Road, Tunga, Minna, Niger State</td>
+    <td></td>
+    <td></td>
+    <td>MINNA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, KAGARA</td>
+    <td></td>
+    <td>Kagara, Niger State</td>
+    <td></td>
+    <td></td>
+    <td>KAGARA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>311 AR MRS KONTAGORA</td>
+    <td></td>
+    <td>Kontagora, Niger State</td>
+    <td></td>
+    <td></td>
+    <td>KONTAGORA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>WASIHA MEDICAL CENTRE</td>
+    <td></td>
+    <td>Plot 10B Off Niiteco Road, Tunga, Minna</td>
+    <td></td>
+    <td></td>
+    <td>MINNA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>LIBERTY HOSPITAL</td>
+    <td></td>
+    <td>Opposite 1st Bank Plc, Minna Road, Suleja</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>SULEJA HOSPITAL LTD</td>
+    <td></td>
+    <td>11, Hassan Dallalu Road, Opp. City Gate Chemist, Suleja.</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>GASKIYA CLINIC</td>
+    <td></td>
+    <td>Victory Road, Suleja, Niger State</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>BISI CLINIC & MATERNITY</td>
+    <td></td>
+    <td>SW 16, Benin Street, Minna, Niger State</td>
+    <td></td>
+    <td></td>
+    <td>MINNA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>SOLACE HOSPITAL</td>
+    <td></td>
+    <td>HASSAN DALHATU ROAD, SULEJA</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>SOKOJI HOSPITAL</td>
+    <td></td>
+    <td>POLY ROAD, BIDA</td>
+    <td></td>
+    <td></td>
+    <td>BIDA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>RAILWAY INDUSTRIAL CLINIC</td>
+    <td></td>
+    <td>RAILWAY COMPOUND MINNA</td>
+    <td></td>
+    <td></td>
+    <td>MINNA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>NASSARA CLINIC & MATERNITY</td>
+    <td></td>
+    <td>131, MAIGARI GODABE ROAD, GRA, KONTAGORA</td>
+    <td></td>
+    <td></td>
+    <td>KONTAGORA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>LUCAS HOSPITAL</td>
+    <td></td>
+    <td>BESIDE ASSEMBLY OF GOD CHURCH MADALA</td>
+    <td></td>
+    <td></td>
+    <td>MADALA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>KAINJI MEDICAL CENTER</td>
+    <td></td>
+    <td>48 KAINJI ROAD, PO Box 171, New Bussa</td>
+    <td></td>
+    <td></td>
+    <td>KAINJI</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>AL-AZEEZ MEDICAL CENTER</td>
+    <td></td>
+    <td>OPP MADENGE STATION, LAGOS-KADUNA ROAD, KONTAGORA</td>
+    <td></td>
+    <td></td>
+    <td>KONTAGORA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>RURAL HOSPITAL, KUTA</td>
+    <td></td>
+    <td>Gwada Road, Kuta</td>
+    <td></td>
+    <td></td>
+    <td>KUTA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL</td>
+    <td></td>
+    <td>Hospital Road, Kafin-Koro</td>
+    <td></td>
+    <td></td>
+    <td>KAFIN-KORO</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>SPRING VALLEY HOSPITAL</td>
+    <td></td>
+    <td>B15 Sanni Alhassan Road, GRA, Suleja</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>KONTAGORA CLINIC</td>
+    <td></td>
+    <td>Lagos-Kano Road, Kontagora</td>
+    <td></td>
+    <td></td>
+    <td>KONTAGORA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>UMARU MUSA YARADUA MEMORIAL HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>BAZZA JASIM CLINIC-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>MINNA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>SALLAM HOSPITAL & MATERNITY</td>
+    <td></td>
+    <td>No. 10 Justus Sadiq, Angwan Magaji Road, Suleja, Niger State</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>GARKIYA CHILDREN SPECIALIST CLINIC</td>
+    <td></td>
+    <td>Bosso, Minna Niger State</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>ZUMATOTAL CARE HOSPITAL</td>
+    <td></td>
+    <td>Suleja, Niger State</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>CHARLES HEALTH CARE LIMITED</td>
+    <td></td>
+    <td>No 2, Aliyu Sardauna Street, Between Old NTA Office And Union Bank PLC, Suleja, Niger State.</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>BERITH SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Plot 16087, Minna Road, Kwamba Layout, Suleja, Niger State.</td>
+    <td></td>
+    <td></td>
+    <td>SULEJA</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>FAEJOC RAPHA CLINIC LTD</td>
+    <td></td>
+    <td>Karfe Town, Old Bwari Road, Behind Zuma Barrack, Suleja Niger State</td>
+    <td></td>
+    <td></td>
+    <td>KARFE</td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>SHILOH LIFE CARE HOSPITAL & DIAGNOSIS</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>ARCHMEDICS HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>RIGHTCARE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>RIGHTCARE HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>DHA SPECILITY CLINIC LIMITED</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>EL-HUSSEIN SPECIALIST HOSPITAL LTD</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NIGER</td>
+</tr>
+<tr>
+    <td>MAY DAY SPECIALIST HOSPITALAND</td>
+    <td></td>
+    <td>Esu Karu Road, opp Skye Bank Mararaba</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>FEDERAL MEDICAL CENTRE, KEFFI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KEFFI</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>ADONAI HOSPITAL</td>
+    <td></td>
+    <td>2, Adonai Close Off Old Karu Road, Mararaba</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>BLESSED TRINITY HOSPITAL LTD.</td>
+    <td></td>
+    <td>5, Criss Park Street, Mararaba</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, KEFFI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KEFFI</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>HENAD MEDICAL CENTRE</td>
+    <td></td>
+    <td>Dogo Road</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, UKE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>UKE</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, AKWANGA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>AKWANGA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>E.R.C.C. MEDICAL CENTRE</td>
+    <td></td>
+    <td>Keffi Road Akwanga</td>
+    <td></td>
+    <td></td>
+    <td>AKWANGA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, NASARAWA EGG</td>
+    <td></td>
+    <td>Nasarawa Eggon</td>
+    <td></td>
+    <td></td>
+    <td>EGGON</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td> GENERAL HOSPITAL, KEANA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KEANA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL,WAMBA</td>
+    <td></td>
+    <td>Wamba, Nasarawa State</td>
+    <td></td>
+    <td></td>
+    <td>WAMBA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>DALHATU ARAF SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>KOWA HOSPITAL</td>
+    <td></td>
+    <td>Jos Road, Lafia, Nasarawa State</td>
+    <td></td>
+    <td></td>
+    <td>LAFIA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>SAUKI HOSPITAL</td>
+    <td></td>
+    <td>Jos Road, Lafia, Nasarawa State</td>
+    <td></td>
+    <td></td>
+    <td>LAFIA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>HIS MERCY HOSPITAL</td>
+    <td></td>
+    <td>Aso Rd., By NEPA Transformer, Mararaba</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>KARU HOSPITALS LIMITED</td>
+    <td></td>
+    <td>Behind Building Material Market, Mararaba</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>NAGARI ALLAH MAGANI CLINIC & MATERNITY</td>
+    <td></td>
+    <td>Behind Chief Magistrate Court, Keffi.</td>
+    <td></td>
+    <td></td>
+    <td>KEFFI</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>MARABA GURUKU MEDICAL CENTER</td>
+    <td></td>
+    <td>Mararaba Int. Market Mararaba</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>ALPHA HOSPITAL</td>
+    <td></td>
+    <td>36 Makama Dogo Rd Nassara Toto</td>
+    <td></td>
+    <td></td>
+    <td>TOTO</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>NISSI CLINIC & MATERNITY</td>
+    <td></td>
+    <td>Area 1 Masaka Near Balami Filling Station, Nasarawa State</td>
+    <td></td>
+    <td></td>
+    <td>MASAKA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>DSS CLINIC</td>
+    <td></td>
+    <td>Lafia Nasarawa State</td>
+    <td></td>
+    <td></td>
+    <td>LAFIA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, TOTO</td>
+    <td></td>
+    <td>Toto, Nasarawa State</td>
+    <td></td>
+    <td></td>
+    <td>TOTO</td>
+    <td>NASARAWA</td>
+</tr>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, GARAKU</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>GARAKU</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, NASARAWA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>FED. POLYTECHNIC NASARAWA MEDICAL</td>
+    <td></td>
+    <td>Nasarawa, Nasarawa State</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>SHUKURA MEDICAL CENTER</td>
+    <td></td>
+    <td>Opp Kofar House, Hausa Primary School, Keffi</td>
+    <td></td>
+    <td></td>
+    <td>KEFFI</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>ROYAL HOSPITAL</td>
+    <td></td>
+    <td>Keffi-Abuja Road, Behind Gwaza Hotel, Akwanga</td>
+    <td></td>
+    <td></td>
+    <td>AKWANGA/td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>OUR LADY OF APOSTLES HOSPITAL</td>
+    <td></td>
+    <td>OLA Hospital, Akwanga</td>
+    <td></td>
+    <td></td>
+    <td>AKWANGA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>MISAN CLINIC & MATERNITY</td>
+    <td></td>
+    <td>Ado, Karu</td>
+    <td></td>
+    <td></td>
+    <td>KARU</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>MANDD HOSPITAL</td>
+    <td></td>
+    <td>PLOT 6565 JOS ROAD, Lafia</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>KINGS CARE HOSPITAL</td>
+    <td></td>
+    <td>Kings Care Close Mararaba</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>FOUNTAINHEAD MEDICAL CENTRE</td>
+    <td></td>
+    <td>22 Jos Road, NIPDC Estate, Off Abacha Road Mararaba</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>NASARAWA STATE UNIVERSITY HEALTH</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KEFFI</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>POLICE CLINIC</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>NASARAWA MEDICAL CENTRE</td>
+    <td></td>
+    <td>Along Toto-Abaji Road Nasarawa</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>LIVIA SHAMMAH HOSPITALS LIMITED</td>
+    <td></td>
+    <td>Off Criss Park Street, Mararaba, Nassarawa State</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>TOTAL CARE HOSPITAL</td>
+    <td></td>
+    <td>35, Abacha Rd, Mararaba, Nasarawa State</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>VICAR CLINIC</td>
+    <td></td>
+    <td>Near Deeper Life, Kabayi Mararaba, Nasarawa State</td>
+    <td></td>
+    <td></td>
+    <td>MARARABA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>KYARI LAFIYA CLINICAND MATERNITY</td>
+    <td></td>
+    <td>No 10, Philip Dada Street, One Man Village, Nasarawa State.</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL DOMA</td>
+    <td></td>
+    <td>Agbashi Road, Doma, Nasarawa State.</td>
+    <td></td>
+    <td></td>
+    <td>DOMA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>MASAKA CENTRAL HOSPITAL</td>
+    <td></td>
+    <td>100 royal college road, immediately after royal college, Masaka, Nasarawa State.</td>
+    <td></td>
+    <td></td>
+    <td>MASAKA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>EDITHER CHOICE HOSPITAL</td>
+    <td></td>
+    <td>1 Mohammed Mana Street Off Abacha Road,</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>OSHYEG`BA JOSH MEDICAL CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>ANOINTED CLINIC & MATERNITY</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>SAN HEALTH PROJECT LAFIA EAST</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>LAFIA</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>MOJILLA HOSPITAL KARU</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KARU</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>MARANATHA HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>COMPRENSIVE MODEL PRIMARY HEALTHCARE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>JAMA`A MEDICAL CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL MARARABA UDE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>UDE</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>SILCOM EJIGA HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>JOHEPZ MEDICAL CENTRE KARU</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>KARU</td>
+    <td>NASARAWA</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, BARKIN-LADI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BARIKIN-LADI</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>COTTAGE HOSPITAL, BASSA</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BASSA</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>COTTAGE HOSPITAL, BOKKOS</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>BOKKOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>ELDIN SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>12 Dogon Dutse Road, Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>NEW ERA CLINIC</td>
+    <td></td>
+    <td>Jk 27 Chollon Street, Off Akpata</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>SAUKI CLINIC & HOSPITAL</td>
+    <td></td>
+    <td>Joseph Gomwalk Road</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>KAUNA HOSPITAL</td>
+    <td></td>
+    <td>35 Ahmadu Bello Way, On Rwang-Pam</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, LANGTANG</td>
+    <td></td>
+    <td>Langtang, Jos</td>
+    <td></td>
+    <td></td>
+    <td>LANGTANG</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>CHILLAS SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>20 Zaria Bye Pass, Jos</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, PANKSHIN</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PANKSHIN</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>COMPREHENSIVE HEALTH CENTRE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, SHENDAM</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>SHENDAM</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>GWASH SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Haliru Street, Behind Kwararafa Cinema, Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>463 NIGERIANAIRFORCE HOSPITAL</td>
+    <td></td>
+    <td>NAF Station, Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>UNIVERSITY OF JOS HEALTH CENTRE</td>
+    <td></td>
+    <td>Jos, Plateau State</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>COTTAGE HOSPITAL/COMPREHENSIVE</td>
+    <td></td>
+    <td>Police Staff College, Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>MATANMI HOSPITAL</td>
+    <td></td>
+    <td>89 Masallachin Juma''a Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>MAY HOSPITAL</td>
+    <td></td>
+    <td>Yelwa Rd Box 181 Shendam</td>
+    <td></td>
+    <td></td>
+    <td>SHENDAM</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>NISSI DOMINUS MEDICAL CENTRE</td>
+    <td></td>
+    <td>Jaktu Estate Mangu</td>
+    <td></td>
+    <td></td>
+    <td>MANGU</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>SAMANTHA LUCIL HOSPITAL</td>
+    <td></td>
+    <td>16, Enugu-Agidi street Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>BENE CLINIC</td>
+    <td></td>
+    <td>Yelwa Road Box 204 Shendam</td>
+    <td></td>
+    <td></td>
+    <td>SHENDAM</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>OUR LADY OFAPOSTLE HOSPITAL</td>
+    <td></td>
+    <td>1 Zaria By pass Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>SOLAT WOMEN HOSPITAL</td>
+    <td></td>
+    <td>44 Kashim Ibrahim Street Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>BUKURU SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Gyel Gyero Road Jos</td>
+    <td></td>
+    <td></td>
+    <td>BUKURU, JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>FEDERAL LOWCOST CLINIC & MATERNITY</td>
+    <td></td>
+    <td>Federal Lowcost Miango Road Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>LAWRAK HOSPITAL</td>
+    <td></td>
+    <td>21, Temple Road Off Miango Road Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>JOS UNIVERSITY TEACHING HOSPITAL</td>
+    <td></td>
+    <td>Murtala Mohammed Way, Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>PLATEAU SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Jos, Plateau State</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>NATIONAL INST. FOR POLICY & STANDARD</td>
+    <td></td>
+    <td>Jos South, Jos, Plateau State</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>OLA HOSPITALAND ORPHANAGE ZAW</td>
+    <td></td>
+    <td>Ola Hospital, Zawan, Plateau State</td>
+    <td></td>
+    <td></td>
+    <td>ZAWAN</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>HWOLSHE MEDICAL CENTRE</td>
+    <td></td>
+    <td>Tudun Wada Ring Road, P O Box 8103, Anglo, Jos.</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>JENVAK HOSPITAL</td>
+    <td></td>
+    <td>22, T/Wada Ring Road, Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>VOM CHRISTIAN HOSPITAL</td>
+    <td></td>
+    <td>Vom, Plateau State</td>
+    <td></td>
+    <td></td>
+    <td>VOM</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>SKANE RADIO-DIAGNOSTIC CENTRE</td>
+    <td></td>
+    <td>32B Ibrahim Taiwo Road, Jos, Opp. Plateau Hospital, Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>MAND B MEDICAL CENTRE</td>
+    <td></td>
+    <td>Dorowa Village, Bukuru</td>
+    <td></td>
+    <td></td>
+    <td>BUKURU</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>TADAM MEDICAL CENTRE</td>
+    <td></td>
+    <td>41 Yakubu Gowon Way, Old Airport Road</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>BINGHAM UNIVERSITY TEACHING HOSPITAL</td>
+    <td></td>
+    <td>23 Zaria By Pass, Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>DEE MEDICAL CENTRE</td>
+    <td></td>
+    <td>Plot BP 1669/21 Bukuru Express way, Off Kugiya Road, Jos, Plateau State.</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>FERTILE GROUND HOSPITAL</td>
+    <td></td>
+    <td>Plot 1234, Zaramaganda, Jos, Adjacent Golden Bread, Plateau State.</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>MARYSOL SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td>Kwang Delimi, Off Rayfield Resort Road, Jos, Plateau State.</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>ADVENTIST HEALTH INTERNATIONAL</td>
+    <td></td>
+    <td>Seventh Day Adventist Hospital, Jengre, Plateau State.</td>
+    <td></td>
+    <td></td>
+    <td>JENGRE</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>MASHIAH FOUNDATION CLINIC</td>
+    <td></td>
+    <td>Behind JMDB Qtrs Tundu Wada, Jos, Plateau State.</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>PARKVIEW FAMILY MEDICINE ROYAL</td>
+    <td></td>
+    <td>By Solomon Lar Amusement Park, Domkat Bali Way, Jos, Plateau State</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>HOPE HILL SPECIALIST MEDICAL CENTRE</td>
+    <td></td>
+    <td>20, Zaria Crescent, Jos, Plateau State</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>ABNIRA MEDICAL CENTRE</td>
+    <td></td>
+    <td>Plot 10078 Hospital place, behind Plateau Hospital, Jos</td>
+    <td></td>
+    <td></td>
+    <td>JOS</td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL</td>
+    <td></td>
+    <td>Mangu,Pankshin Road</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>WASE COTTAGE HOPITAL</td>
+    <td></td>
+    <td>Wase Town, Garkawa Rd</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>GENERAL HOSPITAL, DENGI</td>
+    <td></td>
+    <td>Jarmai Rd, Dengi</td>
+    <td></td>
+    <td></td>
+    <td>DENGI</td>
+    <td>PLATE</td>
+</tr>
+<tr>
+    <td>STAHEALTH SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>MERCY-SEAT SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>JANIK SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>SUNNAH HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>GOODSHEPHERD LANGTANG SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>LONGBAP MEMORIAL SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>ACHILLES SPECIALIST HOSPITAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>Top-Notch Medicare Hospital</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+<tr>
+    <td>Tru Care Medical Centre</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>PLATEAU</td>
+</tr>
+</tbody>
+</table>
+<!--		Start Pagination -->
+<div class='pagination-container' >
+ <nav>
+    <ul class="pagination" style="list-style: none;">
+    <li data-page="prev" >
+        <span> << <span class="sr-only">(current)</span></span>
+    </li>
+<!--	Here the JS Function Will Add the Rows -->
+    <li data-page="next" id="prev">
+        <span> >> <span class="sr-only">(current)</span></span>
+    </li>
+    </ul>
+ </nav>
+</div>
+</div> <!-- 		End of Container -->
+</section>
+</main>
+<!--this is the footer section with contact information and links-->
+<section class="footer"> 
+  <div class="footer-top">       
+    <div class="row1">
+      <div class="col">       
+        <h3 class="footer-title">Healthcare Plans</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="individualplan.html">Individual Plans</a></li>       
+          <li><a class="footer-text-3" href="familyplan.html">Family Plans</a></li>       
+          <li><a class="footer-text-3" href="corporateplan.html">Corporate Plans</a></li>      
+          <li><a class="footer-text-3" href="customizedplan.html">Customized Plans</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">       
+        <h3 class="footer-title">Recources</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="enrollment.html">Enrollment</a></li>       
+          <li><a class="footer-text-3" href="download.html">Downloads</a></li>       
+          <li><a class="footer-text-3" href="faqs.html">Frequently Asked Questions</a></li>      
+          <li><a class="footer-text-3" href="career.html">Career</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">
+        <h3 class="footer-title">Quick Links </h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="outline.html">About Us</a></li>       
+          <li><a class="footer-text-3" href="policy.html">Privacy Policy</a></li>
+          <li><a class="footer-text-3" href="terms.html">Terms & Conditions</a></li>
+          <li><a class="footer-text-3" href="contact.html">Contact Us</a></li>       
+        </ul>           
+      </div>         
+    </div>    
+  </div>     
+<div class="row3">
+<div class="col3-3">
+<div class="copyright-text" style="font-size: 18px; margin-top: 0.5em; float: left;">© 2022 Songhai Health Trust Limited. All rights reserved.
+</div>
+</div>
+<div class="col3-3">
+<div class="media" style="float: right;">
+    <a href="https://play.google.com/store/search?q=songhai+hmo&c=apps&hl=en&gl=US"><img src="images/log.jpg"></a>
+    <a href="mailto:info@songhaihealthtrust.com"><img src="images/mail.png"></a>
+    <a href="https://www.linkedin.com/login"><img src="images/linkedin1.png"></a>
+  <a href="https://www.facebook.com/songhaihealth/"><img src="images/face.jpg"></a>
+  <a href="https://mobile.twitter.com/songhaihealth"><img src="images/tweet.jpg"></a>
+  <a href="https://www.instagram.com/p/CdDdbxhtbK1/?igshid=YTgzYjQ4ZTY%3D"><img src="images/insta.jfif"></a>
+</div>
+</div>
+</div>
+</section> 
+<script>
+ getPagination('#table-id');
+					//getPagination('.table-class');
+					//getPagination('table');
+
+		  /*					PAGINATION 
+		  - on change max rows select options fade out all rows gt option value mx = 10
+		  - append pagination list as per numbers of rows / max rows option (20row/10= 2pages )
+		  - each pagination li on click -> fade out all tr gt max rows * li num and (10*pagenum 2 = 20 rows)
+		  - fade out all tr lt max rows * li num - max rows ((10*pagenum 2 = 20) - 5)
+		  - fade in all tr between (maxRows*PageNum) and (maxRows*pageNum)- MaxRows 
+		  */
+		 
+
+function getPagination(table) {
+  var lastPage = 1;
+
+  $('#maxRows')
+    .on('change', function(evt) {
+      //$('.paginationprev').html('');						// reset pagination
+
+     lastPage = 1;
+      $('.pagination')
+        .find('li')
+        .slice(1, -1)
+        .remove();
+      var trnum = 0; // reset tr counter
+      var maxRows = parseInt($(this).val()); // get Max Rows from select option
+
+      if (maxRows == 5000) {
+        $('.pagination').hide();
+      } else {
+        $('.pagination').show();
+      }
+
+      var totalRows = $(table + ' tbody tr').length; // numbers of rows
+      $(table + ' tr:gt(0)').each(function() {
+        // each TR in  table and not the header
+        trnum++; // Start Counter
+        if (trnum > maxRows) {
+          // if tr number gt maxRows
+
+          $(this).hide(); // fade it out
+        }
+        if (trnum <= maxRows) {
+          $(this).show();
+        } // else fade in Important in case if it ..
+      }); //  was fade out to fade it in
+      if (totalRows > maxRows) {
+        // if tr total rows gt max rows option
+        var pagenum = Math.ceil(totalRows / maxRows); // ceil total(rows/maxrows) to get ..
+        //	numbers of pages
+        for (var i = 1; i <= pagenum; ) {
+          // for each page append pagination li
+          $('.pagination #prev')
+            .before(
+              '<li data-page="' +
+                i +
+                '">\
+								  <span>' +
+                i++ +
+                '<span class="sr-only">(current)</span></span>\
+								</li>'
+            )
+            .show();
+        } // end for i
+      } // end if row count > max rows
+      $('.pagination [data-page="1"]').addClass('active'); // add active class to the first li
+      $('.pagination li').on('click', function(evt) {
+        // on click each page
+        evt.stopImmediatePropagation();
+        evt.preventDefault();
+        var pageNum = $(this).attr('data-page'); // get it's number
+
+        var maxRows = parseInt($('#maxRows').val()); // get Max Rows from select option
+
+        if (pageNum == 'prev') {
+          if (lastPage == 1) {
+            return;
+          }
+          pageNum = --lastPage;
+        }
+        if (pageNum == 'next') {
+          if (lastPage == $('.pagination li').length - 2) {
+            return;
+          }
+          pageNum = ++lastPage;
+        }
+
+        lastPage = pageNum;
+        var trIndex = 0; // reset tr counter
+        $('.pagination li').removeClass('active'); // remove active class from all li
+        $('.pagination [data-page="' + lastPage + '"]').addClass('active'); // add active class to the clicked
+        // $(this).addClass('active');					// add active class to the clicked
+	  	limitPagging();
+        $(table + ' tr:gt(0)').each(function() {
+          // each tr in table not the header
+          trIndex++; // tr index counter
+          // if tr index gt maxRows*pageNum or lt maxRows*pageNum-maxRows fade if out
+          if (
+            trIndex > maxRows * pageNum ||
+            trIndex <= maxRows * pageNum - maxRows
+          ) {
+            $(this).hide();
+          } else {
+            $(this).show();
+          } //else fade in
+        }); // end of for each tr in table
+      }); // end of on click pagination list
+	  limitPagging();
+    })
+    .val(10)
+    .change();
+
+  // end of on select change
+
+  // END OF PAGINATION
+}
+
+function limitPagging(){
+	// alert($('.pagination li').length)
+
+	if($('.pagination li').length > 7 ){
+			if( $('.pagination li.active').attr('data-page') <= 3 ){
+			$('.pagination li:gt(5)').hide();
+			$('.pagination li:lt(5)').show();
+			$('.pagination [data-page="next"]').show();
+		}if ($('.pagination li.active').attr('data-page') > 3){
+			$('.pagination li:gt(0)').hide();
+			$('.pagination [data-page="next"]').show();
+			for( let i = ( parseInt($('.pagination li.active').attr('data-page'))  -2 )  ; i <= ( parseInt($('.pagination li.active').attr('data-page'))  + 2 ) ; i++ ){
+				$('.pagination [data-page="'+i+'"]').show();
+
+			}
+
+		}
+	}
+}
+$(function() {
+  // Just to append id number for each row
+  $('table tr:eq(0)').prepend('<th> ID </th>');
+
+  var id = 0;
+
+  $('table tr:gt(0)').each(function() {
+    id++;
+    $(this).prepend('<td>' + id + '</td>');
+  });
+});
+</script>
+</body>
+</html>

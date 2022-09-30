@@ -1,0 +1,7721 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+        <!--tittle>Songhai Health Trust Limited North-Central Healthcare Provider Page</tittle-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Songhai Health Trust Limited</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script scr="index.js" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bolded Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<style>
+body {
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  width: 100%;
+  height: 75%;
+  top: 15%;
+  bottom: 10%;
+  color: none;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: none;
+}
+/* for the website header.
+two image containers */
+.row {
+  width: 100%;
+  display: flex;
+}
+.column {
+  width: 350px;
+  flex: 50%;
+  padding: none;
+  top: 0;
+  margin-top: 1em;
+  height: 100px; 
+  justify-content: space-between;
+}
+.column img {
+ background-color: white;
+ font-size: 22px;
+ width: 350px;
+ height: 100px;
+ bottom: 10%;
+ margin: 0;
+ margin-left: 20px;
+ vertical-align: top;
+}
+
+/*clears float after image container*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* styling the navigation bar */
+nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 10%;
+    height: 5%;
+    margin: none;
+    margin-bottom: 1em;
+}
+  .menu-btn {
+     background-color: white;
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     cursor: pointer;
+     border: none;
+   }
+  .menu-btn:hover {
+     background-color: none;
+  }
+  .links,
+  .links-hidden {
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     border: none;
+     text-decoration: none;
+  }
+  .links-hidden {
+      display: block;
+  }
+  .links:hover,
+  .links-hidden:hover {
+    background-color: white;
+  }
+   .dropdown-menu {
+     position: relative;
+     display: inline-block;
+   }   
+  .dropdown-menu:hover
+  .menu-content {
+    display: block;
+     background-color: none;
+  }  
+   .menu-content {
+     display: none;
+     position: absolute;
+     background-color: none;
+     min-width: 160px;
+     overflow: auto;
+     z-index: 1;
+   } 
+   .menu-content a {
+     color: #000080;
+     padding: 12px 16px;
+     text-decoration: none;
+     display:block;
+  }
+   .dropdown a:hover {
+     background-color: none;
+  }
+.show {
+     display: block;
+ } 
+
+ /* styling for provider tables */
+.region {
+    font-family: 'Cinzel';
+    font-size: 36px;
+    font-weight: 500;
+    color: #000080;
+    text-align: center;
+    margin-top: 2em;
+}
+table {
+  width: 90%;
+  margin-top: 100px;
+  font-size: 18px;
+  border: 1px solid #343a40;
+  justify-content: center;
+  margin-left: 55px;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+td {
+  border: 1px solid #343a40; 
+  padding: 16px 24px;
+  text-align: left;
+}
+thead tr {
+  background-color: #087f5b;
+  color: #fff;
+  height: 3em;
+}
+thead #first {
+width: 25%;
+}
+thead #second {
+width: 5%;
+}
+thead #third {
+width: 20%;
+}
+thead #fourth {
+width: 10%;
+}
+thead #fifth {
+width: 15%;
+}
+thead #sixth {
+width: 15%;
+}
+thead #seventh {
+width: 10%;
+}
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+} 
+.pagination {
+ float: right;
+ color: #000000;
+ font-size: 22px;
+ margin-right: 100px;
+}
+.pagination li:hover{
+cursor: pointer;
+}
+.pagination li.active {
+    background-color: #327ff2;
+    color: #fff;
+    padding: 5px 3px;
+    align-items: center;
+}
+.pagination li {
+display: inline;
+margin-top: 0;
+margin-right: 2px;
+font-weight: bold;
+}
+table tbody tr {
+        display: none;
+ }
+.container h3 {
+ font-size: 24px;
+ color: #000000;
+ margin-left: 50px;
+}
+.form-group {
+  color: #000000;
+  margin-left: 70px;
+}
+
+/* the footer is fixed to the bottom of the page */
+.row1 {
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  height: 9%;
+  bottom: 1;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  background: #e6f2ef;
+  text-align: center;
+  vertical-align: top;
+  color: #000080;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-text-3:hover {
+  color: #ff8000;
+  transform: scale(1.08);
+}
+.col {
+  flex-basis: 30%;
+  box-sizing: border-box;
+  border: none;
+}
+.footer-title {
+  text-align: left;
+  margin-left: 2em;
+  margin-top: 3em;
+}
+.col h3 { 
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.footer-text-3 {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.footer-bottom {
+  width: 100%;
+  height: 1%;
+  bottom: 0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background: #fff;
+  text-align: center;
+  vertical-align: middle;
+  color: #333;
+}
+.row3 {
+  width: 100%;
+  display: inline;
+}
+.col3-3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 1em;
+}
+.copyright-text {
+  display: inline;
+  width: 50%;
+  margin-left: 0px;
+}
+.media {
+  display: inline;
+  width: 30%;
+}
+.media img {
+  display: inline;
+}
+.media img {
+  background-color: white;
+  color: none;
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  text-align: left;
+  margin: 10px 15px;
+  vertical-align: left;
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+</style>
+<body>
+    <header>
+        <div class="row1">
+            <div class="column" id="company-logo">
+                <img src="images/logo.jpeg" style="float: left">
+            </div>
+            <div class="column" id="contact-no" style="float: right; color: #000080; font-size: 36px; margin-left: 800px;">
+              +(234) 803-351-1011
+       </div>
+        </div>
+        <nav>
+          <div class="navbar">
+              <a class="links" href="index.html">Home</a>
+              <div class="dropdown-menu">
+                <button onclick="plan-list" class="menu-btn">About Us +</button>
+                <div id="dropdown1" class="menu-content">
+                    <a class="links-hidden" href="outline.html">Outline</a>
+                    <a class="links-hidden" href="staffgallery.html">Staff </a>
+                </div>
+                </div>
+              <div class="dropdown-menu">
+              <button onclick="plan-list" class="menu-btn">Health Plans +</button>
+              <div id="dropdown1" class="menu-content">
+                <a class="links-hidden" href="individualplan.html">Individual</a>
+                <a class="links-hidden" href="familyplan.html">Family</a>
+                <a class="links-hidden" href="corporateplan.html">Corporate</a>
+                <a class="links-hidden" href="customizedplan.html">Customized</a>
+            </div>
+            </div>
+            <div class="dropdown-menu">
+            <button onclick="resource-list" class="menu-btn">Resources +</button>
+            <div id="dropdown2" class="menu-content">
+                <a class="links-hidden" href="gallery.html">Gallery</a>
+                  <a class="links-hidden" href="enrollment.html">Enrollment</a>
+                  <a class="links-hidden" href="download.html">Downloads</a>
+                  <a class="links-hidden" href="faqs.html">FAQ</a>
+                  <a class="links-hidden" href="career.html">Careers</a>
+              </div>
+              </div>
+              <a class="links" style="color: #008000;" href="healthprovider.html">Health Providers</a>
+              <a class="links" href="login.html">Log In</a>
+              <a class="links" href="blog.html">Blog</a>
+          </div>
+      </nav>
+    </header>
+    <main>
+    <section class="region1">
+<div class="container">
+    <h2 class="region"> SOUTH-WEST </h2>
+    <h3>Select Number Of Rows</h3>
+            <div class="form-group"> 	<!--		Show Numbers Of Rows 		-->
+                 <select class  ="form-control" name="state" id="maxRows">
+                     <option value="5000">Show ALL Rows</option>
+                     <option value="10">10</option>
+                     <option value="15">15</option>
+                     <option value="20">20</option>
+                     <option value="50">50</option>
+                     <option value="70">70</option>
+                     <option value="100">100</option>
+                    </select>
+                 
+              </div>
+
+<table class="table table-striped table-class" id= "table-id">
+    <thead>
+        <tr>
+            <th id="first">Name</th>
+            <th id="second">Status</th>
+            <th id="third">Address</th>
+            <th id="fourth">Phone</th>
+            <th id="fifth">Email</th>
+            <th id="sixth">City</th>
+            <th id="seventh">State</th>
+        </tr>
+      </thead>
+<tbody>
+    <tr>
+        <td>ST.GREGORY HOSPITAL</td>
+        <td></td>
+        <td>KM 2 Basiri Iyin Road, Ado Ekiti</td>
+        <td></td>
+        <td></td>
+        <td>ADO EKITI</td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>OLUMORIN SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Ado-Ekiti, Ekiti</td>
+        <td></td>
+        <td></td>
+        <td>ADO EKITI</td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>ADE-TADE HOSPITAL</td>
+        <td></td>
+        <td>11, Okebola Street, Ado Ekiti</td>
+        <td></td>
+        <td></td>
+        <td>ADO EKITI</td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>ORIRE HOSPITAL COMPLEX</td>
+        <td></td>
+        <td>1, Orire Lane, Box 944, Ado Ekiti</td>
+        <td></td>
+        <td></td>
+        <td>ADO EKITI</td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>UNIVERSITY TEACHING HOSPITAL, ADO EKITI</td>
+        <td></td>
+        <td>Ado Ekiti, Ekiti</td>
+        <td></td>
+        <td></td>
+        <td>ADO EKITI</td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>FEDERAL TEACHING HOSPITAL</td>
+        <td></td>
+        <td>Ido Ekiti, Ekiti</td>
+        <td></td>
+        <td></td>
+        <td>IDO EKITI</td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>SUPREME FAITH HOSPITAL</td>
+        <td></td>
+        <td>Ado Ekiti, Ekiti</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>JOE-JANE MEDICAL CENTRE</td>
+        <td></td>
+        <td>27 Dallimore Street, Ado Ekiti</td>
+        <td></td>
+        <td></td>
+        <td>ADO EKITI</td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>ADETOYIN HOSPITAL</td>
+        <td></td>
+        <td>No. L16 Onigari, Secretariat Rd., Ado Ekiti</td>
+        <td></td>
+        <td></td>
+        <td>ADO EKITI</td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>STATE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Ikole-Ekiti, Ekiti</td>
+        <td></td>
+        <td></td>
+        <td>IKOLE EKITI</td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>OGUNTOYE HOSPITAL</td>
+        <td></td>
+        <td>136 Ilawe Road, Ado Ekiti</td>
+        <td></td>
+        <td></td>
+        <td>ADO EKITI</td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>FOLASADE CLINIC, USI EKITI</td>
+        <td></td>
+        <td>Irede Estate, Usi Ekiti</td>
+        <td></td>
+        <td></td>
+        <td>USI EKITI</td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>MARIA ASSUMPTIA CATHOLIC HOSPITAL</td>
+        <td></td>
+        <td>Ireje Street, Ikere Road, Ado Ekiti</td>
+        <td></td>
+        <td></td>
+        <td>ADO EKITI</td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>QUEENS CARE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>OLIVES SPECIALIST CLINICS & FERTILITY SERVICES</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>MATERNAL CHILD SPECIALIST</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>FOUNTAIN OF HOPE HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>ABUAD MULTI SYSTEM HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>ST. DAVIDS MEDICAL CENTER</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>EKITI</td>
+    </tr>
+    <tr>
+        <td>PRINCE AND PRINCESS HOSPITAL,</td>
+        <td></td>
+        <td>Plot 75. 12th Road Gowon Estate Egbeda, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>EGBEDA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>TALENT SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Plot 440 4th Avenue, Gowon Estate, Egbeda,  Lagos</td>
+        <td></td>
+        <td></td>
+        <td>EGBEDA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BARBINTON MEDICAL CENTRE, KETU</td>
+        <td></td>
+        <td>No. 9 Samuel Anibaba Street Iyana School Bus Stop Ketu Lagos</td>
+        <td></td>
+        <td></td>
+        <td>KETU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST.CLAVER HOSPITAL</td>
+        <td></td>
+        <td>28 Ijaiye Road Beside Sweet Sensation, Ogba, Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DEJI CLINIC</td>
+        <td></td>
+        <td>Iju Fagba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IJU FAGBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>COUNTY HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OSUNTUYI MEDICAL CENTER, IJU_ISH</td>
+        <td></td>
+        <td>255 Iju Rd, Balogun B/Stop, Iju-Ishaga</td>
+        <td></td>
+        <td></td>
+        <td>IJU-ISHAGA</td>
+        <td>LAGOS</td>
+    </tr>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL, ORILE-AGEGE</td>
+        <td></td>
+        <td>Orile-Agege, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>ORILE-AGEGE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. THOMAS`S HOSP. IFAKO-AGEGE</td>
+        <td></td>
+        <td>17, Awoni Murphy Street, Itako, Agege, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>IFAKO-AGEGE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BETTA HOSPITALS LTD.</td>
+        <td></td>
+        <td>9-11 Coker Street, Ipaja Road, Agege, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>AGEGE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ALL SOULS INFIRMARY HOSPITAL &</td>
+        <td></td>
+        <td>No. 8 Church Street, Elere, Agege, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>AGEGE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MUCAS HOSPITAL</td>
+        <td></td>
+        <td>19 Ogun Str., Adeolu Bus Stop, Dopemu, Agege, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>AGEGE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MASOL HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>8, Kola Akinlade Str., off Akinsegun Rd., Jesu Oseun, Abule Egba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>ABULE EGBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AJEROMI GENERAL HOSPITAL</td>
+        <td></td>
+        <td>Awodi-Ora Ajegunle</td>
+        <td></td>
+        <td></td>
+        <td>AJEGUNLE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PRINCE AND PRINCESS HOSPITAL</td>
+        <td></td>
+        <td>191 Ojo Road, Ligoli Bus Stop, Ajegunle, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>AJEGUNLE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ALL SOUL`S CLINICS LTD</td>
+        <td></td>
+        <td>No. 235 Ojo Road, Ajegunle, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>AJEGUNLE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CONVENANT CONCEPTION HOSPITAL</td>
+        <td></td>
+        <td>No. 9 Illiasu Road Ikotun-Egbe Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKOTUN-EGBE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MOUNT SINA`I HOSPITAL - EGBE</td>
+        <td></td>
+        <td>105, Isolo Road , Egbe Lagos</td>
+        <td></td>
+        <td></td>
+        <td>EGBE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ELF FOUNDATION MOTHER & CHILD CLINIC</td>
+        <td></td>
+        <td>Alimosho L.G. Ikotun Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKOTUN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BROAD HOSPITAL & MATERINTY</td>
+        <td></td>
+        <td>17 Fehintola Street , Off Isijola  Street Ikotun Lagos</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ZENITH MEDICAL CENTRE</td>
+        <td></td>
+        <td>1. Adeyefa Street. Off Abeokuta Exp. Iyana-Ipaja</td>
+        <td></td>
+        <td></td>
+        <td>IYANA-IPAJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>VETA HOSPITAL LTD.</td>
+        <td></td>
+        <td>1, Veta Close, Araromi Bus Stop Abeoukuta Expressway Iyana-Ipaja Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IYANA-IPAJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SHEPHERD SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>2nd Avenue 23 Road, T Close House 38, Festac, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FIRST FAITH MED. CENTRE LTD.</td>
+        <td></td>
+        <td>2, Kekere Ekun Str., Orile Iganmu, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>ORILE IGANMU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GRAYMA MEDICAL CENTRE</td>
+        <td></td>
+        <td>27, Amai Street, Off Alafia Bus Stop, Along Lagos-Badagry expressway(Km 3), Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PRAISE MEDICAL CENTRE, FESTAC.</td>
+        <td></td>
+        <td>3rd Avenue O'' Close House 2, Festac Town, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. ANTHONY`S MEDICAL CENTRE</td>
+        <td></td>
+        <td>19 Badagry Expressway, Festac Town, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HOVA'S PLACE HOSPITAL & CLINIC</td>
+        <td></td>
+        <td>House 23, T Close, 5th Avenue,  Festac Town, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PALM BEACH FOUNDATION HOSPITAL</td>
+        <td></td>
+        <td>157 Old Ojo Road, Amuwo Odofin, Festac Town, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LA SAPLENZA HOSPITAL LTD.</td>
+        <td></td>
+        <td>2nd Ave, 21 Road D Close House 15 Festac Town Lagos</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. JUDE`S HOSPITAL</td>
+        <td></td>
+        <td>21 Road, B Close, House 3, Festac Town</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ROYAL OAK HOSPITAL</td>
+        <td></td>
+        <td>21 Rd C Close House 24 Festac Town, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ITUAH HOSPITAL LTD.</td>
+        <td></td>
+        <td>512 Road J. Close Festac Town Lagos</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GOD'S POWER CLINIC HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>321 Road C. Close House 7. Festac Town Lagos</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>EMEL HOSPITAL</td>
+        <td></td>
+        <td>21 Road Z Close,Festac Town</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AMC HOSPITAL</td>
+        <td></td>
+        <td>House 19, Dubar Road, Mile 2, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>MILE 2</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CEDAR GROUP HOSPITAL</td>
+        <td></td>
+        <td>208 Road, D Close, FHA, Festac Town, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LAGOON HOSPITAL, APAPA</td>
+        <td></td>
+        <td>8 Marine Road , Apapa Lagos</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DAKO MEDICAL CENTRE</td>
+        <td></td>
+        <td>225b Kirikiri Rd., Trinity Bus Stop, Olodi, Apapa, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ABBEY MEDICAL CENTRE</td>
+        <td></td>
+        <td>74 Idewu Street, Olodi, Apapa, Lagos</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SONEX CLINICS LTD. (HOSPITAL)</td>
+        <td></td>
+        <td>5b Emordi Street, Olodi, Apapa, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OSTARD HOSPITAL & MATERNITY HOME</td>
+        <td></td>
+        <td>161, Idewu Street, Olodi, Apapa, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FALETI MEDICAL CENTRE</td>
+        <td></td>
+        <td>204, Kirikiri Road, Trinity B/Stop, Olodi, Apapa, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>IDUNA SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>1a, Takorodi Road, Gra, Apapa, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CHRIST MEDICAL CENTRE</td>
+        <td></td>
+        <td>28 Randle Road, Apapa, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HILTON HOSPITAL</td>
+        <td></td>
+        <td>2 Berger Street, Olodi, Apapa, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL, BADAGRY</td>
+        <td></td>
+        <td>Badagry, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>BADAGRY</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GRACE-LAND MEDICAL CENTER</td>
+        <td></td>
+        <td>147, Badagry Expressway</td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL, EPE</td>
+        <td></td>
+        <td>Epe, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>EPE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DOREN SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>1 Kemfat Road , Thomas Village, lekki.</td>
+        <td></td>
+        <td></td>
+        <td>LEKKI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>KINGS HOSPITAL</td>
+        <td></td>
+        <td>39 Mashalashi Street off Keffi Road, Obalende, Ikoyi</td>
+        <td></td>
+        <td></td>
+        <td>IKOYI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>COSMODERM MEDICAL CENTRE</td>
+        <td></td>
+        <td>202, Awolowo Road, Folomo, Ikoyi, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>IKOYI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>J-RAPHA  HOSPITAL</td>
+        <td></td>
+        <td>40 Ado Lamgbasa Road, Ajah,</td>
+        <td></td>
+        <td></td>
+        <td>AJAH</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SHALOM HOSPITAL OF INT`L CHECK UP</td>
+        <td></td>
+        <td>Off Admirally Way, Off Wale Ariyo Street, Lekki, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>LEKKI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GERMAINE HEALTH CENTRE</td>
+        <td></td>
+        <td>Km 63 Lagos/Epe Expressway, Lekki, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>LEKKI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>THE PENINSULAR HOSPITAL</td>
+        <td></td>
+        <td>Km 23, Lagos Expressway, Ikota, Lekki, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>LEKKI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HAVILAH HOSPITAL</td>
+        <td></td>
+        <td>Havilah Bus Stop, Ajah - Adoh Road Opp. Dredging Site, Ajah</td>
+        <td></td>
+        <td></td>
+        <td>AJAH</td>
+        <td>LAGOS</td>
+    </tr>
+    </tr>
+    <tr>
+        <td>UDECO MEDICAL CENTRE</td>
+        <td></td>
+        <td>Plot 39, 36 Udeco Medical Road off Chevron Drive, Chevy Estate, Lekki</td>
+        <td></td>
+        <td></td>
+        <td>LEKKI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>THE ROYAL INFIRMARY HOSPITAL</td>
+        <td></td>
+        <td>Badore Road, Off Ajah - Addo Road</td>
+        <td></td>
+        <td></td>
+        <td>ADDO ROAD</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OLATUNBOSUN CONVALESCENT & MATERNITY HOME</td>
+        <td></td>
+        <td>2, Olatunbosun Close, Egbatedo Obadeyi B/Stop Ijaye</td>
+        <td></td>
+        <td></td>
+        <td>IJAYE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>UPTOWN MEDICAL CENTRE</td>
+        <td></td>
+        <td>60 Agbado Road, Ijaiye Ojokoro near Bukinsheen Int''l School</td>
+        <td></td>
+        <td></td>
+        <td>IJAIYE OJOKORO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>EKO HOSPITAL IKEJA</td>
+        <td></td>
+        <td>31, Mobolaji Bank, Anthony Way Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BODET MEDICARE AND MATERNITY</td>
+        <td></td>
+        <td>6/8 Odewale St. Alausa, Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BRAFUS SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>1b Ajayi Road, Ogba</td>
+        <td></td>
+        <td></td>
+        <td>OGBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>EZIEKEL MEDICAL CENTRE</td>
+        <td></td>
+        <td>55 Oduduwa Crescent</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. LEO`S CATHOLIC CLINIC</td>
+        <td></td>
+        <td>C/O Catholic Church,10 Toyin Str. Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LIFE SUPPORT MEDICAL CENTER</td>
+        <td></td>
+        <td>1, Oba Docemo Street G.R.A Ikeja, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. IVES MEDICAL CENTRE</td>
+        <td></td>
+        <td>90 Opebi Rd. Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FOLY CLINIC</td>
+        <td></td>
+        <td>3 Julius Showunmi Str. Shogunle</td>
+        <td></td>
+        <td></td>
+        <td>SHOGUNLE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FASANMI CLINIC AND MATERNITY</td>
+        <td></td>
+        <td>5/7 Olori Str. Shogunle Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>IKEJA MEDICAL CENTRE</td>
+        <td></td>
+        <td>11 Ogun Modede Street Off, Allen Avenue , Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HOLY TRINITY HOSPITAL</td>
+        <td></td>
+        <td>1108 Awolowo Way Ikeja Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MOTAYO HOSPITAL LIMITED</td>
+        <td></td>
+        <td>3. Owodumi Street, Off Toyin Street Ikeja Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>QUEENS SPECIALIST HOSPITAL LTD</td>
+        <td></td>
+        <td>3B CMD Road, Magodo GRA</td>
+        <td></td>
+        <td></td>
+        <td>MAGODO GRA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>TRIUMPH MEDICAL CENTRE</td>
+        <td></td>
+        <td>32, Unity Road, Ikeja, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SHOREMAN MEDICAL CENTRE</td>
+        <td></td>
+        <td>31, Olowu Street, Ikeja, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ESTATE CLINIC & HOLY TRINITY HOSPITAL</td>
+        <td></td>
+        <td>110b Awolowo Way, Ikeja, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NEW-GATE HOSPITAL</td>
+        <td></td>
+        <td>59 Ikorodu, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL, IKORODU</td>
+        <td></td>
+        <td>Ikorodu, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>IKORODU HOSPITAL AND CLINIC.</td>
+        <td></td>
+        <td>9, Muniratu Alojo Street,Off Lagos Road By Afribank,Ikorodu</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>IDERA HOSPITAL GROUP</td>
+        <td></td>
+        <td>Ebute Metta Branch, Off Ojogbe Bus Stop, Ikorodu, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DEJI CLINIC LTD.</td>
+        <td></td>
+        <td>19 Demurin Street, Catop Chicken George Ketu Lagos</td>
+        <td></td>
+        <td></td>
+        <td>KETU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AYO CLINIC</td>
+        <td></td>
+        <td>No. 8 Alapere Street , Ketu Lagos</td>
+        <td></td>
+        <td></td>
+        <td>KETU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ZION MEDICAL CENTRE</td>
+        <td></td>
+        <td>No. 6 Visa Omotunde Street Off Elebiju Road Ketu Lagos</td>
+        <td></td>
+        <td></td>
+        <td>KETU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GLORIA HOSPITAL</td>
+        <td></td>
+        <td>9, Oladeinde Str., Anthony Village</td>
+        <td></td>
+        <td></td>
+        <td>ANTHONY VILLAGE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LIFE FOUNTAIN MEDICAL CLINIC</td>
+        <td></td>
+        <td>45, Oyedele Ogunniyi Str. Anthony Village</td>
+        <td></td>
+        <td></td>
+        <td>ANTHONY VILLAGE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MED-IN SPECIALIST HOSPITAl</td>
+        <td></td>
+        <td>1, Osugbo Street Ogudu,Kosofe</td>
+        <td></td>
+        <td></td>
+        <td>KOSOFE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MOUNT SINAI SPECIAL. CLINIC</td>
+        <td></td>
+        <td>19a Millitary Str. Onikan Lagos</td>
+        <td></td>
+        <td></td>
+        <td>ONIKAN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AVON MEDICAL SERVICES LIMITED</td>
+        <td></td>
+        <td>3rd Floor, West Wing City Hall, Catholic Mission Street, Lagos</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LONGING MEDICAL CENTRE</td>
+        <td></td>
+        <td>1 Josepha Close, Off Ogundeji Oguntona St, By Ajala Bus Stop, Ijaiye Ojokoro</td>
+        <td></td>
+        <td></td>
+        <td>IJAIYE OJOKORO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GOOD FAITH CLINIC</td>
+        <td></td>
+        <td>19, Ojo-Giwa Street, Off Idumagbo Avenue, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>IDUMAGBO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AJIKE-SANDA MEMORIAL MEDICAL CENTRE</td>
+        <td></td>
+        <td>54, Adeniji Adele Street, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. PAUL`S HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>71a Ondo Street (East), Ebute Metta</td>
+        <td></td>
+        <td></td>
+        <td>EBUTE META</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FEDERAL MEDICAL CENTRE - EBUTE</td>
+        <td></td>
+        <td>PMB 1097, Ebute-Metta.</td>
+        <td></td>
+        <td></td>
+        <td>EBUTE META</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LAGOS MAINLAND HOSPITAL</td>
+        <td></td>
+        <td>Abule-Oja, Yaba</td>
+        <td></td>
+        <td></td>
+        <td>YABA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. STEVENS HOSPITAL LIMITED</td>
+        <td></td>
+        <td>16, Majekodunmi Street, Maboju-Shogunle</td>
+        <td></td>
+        <td></td>
+        <td>MABOJU-SHOGUNLE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NIGERIAN RAILWAY HOSPITAL</td>
+        <td></td>
+        <td>Ebute Metta, Lagos</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MT. SINAI HOSPITAL</td>
+        <td></td>
+        <td>177 Borno Way, Ebute Metta</td>
+        <td></td>
+        <td></td>
+        <td>EBUTE META</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LOBEL HOSPITAL</td>
+        <td></td>
+        <td>No. 1b Kufeju Street, Alagomeji, Yaba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>YABA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. LUKE`S HOSPITAL</td>
+        <td></td>
+        <td>18 Commercial Avenue, Sabo, Yaba, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>YABA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PSYCHIATRIC HOSPITAL COMMUNITY</td>
+        <td></td>
+        <td>Yaba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>YABA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MARIEN CLINIC</td>
+        <td></td>
+        <td>7, Montgomery Road, Yaba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>YABA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>EBENEZER SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>355 Agege Motor Road Challenge B/Stop, Mushin</td>
+        <td></td>
+        <td></td>
+        <td>MUSHIN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ULTIMA MEDICAL HOSPITAL</td>
+        <td></td>
+        <td>3. Cappa Avenue Palmgrove Estate Mushin Lagos</td>
+        <td></td>
+        <td></td>
+        <td>MUSHIN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LUMICO MEDICAL CENTRE</td>
+        <td></td>
+        <td>8 Folario Street  Mushin  Lagos</td>
+        <td></td>
+        <td></td>
+        <td>MUSHIN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NUSAMIN CLINC & MATERNITY HOSPITAL</td>
+        <td></td>
+        <td>1A & 1B Akintola Close Behind LUTH, Mushin Lagos</td>
+        <td></td>
+        <td></td>
+        <td>MUSHIN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MOUNT SINAI HOSPITAL - MUSHIN</td>
+        <td></td>
+        <td>32 Olanubi Street, Papa Ajao. Mushin Lagos</td>
+        <td></td>
+        <td></td>
+        <td>MUSHIN</td>
+        <td>LAGOS</td>
+    </tr>
+    </tr>
+    <tr>
+        <td>HILLSTAR CLINICS</td>
+        <td></td>
+        <td>98 Palm Avenue Papa Ajao, Mushin Lagos</td>
+        <td></td>
+        <td></td>
+        <td>MUSHIN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MAY CLINICS LIMITED</td>
+        <td></td>
+        <td>Doxology House, 24/26 Sadiku Street Ilasamaja, Off Isolo Express</td>
+        <td></td>
+        <td></td>
+        <td>ILASAMAJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SUMMIT HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>5 Summit Close, Off Mosalashi B/Stop</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>KAGOS</td>
+    </tr>
+    <tr>
+        <td>IYALODE BISOYE TEJUOSO HOSPITAL</td>
+        <td></td>
+        <td>18-20 Ilupeju Bye-Pass Road, Ilupeju, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>ILUPEJU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MAY HOSPITAL ILUPEJU</td>
+        <td></td>
+        <td>20, Sura Mogaji Street, Off Coker Road, Illupeju, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>ILUPEJU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>KILADEJO HOSPITAL & SPECIALIST</td>
+        <td></td>
+        <td>15ppl Road Off Ppl Bus Stop Badagry Expressway Lagos</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FELLOWSHIP CLINICS</td>
+        <td></td>
+        <td>16,Dada Street,Off Ojo Alaba Int''l Mkt. Road,Beside Ojo LG. Secretariat, Ojo, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SABO CROWN HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>1 Dr Chinwuba Anameje Street, beside Sabo-Oniba Primary Sch. Ojo-Igbede Road</td>
+        <td></td>
+        <td></td>
+        <td>OJO-IGBEDE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LA SAPLENZA HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>14,Adeyemi Street, Off Olojo Drive, Ojo</td>
+        <td></td>
+        <td></td>
+        <td>OJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. ANTHONY MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>IBIJOLA MEDICAL CENTRE</td>
+        <td></td>
+        <td>31 Badagry Express Way Lagos.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FEMOLA HOSPITAL</td>
+        <td></td>
+        <td>106, Olola Ring Road, Ijanikin</td>
+        <td></td>
+        <td></td>
+        <td>IJANIKIN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DOLU HOSPITAL- LA/0351/P</td>
+        <td></td>
+        <td>7.Sunmola Abayomi Str. Motoluku Lagos</td>
+        <td></td>
+        <td></td>
+        <td>MOTOLUKU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>EDMAC MEDICAL CENTRE</td>
+        <td></td>
+        <td>21 Samuel Street, Mafoloku Oshodi Lagos</td>
+        <td></td>
+        <td></td>
+        <td>MADOLUKU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DIVINE -GRACE MEDICAL CENTRE</td>
+        <td></td>
+        <td>3 Sobogun Rofa Street, Mafoloku-Oshodi</td>
+        <td></td>
+        <td></td>
+        <td>MAFOLUKU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HOLY SAVIOUR HOSP. CLINIC & MATERNITY</td>
+        <td></td>
+        <td>45/47 Mofoluku Road Garage Bus Stop, Oshodi</td>
+        <td></td>
+        <td></td>
+        <td>OSHODI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GEO MEDICAL CENTRE</td>
+        <td></td>
+        <td>12 Subairu Street, Ladipo Bus Stop, Sogunle</td>
+        <td></td>
+        <td></td>
+        <td>SOGUNLE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ONE LIFE HOSPITAL LIMITED</td>
+        <td></td>
+        <td>485 Agege Motor Road, Bolade, Oshodi</td>
+        <td></td>
+        <td></td>
+        <td>BOLADE, OSHODI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. EMMANUEL CLINICS & HOSPITAL</td>
+        <td></td>
+        <td>2,Bola Ademuwon Street,Behind Aswani Market,Isolo</td>
+        <td></td>
+        <td></td>
+        <td>ISOLO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ALPHA PEACE MEDICAL CENTRE</td>
+        <td></td>
+        <td>Kareem Street,Isolo Way,Isolo</td>
+        <td></td>
+        <td></td>
+        <td>ISOLO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. RAPHAEL`S HOSPITAL LTD.</td>
+        <td></td>
+        <td>9,Ago Okota Palace Way,Okota -Layout, Isolo Okota</td>
+        <td></td>
+        <td></td>
+        <td>ISOLO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BOSE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>7,Ilori Street, Ire-Akari Estate, Isolo</td>
+        <td></td>
+        <td></td>
+        <td>ISOLO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MOUNT PISGAH HOSPITAL LTD.</td>
+        <td></td>
+        <td>140 Isolo Road, Egbe, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>EGBE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BOYLE MEDICAL CENTRE</td>
+        <td></td>
+        <td>1b Oyewole Way(Off Olufemi Peters) Ire Akari Estate,Isolo</td>
+        <td></td>
+        <td></td>
+        <td>ISOLO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LIVES FOUNTAIN MEDICARE</td>
+        <td></td>
+        <td>28, Godwin Omonua Street, Ire-Akari Estate, Isolo</td>
+        <td></td>
+        <td></td>
+        <td>ISOLO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BISSALAM HOSPITAL COMPLEX</td>
+        <td></td>
+        <td>4, Modupe Shita Street, Off Liasu Road, Egbe</td>
+        <td></td>
+        <td></td>
+        <td>EGBE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL, ISOLO</td>
+        <td></td>
+        <td>Isolo, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>ISOLO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OPTIMAL MEDICAL CENTRE,OSHODI</td>
+        <td></td>
+        <td>5a Adeyemo Street Off 7/8 B/Stop Mafoloku,</td>
+        <td></td>
+        <td></td>
+        <td>OSHODI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LABSON SPECIALIST HOSPITAL &</td>
+        <td></td>
+        <td>83 Bangbose Street, Campos Square, Lagos Island</td>
+        <td></td>
+        <td></td>
+        <td>LAGOS ISLAND</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CRI MEDICLINIC LEKKI VGC</td>
+        <td></td>
+        <td>Plot 232 Road 1 Vgc Lekki Epc Expressway Lagos</td>
+        <td></td>
+        <td></td>
+        <td>LEKKI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ADONAI MEDICAL CENTRE</td>
+        <td></td>
+        <td>No. 36 Adekunle Kuye Street,  Lagos.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AKINBOLADE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>66, Badagry Expressway, Ojo, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SOLBI CONTINENTAL HOSPITAL LTD.</td>
+        <td></td>
+        <td>3, Fola Agoro Str., Off Abule Ijesha Str., Shomolu</td>
+        <td></td>
+        <td></td>
+        <td>SHOMOLU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MEDOL CLINIC</td>
+        <td></td>
+        <td>54,Adaranyo Street,Famous B/Stop,(Opp Pedro Pri.Sch.)Shomolu</td>
+        <td></td>
+        <td></td>
+        <td>SHOMOLU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL GBAGADA</td>
+        <td></td>
+        <td>Gbagada, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>GBAGADA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OBANLEAJE HOSPITALAND MAT. HOSPITAL</td>
+        <td></td>
+        <td>No. 24 Braimoh Street, Obanikoro, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OBANIKORO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PROVIDENCE HOSPITAL IKOYI</td>
+        <td></td>
+        <td>2B  Maduike Street, off Raymond Njoku Street, SW Ikoyi, Lagos, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>IKOYI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OLANIBA MEM. SPEC. HOSPITAL</td>
+        <td></td>
+        <td>10a Olatunde Onimole Street, Surulere, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ISIOMA HOSPITAL</td>
+        <td></td>
+        <td>28, Molusi Avenue Ikate, Surulere, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MERCY THOMAS OREDUGBA MEDICAL</td>
+        <td></td>
+        <td>8, Mogaji Street, Aguda, Surulere, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. LUKE`S MEDICAL CENTRE</td>
+        <td>61 Teniola Street off Adeshina Street, by Airways Link Road, Ijeshatedo, Surulere</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>K-OYEKAN CLINICS</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>A.B. SPECIALIST HOSPITAL GROUP</td>
+        <td></td>
+        <td>87, Randle Avenue, Surulere, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>THE COMFORTER HOSPITAL</td>
+        <td></td>
+        <td>20 Alh. Jinadu Street, Surulere, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FIRST CROSS HOSPITAL</td>
+        <td></td>
+        <td>No. 2 Oshopishan Street, Surulere, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SMITH MEDICAL CENTRE</td>
+        <td></td>
+        <td>3 Eniasoro Beyioku Street, Surulere</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MODEL SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>5 Tafawa Balewa Crescent Off Adeniran Ogunsanya</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FIRST DOMINICAN HOSPITAL LTD</td>
+        <td></td>
+        <td>27, Alhaji Masha Road, Surulere, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MEZONEL HOSPITAL</td>
+        <td></td>
+        <td>1 Adetola Street, Aguda-Surulere, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ALEXANDER MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>79, Oduduwa Street, Ikate, Surulere, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    </tr>
+    <tr>
+        <td>PRIME HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>UWEMEDIMO HOSPITAL LTD</td>
+        <td></td>
+        <td>19 Market Street, Ijesha - Surulere, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NEW DAY SPECIALIST CLINIC LTD.</td>
+        <td></td>
+        <td>2, Ladele Street, Off Nnobi Street, Ikate, Surulere, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SHALOM HOSPITAL LTD.</td>
+        <td></td>
+        <td>4a, Mosumola Street, Aguda, Surulere, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>REMILEKUN MEMORIAL MEDICAL CENTRE</td>
+        <td></td>
+        <td>29A Itire Road, Surulere, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>TOPAZ HOSPITAL</td>
+        <td></td>
+        <td>12, Adeniyi Street, By Municipal Library, Lagos</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LIVING SPRING HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>49, Alafia Avenue Off Afolabi Obe Street Ori-Oke B/Stop</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BCL CLINIC</td>
+        <td></td>
+        <td>10, MacDonald Road, Ikoyi, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKOYI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>68 NIGERIAN ARMY REFERENCE. HOSPITAL.</td>
+        <td></td>
+        <td>Myhoung Barracks, Yaba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>YABA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MILITARY HOSPITAL (CREEK HOSPITAL)</td>
+        <td></td>
+        <td>Awolowo Road, Ikoyi, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKOYI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>81 DIVISION HOSPITAL</td>
+        <td></td>
+        <td>Dodan Barracks, Ikoyi, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKOYI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>445 NIGERIAN AIRFORCE HOSPITAL</td>
+        <td></td>
+        <td>Sam Ewang Air Force Base, Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NIGERIAN AIRFORCE MEDICAL CENTRE</td>
+        <td></td>
+        <td>12 King George V Road, Onikan, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>ONIKAN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>403 CMD MEDICAL CENTRE</td>
+        <td></td>
+        <td>NAF Station, Shasha, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>SHASHA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL, GBAGADA</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>GBAGADA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LAGOON CLINIC</td>
+        <td></td>
+        <td>11A, Idejo Street, V/Island, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>VICTORIA ISLAND</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LAGOON HOSPITAL, IKEJA</td>
+        <td></td>
+        <td>97/101 Obafemi Awolowo Way, Ikeja.</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FINNIH MEDICAL CENTRE</td>
+        <td></td>
+        <td>42, Oduduwa Crescent G.R.A, Ikeja.</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>KUPA MEDICAL CENTRE LTD</td>
+        <td></td>
+        <td>4, Lateef Salami Street, Off M/M In''''tl Airport Rd. Ajao Estate, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>AJAO ESTATE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DELTA CROWN HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>14, Ajayi Street, Ketu, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>KETU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OSUNTUYI MEDICAL CENTRE, OBANIKORO</td>
+        <td></td>
+        <td>6, Alh. Salisu Street, Obanikoro, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>OBANIKORO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CRYSTAL SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>148, Akowonjo Road, Dopemu, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>DOPEMU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FAITH CITY HOSPITAL, AJAO -ESTATE</td>
+        <td></td>
+        <td>16, Asa-Afariogun Street, Off Osolo Way, Ajao Estate, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>AJAO ESTATE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FAITH CITY HOSPITAL, V/I</td>
+        <td></td>
+        <td>2B, Oko-Awo Close, V/Island, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>VICTORIA ISLAND</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>R-JOLAD HOSPITAL</td>
+        <td></td>
+        <td>1, Akinyede Street, By New Garage, Bariga, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>BARIGA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HEALS SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>40B, Godwin Omonua Street, Ireakari Estate.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HEALING CROSS HOSPITAL LTD</td>
+        <td></td>
+        <td>34, Apena Street, Okota Isolo, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>ISOLO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>KROWN HOSPITAL & MATERNITY CENTRE</td>
+        <td></td>
+        <td>11, Alhaji Sekoni Street, Off Alimosho Rd, Iyana-Ipaja, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>IYANA-IPAJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LEGUS SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>34 Akorohunfayo Street, Ikorodu Rd., Igbobi, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IGBOBI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FABMA HOSPITAL</td>
+        <td></td>
+        <td>13, Yaya Abatan Street, Ijaiye Ogba, Ifako, Ijaiye, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IFAKO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LAGOS UNIV. TEACHING HOSPITAL</td>
+        <td></td>
+        <td>Idiaraba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IDIARABA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LAGOS ISLAND MATERNITY HOSPITAL</td>
+        <td></td>
+        <td>Broad Street, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>LAGOS ISLAND</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LAGOS STATE UNIVERSITY TEACHING HOSPITAL</td>
+        <td></td>
+        <td>Ikeja, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LAGOS STATE GENERAL HOSPITAL</td>
+        <td></td>
+        <td>Broad Street, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>LAGOS ISLAND</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ELEGBELEYE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>1, Elegbeleye Street, Ikosi-Ketu, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>KETU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ALHERI HOSPITAL</td>
+        <td></td>
+        <td>10, Ojodu Abiodun Road, Off Kosoko Road, Berger B/Stop, Ojodu, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OJODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ALHERI HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>149 BN MRS OJO</td>
+        <td></td>
+        <td>Ojo, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>OJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>174 BN MRS IKORODU</td>
+        <td></td>
+        <td>Ikorodu, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>65 BN MRS VICTORIA ISLAND</td>
+        <td></td>
+        <td>V/Island, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>VICTORIA ISLAND</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>242 RECCE BN MRS, BADAGRY</td>
+        <td></td>
+        <td>Badagry,  Lagos</td>
+        <td></td>
+        <td></td>
+        <td>BADAGRY</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>UNIVERSITY OF LAGOS HEALTH CENTRE</td>
+        <td></td>
+        <td>Yaba, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>YABA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>POLICE HOSPITAL, FALOMO</td>
+        <td></td>
+        <td>Ikoyi, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKOYI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>COTTAGE HOSPITAL/COMPREHENSIV</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NIGERIAN NAVY REFERENCE HOSPITAL</td>
+        <td></td>
+        <td>Navy Town, Ojo, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NAVY MEDICAL CENTRE</td>
+        <td></td>
+        <td>Dockyard, Victoria Island, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>VICTORIA ISLAND</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OBISESSAN NAVY MEDICAL CENTRE</td>
+        <td></td>
+        <td>Mobil Road, Apapa, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SICK BAY NNS BEECROFT</td>
+        <td></td>
+        <td>Lagos, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LADI-LAK MEDICAL CENTRE</td>
+        <td></td>
+        <td>No 53 IGY Ologbin street, Ladi-lak B/Stop, Bariga, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>BARIGA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SAMARIA HOSPITAL</td>
+        <td></td>
+        <td>No 17 Dabo Bashorun street off Ali Dada Street, Okota, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OKOTA</td>
+        <td>LAGOS</td>
+    </tr>
+    </tr>
+    <tr>
+        <td>WATERSHED HOSPITAL</td>
+        <td></td>
+        <td>No 3 Dele Orisabiyi street off Ago palace way, Okota, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OKOTA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>VONES MEDICAL CENTRE</td>
+        <td></td>
+        <td>9 Barikisu St Onike Yaba</td>
+        <td></td>
+        <td></td>
+        <td>YABA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OMOL MEDICAL CENTRE & MATERNITY</td>
+        <td></td>
+        <td>No 57 Shyllon street, Palm Grove, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>PALM GROVE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>TAND S HOSPITAL</td>
+        <td></td>
+        <td>169 Agege Motor Road Olosha B/S Mushin</td>
+        <td></td>
+        <td></td>
+        <td>MUSHIN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GOOD HEALTH MEDICAL CENTRE</td>
+        <td></td>
+        <td>No 19 Oludegun street, Ire-Akari estate, Isolo</td>
+        <td></td>
+        <td></td>
+        <td>ISOLO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CONTINENTAL HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>11 Ago-Owu St Off Kayode St Onipanu</td>
+        <td></td>
+        <td></td>
+        <td>ONIPANU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ANIYUN HOSPITAL</td>
+        <td></td>
+        <td>No 3 Femi Aderibigbe, close off Diya street Beside Total filling station, Ifako</td>
+        <td></td>
+        <td></td>
+        <td>IFAKO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SAFE-WAY HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>Km 46 Lagos-Epe Express Road, Sangotedo, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>SANGOTEDO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MOYUB HOSPITAL</td>
+        <td></td>
+        <td>No 1 Hajia Halima Mohammed ,close off Taiwo street ,Okota</td>
+        <td></td>
+        <td></td>
+        <td>OKOTA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DIVINE MEDICAL CENTRE</td>
+        <td></td>
+        <td>16, Akanbi Danmole Street, off Ribadu Rd., SW., Ikoyi, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKOYI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BARNES HOSPITAL</td>
+        <td></td>
+        <td>Plot 34B Oniru Road, Dideolu Estate, Victoria Island</td>
+        <td></td>
+        <td></td>
+        <td>VICTORIA ISLAND</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BOLA HOSPITAL & MATERNITYE</td>
+        <td></td>
+        <td>30 Akiti Avenue Off Okota Road</td>
+        <td></td>
+        <td></td>
+        <td>OKOTA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AGO MEDICAL CENTRE</td>
+        <td></td>
+        <td>No 6 Oyinlola close, By Arewa B/stop Ago palace way, Okota</td>
+        <td></td>
+        <td></td>
+        <td>OKOTA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BEST HOPE HOSPITAL LIMITED</td>
+        <td></td>
+        <td>40 Alaromi St Off Layi Oyekanmi St Mushin</td>
+        <td></td>
+        <td></td>
+        <td>MUSHIN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>APEX-CARE HOSPITAL</td>
+        <td></td>
+        <td>42 Kujore St Ojota</td>
+        <td></td>
+        <td></td>
+        <td>OJOTA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AMESO SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>7 Jumat Olukoya Street Off Ogudu Rd Ojota</td>
+        <td></td>
+        <td></td>
+        <td>OJOTA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>TMAC SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>14, Berkeley Street, off King George Street, Onikan, Lagos Island</td>
+        <td></td>
+        <td></td>
+        <td>ONIKAN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NEWALPHA MEDICAL CENTRE</td>
+        <td></td>
+        <td>36, Abusatu Str., Off Lagos Abeokuta, Exp. Way, Araromi, Adeolu B/Staop, Agege, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>AGEGE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PINECREST SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>83 Makinde street, Mofoluku, Oshodi</td>
+        <td></td>
+        <td></td>
+        <td>MOFOLUKU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ARUNA OGUN MEMORIAL SPECIALIST</td>
+        <td></td>
+        <td>2/4 Bamimosu St Ipakodo-Ikorodu</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GEO-MARIE HOSPITAL</td>
+        <td></td>
+        <td>35, AdePegbu Street, Abule-Egba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>ABULE-EGBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HEDA HOSPITAL</td>
+        <td></td>
+        <td>2A, Princess Aina close, Ajao Estate ,Oshodi</td>
+        <td></td>
+        <td></td>
+        <td>OSHODI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>EVANGEL HOSPITAL</td>
+        <td></td>
+        <td>106, Abeokuta Expressway, Awori B/Stop, Abule-Egba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>ABULE-EGBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DONAS HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>67 Owulade Avenue Irawo Bus/Stop Owode</td>
+        <td></td>
+        <td></td>
+        <td>OWODE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BALDA HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>No 31, Itsekiri Street, Iju-Ajuwon, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IJU-AJUWON</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AYODELE MEDICAL CENTRE</td>
+        <td></td>
+        <td>23/25, Jonathan Coker Rd, Off Fagba Junction, Iju Agege</td>
+        <td></td>
+        <td></td>
+        <td>AGEGE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FIRST LINE HOSPITAL</td>
+        <td></td>
+        <td>2nd Avenue House 14 By 207 Road Junction, Festac Town</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PETROS FOUNDATION HOSPITAL</td>
+        <td></td>
+        <td>20 Seinde Callisto Crescent Charity, Oshodi</td>
+        <td></td>
+        <td></td>
+        <td>OSHODI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ANCILLA CATHOLIC HOSPITAL</td>
+        <td></td>
+        <td>3, Muyiwa Olojo Street, Iju, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IJU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>JOBI CLINIC & MATERNITY HOSPITAL</td>
+        <td></td>
+        <td>3/5 Adeyeri Owuyo St Ikorodu</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OMNI MEDICAL CENTRE</td>
+        <td></td>
+        <td>18, Boyle''s Street, Onikan, Lagos Island, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>LAGOS ISLAND</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ESIRI SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>5 Alashe Close Ojogbe Ikorodu</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CHRISTIANA CLINIC</td>
+        <td></td>
+        <td>8 Ogunyemu street, Pedro, Bariga</td>
+        <td></td>
+        <td></td>
+        <td>BARIGA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>UNITA HOSPITAL</td>
+        <td></td>
+        <td>63, Oduduwa, Street, by College B/Stop, Ikotun, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKOTUN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SUBOL HOSPITAL</td>
+        <td></td>
+        <td>16/17, Oba Amusa Avenue, Off Ikotun Rd, Idimu-Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IDUMU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SHAMMAH HOSPITAL</td>
+        <td></td>
+        <td>5, Epe Street Off Iludun Street Amukoko Lagos</td>
+        <td></td>
+        <td></td>
+        <td>AMUKOKO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SOLIK HOSPITAL</td>
+        <td></td>
+        <td>1a, Abeokuta Street, Off Okunola B/Stop, Egbeda, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>EGBEDA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BETHESDA FAMILY CLINIC & MATERNITY</td>
+        <td></td>
+        <td>207 Road, A Close House 6. Festac Town Lagos</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AJAYI MEDICAL CENTER</td>
+        <td></td>
+        <td>50 Ekulu Street Ikorodu</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CAREPOINT CLINIC, EGBEDA LTD</td>
+        <td></td>
+        <td>7-9 Ogunlana Street Off Akowonjo RD Egbena</td>
+        <td></td>
+        <td></td>
+        <td>EGBENA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SETFONE HOSPITAL LIMITED</td>
+        <td></td>
+        <td>23 Church Str Abule Taylor B/Stop Off Abeokuta Exp Way</td>
+        <td></td>
+        <td></td>
+        <td>ABULE TAYLOR</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NATAFOD CONSULTANTS HOSPITAL</td>
+        <td></td>
+        <td>104 Cemetry Road, Mosafejo, NEPA B/Stop, Amukoko, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>AMUKOKO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HIGH ROCKS HOSPITAL</td>
+        <td></td>
+        <td>38 Afariogun street, Oshodi</td>
+        <td></td>
+        <td></td>
+        <td>OSHODI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ADESOLA CLINIC</td>
+        <td></td>
+        <td>2 Onabola street Pedro Bariga</td>
+        <td></td>
+        <td></td>
+        <td>BARIGA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ROPHEKA HOSPITAL LTD</td>
+        <td></td>
+        <td>6 Dosu Ogundele Street Miccom Bus/Stop Akowonjo Lagos</td>
+        <td></td>
+        <td></td>
+        <td>AKOWONJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CAPES HOSPITAL LTD</td>
+        <td></td>
+        <td>16a Aibarba street, Bariga</td>
+        <td></td>
+        <td></td>
+        <td>BARIGA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PROMISE MEDICAL CENTER LTD</td>
+        <td></td>
+        <td>112 Dopemu Rd Ayinla B/Stop Dopemu Lagos</td>
+        <td></td>
+        <td></td>
+        <td>DOPEMU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PRIMEX HOSPITAL</td>
+        <td></td>
+        <td>58 Igando Rd Unity Bus/Stop Ikotun-Egbe Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKOTUN-EGBE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BONNE SANTE HEALTH SERVICE LTD</td>
+        <td></td>
+        <td>3rd Avenue, Festac, 321 Road, C Close, House No. 8, Festac Town, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OKIKI CLINIC & MATERNITY</td>
+        <td></td>
+        <td>18 Ola Sheu Str Iyana Ipaja by Alimosho Bus/Stop</td>
+        <td></td>
+        <td></td>
+        <td>ALIMOSHO</td>
+        <td>LAGOS</td>
+    </tr>
+    </tr>
+    <tr>
+        <td>MOBONIKE-T MEDICAL CENTRE</td>
+        <td></td>
+        <td>26, Surulere 1 Bus Stop Dopemu Lagos</td>
+        <td></td>
+        <td></td>
+        <td>DOPEMU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MAJOROH MEDICAL CENTER</td>
+        <td></td>
+        <td>6 Olofin Street Apapa Lagos</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>JERICHO CLINIC</td>
+        <td></td>
+        <td>30 Ayodele street, Mafoluku ,Lagos</td>
+        <td></td>
+        <td></td>
+        <td>MAFOLUKU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LIGHT HOSPITAL</td>
+        <td></td>
+        <td>15 Olumide Onanubi Str Off Folarin Str Alimosho/Off Jimoh B/S Akowonjo</td>
+        <td></td>
+        <td></td>
+        <td>AKOWONJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PLATO HOSPITAL & MATERNITY HOSPITAL</td>
+        <td></td>
+        <td>641 Agege Motor Road,  Shogunle, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>SHOGUNLE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HAMKAD HOSPITAL</td>
+        <td></td>
+        <td>39 Olawale Cole Street U-turn B/Stop Abule Egba</td>
+        <td></td>
+        <td></td>
+        <td>ABULE-EGBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>G. ESTATE CLINIC</td>
+        <td></td>
+        <td>34 Rd A Close Plot 311 Gowon Estate Ipaja Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IPAJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DAYSPRING HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>1 Popoola Street Off Isijola Street Ikotun Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKOTUN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>THEARK HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>8 Ogun Abewenla Str Off Ayobo Rd Oja B/Stop Ipaja</td>
+        <td></td>
+        <td></td>
+        <td>IPAJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>K AND B HEALTHCARE CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GOLDEN CROSS INFIRMARY HOSPITAL</td>
+        <td></td>
+        <td>22 Road Festac Town Lagos</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GOODWILL FAMILY HOSPITAL</td>
+        <td></td>
+        <td>84 Oluwa Street Ladega Bus Stop Olodi Apapa Lagos</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SASEUN HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>172 Kiri-Kiri Road Apapa</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GATEWAY CLINIC & MATERNITY</td>
+        <td></td>
+        <td>211, Muyibi Str, Off Peoples B/Stop, Olodi Apapa, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CHRIST FOUNDATION CLINIC</td>
+        <td></td>
+        <td>68 Alhaja Sinatu Ajayi Road, Morogbo Agbara, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>MOROGBO AGBARA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ELPHY HOSPITAL</td>
+        <td></td>
+        <td>6, Task Force Rd, By PPL B/S, Okokomaiko, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OKOKOMAIKO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ONYEMS-B HOSPITAL</td>
+        <td></td>
+        <td>16, Oba-Dauda Str., Ojoo Alaba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>ALABA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BONNE SANTE HOSPITAL</td>
+        <td></td>
+        <td>12, Ahl Sulaiman Str. Opp Ojoo Military Cantonment, Ojo, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>TIN CAN HOSPITAL</td>
+        <td></td>
+        <td>3, Kudaisi Str. Off Tin Can Exp. Olodi, Apapa</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MAKAL MEDICAL CENTRE</td>
+        <td></td>
+        <td>42, Alh Balogun Str, Kuje, Anuwo Off Old Ojo Rd, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>ANUWO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PATOL MEDICAL CENTRE</td>
+        <td></td>
+        <td>48, Swamp Str. Off Kirikiri Rd, Olodi, Apapa</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DE-NEWAIYETORO MEDICAL CENTRE</td>
+        <td></td>
+        <td>3, Samson Str, Ibasa-Nla Aiyetoro, Near Ijanikin Ojo LGA Badagry Exp. Way, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>BADAGRY</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>THE GREAT PHYSCIAN HOSPITAL LTD</td>
+        <td></td>
+        <td>3, Niyi Adebule Str, New Nepa B/S Badagry</td>
+        <td></td>
+        <td></td>
+        <td>BADAGRY</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OLA-OKI MEDICAL CENTRE</td>
+        <td></td>
+        <td>Opp Iberoko Low cost B/S Ibereko, Badagry</td>
+        <td></td>
+        <td></td>
+        <td>BADAGRY</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL APAPA</td>
+        <td></td>
+        <td>16, Ibikunle Akintoye Str, Off Randle Rd, Apapa</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>C R I MEDI CLINIC</td>
+        <td></td>
+        <td>42A Issac John Street GRA Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>UNITY HOSPITAL ,IKEJA.</td>
+        <td></td>
+        <td>138 Obafemi Awolowo Way Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ADEFEMI HOSPITAL</td>
+        <td></td>
+        <td>49 Seriki Aro, Avenu Off Obafemi Awolowo Way Lagos</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DEVINE HOSPITAL</td>
+        <td></td>
+        <td>8 Lawal Street by Oregun Bus Stop, Oregun, Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ISALU HOSPITAL</td>
+        <td></td>
+        <td>10 Wempco Road, Off Lateef Jakande Road, Ogba, Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OMOLEWA MEDICAL CENTRE</td>
+        <td></td>
+        <td>10B Idowu Akinola Off Olufemi Ojo, Oluwura Isheri, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OLUWURA ISHERI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>IDOWU SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>10A Olaniji Street, Off Kudirat Abiola Way, Julie Estate, Oregun</td>
+        <td></td>
+        <td></td>
+        <td>OREGUN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SOLID ROCK HOSPITAL</td>
+        <td></td>
+        <td>Plot 108 Isheri Road Ojodu</td>
+        <td></td>
+        <td></td>
+        <td>OJODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MOTHERAND CHILD HOSPITAL</td>
+        <td></td>
+        <td>39A, Adeniyi Jones Avenue Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LIFE CARE CLINIC & MATERNITY</td>
+        <td></td>
+        <td>12, Alh. Tokumbo Ali Street Off Toyin Street Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GAND S MEDICAL & DENTAL HOSPITAL</td>
+        <td></td>
+        <td>15 Muyibi Street, Oveira Ogba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OGBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BALMGILEAD HOSPITAL</td>
+        <td></td>
+        <td>49, Kayode Street Off Iyaiye Rd. Ogba</td>
+        <td></td>
+        <td></td>
+        <td>OGBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. CHARLES HOSPITAL</td>
+        <td></td>
+        <td>59, Ayilara Street</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PARKANDE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>13, Rasaq Balogun Street Off Adetola Street Off Adeniran Ogunsanya</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>JALUPON ESTATE HOSPITAL</td>
+        <td></td>
+        <td>63 Bode Thomas Street Lagos</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FOUNTAIN HOSPITAL LTD.</td>
+        <td></td>
+        <td>B Daramola Lane Off Adesina Street Ijesha-tedo</td>
+        <td></td>
+        <td></td>
+        <td>IJESHA-TEDO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PRIMUS HOSPITAL</td>
+        <td></td>
+        <td>272 Ijesha Rd. Ijesha-tedo</td>
+        <td></td>
+        <td></td>
+        <td>IJESHA-TEDO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BIMTOM HOSPITAL</td>
+        <td></td>
+        <td>205 Ijesha Rd. Ijesha-tedo</td>
+        <td></td>
+        <td></td>
+        <td>IJESHA-TEDO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SHASHA MEDICAL CENTRE</td>
+        <td></td>
+        <td>15, Oyebola Street, off Ajako B/Stop, Shasha, Alimosho, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>ALIMOSHO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>JEFFIS SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>9 Adegbola Street, Alakuku, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>ALAKUKU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LEX MEDICAL CENTRE</td>
+        <td></td>
+        <td>5 Rahat Alabi Street, Iyana Meiran B/Stop, Ijaiye, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IJAIYE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FANNIMED HOSPITAL</td>
+        <td></td>
+        <td>Block 210, Lily Road, LSDPC Med. Estate, Phase IV, Oba-Oguniyi Rd, Ogba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OGBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FAFOLU MEDICAL CENTRE</td>
+        <td></td>
+        <td>22, Fafolu Street, Olorunshogo, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OLORUNSHOGBO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ASCON CLINIC</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GOOD FAITH CLINIC</td>
+        <td></td>
+        <td>No. 1 Akindelu Street, off Folawoyo Bankole Street, Ikate, Surulere, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    </tr>
+    <tr>
+        <td>9 BDE MC IKEJA</td>
+        <td></td>
+        <td>Ikeja Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SOLAD  MEDICAL CENTRE</td>
+        <td></td>
+        <td>No 8 Maria Ipaja - Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IPAJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OBITOKS HOSPITAL</td>
+        <td></td>
+        <td>2 Gideon Adeniran Street oke Odo Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OKE-ODO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AGAPE MEDICAL CENTER</td>
+        <td></td>
+        <td>16, OGUNBIYI ILO STREET, OLUDE B/STOP, IPAJA</td>
+        <td></td>
+        <td></td>
+        <td>IPAJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BALM CLINICS</td>
+        <td></td>
+        <td>2/3 GODMON ESTATE, OKOTA</td>
+        <td></td>
+        <td></td>
+        <td>OKOTA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BAYO OGUNRO MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>158 KIRIKIRI ROAD OLODI APAPA</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CRUSAINTS HOSPITAL</td>
+        <td></td>
+        <td>54, ADESIYAN STREEET, ILUPEJU</td>
+        <td></td>
+        <td></td>
+        <td>ILUPEJU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DUNIA HOSPITAL</td>
+        <td></td>
+        <td>47 OLD OKO OBA RD. AGEGE</td>
+        <td></td>
+        <td></td>
+        <td>AGEGE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>F.C.EAKOKA</td>
+        <td></td>
+        <td>AKOKA YABA</td>
+        <td></td>
+        <td></td>
+        <td>YABA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FIRST CITY HOSPITAL, LEKKI</td>
+        <td></td>
+        <td>OSAPA LONDON LEKKI PENINSULA</td>
+        <td></td>
+        <td></td>
+        <td>LEKKI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FIRST FAITH MEDICAL CENTRE, SURULERE</td>
+        <td></td>
+        <td>5, KARIMU COKER ORILE IGANMU</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GOOD TIDINGS HOSPITAL</td>
+        <td></td>
+        <td>37/39 FASORO STREET, SURULERE</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HOLINESS HOSPITAL</td>
+        <td></td>
+        <td>3, MODUPEOLA  STREET,OFF AKEJA ROAD BEHIND MUSLIM COLL. ILE IWE B/STOP</td>
+        <td></td>
+        <td></td>
+        <td>ILE-IWE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HOLY FAMILY CATHOLIC MEDICAL CENTRE</td>
+        <td></td>
+        <td>22 RD FESTAC TOWN</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>IKOTUN NURSING HOME & CONV.</td>
+        <td></td>
+        <td>24, ABOGUN LOKO STR IJEGUN ROAD, IKOYUN</td>
+        <td></td>
+        <td></td>
+        <td>IKOYUN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>IMPERIAL MEDICAL CENTER</td>
+        <td></td>
+        <td>65 BRICKFIELD ROAD, EBUTE METTA WEST</td>
+        <td></td>
+        <td></td>
+        <td>EBUTE-META</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>KRANZ SPECIALIST CLINIC & MATERNITY</td>
+        <td></td>
+        <td>9, UNITY ROAD OFF TOYIN STREET, IKEJA</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LIFE LINE CHILDREN HOSPITAL</td>
+        <td></td>
+        <td>133 OGUNLANA DRIVE SURULERE</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LONGE MEDICAL CENTER</td>
+        <td></td>
+        <td>126, olusegun osoba road, agbado crossing</td>
+        <td></td>
+        <td></td>
+        <td>AGBADO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LOTA MEDICAL CENTER</td>
+        <td></td>
+        <td>1 mojisola abass street off salvation str powerline b/stop, isheri-olofin</td>
+        <td></td>
+        <td></td>
+        <td>ISHERI-OLOFIN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MANIFEL MEDICAL CENTER</td>
+        <td></td>
+        <td>192 ijegun road, ikotun</td>
+        <td></td>
+        <td></td>
+        <td>IKOTUN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MOBONIKE HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MOUNT SINAI HOSPITAL,SURULERE</td>
+        <td></td>
+        <td>30, falolu street, surulere</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NATIONAL ORTHOPAEDIC HOSPITAL</td>
+        <td></td>
+        <td>120/124 ikorodu rd.</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NEW GRACE LAND HOSPITAL</td>
+        <td></td>
+        <td>1 & 2 grace land close off adeyemi apena str.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ONAOLAPO VICTORY CLINIC</td>
+        <td></td>
+        <td>4, amoshe str, meiran ojokoro</td>
+        <td></td>
+        <td></td>
+        <td>OJOKORO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OPTIMAL SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>9 Gbaja Street Surulere</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PACIFIC HOSPITAL</td>
+        <td></td>
+        <td>314 IJU WATER WORKS , IFAKO</td>
+        <td></td>
+        <td></td>
+        <td>IFAKO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OSBON CLINIC & MATERNITY</td>
+        <td></td>
+        <td>9, ADENIYI ADEYELE STR, ILE EPO B/STOP, EJIGBO</td>
+        <td></td>
+        <td></td>
+        <td>EJIGBO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>REM YEMS HEALTH CENTER</td>
+        <td></td>
+        <td>3 KOLLINTON CLOSE ALAGBADO</td>
+        <td></td>
+        <td></td>
+        <td>ALAGBADO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SANOMENS MEDICAL CENTER</td>
+        <td></td>
+        <td>8, ISOLO/EJIGBO ROAD, OKE AFA ISOLO</td>
+        <td></td>
+        <td></td>
+        <td>ISOLO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ROYAL SALVATION HOSPITAL</td>
+        <td></td>
+        <td>9, MARQUIS STREET, MASALLACHI B/STOP, SHASHA , AKOWONJO</td>
+        <td></td>
+        <td></td>
+        <td>OKOWONJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SHALOM HOSPITAL</td>
+        <td></td>
+        <td>OYERO STREET,ADURA B/STOP,LAGOS-ABEOKUTA EX/WAY, ALAGBADO</td>
+        <td></td>
+        <td></td>
+        <td>ALAGBADO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SILVAN  CLINIC</td>
+        <td></td>
+        <td>42/44 OKOTA ROAD, ISOLO</td>
+        <td></td>
+        <td></td>
+        <td>ISOLO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. CHARLES CLINIC</td>
+        <td></td>
+        <td>36/60 OSHS DRIVE OFF KIRIKIRI ROAD, OLODI APAPA</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. CLEMENT HOSPITAL</td>
+        <td></td>
+        <td>321 RD. G-CLOSE 3RD AVENUE FESTAC TOWN</td>
+        <td></td>
+        <td></td>
+        <td>FESTAC</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. MICHAELS CLINIC</td>
+        <td></td>
+        <td>KM 974, LAGOS-ABEOKUTA EX/WAY, ALAKUKO B/STOP, ALAGBADO</td>
+        <td></td>
+        <td></td>
+        <td>ALAGBADO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST.NICHOLAS</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST.KIZITO (PHC)</td>
+        <td></td>
+        <td>ILASAN HOUSING ESTATE JAKANDE, LEKKI</td>
+        <td></td>
+        <td></td>
+        <td>LEKKI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST.MILLA HOPSITAL</td>
+        <td></td>
+        <td>19B LADIPO OLUWOLE STR. APAPA G.R.A</td>
+        <td></td>
+        <td></td>
+        <td>APAPA GRA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL, SURULERE</td>
+        <td></td>
+        <td>Randle Avenue</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>UPLIFT MEDICAL CENTER</td>
+        <td></td>
+        <td>15, ADMIRALTY WAY, LEKKI PHASE 1</td>
+        <td></td>
+        <td></td>
+        <td>LEKKI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>VINEYARD HOSPITAL LIMITED</td>
+        <td></td>
+        <td>4 Gbemi Ogundeyi Street, Idimu, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>IDIMU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>REDEEMED MEDICAL CENTRE</td>
+        <td></td>
+        <td>Elias Close, Okokomaiko, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OKOKOMAIKO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AFRIMED SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>1 Williams Street, off Diya Street, Sawmill, Gbagada Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>GBAGADA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FOLABI MEDICAL CENTER</td>
+        <td></td>
+        <td>78 Oworonsoki Road, Labule Bus Stop, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>LABULE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>JIM-SAM HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>22 Gaskiya College Road, Ijora Badia, Apapa, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BESTCARE HOSPITAL</td>
+        <td></td>
+        <td>2A Keffi Street, South-West Ikoyi</td>
+        <td></td>
+        <td></td>
+        <td>IKOYI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SKYLIGHT CLINIC</td>
+        <td></td>
+        <td>27 Ibari/Old Otta Road, Moshalashi B/Stop, Alagbado</td>
+        <td></td>
+        <td></td>
+        <td>ALAGBADO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CALVERY GRACE HOSPITAL</td>
+        <td></td>
+        <td>Lagos Badagry Express Way, Iyana Iba B/Stop, Opp. LASU, Ojo</td>
+        <td></td>
+        <td></td>
+        <td>OJO</td>
+        <td>LAGOS</td>
+    </tr>
+    </tr>
+    <tr>
+        <td>FAITH NURSING SERVICES</td>
+        <td></td>
+        <td>32 Duro Adewale Street, Off Wazobia B/Stop, Abaranje, Ikotun</td>
+        <td></td>
+        <td></td>
+        <td>IKOTUN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>EPRAH MEDICAL CLINIC</td>
+        <td></td>
+        <td>228 Ikotun Road, Alhaja B/Stop, Idimu</td>
+        <td></td>
+        <td></td>
+        <td>IDIMU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>JIBOL MEDICAL CLINIC</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>INLAND SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>11 Bola Owodunni Street, Behind Eskay Filling Station, Alapere, Ketu</td>
+        <td></td>
+        <td></td>
+        <td>KETU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DURO SOLEYE HOSPITAL</td>
+        <td></td>
+        <td>34 Allen Avenue, Ikeja</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FELLOWSHIP HOSPITAL LTD</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ARMED FORCES RESETTLEMENT CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NIGERIAN ARMY SCHOOL OF MEDICAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SANTA MARIA HOSPITAL</td>
+        <td></td>
+        <td>10, Santa Maria Street, Egan  Igando</td>
+        <td></td>
+        <td></td>
+        <td>IGANDO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>JAIYEOLA CLINIC</td>
+        <td></td>
+        <td>4 Bankole Street by Famous Bust Stop, Pedro, Shomolu, Bariga</td>
+        <td></td>
+        <td></td>
+        <td>BARIGA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>TINU HOSPITAL</td>
+        <td></td>
+        <td>86 Mushin Road, Isolo</td>
+        <td></td>
+        <td></td>
+        <td>ISOLO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>A. B. 10 HOSPITAL</td>
+        <td></td>
+        <td>2 Adeleke Odunuga Close, Harmony Estate, Ifako-Ijaye</td>
+        <td></td>
+        <td></td>
+        <td>IFAKO-IJAYE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST ANTHONY'S OF PADUA'S MEDICAL CENTRE</td>
+        <td></td>
+        <td>40 Cardoso Street, Awodiora-Ajegunle</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ANGEL HOSPITAL</td>
+        <td></td>
+        <td>No 20 ECWA Church Road, Coker Village, Orile-Iganmu</td>
+        <td></td>
+        <td></td>
+        <td>ORILE-IGANMU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ANCEL HOSPITAL</td>
+        <td></td>
+        <td>44 Kemberi Road, Okoko-Ojo, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OKOKO-OJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ADEMOLA HOSPITAL</td>
+        <td></td>
+        <td>1 Omowale Street, Cele Bus Stop, Ijanikin-Ojo</td>
+        <td></td>
+        <td></td>
+        <td>IJANIKIN-OJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DIVINE BLESSING HOSPITAL</td>
+        <td></td>
+        <td>1 Aruna Ayuba Close, Akesan, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>AKESAN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST MARY'S SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Plot 458 Titilayo Adedoyin Street, Omole Phase 1, Ikeja</td>
+        <td></td>
+        <td></td>
+        <td>IKAJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>KUNLADE HOSPITAL</td>
+        <td></td>
+        <td>7 Opeki Road, Olude Ipaja, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>OLUDE-IPAJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BLUE CROSS HOSPITAL</td>
+        <td></td>
+        <td>48 Ijaiye Road, Ogba</td>
+        <td></td>
+        <td></td>
+        <td>OGBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PAND G MEDICAL CENTRE</td>
+        <td></td>
+        <td>29 Sanni Labode Street, New Oko-Oba, Lagos</td>
+        <td></td>
+        <td></td>
+        <td>NEW OKO-OBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>TOLU MEDICAL CENTRE</td>
+        <td></td>
+        <td>25 Amodu Tijani Street, Tolu Bus Stop, Olodi Apapa</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>RIKKY HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ILOGBO CENTRAL HOSPITAL</td>
+        <td></td>
+        <td>175 Ilogbo Road Ajangbadi</td>
+        <td></td>
+        <td></td>
+        <td>AJANGBANDI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AJARA MEDICAL CENTRE</td>
+        <td></td>
+        <td>1 Ajara Medical Centre Street, Topo, Badagry</td>
+        <td></td>
+        <td></td>
+        <td>BADAGRY</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DIALYZER MEDICAL CENTRE</td>
+        <td></td>
+        <td>60, Arowojobe Street, Oseni Bus Stop, Oshodi</td>
+        <td></td>
+        <td></td>
+        <td>OSHODI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MOLAYO MEDICAL CENTRE</td>
+        <td></td>
+        <td>20 Akinyele Street, Oko Oba</td>
+        <td></td>
+        <td></td>
+        <td>OKO-OBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NIGERIA FRENCH LANGUAGE CLINIC</td>
+        <td></td>
+        <td>Nigeria French Village, Badagry</td>
+        <td></td>
+        <td></td>
+        <td>BADAGRY</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GOOD SEED SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>1/3 Asa Afariogun Road, Ajao Estate</td>
+        <td></td>
+        <td></td>
+        <td>AJAO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AISHAT SPECIALIST HOSPITAL LTD</td>
+        <td></td>
+        <td>26 Fagbenro Street, Idi-Araba</td>
+        <td></td>
+        <td></td>
+        <td>IDI-ARABA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SENTINEL HOSPITAL</td>
+        <td></td>
+        <td>1 Benson Akinyele Street, Okota</td>
+        <td></td>
+        <td></td>
+        <td>OKOTA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OLIVE MEDICARE HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>6 Gholus Close, Dopemu Roundabout</td>
+        <td></td>
+        <td></td>
+        <td>DOPEMU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ROYAN HOSPITAL</td>
+        <td></td>
+        <td>7 Aina Street Ojodu</td>
+        <td></td>
+        <td></td>
+        <td>OJODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>RAYINE HOSPITAL</td>
+        <td></td>
+        <td>15 Ashibejoye Street, Apapa</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NEW MERIT HOSPITAL LTD</td>
+        <td></td>
+        <td>103 Ibari Road, Alagbado</td>
+        <td></td>
+        <td></td>
+        <td>ALAGBADO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NEW CITY CLINIC & MATERNITY</td>
+        <td></td>
+        <td>59 Olaiya Street Mafoluku Garage, Oshodi</td>
+        <td></td>
+        <td></td>
+        <td>OSHODI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DFO MEDICAL CLINIC</td>
+        <td></td>
+        <td>1 Banji Adewole Lane, Pako, Akoka</td>
+        <td></td>
+        <td></td>
+        <td>AKOKA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NIMBUS MEDICAL CENTRE</td>
+        <td></td>
+        <td>6 Kola Iyaomolere Street, By Omotayo Banwo Street, Ogudu, Ori-Oke Ojota</td>
+        <td></td>
+        <td></td>
+        <td>OJOTA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST DANIE'S HEALTH CENTRE</td>
+        <td></td>
+        <td>14 Oduduwa Street Car Wash B/Stop, Oworosoki</td>
+        <td></td>
+        <td></td>
+        <td>OWOROSOKI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ADEBAYO OGUNSANYA MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>8 Eniasoro Beyioku Street, Off Ajao Road, Surulere</td>
+        <td></td>
+        <td></td>
+        <td>SURULERE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HIS MERCY HOSPITAL</td>
+        <td></td>
+        <td>17 Adeyemi Street Off Chemist B/Stop, Orile Iganmu</td>
+        <td></td>
+        <td></td>
+        <td>IGANMU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FIRST GRACELAND HOSPITAL</td>
+        <td></td>
+        <td>KM 42, Lekki-Epe Express Way, Abijoh Aja</td>
+        <td></td>
+        <td></td>
+        <td>AJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MAYFAIR MEDICAL CENTRE</td>
+        <td></td>
+        <td>30/32 Adenle Street, Oke Koto, Agege</td>
+        <td></td>
+        <td></td>
+        <td>AGEGE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>INLAND SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>153, Ogudu Road GRA, Ojota</td>
+        <td></td>
+        <td></td>
+        <td>OJOTA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GRACE SPRINGS HOSPITAL</td>
+        <td></td>
+        <td>Oba Adetona, Ilupeju</td>
+        <td></td>
+        <td></td>
+        <td>ILUPEJU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>EL-SHADDAI HOSPITAL & LABORATORY</td>
+        <td></td>
+        <td>KM 4 LASU Road, Iyana School B/Stop, Iba, Ojo</td>
+        <td></td>
+        <td></td>
+        <td>OJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>JOMARK HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>27 Alaba Road, Alaba-Oro</td>
+        <td></td>
+        <td></td>
+        <td>ORO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BOB SPECIALIST HOSPITALS</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BOLAKUNMI-IDOWU MEMORIAL MEDICAL CENTRE</td>
+        <td></td>
+        <td>5 Segun Ishola Street, Owuwu, Ikorodu</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OHBEE HOSPITAL</td>
+        <td></td>
+        <td>1, Kudaki Road, Hostel Bus stop, Egbe, Lagos, Lagos state</td>
+        <td></td>
+        <td></td>
+        <td>EGBE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>RIVET SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ABLE GOD HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>52, Ijesha Road, Opp Mobil Petrol Station, Adedeji, B/stop, ijeshatedo Lagos State</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CREST HOSPITAL</td>
+        <td></td>
+        <td>156/160 Isuti Road, Oremeji B/Stop, Egan, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>EGAN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>RALLY HOSPITAL</td>
+        <td></td>
+        <td>9, Ibadan Street,Off Illupeju Road, Illupeju, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>ILUPEJU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PHARCEPT HOSPITAL</td>
+        <td></td>
+        <td>Plot 74a, Block K, Olajomehin Road, Home of Grace B/Stop, Agbede Meeting, Ikorodu, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. CATHERINE OF SIENA MEDICAL CENTRE</td>
+        <td></td>
+        <td>45/49 Old Ewu Road, Mafoluku, Oshodi, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>OSHODI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>STANDARD LIFECARE CLINIC</td>
+        <td></td>
+        <td>5, Paul Street, Off Sanni Balogun,Off Egba Road, New Oko Oba, Abule Egba Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>ABULE-EGBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LAYOLE & SONS  HOSPITAL LTD</td>
+        <td></td>
+        <td>89, Oyemekun Road, Off College road, Ifako/Ijaiye,  Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>IFAKO-IJAYE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NEOLIFE CLINIC</td>
+        <td></td>
+        <td>5, Olakunle street, Ajegunle, Ikorodu road,  Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DESERET INTERNATIONAL HOSPITAL</td>
+        <td></td>
+        <td>23, Oduduwa Crescent, GRA, Ikeja,  Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>DEELACS MEDICAL CENTER</td>
+        <td></td>
+        <td>11, Magbon Road, Magbon End, Badagry expressway,  Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>MAGBON END</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>EL- DUNAMIS MEDICAL CENTRE</td>
+        <td></td>
+        <td>6 King Solomon St, Ologuro B/Stop,  Akesan  Alimosho, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>ALIMOSHO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OAK HOSPITAL</td>
+        <td></td>
+        <td>191, Lagos road, Ikorodu, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>TRINITY CLINIC & MATERNITY</td>
+        <td></td>
+        <td>No 6, Oyedele Str. By Trinity Clinic Bus Stop, Off Mobil Filling Station Off Igbo-Elerin Road, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ADEBAYO LIVING TOWER HOSPITAL</td>
+        <td></td>
+        <td>8,  Adebayo  Ojajuni Street,  Imeke, Badagry, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>BADAGRY</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ARABA MEDICAL CENTER</td>
+        <td></td>
+        <td>122, Ekoro- Agbelekale road, Big Joy B/stop, Abule Egba, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>ABULE-EGBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BLUE SKY HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CAREPOINT HOSPITAL, OJO LTD</td>
+        <td></td>
+        <td>9, abbi street off rasaki bus stop, ilemba awori, shibiri road, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>OJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LIFEGATE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>2B, Abiodun Jagun Str., Ogba , Ikeja,Lagos State</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HOLY FILL HOSPITAL</td>
+        <td></td>
+        <td>137, Isawo road, Owotu, Agric, Ikorodu, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CARE GIVER HOSPITAL</td>
+        <td></td>
+        <td>20 Torikoh Street opp Coca cola Depot,  Torikoh badagry, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>BADAGRY</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>WEST CARE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>32, Samuel Street Vulcanizer bus stop Egbeda, Akowonjo, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>AKOWONJO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. NICHOLAS HOSPITAL</td>
+        <td></td>
+        <td>58 Campbell Street Lagos Island, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>LAGOS ISLAND</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ROYALE MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GOODNESS MEDICAL CENTRE</td>
+        <td></td>
+        <td>151, Shibiri Road,Opp Otto- Awori Local Council Dev. Area Office, Shibiri - Lagos, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>SHIBIRI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AHMADIYA MUSLIM HOSPITAL</td>
+        <td></td>
+        <td>39, Payne crescent, Apapa, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>APAPA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST. RAPHAEL DIVINE MERCY SPECIALIST</td>
+        <td></td>
+        <td>Boge Town, Ijede Road, Ikorodu, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MAGODO SPECIALIST HOSPITAL LIMITED</td>
+        <td></td>
+        <td>10, Jaiye Oyedotun street, Magodo GRA, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>MAGODO GRA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>TOFAAN'S HOSPITAL</td>
+        <td></td>
+        <td>15 ,Asipa road, amule, bus stop, ayobo, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>AYOBA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LIMAD HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ALIMOSHO GENERAL HOSPITAL</td>
+        <td></td>
+        <td>LASU/Isheri road, Igando, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>IGANDO</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CRADLE MEDICAL CENTER</td>
+        <td></td>
+        <td>26, Dopemu road, Agege, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>DOPEMU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>FUJA MEDICAL CENTRE</td>
+        <td></td>
+        <td>23 Elegbata St. Apongbon, Lagos Island, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>LAGOS ISLAND</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>TRUE CARE MODEL HOSPITAL LTD</td>
+        <td></td>
+        <td>19, AdeyemiApena Street,Papa, Epe. Behind The General Hospital, Epe Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>EPE</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL, MUSHIN</td>
+        <td></td>
+        <td>48, oliyide street, Mushin, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>MUSHIN</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AMODUADESOLA MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>5, AANIBABA STREET, Ikorodu, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>IKORODU</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NEW IKEJA HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>15, Gbajobi street off Obafemi awolowo way, Ikeja, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>IKEJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL IBEJU LEKKI</td>
+        <td></td>
+        <td>lagos road, Akodo, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>LEKKI</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MEDISERVICES  COMMUNITY HOSPITAL</td>
+        <td></td>
+        <td>245 Ipaja Road, Ijaja, Lagos State</td>
+        <td></td>
+        <td></td>
+        <td>IJAJA</td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BLOOMING CARE HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HEALING VIRTUES HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OUTREACH WOMENAND CHILDREN</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AKANBI MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SYNERGY MEDICALS</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AJOWA NURSING HOME</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>A HARMONY CLINIC & MATERNITY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>STAR HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>AVON MEDICAL SERVICES LTD</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ISUTI MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BEE HESS HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>MERCY STRIPES SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>THEO HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OWOLOLA BETHEL HEALTH CARE SE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>OUR LADY & ST. FRANCIS CATHOLIC</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>WESTCARE HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SAMAS HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>IFPF HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>BOOT HOSPITALS</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GOD CURES HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SOTERIA MATERNITY & HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>PAULATE HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>HEALING STRIPES HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>SANTOS MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>GOD FAVOURITE HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ST JOSEPH MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>NIGERIAN AIR FORCE MOTHER & CHILD</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>ESO HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>LENNOX HOSPITAL LIMITED</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>TRUST IN GOD MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>CAVESBURY HOSPITAL & HEALTH CLINIC</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>B & Y HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>COSAN CLINIC</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>REV. FR. JOHN BURKE MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>LAGOS</td>
+    </tr>
+    <tr>
+        <td>STATE SPECIALIST HOSPITAL,IKARE</td>
+        <td></td>
+        <td>Ikare Akoko, Ondo</td>
+        <td></td>
+        <td></td>
+        <td>IKARE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>TEREBO OMOWETAN HOSPITAL</td>
+        <td></td>
+        <td>Beside Muslim Primary School Ese Quarters, Ikare Akoko</td>
+        <td></td>
+        <td></td>
+        <td>IKARE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>SIJUWADE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>10,SIJUWADE BAA-SEGUN RD, AKURE</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>ST. DAVID`S HOSPITAL</td>
+        <td></td>
+        <td>OBA ADESIDA RD.AKURE</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>ST. JOHN AND MARY HOSPITAL</td>
+        <td></td>
+        <td>2 Adebayo Onilane Isikan Allase Akure</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>ADE-TADE HOSPITAL</td>
+        <td></td>
+        <td>5-7 Ade-Tade Str.  Illesa Garrage, P.O.Box 3200, Akure</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>JOE-JANE MEDICINE CENTRE</td>
+        <td></td>
+        <td>Okejebu Rd. Akure</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>ABITOYE HOSPITAL</td>
+        <td></td>
+        <td>101, Ijoka Road, Akure</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>UNIVERSITY OF MEDICAL SCIENCES</td>
+        <td></td>
+        <td>Akure, Ondo</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>STATE SPECIALIST HOSPITAL,OKITIPUPA</td>
+        <td></td>
+        <td>Okitipupa, Ondo</td>
+        <td></td>
+        <td></td>
+        <td>OKITIPUPA</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>FEDERAL MEDICAL CENTRE</td>
+        <td></td>
+        <td>Owo, Ondo</td>
+        <td></td>
+        <td></td>
+        <td>OWO</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>UNIVERSITY OF MEDICAL SCIENCES</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>OLUDARE HOSPITAL</td>
+        <td></td>
+        <td>Fanibi Layout, Akure</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>ADEYEMI COLLEGE OF EDUCATION HOSPITAL</td>
+        <td></td>
+        <td>Ondo-Ife Road, Ondo State</td>
+        <td></td>
+        <td></td>
+        <td>IFE ROAD</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>323 AR MRS, AKURE</td>
+        <td></td>
+        <td>Akure, Ondo State</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>FIRST MERCY SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>19c Gbogi street, off Osa Adesida Road, Akure</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>MOMAAK SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>3 Lafe Inn way, Okuta Eleri</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>JAND E FATUNLA HOSPITAL</td>
+        <td></td>
+        <td>11/13 Arisoyin layout Oke Arotitun (By IBIPRESS), Akure</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>CHRIST HOSPITAL</td>
+        <td></td>
+        <td>5 Adeyemi  College Road, Ondo Town</td>
+        <td></td>
+        <td></td>
+        <td>ONDO</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>ADEDEWE OKUNRIBOYE HOSPITAL</td>
+        <td></td>
+        <td>Opposite Celestial Church, Ondo Road Bye pass, Akure</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>ANTHONY ADELEKE MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>Okitipupa L. G. A, Ondo</td>
+        <td></td>
+        <td></td>
+        <td>OKITIPUPA</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>OGUNSUSI MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>1 Zion Estate, Ile-oluji</td>
+        <td></td>
+        <td></td>
+        <td>ILE-OLUJI</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>FUJAH SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>22, Adetutu Street, Opp. Isikan Market, Akure, Ondo State</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>POLICE CLINICS, ONDO</td>
+        <td></td>
+        <td>Ondo, Ondo State</td>
+        <td></td>
+        <td></td>
+        <td>ONDO</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>FEDERAL UNIVERSITY OF TECHNOLOGY</td>
+        <td></td>
+        <td>Akure, Ondo State</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>MIRACLE HOSPITAL</td>
+        <td></td>
+        <td>17A IWEALEWA STREET, AKURE</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>ARIF MEDICAL CENTER</td>
+        <td></td>
+        <td>Behind Sabo Main Market Ore</td>
+        <td></td>
+        <td></td>
+        <td>ORE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>SHEKINAH HOSPITALS</td>
+        <td></td>
+        <td>BEHIND OLD OWO GARAGE, OFF EL-SHADDAI RD. AKURE</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>OKE ROYAL HOSPITAL</td>
+        <td></td>
+        <td>CJO-8, OLORUNSHOGO STREET,IKARE-AKOKO</td>
+        <td></td>
+        <td></td>
+        <td>IKARE-AKOKO</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>INLAND MEDICAL CENTER</td>
+        <td></td>
+        <td>2, OLANIPEKUN LANE,BEHIND GEN. HOSPITAL, IKARE-AKOKO</td>
+        <td></td>
+        <td></td>
+        <td>IKARE-AKOKO</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>BABALOLA MEDICAL CENTER</td>
+        <td></td>
+        <td>21, HOSPITAL RD, ONDO TOWN</td>
+        <td></td>
+        <td></td>
+        <td>ONDO</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>SCKYE HOSPITAL LTD</td>
+        <td></td>
+        <td>83B Oba Adesida Road, Akure</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL</td>
+        <td></td>
+        <td>Opp Anglican Grammar School, Oke-Ogbe, Iju-Itaogbolu, Ondo State</td>
+        <td></td>
+        <td></td>
+        <td>IJU-OTAOGBOLU</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>HOPELAND SPECIALIST MEDICAL CENTRE</td>
+        <td></td>
+        <td>1, Arikawe Street, Akure, Ondo state</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>ST LOUIS CATHOLIC HOSPITAL</td>
+        <td></td>
+        <td>Owo Hospital Rd, Oke Ogun area, Owo, Ondo State</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>RAINBOW MEDICAL CENTER</td>
+        <td></td>
+        <td>9, Joy street, Ore, Ondo State</td>
+        <td></td>
+        <td></td>
+        <td>ORE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>NEW DAY CLINIC AND MATERNITY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>MITEDA SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>TIM-UNITY SPECIALIST HOSPITAL </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>FEDERAL MEDICAL CENTRE OWO, AKURE ANNEX</td>
+        <td></td>
+        <td>Akure-Oda Road, Akure</td>
+        <td></td>
+        <td></td>
+        <td>AKURE</td>
+        <td>ONDO</td>
+    </tr>
+    <tr>
+        <td>FEDERAL MEDICAL CENTRE, ABEOKUTA</td>
+        <td></td>
+        <td>Bisi Onabanjo Way, Idi-Aba, Abeokuta, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>MERCY GROUP CLINICS</td>
+        <td></td>
+        <td>Back Of Uba Building Pansheke, Ibara, Abeokuta</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>EGBA MEDICAL CENTRE</td>
+        <td></td>
+        <td>Ishabu, Abeokuta</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>OBA ADEMOLA MATERNITY HOSPITAL</td>
+        <td></td>
+        <td>Ijemo, Abeokuta</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>NEUROPSYCHIATRIC HOSPITAL</td>
+        <td></td>
+        <td>Aro, Abeokuta, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>KINGSMITH SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>12 Ojodu Road, Akute, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>AKUTE</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>STATE HOSPITAL, IJEBU-ODE</td>
+        <td></td>
+        <td>Ijebu-Ode, Ogun</td>
+        <td></td>
+        <td></td>
+        <td>IJEBU-ODE</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>STATE HOSPITAL, ABEOKUTA</td>
+        <td></td>
+        <td>Abeokuta, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>HETTA MEDICAL CENTRE</td>
+        <td></td>
+        <td>15, Martina Road, Sango, Ota</td>
+        <td></td>
+        <td></td>
+        <td>SANGO OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>LARION MEDICAL CENTRE</td>
+        <td></td>
+        <td>8, Laz Ukwuoma Close, Morogbo Agbara, Lagos.</td>
+        <td></td>
+        <td></td>
+        <td>MOROGBO AGBARA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>ROPHE MEDICAL CENTRE</td>
+        <td></td>
+        <td>23, Anambra Crescent, Agbara Estate, Ogun State.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>MEDICARE CLINIC</td>
+        <td></td>
+        <td>105, Idi-Iroko Road, Otta, Ogun State.</td>
+        <td></td>
+        <td></td>
+        <td>OTTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>192 BN MRS OWODE</td>
+        <td></td>
+        <td>Owode, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>OWODE</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>OLUTUNU CLINICS</td>
+        <td></td>
+        <td>Agosa, Idiroko</td>
+        <td></td>
+        <td></td>
+        <td>IDI-IROKO</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>TOBILOBA CLINIC AND MATERNITY</td>
+        <td></td>
+        <td>1 Tobiloba Way off Kuforiji-olubi Estate, Adigbe, Abeokuta</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>HEADSTONE MEDICAL CENTRE</td>
+        <td></td>
+        <td>103  Idiroko Road, Owode Yewa</td>
+        <td></td>
+        <td></td>
+        <td>OWODE YEWA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>FAME MEDICAL CENTRE</td>
+        <td></td>
+        <td>No 48 joju Rd Sango Ota</td>
+        <td></td>
+        <td></td>
+        <td>SANGO OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>MAYOWA INTEGRATED MEDICAL SERVICES</td>
+        <td></td>
+        <td>1, ALAWODE WAY, IDI-IROKO</td>
+        <td></td>
+        <td></td>
+        <td>IDI-IROKO</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>CENTRAL SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>133 Idiroko Rd Ota</td>
+        <td></td>
+        <td></td>
+        <td>OTTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>TWINS SPECIALIST CLINIC</td>
+        <td></td>
+        <td>2 Gate GRA Ota</td>
+        <td></td>
+        <td></td>
+        <td>OTTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>AYOTOLA SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>3 Suraju Odunuga Street, Off Baruwa Str, Sagamu</td>
+        <td></td>
+        <td></td>
+        <td>SAGAMU</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>VICTORIA MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>Morogbo Agbara, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>AGBARA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>LAFIYA MEDICAL CENTER</td>
+        <td></td>
+        <td>No 6 Olanode Street Ayetoro Garage, Abeokuta</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>SOREMEKUN MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>127 Lagos-Abeokuta Rd, Vespa B/Stop, Ifon</td>
+        <td></td>
+        <td></td>
+        <td>IFON</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>AGBARA MEDICAL CENTRE</td>
+        <td></td>
+        <td>1B Adigbogbo Str Jide, Agbara</td>
+        <td></td>
+        <td></td>
+        <td>AGBARA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>ALPHA CLINIC</td>
+        <td></td>
+        <td>3 Catholic Church Str., Ajegunle Olororo Aiyegbami, Sagamu</td>
+        <td></td>
+        <td></td>
+        <td>SAGAMU</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>OWOKONIRAN MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>3 Owokoniran Street, Makun Station, Sagamu</td>
+        <td></td>
+        <td></td>
+        <td>SAGAMU</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>BISOYEGBOYE MEDICAL CENTRE</td>
+        <td></td>
+        <td>No 1B Taiwo Str, Makun, Sagamu</td>
+        <td></td>
+        <td></td>
+        <td>SAGAMU</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>LANIK MEDICAL CENTRE</td>
+        <td></td>
+        <td>No 5 Imoru Str Ijebu-Ode</td>
+        <td></td>
+        <td></td>
+        <td>IJEBU-ODE</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>NAVAL SICK BAY</td>
+        <td></td>
+        <td>Abeokuta, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>ITUNU HOSPITAL</td>
+        <td></td>
+        <td>48 Tinubu Street Itezko Abeoukuta</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>FARAMED CLINICS</td>
+        <td></td>
+        <td>37 Akinwunmi Street Joji Rd. Ota</td>
+        <td></td>
+        <td></td>
+        <td>OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>KROWNFIT MEDICAL CENTRE</td>
+        <td></td>
+        <td>Km 7 Idiroko Road Sango ,Ota</td>
+        <td></td>
+        <td></td>
+        <td>OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>ARISET MEDICAL CENTRE & VENT</td>
+        <td></td>
+        <td>6 Akunleyon Street Ota</td>
+        <td></td>
+        <td></td>
+        <td>OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>RUBEE MEDICAL CENTRE LTD</td>
+        <td></td>
+        <td>Km 38 Abeokuta Motor Road, Sango, Ota</td>
+        <td></td>
+        <td></td>
+        <td><SANGO-OTA></SANGO-OTA></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>OLUWALOGBON MEDICAL CENTER </td>
+        <td></td>
+        <td>Ifelodun Qtrs. Atan Ota</td>
+        <td></td>
+        <td></td>
+        <td>ATAN OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>MULIB HOSPITAL</td>
+        <td></td>
+        <td>57 Ijoko Motor Road, Sango Ota</td>
+        <td></td>
+        <td></td>
+        <td>SANGO OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>IBUKUN CLINICS</td>
+        <td></td>
+        <td>1 Agunloye Street, Otta</td>
+        <td></td>
+        <td></td>
+        <td>OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>KOLADE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>68 Idiroko Road, Sango Ota</td>
+        <td></td>
+        <td></td>
+        <td>SANGO-OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>OTA SPECIALIST HOSPITAL LTD</td>
+        <td></td>
+        <td>67 Idiroko Road, Ota</td>
+        <td></td>
+        <td></td>
+        <td>OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>FEDERAL POLYTECHNIC MEDICAL CENTRE</td>
+        <td></td>
+        <td>Ilaro, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>ILARO</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>UNIVERSITY OF AGRIC HEALTH CENTRE</td>
+        <td></td>
+        <td>Abeokuta, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>DIAMOND CROSS MEDICAL CENTRE</td>
+        <td></td>
+        <td>36 Okejigbo Rd, Iporo Ake, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>IPORO AKE</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>JESUS IS LOVE & POWER HOSPITAL</td>
+        <td></td>
+        <td>St. Mary''s Catholic Church Area Alaja, Ifon</td>
+        <td></td>
+        <td></td>
+        <td>IFON</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>MEDYTOP SPECIALIST CLINIC</td>
+        <td></td>
+        <td>3 Ejimo Alebiosu Str, Isale Ijagba Sagamu</td>
+        <td></td>
+        <td></td>
+        <td>SAGAMU</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>ORE-OFE CLINIC</td>
+        <td></td>
+        <td>88A Ejirin Rd Ijebu-Ode, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>IJEBU-ODE</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>SACRED HEART HOSPITAL</td>
+        <td></td>
+        <td>Lantoro Abeokuta, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>HOSSANA SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>LEAD HOSPITAL</td>
+        <td></td>
+        <td>6 Fashola Street off Pipeline Road, Behind Mountain of Fire Church, Asore-Ajuwon</td>
+        <td></td>
+        <td></td>
+        <td>ASORE-AJUWON</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>OLABISI ONABANJO UNIVERSITY TEACHING HOSPITAL</td>
+        <td></td>
+        <td>Shagamu, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>SHAGAMU</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>ADEYEMI MEDICAL CENTRE</td>
+        <td></td>
+        <td>4 Muri Abiola Street, Agbado Station</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>AKOBI SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Plot 5, Blk vw, Molipa Community layout, Ijebu-Ode</td>
+        <td></td>
+        <td></td>
+        <td>IJEBU-ODE</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>CORNERSTONE HOSPITAL</td>
+        <td></td>
+        <td>Beside Akute Grammar School, Akute</td>
+        <td></td>
+        <td></td>
+        <td>AKUTE</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>BISTED MEDICAL CLINIC & MATERNITY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>ST SHILO MEDICAL CENTRE</td>
+        <td></td>
+        <td>35 Olujimi Fashola Street off Ilo Awele Road, Toll Gate, Ota</td>
+        <td></td>
+        <td></td>
+        <td>OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>AMAZING GRACE HOSPITAL</td>
+        <td></td>
+        <td>7 Iloro Street, Off New Road, Ijebu-Ode</td>
+        <td></td>
+        <td></td>
+        <td>IJEBU-ODE</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>FIRST ALPHA MEDICAL CENTRE</td>
+        <td></td>
+        <td>Kuforiji Olubi Drive, Adigbe, Abeokuta</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>REDEMPTION HOSPITAL</td>
+        <td></td>
+        <td>Opp Deeper Life Camp, off Major Thompson, Sabo, Sagamu</td>
+        <td></td>
+        <td></td>
+        <td>SHAGAMU</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>J-PILLAR CLINIC & MATERNITY</td>
+        <td></td>
+        <td>8 Iyana Iyesi Junction, Iyana Iyesi, Ota</td>
+        <td></td>
+        <td></td>
+        <td>OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>BEACHLAND SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>STRONG TOWER HOSPITAL</td>
+        <td></td>
+        <td>Oke Aro Road, Agbado</td>
+        <td></td>
+        <td></td>
+        <td>AGBADO</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>BABCOCK UNIVERSITY MEDICAL CENTRE</td>
+        <td></td>
+        <td>Ilisan Remo, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>ILISAN REMO</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>QUEEN`S HOSPITAL</td>
+        <td></td>
+        <td>Poly Exp Road, Ilaro</td>
+        <td></td>
+        <td></td>
+        <td>ILARO</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>FIRST CONTACT HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>33B, Kuto Road, Behind Yemi-Ola Executive Stores, Abeokuta, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>ABEOKUTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>HERITAGE HOSPITAL SERVICES</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>STATE HOSPITAL OTA,</td>
+        <td></td>
+        <td>Ota, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td>OTA</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>IYANIWURA SPECILAIST HOSPITAL</td>
+        <td></td>
+        <td>I Olujobi Falana close, Behind AP filling station, Mowe town, Sagamu, Ogun state</td>
+        <td></td>
+        <td></td>
+        <td>SHAGAMU</td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>GOD'S HOPE HOSPITAL LIMITED</td>
+        <td></td>
+        <td>3/8, Apene Street, off Adigbe road, Adigbe, Abeokuta, Ogun State</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>BROADLAND HOSPITAL SERVICE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>ACCESS MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>PILLARS SPECIALIST CLINIC</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>CONCISE HEALTH CARE LTD</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>DE-GREEN PEARL HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>OJUGBELE SPECIALIST  HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>STATE HOSPITAL ISARA-REMO</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>LIFE BUILDERS HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>ABUNDANT LIFE HOSPITAL LTD</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>BELLS UNIVERSITY OF TECHNOLOGY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>MEDICPLUS HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>PROMISE MEDICAL CENTRE LTD</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>SURE MERCY HOSPITAL LIMITED</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td> DAVEROSE HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OGUN</td>
+    </tr>
+    <tr>
+        <td>HOPE MEDICAL CENTRE & MATERNITY HOSPITAL</td>
+        <td></td>
+        <td>Oyan Road, Ila-Orangun</td>
+        <td></td>
+        <td></td>
+        <td>ILA-ORANGUN</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>OLUNIFE HOSPITAL</td>
+        <td></td>
+        <td>Ile Ife, Osun</td>
+        <td></td>
+        <td></td>
+        <td>ILE-IFE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>STATE HOSPITAL, IWO</td>
+        <td></td>
+        <td>Iwo, Osun</td>
+        <td></td>
+        <td></td>
+        <td>IWO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>MOJISOLA MEDICAL CENTRE</td>
+        <td></td>
+        <td>No.5 Bibilari Avenue,Oke-Omi Iru, Osogbo Rd, Ilesha</td>
+        <td></td>
+        <td></td>
+        <td>ILESHA</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>IBUKUN OLU HOSPITAL</td>
+        <td></td>
+        <td>Obaagun, Osogbo</td>
+        <td></td>
+        <td></td>
+        <td>OSHOGBO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>BIKET MEDICAL CENTRE</td>
+        <td></td>
+        <td>Off Kuyi Square, Osogbo-Ikirun Road</td>
+        <td></td>
+        <td></td>
+        <td>OSHOGBO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>ADEBARE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Gbongan Road Osogbo</td>
+        <td></td>
+        <td></td>
+        <td>OSHOGBO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>LADOKE AKINTOLA TEACHING HOSPITAL</td>
+        <td></td>
+        <td>Osogbo, Osun</td>
+        <td></td>
+        <td></td>
+        <td>OSHOGBO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>ABAKE MEDICAL CENTRE</td>
+        <td></td>
+        <td>Odiolowo, Osogbo</td>
+        <td></td>
+        <td></td>
+        <td>OSHOGBO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>OROKI HOSPITAL</td>
+        <td></td>
+        <td>No. 32, Ayetoro Street, Old Ikirun Rd Osogbo</td>
+        <td></td>
+        <td></td>
+        <td>OSHOGBO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>OBAFEMI AWOLOWO TEACHING HOSPITAL</td>
+        <td></td>
+        <td>Ile-Ife/Ilesha, Osun</td>
+        <td></td>
+        <td></td>
+        <td>ILE-IFE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>ADENLE MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>Ilesha, Osun</td>
+        <td></td>
+        <td></td>
+        <td>ILE-IFE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>OBAFEMI AWOLOWO UNIVERSITY HEALTH CENTRE</td>
+        <td></td>
+        <td>Ile-Ife, Osun State</td>
+        <td></td>
+        <td></td>
+        <td>ILE-IFE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>ONWARD SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Agunbelewo Ilobu Road, Oshogbo</td>
+        <td></td>
+        <td></td>
+        <td>OSHOGBO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>MODUPE MEDICAL CENTRE</td>
+        <td></td>
+        <td>Oke Ola Apomu,Near Ayedaade Grammar School, Ikire, Osun State</td>
+        <td></td>
+        <td></td>
+        <td>IKIRE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>POLICE CLINICS, OSUN</td>
+        <td></td>
+        <td>Osun State</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>FEDERAL POLYTECHNIC MEDICAL CENTRE</td>
+        <td></td>
+        <td>Ede North, Osun State</td>
+        <td></td>
+        <td></td>
+        <td>EDE NORTH</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>SEVENTH DAY ADVENTIST HOSPITAL</td>
+        <td></td>
+        <td>LAGERE RD,ILE-IFE</td>
+        <td></td>
+        <td></td>
+        <td>ILE-IFE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>OUR LADY OF FATIMA CATHOLIC HOSPITAL</td>
+        <td></td>
+        <td>ODI-OLOWO,OSOGBO</td>
+        <td></td>
+        <td></td>
+        <td>OSHOGBO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>TITILOPE MEDICAL CENTRE</td>
+        <td></td>
+        <td>92A MORE OPP POLICE BARRACKS ILE IFE</td>
+        <td></td>
+        <td></td>
+        <td>ILE-IFE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>AL-AMEEN MEDICAL CENTRE</td>
+        <td></td>
+        <td>OKE-BOLA , GBONGAN</td>
+        <td></td>
+        <td></td>
+        <td>GBONGAN</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>RONBAY HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>TALAFIA IMAM STR, BEHIND FED. POLY EDE</td>
+        <td></td>
+        <td></td>
+        <td>EDE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>ST. VICTORIA SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>OPP NTA MOKURO RD, ILE-IFE</td>
+        <td></td>
+        <td></td>
+        <td>ILE-IFE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>ST. JUDE`S HOSPITAL</td>
+        <td></td>
+        <td>OFF FATIMA COLLEGE RD, LAAKOSIN IKIRE</td>
+        <td></td>
+        <td></td>
+        <td>IKIRE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>OUR LADY OF LOURDES CATHOLIC HOSPITAL</td>
+        <td></td>
+        <td>Parde Road, Ipetumodu</td>
+        <td></td>
+        <td></td>
+        <td>IPETUMODU</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>ANU OLUWA HOSPITAL</td>
+        <td></td>
+        <td>Off Council Road, Isale Imole Area, Ilobu</td>
+        <td></td>
+        <td></td>
+        <td>ILOBU</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>MORNING STAR MEDICAL CENTRE</td>
+        <td></td>
+        <td>10, Oyetunde Street, Alekuwodo,  Osogbo</td>
+        <td></td>
+        <td></td>
+        <td>OSOGBO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>APEX MEDICAL CENTRE</td>
+        <td></td>
+        <td>133 Ibadan Road, Ile Ife</td>
+        <td></td>
+        <td></td>
+        <td>ILE-IFE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>BOWEN UNIVERSITY HEALTH CENTR</td>
+        <td></td>
+        <td>Iwo, Osun</td>
+        <td></td>
+        <td></td>
+        <td>IWO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>LIVING HOPE HOSPITAL</td>
+        <td></td>
+        <td>Parakin obalufe Layout, Osun state</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>ANU-OLU HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>1, Alh Wahab Salami Str, Agip Area, Ede</td>
+        <td></td>
+        <td></td>
+        <td>EDE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>SPRING HOPE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Spring House, Old Ikirun Road, Oshogbo, Osun State</td>
+        <td></td>
+        <td></td>
+        <td>OSHOGBO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>EMMANUEL MEDICAL CENTRE</td>
+        <td></td>
+        <td>8 Deborah Oladogun Street Oshogbo</td>
+        <td></td>
+        <td></td>
+        <td>OSHOGBO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>TITILOPE MEDICAL CENTRE</td>
+        <td></td>
+        <td>Jaleoyemi Street, Off Station Road, Ikirun, Osun State</td>
+        <td></td>
+        <td></td>
+        <td>IKIRE</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>VICTORY POINT HOSPITAL</td>
+        <td></td>
+        <td>Ojoda New Town, Ile- idande, Osogbo, Osun State.</td>
+        <td></td>
+        <td></td>
+        <td>OSHOGBO</td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>ULTIMATE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>LIVING HOPE MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>IYIOLA HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>GOODNESS AND MERCY SPECIALIST</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>CRYSTAL CROSS SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>OLANREWAJU MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>OSUN STATE UNIVERSITY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>OSOGBO CENTRAL HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>ALIVE MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OSUN</td>
+    </tr>
+    <tr>
+        <td>UNIVERSITY COLLEGE HOSPITAL</td>
+        <td></td>
+        <td>Ibadan, Oyo State</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>TOBI MEDICAL CENTRE LTD.</td>
+        <td></td>
+        <td>57/453 Felele Layout, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>MOLLY SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>18, Iwo Road Idiape Junction, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>BADEJOKO MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>Oremeji Mokola Opp. Premier, Hotel Junction, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>WELFARE HOSPITAL LTD.</td>
+        <td></td>
+        <td>Old Ife Road Newgbagi, Market Area, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>GOLD CROSS MEDICAL CLINIC</td>
+        <td></td>
+        <td>36, Oje-Adeoye-Oje Road, Yemetu, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>J. RAPHA HOSPITAL</td>
+        <td></td>
+        <td>No. 6, Aare Avenue New Bodija, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ADEOYE MEMORIAL SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Nw/ 4/185 George Street, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>MOBOLAJI HOSPITAL</td>
+        <td></td>
+        <td>43, Obafemi Awolowo Way, Oke-Bola, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>LANARK SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Sw9/1423, State Hospital Road, Ring Road Area, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>CHRISTUS SPECIAL HOSPITAL</td>
+        <td></td>
+        <td>Zion Building, Kayode Obenbe, Crescent, New Ire Road, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>THE VINE HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>Block 10 Plot 24, Alafin Avenue, Oluyole Extension, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>FEMI SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>7, Bcos Road Basorun, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>TEJU SPECIALIST HOSPITAL ANNEX</td>
+        <td></td>
+        <td>Oyo-Ogbomosho Road,Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>KEJIDE SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Sw 9/704a Elewure Str., Challenge, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>MAK CLINIC</td>
+        <td></td>
+        <td>By Alma Guest House Junction, Opp. Nitel New Bodija, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ALAFIA HOSPITAL</td>
+        <td></td>
+        <td>Mokola, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>TEJU SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>6 Alh. Animasaun Street, Ring Road, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>TOUN MEMORIAL SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Km 1/2 New Life Road, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>DORJIL HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>Abidokun Close Police Molete, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>LAD MEDICAL CENTRE</td>
+        <td></td>
+        <td>1 Lad Hospital Road, Beside Police Barracks, Orita Challenge, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>AL-HAYYU HOSPITAL</td>
+        <td></td>
+        <td>Saw-Mill Ife Road, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>SAINT CHRISTOPHER'S HOSPITAL</td>
+        <td></td>
+        <td>10, Okeremi Street, Off Shobande Ave. Oremeji, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ASVON HOSPITAL</td>
+        <td></td>
+        <td>Km 11/4 Opp. New  Gbagi Market, New Life Road, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>LAFIA HOSPITAL</td>
+        <td></td>
+        <td>Sw 9/960 Abeokuta Road, Apata, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>MEDICAL PRACTITIONERS SERVICES</td>
+        <td></td>
+        <td>Mokola Roundabout, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>BETA-LIFE HOSPITAL</td>
+        <td></td>
+        <td>14, Popoola Yemoja Street, Off Awolowo Avenue, Oke Ado, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>HIGHLAND SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>The House Of Hearing, Adeoyo Hospital Road, Yemetu, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ST. MARY`S CATHOLIC GENERAL HOSPITAL</td>
+        <td></td>
+        <td>Eleta, Ibadan, Oyo State</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>DOMINIC HOSPITALAND MATERNITY</td>
+        <td></td>
+        <td>7 Up Bus-Stop Monatani, Agodi, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>SKYLINE SPECIALIST CLINIC</td>
+        <td></td>
+        <td>14, Olalekan Alabi Close, Off Abayomi Bus Stop, Iwo Road, Ibadan, Oyo State</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>BAPTIST HOSPITAL</td>
+        <td></td>
+        <td>Oyo, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>FIDITI GENERAL HOSPITAL</td>
+        <td></td>
+        <td>Yemoja Area, Fiditi</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>OYIN SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Airport Road, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>2 DIV HOSPITAL</td>
+        <td></td>
+        <td>Adekunle Fajuyi Cantonment, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>NAF MEDICAL CENTRE</td>
+        <td></td>
+        <td>NAF Air Force Comp Sec. Sch. Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>MUSLIM HOSPITAL</td>
+        <td></td>
+        <td>Afote Road, Shaki</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>IRETI OLUWA HOSPITAL</td>
+        <td></td>
+        <td>Kajola Saw-Mill, Apake, Ogbomosho</td>
+        <td></td>
+        <td></td>
+        <td>SHAKI</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>GENERAL HOSPITAL, ISEYIN</td>
+        <td></td>
+        <td>Iseyin, Oyo State.</td>
+        <td></td>
+        <td></td>
+        <td>OGBOMOSO</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>OUR LADY CATHOLIC HOSPITAL</td>
+        <td></td>
+        <td>Iseyin, Oyo State.</td>
+        <td></td>
+        <td></td>
+        <td>ISEYIN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ADEOYO MATERNITY HOSPITAL</td>
+        <td></td>
+        <td>Yemetu Road, Ibadan.</td>
+        <td></td>
+        <td></td>
+        <td>ISEYIN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>RING ROAD HOSPITAL</td>
+        <td></td>
+        <td>Ring Road, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>JERICO GENERAL HOSPITAL</td>
+        <td></td>
+        <td>Magazine Road, Jerico, Ibadan.</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>STATE HOSPITAL, OYO</td>
+        <td></td>
+        <td>Oyo, Oyo State</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>STATE HOSPITAL, OGBOMOSO</td>
+        <td></td>
+        <td>Ogbomosho, Oyo State.</td>
+        <td></td>
+        <td></td>
+        <td>OGBOMOSO</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>STATE HOSPITAL, SAKI</td>
+        <td></td>
+        <td>Saki, Sango Road, Ibadan, Oyo State</td>
+        <td></td>
+        <td></td>
+        <td>SAKI</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>BAPTIST MEDICAL CENTRE, SAKI</td>
+        <td></td>
+        <td>Ajegunle Area, Saki, Oyo State</td>
+        <td></td>
+        <td></td>
+        <td>SAKI</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>JERICO NURSING HOME</td>
+        <td></td>
+        <td>Magazine Road, Ibadan.</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>COTTAGE HOSPITAL/COMPREHENSIVE</td>
+        <td></td>
+        <td>Oyo Police Command, Ibadan, Oyo State</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>UNITY MEDICAL CENTRE</td>
+        <td></td>
+        <td>31 Eleyele Rd Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>MOMMOH MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>Idi-Ope Oyo</td>
+        <td></td>
+        <td></td>
+        <td>IDI-OPE</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>NEW DAY HOSPITAL</td>
+        <td></td>
+        <td>Behind Hosanna Joe Restuarant Off Ibadan-Lagos Express Rd Owode-Academy Area, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>FAITH MEDICAL HOSPITAL</td>
+        <td></td>
+        <td>No. 40 Nitel Rd, Ogbomosho Oyo State</td>
+        <td></td>
+        <td></td>
+        <td>OGBOMOSO</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>SHEKINAH MEDICAL CENTRE</td>
+        <td></td>
+        <td>No.2 Bamgboshe Street Owode Oyo</td>
+        <td></td>
+        <td></td>
+        <td>OWODE</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>VICTORY MEDICAL CENTRE</td>
+        <td></td>
+        <td>House 4, Road 120,80,20, NW7 Poly-Eleyele Rd, Mosafejo B/Stop Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>VICTORIA MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>SHALOM MEDICAL CENTRE</td>
+        <td></td>
+        <td>Sabo Area Ogbomosho</td>
+        <td></td>
+        <td></td>
+        <td>OGBOMOSO</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>OLUWASEUN CLINIC & MATERNITY</td>
+        <td></td>
+        <td>Toye Ajagun Area NNPC Pipeline Okonlawo L/out Apata Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>DIVINE FAVOUR HOSPITAL</td>
+        <td></td>
+        <td>Iyana Church, Along Isebo Rd, Jinarere Bus stop, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ZOE SPECIALIST MISSION HOSPITAL</td>
+        <td></td>
+        <td>No.4 Adeogun Str., Oluyele Estate, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>CONTINENTAL MEDICAL CENTRE</td>
+        <td></td>
+        <td>S7/998A Engineer Adebajo Oshinbowale Close, Challenge Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>NAF DETACHMENT MEDICAL CENTRE</td>
+        <td></td>
+        <td>Ibadan, Oyo State</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>BOWEN UNIVERSITY TEACHING HOSPITAL</td>
+        <td></td>
+        <td>Ogbomosho, Oyo State</td>
+        <td></td>
+        <td></td>
+        <td>OGBOMOSO</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>CATHOLIC HOSPITAL, OLUYORO</td>
+        <td></td>
+        <td>Oluyoro, Ibadan, Oyo State</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>UNIVERSITY OF IBADAN HEALTH SERVICES</td>
+        <td></td>
+        <td>Ibadan, Oyo State</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>BETHEL SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>AGGREY HOSPITAL</td>
+        <td></td>
+        <td>92 Yemetu Adeoyo Rd, Yemetu-Oja Bus Stop, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ARIYO MEDICAL CENTRE</td>
+        <td></td>
+        <td>57/57B Oba Abimbola Rd, Felele, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>BANBY SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>Plot 11, Blk XLII, Akobo Estate, Olorunda-Abaa Rd, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>COMFORT MEDICAL CENTRE</td>
+        <td></td>
+        <td>10, Lakanmi Close to Toatle Garden, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>UNIVERSITY HEALTH SERVICE JAJA</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>DOCTORS POLYCLINIC</td>
+        <td></td>
+        <td>12 AKINTOLA STR, AGBOWO U.I IBADAN</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>IBADAN CENTRAL HOSPITAL</td>
+        <td></td>
+        <td>OSOSAMI RD, OFF RING RD, IBADAN</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>FORTUNE HOSPITAL & DENTAL CENTRE</td>
+        <td></td>
+        <td>32 MKO ABIOLA WAY , RING RD, IBADAN, ANFANI ROUNDABOUT</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>HERITAGE COMPREHENSIVE HOSPITAL</td>
+        <td></td>
+        <td>57 ANFANI RD, RING RD, IBADAN</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>MERCYLAND HOSPITAL</td>
+        <td></td>
+        <td>OPP. NEW GBAGI MARKET NEW IFE RD,IBADAN</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>SHALOM GROUP MEDICAL CENTRE</td>
+        <td></td>
+        <td>Aboderin Close, Agbaje Orita Challenge, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>CROWN HOSPITAL</td>
+        <td></td>
+        <td>SW 9/1147A AGBAJE B/STOP, ORITA CHALLENGE,IBADAN</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>PEAMAK HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>Alalubosa Road Oyo</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>SANTHOS HOSPITAL</td>
+        <td></td>
+        <td>Odedele Odeleke Street, Challenge, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>TZ HOSPITALAND MATERNITY</td>
+        <td></td>
+        <td>AGBAKIN LAYOUT BEHIND MR BIGGS IWO RD,IBADAN</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>FOREMOST BASE HOSPITAL LIMITED</td>
+        <td></td>
+        <td>1 Rufai Street N6A/958 Coca Cola Area, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ST MARELLO CATHOLIC HOSPITAL</td>
+        <td></td>
+        <td>Opere Village, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>IYE HOSPITAL LTD</td>
+        <td></td>
+        <td>22 Osibodu Layout Lagos/Ibadan Express Road, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>SAMRON MEDICAL CENTRE</td>
+        <td></td>
+        <td>62 Adebiyi Street, Joyce - B Road off Ring Road Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ST DOMINIC CATHOLIC HOSPITAL</td>
+        <td></td>
+        <td>Ogungbade Village, New Ife Road, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>IMMACULATE HOSPITAL</td>
+        <td></td>
+        <td>23 Odutola Road Off Ososami Road, Oke Ado, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>MUSLIM UMMAH HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>BETA LIFE HOSPITAL</td>
+        <td></td>
+        <td>6 Adegbite Street, Agbowo, University of Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>BEATRICE MEDICAL CENTRE</td>
+        <td></td>
+        <td>16 Bode Kumapaiji Street, Off Iwo Road, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>CHRIST HOPE HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td>59 Ijaye Road, Moniya, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>DUROJAIYE MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>7 Animashaun Street near Muslim Grammar School, Odinjo, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>OLUWAYOMI HOSPITAL</td>
+        <td></td>
+        <td>3 Oyeniwe Street, Olorombo,  Bashorun, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>VINE BRANCH MATERNITY & INFANT HOSPITAL</td>
+        <td></td>
+        <td>Plot 4, Block 5, Road 302 Agodi GRA, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>OPABODE MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td>Oke Oroki, Oyo</td>
+        <td></td>
+        <td></td>
+        <td>OKE OKORI</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>STANNE`S SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td>#9, Moremi Rd, off Aare Avenue, Bodija, Ibadan</td>
+        <td></td>
+        <td></td>
+        <td>IBADAN</td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>NAOMI MEDICAL CENTRE</td>
+        <td></td>
+        <td>3, Araromi Lane, Beside Daily Times Office, Oke Padre, Ibadan, Oyo State</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>LEAD CITY UNIVERSITY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>COLLEGE MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>THE ISSACHAR MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>REDEEMER'S HEALTH CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>AGUGU CENTRAL HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>THE ROCK MEDICAL SERVICESE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ZENITH HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>KING'S WAY INTERNATIONAL HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>GOD'S KNOT HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>JUBILEE HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>AYOKEMI HOSPITAL & ULTRASOUND</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>LADOKE AKINTOLA UNIVERSITY OF T</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>LADOKE AKINTOLA UNIVERSITY OF T</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>PAULINE CANADIAN HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>TRIOSES MEMORIAL HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>PATNAS SPECIALIST HOSPITAL </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>BISMO MEDICAL CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ADENIYI MEMORIAL HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>WEST WIND HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>MOBOLAJI HOSPITAL MATERNITY </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ROYAL HOSPITAL & MATERNITY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>MAINSPRING HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>LADOKE AKINTOLA UNIVERSITY OF TECHNOLOGY</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>OYO MESI SPECIALIST HOSPITAL</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+
+    <tr>
+        <td>TRI-STATE HEALTHCARE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+    <tr>
+        <td>ZENITH CARE HOSPITAL & FERTILITY CENTRE</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>OYO</td>
+    </tr>
+</tbody>
+</table>
+<!--		Start Pagination -->
+<div class='pagination-container' >
+ <nav>
+    <ul class="pagination" style="list-style: none;">
+    <li data-page="prev" >
+        <span> << <span class="sr-only">(current)</span></span>
+    </li>
+<!--	Here the JS Function Will Add the Rows -->
+    <li data-page="next" id="prev">
+        <span> >> <span class="sr-only">(current)</span></span>
+    </li>
+    </ul>
+ </nav>
+</div>
+</div> <!-- 		End of Container -->
+</section>
+</main>
+<!--this is the footer section with contact information and links-->
+<section class="footer"> 
+  <div class="footer-top">       
+    <div class="row1">
+      <div class="col">       
+        <h3 class="footer-title">Healthcare Plans</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="individualplan.html">Individual Plans</a></li>       
+          <li><a class="footer-text-3" href="familyplan.html">Family Plans</a></li>       
+          <li><a class="footer-text-3" href="corporateplan.html">Corporate Plans</a></li>      
+          <li><a class="footer-text-3" href="customizedplan.html">Customized Plans</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">       
+        <h3 class="footer-title">Recources</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="enrollment.html">Enrollment</a></li>       
+          <li><a class="footer-text-3" href="download.html">Downloads</a></li>       
+          <li><a class="footer-text-3" href="faqs.html">Frequently Asked Questions</a></li>      
+          <li><a class="footer-text-3" href="career.html">Career</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">
+        <h3 class="footer-title">Quick Links </h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="outline.html">About Us</a></li>       
+          <li><a class="footer-text-3" href="policy.html">Privacy Policy</a></li>
+          <li><a class="footer-text-3" href="terms.html">Terms & Conditions</a></li>
+          <li><a class="footer-text-3" href="contact.html">Contact Us</a></li>       
+        </ul>           
+      </div>         
+    </div>    
+  </div>     
+<div class="row3">
+<div class="col3-3">
+<div class="copyright-text" style="font-size: 18px; margin-top: 0.5em; float: left;">© 2022 Songhai Health Trust Limited. All rights reserved.
+</div>
+</div>
+<div class="col3-3">
+<div class="media" style="float: right;">
+    <a href="https://play.google.com/store/search?q=songhai+hmo&c=apps&hl=en&gl=US"><img src="images/log.jpg"></a>
+    <a href="mailto:info@songhaihealthtrust.com"><img src="images/mail.png"></a>
+  <a href="https://www.linkedin.com/login"><img src="images/linkedin1.png"></a>
+  <a href="https://www.facebook.com/songhaihealth/"><img src="images/face.jpg"></a>
+  <a href="https://mobile.twitter.com/songhaihealth"><img src="images/tweet.jpg"></a>
+  <a href="https://www.instagram.com/p/CdDdbxhtbK1/?igshid=YTgzYjQ4ZTY%3D"><img src="images/insta.jfif"></a>
+</div>
+</div>
+</div>
+</section> 
+<script>
+ getPagination('#table-id');
+					//getPagination('.table-class');
+					//getPagination('table');
+
+		  /*					PAGINATION 
+		  - on change max rows select options fade out all rows gt option value mx = 10
+		  - append pagination list as per numbers of rows / max rows option (20row/10= 2pages )
+		  - each pagination li on click -> fade out all tr gt max rows * li num and (10*pagenum 2 = 20 rows)
+		  - fade out all tr lt max rows * li num - max rows ((10*pagenum 2 = 20) - 5)
+		  - fade in all tr between (maxRows*PageNum) and (maxRows*pageNum)- MaxRows 
+		  */
+		 
+
+function getPagination(table) {
+  var lastPage = 1;
+
+  $('#maxRows')
+    .on('change', function(evt) {
+      //$('.paginationprev').html('');						// reset pagination
+
+     lastPage = 1;
+      $('.pagination')
+        .find('li')
+        .slice(1, -1)
+        .remove();
+      var trnum = 0; // reset tr counter
+      var maxRows = parseInt($(this).val()); // get Max Rows from select option
+
+      if (maxRows == 5000) {
+        $('.pagination').hide();
+      } else {
+        $('.pagination').show();
+      }
+
+      var totalRows = $(table + ' tbody tr').length; // numbers of rows
+      $(table + ' tr:gt(0)').each(function() {
+        // each TR in  table and not the header
+        trnum++; // Start Counter
+        if (trnum > maxRows) {
+          // if tr number gt maxRows
+
+          $(this).hide(); // fade it out
+        }
+        if (trnum <= maxRows) {
+          $(this).show();
+        } // else fade in Important in case if it ..
+      }); //  was fade out to fade it in
+      if (totalRows > maxRows) {
+        // if tr total rows gt max rows option
+        var pagenum = Math.ceil(totalRows / maxRows); // ceil total(rows/maxrows) to get ..
+        //	numbers of pages
+        for (var i = 1; i <= pagenum; ) {
+          // for each page append pagination li
+          $('.pagination #prev')
+            .before(
+              '<li data-page="' +
+                i +
+                '">\
+								  <span>' +
+                i++ +
+                '<span class="sr-only">(current)</span></span>\
+								</li>'
+            )
+            .show();
+        } // end for i
+      } // end if row count > max rows
+      $('.pagination [data-page="1"]').addClass('active'); // add active class to the first li
+      $('.pagination li').on('click', function(evt) {
+        // on click each page
+        evt.stopImmediatePropagation();
+        evt.preventDefault();
+        var pageNum = $(this).attr('data-page'); // get it's number
+
+        var maxRows = parseInt($('#maxRows').val()); // get Max Rows from select option
+
+        if (pageNum == 'prev') {
+          if (lastPage == 1) {
+            return;
+          }
+          pageNum = --lastPage;
+        }
+        if (pageNum == 'next') {
+          if (lastPage == $('.pagination li').length - 2) {
+            return;
+          }
+          pageNum = ++lastPage;
+        }
+
+        lastPage = pageNum;
+        var trIndex = 0; // reset tr counter
+        $('.pagination li').removeClass('active'); // remove active class from all li
+        $('.pagination [data-page="' + lastPage + '"]').addClass('active'); // add active class to the clicked
+        // $(this).addClass('active');					// add active class to the clicked
+	  	limitPagging();
+        $(table + ' tr:gt(0)').each(function() {
+          // each tr in table not the header
+          trIndex++; // tr index counter
+          // if tr index gt maxRows*pageNum or lt maxRows*pageNum-maxRows fade if out
+          if (
+            trIndex > maxRows * pageNum ||
+            trIndex <= maxRows * pageNum - maxRows
+          ) {
+            $(this).hide();
+          } else {
+            $(this).show();
+          } //else fade in
+        }); // end of for each tr in table
+      }); // end of on click pagination list
+	  limitPagging();
+    })
+    .val(10)
+    .change();
+
+  // end of on select change
+
+  // END OF PAGINATION
+}
+
+function limitPagging(){
+	// alert($('.pagination li').length)
+
+	if($('.pagination li').length > 7 ){
+			if( $('.pagination li.active').attr('data-page') <= 3 ){
+			$('.pagination li:gt(5)').hide();
+			$('.pagination li:lt(5)').show();
+			$('.pagination [data-page="next"]').show();
+		}if ($('.pagination li.active').attr('data-page') > 3){
+			$('.pagination li:gt(0)').hide();
+			$('.pagination [data-page="next"]').show();
+			for( let i = ( parseInt($('.pagination li.active').attr('data-page'))  -2 )  ; i <= ( parseInt($('.pagination li.active').attr('data-page'))  + 2 ) ; i++ ){
+				$('.pagination [data-page="'+i+'"]').show();
+
+			}
+
+		}
+	}
+}
+$(function() {
+  // Just to append id number for each row
+  $('table tr:eq(0)').prepend('<th> ID </th>');
+
+  var id = 0;
+
+  $('table tr:gt(0)').each(function() {
+    id++;
+    $(this).prepend('<td>' + id + '</td>');
+  });
+});
+</script>   
+</body>
+</html>

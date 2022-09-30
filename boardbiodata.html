@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--tittle>Songhai Health Trust Management Team Template Page</tittle-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Songhai Health Trust Limited</title>
+        <link href="https://fonts.googleapis.com/css?family=Bolded Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <script scr="index.js" type="text/javascript" defer></script>
+        <style>
+body {
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  width: 100%;
+  height: 75%;
+  top: 15%;
+  bottom: 10%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: none;
+}
+/* for the website header.
+two image containers */
+.row {
+  width: 100%;
+  display: inline-block;
+}
+.column {
+  width: 350px;
+  float: left;
+  padding: none;
+  top: 0;
+  margin-top: 1em;
+  height: 100px; 
+}
+.column img {
+ background-color: white;
+ font-size: 22px;
+ width: 350px;
+ height: 100px;
+ bottom: 10%;
+ margin: 0;
+ margin-left: 20px;
+ vertical-align: top;
+}
+/*clears float after image container*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* styling the navigation bar */
+nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 10%;
+    height: 5%;
+    margin: none;
+    margin-bottom: 1em;
+}
+  .menu-btn {
+     background-color: white;
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     cursor: pointer;
+     border: none;
+   }
+  .menu-btn:hover {
+     background-color: none;
+  }
+  .links,
+  .links-hidden {
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     border: none;
+     text-decoration: none;
+  }
+  .links-hidden {
+      display: block;
+  }
+  .links:hover,
+  .links-hidden:hover {
+    background-color: white;
+  }
+   .dropdown-menu {
+     position: relative;
+     display: inline-block;
+   }   
+  .dropdown-menu:hover
+  .menu-content {
+    display: block;
+     background-color: none;
+  }  
+   .menu-content {
+     display: none;
+     position: absolute;
+     background-color: none;
+     min-width: 160px;
+     overflow: auto;
+     z-index: 1;
+   } 
+   .menu-content a {
+     color: #000080;
+     padding: 12px 16px;
+     text-decoration: none;
+     display:block;
+  }
+   .dropdown a:hover {
+     background-color: none;
+  }
+.show {
+     display: block;
+ }   
+
+/* Styling the Management Team Biodata page */
+.biodata-container {
+    overflow: hidden;
+    width: 90%;
+    bottom: 10%;
+    top: 15%;
+    margin-left: 5%;
+    background-color: none ;
+  }
+  .biodata-tittle {
+    color: #000080;
+    font-family: 'Cinzel';
+    font-size: 36px;
+    margin: 0;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    vertical-align: top;
+  }
+  .biodata-container  {
+    color: #000000;
+    margin: 0;
+    margin-left: 55px;
+    margin-bottom: 2em;
+    text-align: center;
+    vertical-align: top;
+  }
+  .board-tittle {
+    color: #000000;
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    line-height: 1;
+    font-weight: bold;
+    margin: 1px;
+    text-align: left;
+  }
+  .sub-tittle {
+    color: #000080;
+    font-family: 'Bolded Serif';
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+    margin: 1px;
+    text-align: left;
+  }
+  .wrapingimage-3 {
+   float: left;
+   background-color: white;
+   font-size: 22px;
+   width: 300px;
+   height: 300px;
+   line-height: 42px;
+   margin: 10px 10px;
+   margin-top: 3em;
+   vertical-align: left;
+  }
+  .wrapingimage-3 img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+   .biodata-container .biodata p {
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin: 1px;
+    text-align: left;
+  }
+
+/* the footer is fixed to the bottom of the page */
+.row1 {
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  height: 9%;
+  bottom: 1;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  background: #e6f2ef;
+  text-align: center;
+  vertical-align: top;
+  color: #000080;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-text-3:hover {
+  color: #ff8000;
+  transform: scale(1.08);
+}
+.col {
+  flex-basis: 30%;
+  box-sizing: border-box;
+  border: none;
+}
+.footer-title {
+  text-align: left;
+  margin-left: 2em;
+  margin-top: 3em;
+}
+.col h3 { 
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.footer-text-3 {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 20PX;
+}
+.footer-bottom {
+  width: 100%;
+  height: 1%;
+  bottom: 0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background: #fff;
+  text-align: center;
+  vertical-align: middle;
+  color: #333;
+}
+.row3 {
+  width: 100%;
+  display: inline;
+}
+.col3-3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 1em;
+}
+.copyright-text {
+  display: inline;
+  width: 50%;
+  margin-left: 0px;
+}
+.media {
+  display: inline;
+  width: 30%;
+}
+.media img {
+  display: inline;
+}
+.media img {
+  background-color: white;
+  color: none;
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  text-align: left;
+  margin: 10px 15px;
+  vertical-align: left;
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+        </style>
+    </head>
+<body>
+    <header>
+        <div class="row">
+            <div class="column" id="company-logo">
+                <img src="images/logo.jpeg" style="float: left">
+            </div>
+            <div class="column" id="contact-no" style="float: right; color: #000080; font-size: 36px; margin-left: 20px;">
+                +(234) 803-351-1011
+         </div>
+        </div>
+        <nav>
+            <div class="navbar">
+                <a class="links" href="index.html">Home</a>
+                <div class="dropdown-menu">
+                  <button onclick="plan-list" style="color: #008000;" class="menu-btn">About Us +</button>
+                  <div id="dropdown1" class="menu-content">
+                      <a class="links-hidden" href="outline.html">Outline</a>
+                      <a class="links-hidden" href="staffgallery.html">Staff </a>
+                  </div>
+                  </div>
+                <div class="dropdown-menu">
+                <button onclick="plan-list" class="menu-btn">Health Plans</button>
+                <div id="dropdown1" class="menu-content">
+                  <a class="links-hidden" href="individualplan.html">Individual</a>
+                  <a class="links-hidden" href="familyplan.html">Family</a>
+                  <a class="links-hidden" href="corporateplan.html">Corporate</a>
+                  <a class="links-hidden" href="customizedplan.html">Customized</a>
+              </div>
+              </div>
+              <div class="dropdown-menu">
+              <button onclick="resource-list" class="menu-btn">Resources +</button>
+              <div id="dropdown2" class="menu-content">
+                  <a class="links-hidden" href="gallery.html">Gallery</a>
+                    <a class="links-hidden" href="enrollment.html">Enrollment</a>
+                    <a class="links-hidden" href="download.html">Downloads</a>
+                    <a class="links-hidden" href="faqs.html">FAQ</a>
+                    <a class="links-hidden" href="career.html">Careers</a>
+                </div>
+                </div>
+                <a class="links" href="healthprovider.html">Health Providers</a>
+                <a class="links" href="login.html">Log In</a>
+                <a class="links" href="blog.html">Blog</a>
+            </div>
+        </nav>
+    </header> 
+    <main>
+        <h2 class="biodata-tittle" style="text-align: center;">SONGHAI HEALTH TRUST LIMITED BOARD OF DIRECTORS</h2>
+    <section class="biodata-container">
+        <div class="board-members">
+        <div class="wrapingimage-3">
+            <img src="#">
+        </div><br>
+           <div class="board-tittle">Dr. SHAMSUDEEN USMAN</div><br>
+           <div class="sub-tittle">CON (Chairman)</div><br>
+        <div class="biodata">
+            <P>A graduate of Ahmadu Bello University, Zaria where he obtained B.Sc. Economics.  
+              He holds M.Sc. & Ph.D Economics from London School of Economics and Political Science, United Kingdom.  
+              He has worked in Public Sector and served on several Boards. He was a member of the Federal Executive 
+              Council as Minister of Finance (2007-2009) and later Minister of National Planning (2009-2013).  
+              He was Deputy Governor, Central Bank of Nigeria (1999-2007) and Managing Director NAL Merchant Bank (1995-1999).
+              He is Chairman/CEO, Susman & Associates.  Currently, he is Chairman Board of Directors of Songhai Health Trust Limited.
+            </P>
+        </div>
+        </div>
+    </section>
+    <section class="biodata-container">
+        <div class="board-members">
+        <div class="wrapingimage-3">
+            <img src="images/MDs 1.jpg">
+        </div><br>
+           <div class="board-tittle">BELLO BAWA BWARI</div><br>
+           <div class="sub-tittle">MD/CEO</div><br>
+        <div class="biodata">
+            <P>He is trained lawyer, a businessman and a entrepreneur with over 15 years working experience. 
+              He holds a Bachelor's degree in Law from the prestigious Ahmadu Bello University, Zaria and a B.L from the Nigerian Law School. 
+              As part of his working experience, he has worked with several law firms and companies. 
+              These organizations include Kutigi& Co (Law Firm), Bwari, Akubuo& Associates, the National Assembly of Nigeria, the Irania Offshore Engineering and Construction Company (IOEC), 
+              chrome Oil Services Ltd, Rockline Infrastructures Ltd (EPC Construction), Visapoint Development Company Limited (FMCG Trading), ABMK & Co and Petro Trans-Ennikim JV Company.
+            </P>
+        </div>
+        </div>
+</section>
+<section class="biodata-container">
+    <div class="board-members">
+    <div class="wrapingimage-3">
+        <img src="#">
+    </div><br>
+       <div class="board-tittle">DAHIRU IBRAHIM</div><br>
+       <div class="sub-tittle">DIRECTOR</div><br>
+    <div class="biodata">
+        <P>A 1978 LLB graduate of Ahmadu Bello University, Zaria, Barrister Ibrahim is the Board's legal consultant, 
+            who also holds a 1982 Master of Laws degree from the University College, London.
+            He brings to the Board a wealth of experience on Administration and legal matters both from the Public 
+            and Private Sector perspectives.
+        </P>
+    </div>
+    </div>
+</section>
+<section class="biodata-container">
+    <div class="board-members">
+    <div class="wrapingimage-3">
+        <img src="#">
+    </div><br>
+       <div class="board-tittle">DR. BASHEER I. MOHAMMED</div><br>
+       <div class="sub-tittle">DIRECTOR</div><br>
+    <div class="biodata">
+        <P>A 1974 Biochemistry graduate of the famous University of Toronto, Canada. 
+          A Dental graduate who holds a post graduate certificate in Oral and Maxillofacial Surgery from Howard University, Washington D.C. 
+          He obtained an International Diploma in Safety Management from the British Safety Council and became a 
+          member of the International Institute of Risk and Safety Management (MIIRSM) in 2002. 
+          From 1981 to 2003, he worked in the Medical Services Division of the Nigerian National Petroleum Corporation (NNPC) and retired as General Manager. 
+          During the course of his employment with NNPC, he served as a Consultant Oral Surgeon to various organizations .
+          In 2004, he was appointed Managing Director of SONGHAI HEALTH TRUST LTD from which he retired in 2016.
+          He was appointed a member of Kano Emirate Council Committee on Health and Human Development (KECCOHHD) 
+          and the Emirate Council liaison on drug and substance abuse in 2002.
+          In November 2016, he was appointed as the Pioneer Chairman of the Board of Directors of the newly created 
+          Kano State Contributory Healthcare Management Agency (KSCHMA), a position he still holds.
+          </P>
+    </div>
+    </div>
+</section>
+<section class="biodata-container">
+    <div class="board-members">
+    <div class="wrapingimage-3">
+        <img src="#">
+    </div><br>
+       <div class="board-tittle">ABDULLAHI BAMANGA</div><br>
+       <div class="sub-tittle">DIRECTOR</div><br>
+    <div class="biodata">
+        <P>A 1986 graduate of Kaduna Polytechnic, Alhaji Bamanga is a business magnate who 
+          has made a carrier in the Maritime Industry. 
+          He has held several Board and Management positions in various private companies. 
+          He is currently the Managing Director (CEO) of TOKKE MARITIME SERVICES LTD. 
+          which is the holding company of TOKKE GROUP of Companies.
+        </P>
+    </div>
+    </div>
+</section>
+<section class="biodata-container">
+    <div class="board-members">
+    <div class="wrapingimage-3">
+        <img src="#">
+    </div><br>
+       <div class="board-tittle">PROFESSOR ABDULSALAMI NASIDI, OON</div><br>
+       <div class="sub-tittle">DIRECTOR</div><br>
+    <div class="biodata">
+        <P>He is a physician with more than 32 years of experience in clinical medicine, public health, 
+            virology, and the development of vaccines and biological products. 
+            He currently serves as the Director General of the Nigerian Centre for Disease Control (NCDC), 
+            Chair of the EchiTAb Study group, Nigeria/UK, and Chair/Executive Officer of the Reach Care Foundation, Nigeria.
+            Professor Nasidi earned his medical degree from Kalinin State Medical School, Tver, Russia, 
+            and his doctoral degree from the Ivanovsky Institute of Virology, Academy of Medical Sciences, Moscow, Russia. 
+            He did his post-doctoral and attachments at Institute Pasteur, Paris, F.I. Kimball Research Institute,
+            New York, Liberian Institute of Biomedical research and University of Berlin, Germany. 
+            He has authored more than 50 scientific publications and has been recognized by Nigeria with a national honor, 
+            Officer of the Order of the Niger (OON).
+            </P>
+    </div>
+    </div>
+</section>
+<section class="biodata-container">
+    <div class="board-members">
+    <div class="wrapingimage-3">
+        <img src="#">
+    </div><br>
+       <div class="board-tittle">ARCHITECT U. K. UMARU</div><br>
+       <div class="sub-tittle">DIRECTOR</div><br>
+    <div class="biodata">
+        <P>A 1983 graduate in Architecture from the former Soviet Union, Architect U.K. Umar has a lot of 
+            experience in business management. 
+            He holds a certificate in management and M.Sc. degree in Project Management from the University of Reading in England.
+            He is currently the Chief Executive Officer (CEO) of D&B Limited, a construction firm based in Abuja.
+        </P>
+    </div>
+    </div>
+</section>
+<section class="biodata-container">
+    <div class="board-members">
+    <div class="wrapingimage-3">
+        <img src="#">
+    </div><br>
+       <div class="board-tittle">ABDULKAREEM MOHAMMED SANI</div><br>
+       <div class="sub-tittle">DIRECTOR</div><br>
+    <div class="biodata">
+        <P>Director Representing, New Nigeria Development Company, NNDC
+            Mallam Abdulkareem M. Sani, presently the Assistant General Manager, 
+            Group Internal Audit of the New Nigeria Development Company (NNDC), 
+            obtained his B.sc Accountancy from the University of Maiduguri in 1994. 
+            He also obtained MBA in Business Administration from Ahmadu Bello University, Zaria in 2002. 
+            He severed in various establishments before joining the NNDC Limited Group in March 2001.
+        </P>
+    </div>
+    </div>
+</section>
+<section class="biodata-container">
+  <div class="board-members">
+  <div class="wrapingimage-3">
+      <img src="#">
+  </div><br>
+     <div class="board-tittle">MR FRIDAY AGBO</div><br>
+     <div class="sub-tittle">DIRECTOR</div><br>
+  <div class="biodata">
+      <P>
+
+      </P>
+  </div>
+  </div>
+</section>
+</main>
+<!--this is the footer section with contact information and links-->
+<section class="footer"> 
+  <div class="footer-top">       
+    <div class="row1">
+      <div class="col">       
+        <h3 class="footer-title">Healthcare Plans</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="individualplan.html">Individual Plans</a></li>       
+          <li><a class="footer-text-3" href="familyplan.html">Family Plans</a></li>       
+          <li><a class="footer-text-3" href="corporateplan.html">Corporate Plans</a></li>      
+          <li><a class="footer-text-3" href="customizedplan.html">Customized Plans</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">       
+        <h3 class="footer-title">Recources</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="enrollment.html">Enrollment</a></li>       
+          <li><a class="footer-text-3" href="download.html">Downloads</a></li>       
+          <li><a class="footer-text-3" href="faqs.html">Frequently Asked Questions</a></li>      
+          <li><a class="footer-text-3" href="career.html">Career</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">
+        <h3 class="footer-title">Quick Links </h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="outline.html">About Us</a></li>       
+          <li><a class="footer-text-3" href="policy.html">Privacy Policy</a></li>
+          <li><a class="footer-text-3" href="terms.html">Terms & Conditions</a></li>
+          <li><a class="footer-text-3" href="contact.html">Contact Us</a></li>       
+        </ul>           
+      </div>         
+    </div>    
+  </div>     
+<div class="row3">
+<div class="col3-3">
+<div class="copyright-text" style="font-size: 18px; margin-top: 0.5em; float: left;">© 2022 Songhai Health Trust Limited. All rights reserved.
+</div>
+</div>
+<div class="col3-3">
+<div class="media" style="float: right;">
+  <a href="https://play.google.com/store/search?q=songhai+hmo&c=apps&hl=en&gl=US"><img src="images/log.jpg"></a>
+  <a href="mailto:info@songhaihealthtrust.com"><img src="images/mail.png"></a>
+  <a href="https://www.linkedin.com/login"><img src="images/linkedin1.png"></a>
+  <a href="https://www.facebook.com/songhaihealth/"><img src="images/face.jpg"></a>
+  <a href="https://mobile.twitter.com/songhaihealth"><img src="images/tweet.jpg"></a>
+  <a href="https://www.instagram.com/p/CdDdbxhtbK1/?igshid=YTgzYjQ4ZTY%3D"><img src="images/insta.jfif"></a>
+</div>
+</div>
+</div>
+</section> 
+</body>
+</html>

@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--tittle>Songhai Health Trust Individual Health Care Plan Page</tittle-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Songhai Health Trust Limited</title>
+        <link href="https://fonts.googleapis.com/css?family=Bolded Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script scr="index.js" type="text/javascript" defer></script>
+        <style>
+ body {
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  width: 100%;
+  height: 75%;
+  top: 15%;
+  bottom: 10%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: none;
+}
+/* for the website header.
+two image containers */
+.row {
+  width: 100%;
+  display: inline-block;
+}
+.column {
+  width: 350px;
+  float: left;
+  padding: none;
+  top: 0;
+  margin-top: 1em;
+  height: 100px; 
+}
+.column img {
+ background-color: white;
+ font-size: 22px;
+ width: 350px;
+ height: 100px;
+ bottom: 10%;
+ margin: 0;
+ margin-left: 20px;
+ vertical-align: top;
+}
+/*clears float after image container*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* styling the navigation bar */
+nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 10%;
+    height: 5%;
+    margin: none;
+    margin-bottom: 1em;
+}
+  .menu-btn {
+     background-color: white;
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     cursor: pointer;
+     border: none;
+   }
+  .menu-btn:hover {
+     background-color: none;
+  }
+  .links,
+  .links-hidden {
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     border: none;
+     text-decoration: none;
+  }
+  .links-hidden {
+      display: block;
+  }
+  .links:hover,
+  .links-hidden:hover {
+    background-color: white;
+  }
+   .dropdown-menu {
+     position: relative;
+     display: inline-block;
+   }   
+  .dropdown-menu:hover
+  .menu-content {
+    display: block;
+     background-color: none;
+  }  
+   .menu-content {
+     display: none;
+     position: absolute;
+     background-color: none;
+     min-width: 160px;
+     overflow: auto;
+     z-index: 1;
+   } 
+   .menu-content a {
+     color: #000080;
+     padding: 12px 16px;
+     text-decoration: none;
+     display:block;
+  }
+   .dropdown a:hover {
+     background-color: none;
+  }
+.show {
+     display: block;
+ }   
+/* Styling for Healthcare Plan pages. */
+ /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+/* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  /* margin-bottom: 4.8rem; */
+  font-size: 3rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.5em;
+  /* 24 / 30 / 36 */
+}
+.plan-img-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 3em;
+}
+.plan-img-text h1 {
+  font-family: 'Cinzel';
+  color: #000080;
+}
+.plan-img-text p {
+  font-size: 22px;
+  color: #000000;
+  font-family: 'Playfair Display';
+}
+.plan-img-text img {
+  width: 950px;
+  height: 593px;
+  align-items: center;
+  border: 1px solid #c0c0c0;
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+.plan-img-text img:hover {
+  transform: scale(1.05);
+}
+.healthplan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+}
+.btn:link,
+.btn:visited {
+  background-color: #099268;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  display: inline-block;
+  border-radius: 100px;
+}
+.btn:hover,
+.btn:active {
+  background-color: #000000;
+}
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+  text-align: center;
+}
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+  width: 120px;
+  text-align: center;
+}
+
+/* styling for the table segment */
+.table_container {
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+}
+table {
+  width: 80%;
+  margin-top: 100px;
+  font-size: 18px;
+  border: 1px solid #343a40;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+th,
+td {
+  border: 1px solid #343a40; 
+  padding: 16px 24px;
+  text-align: left;
+}
+thead tr {
+  background-color: #087f5b;
+  color: #fff;
+}
+
+thead th {
+  width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+/* the footer is fixed to the bottom of the page */
+.row1 {
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  height: 9%;
+  bottom: 1;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  background: #e6f2ef;
+  text-align: center;
+  vertical-align: top;
+  color: #000080;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-text-3:hover {
+  color: #ff8000;
+  transform: scale(1.08);
+}
+.col {
+  flex-basis: 30%;
+  box-sizing: border-box;
+  border: none;
+}
+.footer-title {
+  text-align: left;
+  margin-left: 2em;
+  margin-top: 3em;
+}
+.col h3 { 
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.footer-text-3 {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-left: 2em;
+}
+.footer-bottom {
+  width: 100%;
+  height: 1%;
+  bottom: 0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background: #fff;
+  text-align: center;
+  vertical-align: middle;
+  color: #333;
+}
+.row3 {
+  width: 100%;
+  display: inline;
+}
+.col3-3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 1em;
+}
+.copyright-text {
+  display: inline;
+  width: 50%;
+  margin-left: 0px;
+}
+.media {
+  display: inline;
+  width: 30%;
+}
+.media img {
+  display: inline;
+}
+.media img {
+  background-color: white;
+  color: none;
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  text-align: left;
+  margin: 10px 15px;
+  vertical-align: left;
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="column" id="company-logo">
+                    <img src="images/logo.jpeg" style="float: left">
+                </div>
+                <div class="column" id="contact-no" style="float: right; color: #000080; font-size: 36px; margin-left: 20px;">
+                  +(234) 803-351-1011
+           </div>
+            </div>
+            <nav>
+              <div class="navbar">
+                  <a class="links" href="index.html">Home</a>
+                  <div class="dropdown-menu">
+                    <button onclick="plan-list" class="menu-btn">About Us +</button>
+                    <div id="dropdown1" class="menu-content">
+                        <a class="links-hidden" href="outline.html">Outline</a>
+                        <a class="links-hidden" href="staffgallery.html">Staff </a>
+                    </div>
+                    </div>
+                  <div class="dropdown-menu">
+                  <button onclick="plan-list" style="color: #008000;" class="menu-btn">Health Plans +</button>
+                  <div id="dropdown1" class="menu-content">
+                    <a class="links-hidden" href="individualplan.html">Individual</a>
+                    <a class="links-hidden" href="familyplan.html">Family</a>
+                    <a class="links-hidden" href="corporateplan.html">Corporate</a>
+                    <a class="links-hidden" href="customizedplan.html">Customized</a>
+                </div>
+                </div>
+                <div class="dropdown-menu">
+                <button onclick="resource-list" class="menu-btn">Resources +</button>
+                <div id="dropdown2" class="menu-content">
+                    <a class="links-hidden" href="gallery.html">Gallery</a>
+                      <a class="links-hidden" href="enrollment.html">Enrollment</a>
+                      <a class="links-hidden" href="download.html">Downloads</a>
+                      <a class="links-hidden" href="faqs.html">FAQ</a>
+                      <a class="links-hidden" href="career.html">Careers</a>
+                  </div>
+                  </div>
+                  <a class="links" href="healthprovider.html">Health Providers</a>
+                  <a class="links" href="login.html">Log In</a>
+                  <a class="links" href="blog.html">Blog</a>
+              </div>
+          </nav>
+        </header>
+        <main>
+            <div class="plan-img-text">    
+            <h1>INDIVIDUAL HEALTHCARE PLAN</h1> 
+            <div>   
+            <img class="ind-pic" src="images/plan img 1.png">
+           </div>
+         <div class="healthplan">
+           <p> We offer affordable health insurance plans for individuals who</p>
+             <p>do not have access to employer/sponsored or government run coverage.</p>
+        
+           <p>This plan is personalised for only you to enjoy a variety of </p> 
+          <p>health benefit packages
+           from Standard to Gold plus categories</p>
+          </div>
+          <div class="plan-price">    
+            <a href="#" class="btn btn--small">Buy Now</a>
+          </div>
+        </div>  
+          <div class="table_container">      
+          <table>        
+            <thead>        
+                <tr>
+                <th>COVERED SERVICES</th>
+                <th>STANDARD</th>
+                <th>CLASSIC</th>
+                <th>SILVER</th>
+                <th>GOLD</th>
+                <th >GOLD PLUS</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <th>MEDICAL EMMERGENCY SERVICES: Acute Heart Failure, Shock</th>
+                <td>&#10004</td><td>&#10004</td>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>OUT PATIENT SERVICES</th>
+                <td>General Consultation</td>
+                <td>General + Specialist Consultation</td>
+                <td>General + Specialist Consultation</td><td>General + Specialist Consultation</td>
+                <td>General + Specialist Consultation</td>
+                </tr>
+                <tr>
+                <th>INPATIENT MEDICAL SERVICES</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>  
+                </tr>
+                <tr>
+                <th>ALLERGIES</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>MEASLES</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>CHICKEN POX</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>PARASITIC AND ALLERGIC SKIN CONDITIONS</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Scabies, Tinea Infection, Acne, Eczema, Seborrheic</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Dermatitis</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>URINARY TRACT INFECTION</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Uncomplicated & Complicated Urinary Tract Infection</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>PEPTIC ULCER DISEASE</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Acute Axacerbation of Peptic Ulcer Disease, GERD</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Indigestion</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>UPPER & LOWER RESPIRATORY TRACT INFECTION</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Pneumonia, Bronchitis, Influenza, Viral Croup,</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Bronchiolitis</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>ASTHMA</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>CORYZA</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>DIARRHEA DISEASES</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>CADIO-VASCULAR CONDITIONS</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Hypertension, Myocardial Infarction, Cerebrovascular Accident (stroke),</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Cardiomyopathies, Chronic Heart Failure</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>BLOOD TRANSFUSION</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>HIV/AIDS-Investigation for confirmation</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Treatment of opportunistic infections</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>INVESTIGATIONS</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>PVC, MP, WIDAL, FBC+DIFF, PREGNANCY TEST</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>ESR, RBS/FBS, URINALYSIS, M/C/S</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>E/U/CR, BLOOD GROUP AND GENOTYPE, HBSAg.</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>HBV/HCV, H, PYLORI</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>COOMB's TEST, BLOOD CULTURE, PERIPHERAL</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>BLOOD FILM, CLOTTING PROFILE, BLEEDING TIME, INR</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>D-TIMER, FECAL OCCULT BLOOD, FERRITIN LEVELSM HbA1c</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>LFT, KFT</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>MATERNITY AND CHILD SERVICES</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>Confirmation of Pregnancy</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Antenatal Care (from 12 weeks)</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Management of Labour & Delivery</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Surgical Intervention</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Post-Natal Care</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Febrile Convulsions</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Routine immunization Services</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Additional Immunization under 5yrs</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>ICU/SCBU (1st 24hrs and monetary limit)</th>
+                <td>&#10006</td><td>&#10006</td><td>Limit: 50,000</td><td>Limit: 70,000</td><td>Limit: 100,000</td>
+                </tr>
+                <tr>
+                <th>SURGICAL SERVICES</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>Minor Procedures</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <td>Intermidiate Procedures</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <td>Major Procedures</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Surgical Limit = 50,000 for individual & 70,000 for family plans</th>
+                <td>Surgical Limit = 140,000 for individual & 150,000 for family plans</td><td>Surgical Limit = 220,000 for individual & 530,000 for family plans</td><td>Surgical Limit = 270,000 for individual & 440,000 for family plans</td><td>Surgical Limit. To be determined</td>
+                </tr>
+                <tr>
+                <td>EYE SERVICES</th>
+                    <td></td><td></td><td></td><td></td><td></td>
+      
+                </tr>
+                <tr>
+                <th>Basic Eye Examination (only)</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>MANAGEMENT OF COMMON EYE AILMENTS</th><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>stye, Conjuctivities, Ocular Allergies, Keratitis</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Optical Lens Limit (biennial)</th>
+                <td>&#10006</td><td>10,000</td><td>15,000</td><td>25,000</td><td>To be determined</td>
+                </tr>
+                <tr>
+                <th>Eye Surgeries (Minor & Intermidiate)</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Major Eye Surgery</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>DENTAL CARE</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>TREATMENT OF MINOR AILMENTS</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>Gingivitis, Scurvy, Tooth pain</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Routine pain management</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Simple Extraction</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Surgical Extraction</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Amalgam Filling</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Scaling and Polishing</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Denture and Bridges</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Root Canal Therapy</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>RADIOLOGICAL SERVICES</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>X-rays and Ultrasound</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>CT Scan & MRI (%co-payment)</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>To be determined</td>
+                </tr>
+                <tr>
+                <th>Echocardiography</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>To be determined</td>
+                </tr>
+                <tr>
+                <th>Electrocardiography</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>To be determined</td>
+                </tr>
+                <tr>
+                <th>Doppler Scan</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>To be determined</td>
+                </tr>
+                <tr>
+                <th>PHYSIOTHERAPY</th>
+                <td>3 sessions</td><td>5 sessions</td><td>8 sessions</td><td>10 sessions</td><td>20 sessions</td>
+                </tr>
+                <tr>
+                <th>CANCER CARE</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>General Outpatient Consultation</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Specialist Consultation</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Cancer Screening only (PSA & Mammography)</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Surgical Treatment of Cancer (subject to global limit)</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>MEDICAL CHECKUP</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>Routine Physical</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Annual Medical Examination</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>DRUG TYPES COVERED</th>
+                <td>Generic</td><td>Generic</td><td>Generic</td><td>Generic</td><td>Generic</td>
+                </tr>
+                <tr>
+                <th>ADDED BENEFITS</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>Renal dialysis (subject to policy limit)</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Infertility consultation, investigation & non-hormonal</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>drug management</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>CHRONIC DISEASE MANAGEMENT</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>INTERNATIONAL HEALTH INSURANCE</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>GPA (Group Personal Accident)</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>TRAVEL INSURANCE</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>HIGH END HOSPITALS</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>GYM MEMBERSHIP</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>MENTAL HEALTH SERVICES</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>Out-patient care for 6 weeks</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>EXCLUSIONS: to be hilighted in the policy document</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                </tbody>
+            </thead>
+            </table>
+        </main>
+  <!--this is the footer section with contact information and links-->
+<section class="footer"> 
+  <div class="footer-top">       
+    <div class="row1">
+      <div class="col">       
+        <h3 class="footer-title">Healthcare Plans</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="individualplan.html">Individual Plans</a></li>       
+          <li><a class="footer-text-3" href="familyplan.html">Family Plans</a></li>       
+          <li><a class="footer-text-3" href="corporateplan.html">Corporate Plans</a></li>      
+          <li><a class="footer-text-3" href="customizedplan.html">Customized Plans</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">       
+        <h3 class="footer-title">Recources</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="enrollment.html">Enrollment</a></li>       
+          <li><a class="footer-text-3" href="download.html">Downloads</a></li>       
+          <li><a class="footer-text-3" href="faqs.html">Frequently Asked Questions</a></li>      
+          <li><a class="footer-text-3" href="career.html">Career</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">
+        <h3 class="footer-title">Quick Links </h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="outline.html">About Us</a></li>       
+          <li><a class="footer-text-3" href="policy.html">Privacy Policy</a></li>
+          <li><a class="footer-text-3" href="terms.html">Terms & Conditions</a></li>
+          <li><a class="footer-text-3" href="contact.html">Contact Us</a></li>       
+        </ul>           
+      </div>         
+    </div>    
+  </div>     
+<div class="row3">
+<div class="col3-3">
+<div class="copyright-text" style="font-size: 18px; margin-top: 0.5em; float: left;">© 2022 Songhai Health Trust Limited. All rights reserved.
+</div>
+</div>
+<div class="col3-3">
+<div class="media" style="float: right;">
+  <a href="https://play.google.com/store/search?q=songhai+hmo&c=apps&hl=en&gl=US"><img src="images/log.jpg"></a>
+  <a href="mailto:info@songhaihealthtrust.com"><img src="images/mail.png"></a>
+  <a href="https://www.linkedin.com/login"><img src="images/linkedin1.png"></a>
+  <a href="https://www.facebook.com/songhaihealth/"><img src="images/face.jpg"></a>
+  <a href="https://mobile.twitter.com/songhaihealth"><img src="images/tweet.jpg"></a>
+  <a href="https://www.instagram.com/p/CdDdbxhtbK1/?igshid=YTgzYjQ4ZTY%3D"><img src="images/insta.jfif"></a>
+</div>
+</div>
+</div>
+</section> 
+    </body>
+</html>

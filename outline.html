@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--tittle>Songhai Health Trust About Us Page</tittle-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Songhai Health Trust Limited</title>
+        <script scr="index.js" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bolded Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+   <style>
+body {
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  width: 100%;
+  height: 75%;
+  top: 15%;
+  bottom: 10%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: none;
+}
+/* for the website header.
+two image containers */
+.row {
+  width: 100%;
+  display: flex;
+}
+.column {
+  width: 350px;
+  flex: 50%;
+  padding: none;
+  top: 0;
+  margin-top: 1em;
+  height: 100px; 
+  justify-content: space-between;
+}
+.column img {
+ background-color: white;
+ font-size: 22px;
+ width: 350px;
+ height: 100px;
+ bottom: 10%;
+ margin: 0;
+ margin-left: 20px;
+ vertical-align: top;
+}
+/*clears float after image container*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* styling the navigation bar */
+nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 10%;
+    height: 5%;
+    margin: none;
+    margin-bottom: 1em;
+    margin-left: 20px;
+}
+  .menu-btn {
+     background-color: white;
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     cursor: pointer;
+     border: none;
+   }
+  .menu-btn:hover {
+     background-color: none;
+  }
+  .links,
+  .links-hidden {
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     border: none;
+     text-decoration: none;
+  }
+  .links-hidden {
+      display: block;
+  }
+  .links:hover,
+  .links-hidden:hover {
+    background-color: none;
+  }
+   .dropdown-menu {
+     position: relative;
+     display: inline-block;
+   }   
+  .dropdown-menu:hover
+  .menu-content {
+    display: block;
+     background-color: white;
+  }  
+   .menu-content {
+     display: none;
+     position: absolute;
+     background-color: none;
+     min-width: 160px;
+     overflow: auto;
+     z-index: 1;
+   } 
+   .menu-content a {
+     color: #000080;
+     padding: 12px 16px;
+     text-decoration: none;
+     display:block;
+  }
+   .dropdown a:hover {
+     background-color: none;
+  }
+.show {
+     display: block;
+ }   
+
+ /* Styling for about us Page*/
+ .about-songhai {
+/*  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%); */
+  background: url(images/nature7.webp);
+  background-attachment: fixed;
+  background-size:cover;
+  margin: 0;
+}
+.about-songhai {
+  width: 100%;
+  position: relative;
+  top: 15%;
+  margin-top: 2em;
+}
+ .abt-songhai {
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    margin: 2% 10%;
+    background: #e6f2ef;
+    opacity: 0.8;
+    padding: 0 10px;
+  }
+  .abt-songhai h1 {
+    color: #000080;
+    font-size: 36px;
+    font-family: 'Cinzel';
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-top: 1em;
+  }
+  .abt-songhai span {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Rubik';
+    color: #000000;
+  }
+  .abt-songhai p {
+    width: 100%;
+    color: #000000;
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 8px;
+    margin: 2px;
+  }
+
+  /* Styling for SHTL Board of Directors section.
+     Styling for SHTL Management Team section */
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ #board-members{
+   display: grid;
+   place-items: center;
+   text-align: center;
+   background: none;
+ }
+ #board-members{
+   bottom: 50%;
+   top: 30%;
+   margin-top: 4em;
+   margin-bottom: 4em;
+ }
+ #board-members h2 {
+    width: 100%;
+    color: #000080;
+    font-family: 'Bolded-Serif';
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+  }
+  #board-members p {
+    width: 100%;
+    color: #000000;
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+/* script for the slider card */ 
+ .slider{
+   max-width: 1100px;
+   display: flex;
+ }
+ .slider .card{
+   flex: 1;
+   margin: 0 10px;
+   background: #fff;
+ }
+ .slider .card .img{
+   height: 300px;
+   width: 100%;
+ }
+ .slider .card .img img{
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+ }
+ .slider .card .content{
+   padding: 10px 20px;
+ }
+ .card .content .title{
+  font-family: 'Bolded-Serif';
+   font-size: 20px;
+   font-weight: 400;
+ }
+ .card .content .title span {
+  font-family: 'Bolded-Serif';
+   font-size: 18px;
+   font-weight: 400;
+ }
+ .card .content .sub-title{
+   font-size: 20px;
+   font-weight: 400;
+   color: #95662d;
+   line-height: 20px;
+ }
+ .card .content p{
+   text-align: justify;
+   margin: 10px 0;
+ }
+ .card .content .btn{
+   display: block;
+   text-align: left;
+   margin: 10px 0;
+ }
+ .card .content .btn button{
+   background: #008000;
+   color: #fff;
+   border: none;
+   outline: none;
+   font-size: 17px;
+   padding: 5px 8px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.2s;
+ }
+ .card .content .btn button:hover{
+   transform: scale(0.9);
+ }
+ .btn:link,
+.btn:visited {
+  background-color: #008000;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  display: inline-block;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #000000;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+.btn--mid {
+  font-size: 16px;
+  padding: 12px 22px;
+  width: 250px;
+}
+ 
+/* this is the styling for the news section */
+.company-media {
+  background-color: #e6f2ef;
+}
+.company-news {
+  width: 100%;
+  padding: 0;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+.news-title {
+  color: #000080;
+  font-family: 'Rubik';
+  font-size: 32px;
+  text-align: left;
+  margin-left: 200px;
+  margin-top: 2em;
+}
+.news-link {
+  float: right;
+  margin-right: 400px;
+}
+.company-news p {
+  color: #000000;
+  font-family: 'Rubik';
+  font-size: 32px;
+  margin-left: 1em;
+  text-align: center;
+  margin-bottom: 4em;
+  margin-left: 40px;
+}
+.row6 {
+  width: 100%;
+  display: flex;
+}
+.col1-6 {
+  flex: auto;
+  position: relative;
+  background: none;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+.col1-6 {
+  display: inline;
+}
+ .news-text {
+  font-weight: 200;
+  font-size: 28px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+.news-text {
+  color: #000000;
+}
+.news-text .letter {
+  display: inline-block;
+}
+
+/* styling for the packages section of the page */
+.songhai-packages {
+/*  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%); */
+  background: url(images/nature7.webp);
+  background-attachment: fixed;
+  background-size:cover;
+  margin: 0;
+}
+.songhai-packages {
+  position: relative;
+  margin: auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  border: none;
+  width: 100%;
+  bottom: 40%;
+  height: 5%;
+  display: inline-block;
+}
+.songhai-packages {
+  width: 100%;
+  margin: auto;
+}
+.pack-heading {
+  text-align: center;
+  font-family: 'Bolded-Serif';
+  font-size: 28px;
+  color: #000080;
+  background: #ffffff;
+  font-weight: bold;
+  width: 250px;
+  margin-top: 2em;
+  margin-left: 650px;
+  margin-bottom: 1.5em;
+  padding: 3px 5px;
+}
+.package-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.package {
+  text-align: center;
+  margin-bottom: 4em;
+}
+.package img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-bottom: 1em;
+  padding: 8px;
+}
+.package p {
+  font-family: 'Playfair Display';
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 3px;
+}
+
+/* the footer is fixed to the bottom of the page */
+.row1 {
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  height: 9%;
+  bottom: 1;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  background: #e6f2ef;
+  text-align: center;
+  vertical-align: top;
+  color: #000080;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-text-3:hover {
+  color: #ff8000;
+  transform: scale(1.08);
+}
+.col {
+  flex-basis: 30%;
+  box-sizing: border-box;
+  border: none;
+}
+.footer-title {
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 3em;
+}
+.col h3 { 
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.footer-text-3 {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.footer-bottom {
+  width: 100%;
+  height: 1%;
+  bottom: 0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background: #fff;
+  text-align: center;
+  vertical-align: middle;
+  color: #333;
+}
+.row3 {
+  width: 100%;
+  display: inline;
+}
+.col3-3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 1em;
+}
+.copyright-text {
+  display: inline;
+  width: 50%;
+  margin-left: 0px;
+}
+.media {
+  display: inline;
+  width: 30%;
+}
+.media img {
+  display: inline;
+}
+.media img {
+  background-color: white;
+  color: none;
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  text-align: left;
+  margin: 10px 15px;
+  vertical-align: left;
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+   </style>
+      </head>
+<body>
+   <header>
+      <div class="row1">
+          <div class="column" id="company-logo">
+              <img src="images/logo.jpeg" style="float: left">
+          </div>
+          <div class="column" id="contact-no" style="float: right; color: #000080; font-size: 36px; margin-left: 800px;">
+               +(234) 803-351-1011
+        </div>
+      </div>
+      <nav>
+         <div class="navbar">
+             <a class="links" href="index.html">Home</a>
+             <div class="dropdown-menu">
+              <button onclick="plan-list" style="color: #008000;" class="menu-btn">About Us +</button>
+              <div id="dropdown1" class="menu-content">
+                  <a class="links-hidden" href="outline.html">Outline</a>
+                  <a class="links-hidden" href="staffgallery.html">Staff </a>
+              </div>
+              </div>
+             <div class="dropdown-menu">
+             <button onclick="plan-list" class="menu-btn">Health Plans +</button>
+             <div id="dropdown1" class="menu-content">
+              <a class="links-hidden" href="individualplan.html">Individual</a>
+              <a class="links-hidden" href="familyplan.html">Family</a>
+              <a class="links-hidden" href="corporateplan.html">Corporate</a>
+              <a class="links-hidden" href="customizedplan.html">Customized</a>
+          </div>
+          </div>
+          <div class="dropdown-menu">
+          <button onclick="resource-list" class="menu-btn">Resources +</button>
+          <div id="dropdown2" class="menu-content">
+              <a class="links-hidden" href="gallery.html">Gallery</a>
+                 <a class="links-hidden" href="enrollment.html">Enrollment</a>
+                 <a class="links-hidden" href="download.html">Downloads</a>
+                 <a class="links-hidden" href="faqs.html">FAQ</a>
+                 <a class="links-hidden" href="career.html">Careers</a>
+             </div>
+             </div>
+             <a class="links" href="healthprovider.html">Health Providers</a>
+             <a class="links" href="login.html">Log In</a>
+             <a class="links" href="blog.html">Blog</a>
+         </div>
+     </nav>
+  </header>
+    <main>
+      <br><br>
+        <section class="about-songhai">
+           <div class="abt-songhai"><br>
+           <h1 class="abt-title">WHO WE ARE</h1>
+           <p style="text-align: center;">
+              <span> Songhai Health Trust Limited </span> is one of the first-generation Health Maintenance Organizations (HMOs), incorporated since 2001 and has grown to become one of the leading HMOs in the country. We take pride in being driven by ethics in the provision of managed healthcare services to public and private sector employers/employees, as well as our teeming population in the informal sector. Our services are provided under a prepaid arrangement, in partnership with our selected healthcare providers spread across the country. 
+           </p>
+           <p>
+            Our products are designed with due consideration to the varied needs and ability to the pay of the different population groups in the country.
+           </p><br><br>
+           </div>
+         </section>
+         
+         <section class="card-container" id="board-members">
+            <h2 class="board-tittle" style="margin-top:1em;">BOARD OF DIRECTORS</h2><br>
+            <p>
+             At the apex of our company structure is the board of directors comprised of seasoned, accomplished and trustworthy professionals with diverse background.
+            </p><br>
+            <div class="slider owl-carousel">
+              <div class="card">
+                 <div class="img">
+         <img src="#" alt=""></div>
+         <div class="content">
+                   <div class="title">
+                     Dr. SHAMSUDEEN USMAN<span>CON</span></div>
+         <div class="sub-title">
+           CHAIRMAN</div>
+         </div>
+         </div>
+         <div class="card">
+                 <div class="img">
+         <img src="images/MDs 1.jpg" alt=""></div>
+         <div class="content">
+                   <div class="title">
+                     BELLO BAWA BWARI</div>
+         <div class="sub-title">
+            MD/CEO</div>
+         </div>
+         </div>
+         <div class="card">
+                 <div class="img">
+         <img src="#" alt=""></div>
+         <div class="content">
+                   <div class="title">
+                     DAHIRU IBRAHIM</div>
+         <div class="sub-title">
+            DIRECTOR</div>
+         </div>
+         </div>
+         <div class="card">
+            <div class="img">
+    <img src="#" alt=""></div>
+    <div class="content">
+              <div class="title">
+               DR. BASHEER I. MOHAMMED</div>
+    <div class="sub-title">
+      DIRECTOR</div>
+    </div>
+    </div>
+    <div class="card">
+            <div class="img">
+    <img src="#" alt=""></div>
+    <div class="content">
+              <div class="title">
+               ABDULLAHI BAMANGA</div>
+    <div class="sub-title">
+      DIRECTOR</div>
+    </div>
+    </div>
+    <div class="card">
+            <div class="img">
+    <img src="#" alt=""></div>
+    <div class="content">
+              <div class="title">
+               PROF. ABDULSALAMI NASIDI</div>
+    <div class="sub-title">
+      DIRECTOR</div>
+    </div>
+    </div>
+    <div class="card">
+      <div class="img">
+<img src="#" alt=""></div>
+<div class="content">
+        <div class="title">
+         ARCHITECT U. K. UMARU</div>
+<div class="sub-title">
+   DIRECTOR</div>
+</div>
+</div>
+<div class="card">
+      <div class="img">
+<img src="#" alt=""></div>
+<div class="content">
+        <div class="title">
+         ABDULKAREEM MOH'D SANI</div>
+<div class="sub-title">
+   DIRECTOR</div>
+</div>
+</div>
+<div class="card">
+      <div class="img">
+<img src="#" alt=""></div>
+<div class="content">
+        <div class="title">
+         FRIDAY AGBO</div>
+<div class="sub-title">
+   DIRECTOR</div>
+</div>
+</div>
+</div>
+<div class="btn">
+   <a href="boardbiodata.html" class="btn btn--small">READ MORE</a>
+</div><br>
+</section>
+
+<section class="company-media">
+  <div class="company-news"><br><br>
+    <h2 class="news-title">NEWS & UPDATE<span class="news-link"><a href="blog.html">view here</a></span></h2><br><br>
+  </div>
+  <div class="news-letter">
+    <div class="row6">
+    <div class="col1-6">
+    <h3 class="news-text"><p>Subscribe To Our News letter!!</p></h3>
+    </div>
+    <div class="col1-6">
+    <a href="newsletter.html" style="width: 150px;" class="btn btn--mid">Subscribe</a><br>
+    </div>
+    </div>
+  </div><br><br>
+</section>
+
+<section class="songhai-packages">
+  <h2 class="pack-heading">OUR PACKAGES</h2>
+  <div class="package-container">
+    <div class="package">
+        <img src="imageicon/satisfy 2.png" alt="" style="border: 3px solid green;">
+        <p style="background-color: green;">Standard</p>
+    </div>
+    <div class="package">
+        <img src="imageicon/satisfy 3.png" alt="" style="border: 3px solid blue;">
+        <p style="background-color: blue;">Classic</p>
+    </div>
+    <div class="package">
+        <img src="imageicon/pack silver 2.jfif" alt="" style="border: 3px solid silver;">
+        <p style="background-color: silver; color: #000000;">Silver</p>
+    </div>
+    <div class="package">
+        <img src="imageicon/pack gold 3.jfif" alt="" style="border: 3px solid gold;">
+        <p style="background-color:  gold;">Gold</p>
+    </div>
+    <div class="package">
+        <img src="imageicon/pack bar 3.jfif" alt="" style="border: 3px solid darkgoldenrod;">
+        <p style="background-color: darkgoldenrod;">Gold Plus</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<!--this is the footer section with contact information and links-->
+<section class="footer"> 
+  <div class="footer-top">       
+    <div class="row1">
+      <div class="col">       
+        <h3 class="footer-title">Healthcare Plans</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="individualplan.html">Individual Plans</a></li>       
+          <li><a class="footer-text-3" href="familyplan.html">Family Plans</a></li>       
+          <li><a class="footer-text-3" href="corporateplan.html">Corporate Plans</a></li>      
+          <li><a class="footer-text-3" href="customizedplan.html">Customized Plans</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">       
+        <h3 class="footer-title">Recources</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="enrollment.html">Enrollment</a></li>       
+          <li><a class="footer-text-3" href="download.html">Downloads</a></li>       
+          <li><a class="footer-text-3" href="faqs.html">Frequently Asked Questions</a></li>      
+          <li><a class="footer-text-3" href="career.html">Career</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">
+        <h3 class="footer-title">Quick Links </h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="outline.html">About Us</a></li>       
+          <li><a class="footer-text-3" href="policy.html">Privacy Policy</a></li>
+          <li><a class="footer-text-3" href="terms.html">Terms & Conditions</a></li>
+          <li><a class="footer-text-3" href="contact.html">Contact Us</a></li>       
+        </ul>           
+      </div>         
+    </div>    
+  </div>     
+<div class="row3">
+<div class="col3-3">
+<div class="copyright-text" style="font-size: 18px; margin-top: 0.5em; float: left;">© 2022 Songhai Health Trust Limited. All rights reserved.
+</div>
+</div>
+<div class="col3-3">
+<div class="media" style="float: right;">
+  <a href="https://play.google.com/store/search?q=songhai+hmo&c=apps&hl=en&gl=US"><img src="images/log.jpg"></a>
+  <a href="mailto:info@songhaihealthtrust.com"><img src="images/mail.png"></a>
+  <a href="https://www.linkedin.com/login"><img src="images/linkedin1.png"></a>
+  <a href="https://www.facebook.com/songhaihealth/"><img src="images/face.jpg"></a>
+  <a href="https://mobile.twitter.com/songhaihealth"><img src="images/tweet.jpg"></a>
+  <a href="https://www.instagram.com/p/CdDdbxhtbK1/?igshid=YTgzYjQ4ZTY%3D"><img src="images/insta.jfif"></a>
+</div>
+</div>
+</div>
+</section> 
+ <script>
+   /* script for owl carousel slider */
+$(".slider").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000, //4000ms = 4s;
+    autoplayHoverPause: true,
+  });
+ </script>
+</body>
+</html>
