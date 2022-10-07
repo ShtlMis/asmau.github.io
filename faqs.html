@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--tittle>Songhai Health Trust Limited Frequently Asked Questions Page</tittle-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Frequently Asked Questions | Songhai Health Trust Limited</title>
+  <link href="https://fonts.googleapis.com/css?family=Bolded Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script scr="index.js" type="text/javascript" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" charset="utf-8"></script>
+  <style>
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  width: 100%;
+  height: 75%;
+  top: 15%;
+  bottom: 10%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: none;
+}
+/* for the website header.
+two image containers */
+.row {
+  width: 100%;
+  display: inline-block;
+}
+.column {
+  width: 350px;
+  float: left;
+  padding: none;
+  top: 0;
+  margin-top: 1em;
+  height: 100px; 
+}
+.column img {
+ background-color: white;
+ font-size: 22px;
+ width: 350px;
+ height: 100px;
+ bottom: 10%;
+ margin: 0;
+ margin-left: 20px;
+ vertical-align: top;
+}
+/*clears float after image container*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* styling the navigation bar */
+nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 10%;
+    height: 5%;
+    margin: none;
+    margin-bottom: 1em;
+}
+  .menu-btn {
+     background-color: white;
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     cursor: pointer;
+     border: none;
+   }
+  .menu-btn:hover {
+     background-color: none;
+     color: #008000;
+     text-decoration: overline;
+  }
+  .links,
+  .links-hidden {
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     border: none;
+     text-decoration: none;
+  }
+  .links-hidden {
+      display: block;
+  }
+  .links:hover,
+  .links-hidden:hover {
+    background-color: white;
+    color: #008000;
+    text-decoration: overline;
+  }
+   .dropdown-menu {
+     position: relative;
+     display: inline-block;
+   }   
+  .dropdown-menu:hover
+  .menu-content {
+    display: block;
+     background-color: none;
+  }  
+   .menu-content {
+     display: none;
+     position: absolute;
+     background-color: none;
+     min-width: 160px;
+     overflow: auto;
+     z-index: 1;
+   } 
+   .menu-content a {
+     color: #000080;
+     padding: 12px 16px;
+     text-decoration: none;
+     display:block;
+  }
+   .dropdown a:hover {
+     background-color: none;
+     color: #008000;
+     text-decoration: overline;
+  }
+.show {
+     display: block;
+ }   
+
+/* styling for frequently asked questions page*/
+#faq h1 {
+  font-family: 'Cinzel';
+  font-size: 36px;
+  color: #000080;
+  font-weight: 500;
+  text-align: center;
+}
+.accordion-container {
+  position: relative;
+  width: 100%;
+  height: 75%;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.accordions {
+  width: 80%;
+  margin: 100px auto;
+}
+.accordion-item {
+  background-color: #18884c;
+  margin-bottom: 20px;
+  border: 1px solid #343a40;
+  border-radius: 5px;
+  color: #ffffff;
+}  
+.accordion-item .accordion-title {
+  cursor: pointer;
+  padding: 20px;
+  transition: transform 0.4s ease-in-out;
+} 
+.accordion-item .accordion-title.active-title {
+  background-color: #000080;
+  color: #ffffff;
+  border-radius: 5px;
+} 
+.accordions h3 {
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: bold;
+} 
+.accordion-item .accordion-title h3 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+} 
+.accordion-item .accordion-title span.down-arrow {
+  transform: rotate(0);
+  transition: 0.4s;
+} 
+.accordion-item .accordion-title span.down-arrow.arrow-top {
+  transform: rotate(-180deg);
+  color: #ffff;
+  font-weight: bold;
+} 
+.accordion-item .accordion-content {
+  display: none;
+  line-height: 1.7;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 0 0 5px 5px;
+  color: #100e34;
+}
+.accordion-item .accordion-content.active {
+  display: block;
+} 
+.accordion-item .accordion-content p {
+  margin: 0;
+  font-family: "Playfair Display";
+  font-size: 16px;
+}
+.details {
+  background: #dce1f2;
+}  
+.details .detailed_info {
+  margin: 50px auto;
+} 
+.details img {
+  margin: 0 auto;
+  display: block;
+  /* margin-top: 120px; */
+} 
+.details h3 {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 20px;
+}
+.details p {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 1.5em;
+} 
+.details ul li {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 1.7em;
+}
+
+/* the footer is fixed to the bottom of the page */
+.row1 {
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  height: 9%;
+  bottom: 1;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  background-color: #e6f2ef;
+  text-align: center;
+  vertical-align: top;
+  color: #000080;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-text-3:hover {
+  color: #008000;
+  transform: scale(1.08);
+}
+.col {
+  flex-basis: 30%;
+  box-sizing: border-box;
+  border: none;
+}
+.footer-title {
+  text-align: left;
+  margin-left: 2em;
+  margin-top: 3em;
+}
+.col h3 { 
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.footer-text-3 {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 20PX;
+}
+.footer-bottom {
+  width: 100%;
+  height: 1%;
+  bottom: 0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background: #e6f2ef;
+  text-align: center;
+  vertical-align: middle;
+  color: #333;
+}
+.row3 {
+  width: 100%;
+  display: inline;
+}
+.col3-3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 1em;
+}
+.copyright-text {
+  display: inline;
+  width: 50%;
+  margin-left: 0px;
+}
+.media {
+  display: inline;
+  width: 30%;
+}
+.media img {
+  display: inline;
+}
+.media img {
+  background-color: white;
+  color: none;
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  text-align: left;
+  margin: 10px 15px;
+  vertical-align: left;
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+</style>
+</head>
+  <body>
+    <header>
+        <div class="row1">
+            <div class="column" id="company-logo">
+                <img src="logo.jpeg" style="float: left">
+            </div>
+            <div class="column" id="contact-no" style="float: right; color: #000080; font-size: 36px; margin-left: 20px;">
+              +(234) 803-351-1011
+       </div>
+        </div>
+        <nav>
+          <div class="navbar">
+              <a class="links" href="index.html">Home</a>
+              <a class="links" href="aboutus.html">About Us </a>
+              <div class="dropdown-menu">
+              <button onclick="plan-list" class="menu-btn">Health Plans +</button>
+              <div id="dropdown1" class="menu-content">
+                <a class="links-hidden" href="individualplan.html">Individual</a>
+                <a class="links-hidden" href="familyplan.html">Family</a>
+                <a class="links-hidden" href="corporateplan.html">Corporate</a>
+                <a class="links-hidden" href="customizedplan.html">Customized</a>
+            </div>
+            </div>
+            <div class="dropdown-menu">
+            <button onclick="resource-list" style="color: #008000;" class="menu-btn">Resources +</button>
+            <div id="dropdown2" class="menu-content">
+                <a class="links-hidden" href="gallery.html">Gallery</a>
+                  <a class="links-hidden" href="enrollment.html">Enrollment</a>
+                  <a class="links-hidden" href="download.html">Downloads</a>
+                  <a class="links-hidden" href="faqs.html">FAQ</a>
+                  <a class="links-hidden" href="career.html">Careers</a>
+              </div>
+              </div>
+              <a class="links" href="healthprovider.html">Health Providers</a>
+              <a class="links" href="login.html">Log In</a>
+              <a class="links" href="blog.html">Blog</a>
+          </div>
+      </nav>
+    </header>
+    <main>
+    <section id="faq">
+      <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        <div class="container faq">
+          <div class="accordion-container">
+            <div class="row">
+              <div class="col-sm-1">
+                <div class="accordions">
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item1">
+                      <h3>When does my cover end? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item1">
+                      <p>
+                        The contract of coverage is usually for one year from your start date 
+                        unless otherwise stated in the policy document.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item2">
+                      <h3>Can i change my level of cover, or change to a different plan at a later date?<span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item2">
+                      <p>
+                        Yes. You can add more benefits (called 'Riders') to your cover but at an additional premium. 
+                        You cannot remove benefits.
+                        Similarly, you can only upgrade to a higher health plan. You cannot change to a lower plan.
+                        A health plan upgrade can take place at any time during the year of coverage.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item3">
+                      <h3>What differentiates individual cover from group cover? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item3">
+                      <p>
+                        First, an individual cover is not entitled to a waiver of pre-enrollment medical examination. 
+                        Secondly, the benefits of chronic medication and HIV management are not covered under 
+                        individual plans at the quoted premium. 
+                        An additional premium might be required. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item4">
+                      <h3>Do i have and individual cover or group cover?<span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item4">
+                      <p>
+                        You have group coverage if you were enrolled as a member of an organization or company with 
+                        at least 10 principal insured persons.
+                        You have individual coverage if you enrolled as a person or as a single-family.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item5">
+                      <h3>What won't my policy cover? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item5">
+                      <p>
+                        See Exclusions List.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item6">
+                      <h3>What does my policy cover?<span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item6">
+                      <p>
+                        See covered services under your preferred health plan.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item7">
+                      <h3>If i do not use any of the services for the entire year, do I get a refund? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item7">
+                      <p>
+                        No, you will not get a refund. 
+                        However, you will be entitled to a good discount if you wish to renew the policy for another year. 
+                        It is good to remember that illness is often an unforeseen event and one may never know when a health 
+                        insurance cover will be immensely useful. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item8">
+                      <h3>What happens if the cost of services rendered to me exceeds the premium i paid? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item8">
+                      <p>
+                        Each health plan has a medical limit which is approximately seven times the premium paid 
+                        (see your health policy document). 
+                        You will not be required to make any refunds as long as you do not exceed your limit.
+                        When you utilize up to your medical limit before the expiration of your policy, you will be
+                         expected to pay for all subsequent services accessed for the remaining duration of your cover.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item9">
+                      <h3>Do i have to pay any charges at The Point Of Service? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item9">
+                      <p>
+                        For covered services under most of the health plans, the answer is no. 
+                        However, if a co-payment or deductible applies, you would be duly informed at the time of your application.
+                        For non-covered services that you request for, the Provider may ask you to pay out-of-pocket.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item10">
+                      <h3>How can i access specialist Doctors? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item10">
+                      <p>
+                        You can see a specialist doctor, like a pediatrician or dental surgeon, at any time but through 
+                        a referral by your Primary Care Provider. He/She decides whether you need specialist attention 
+                        and subsequently facilitates the process.
+                        For further clarification, please contact the Health Services Unit of SHTL.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item11">
+                      <h3>What happens if i lose my cards? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item11">
+                      <p>
+                        You will be expected to apply for a new membership card. 
+                        Your application should state your name, the health plan you are currently subscribed to, 
+                        and your primary care provider. 
+                        It must be accompanied by a sworn affidavit of loss and a recent passport photo.
+                        You will also be required to pay a processing fee.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item12">
+                      <h3>What happens if i forget my card? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item12">
+                      <p>
+                        You are encouraged to always carry your card in your wallet/purse. 
+                        If you forget your card, you can be able to access care at your primary care provider's (PCP).
+                        When you say your name and HMO, the PCP front desk will identify you using a photo form in their records.
+                        Unfortunately, apart from your PCP, you may not be able to access care anywhere else under the scheme
+                        without your membership ID card.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item13">
+                      <h3>Can a friend or relative make use of my card with my consent? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item13">
+                      <p>
+                        No. Your membership ID card bears your photo and will not give access to care to anyone that does
+                        not match the photo. 
+                       This is the reason every member of a subscribing family is issued a personal identity card. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item14">
+                      <h3>Can i change my primary healthcare provider after joining? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item14">
+                      <p>
+                        Yes but you will need to have spent at least 3 months with the provider to be eligible to change.
+                        You may be required to furnish reasons for change. 
+                        Where the decision is due to dissatisfaction, a formal complaint would have been lodged with SHTL 
+                        at least one month prior to the application for change.
+                        The change if approved will take effect from the 1st day of the month succeeding the month of application.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item15">
+                      <h3>Can i choose more than one hospital? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item15">
+                      <p>
+                        Yes! Every enrollee is entitled to one provider.
+                        However, if members of the family reside in different locations, you can choose a different provider for them. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item16">
+                      <h3>Will my pre-existing conditions be covered? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item16">
+                      <p>
+                        Yes! However this is dependent on your chosen plan.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item17">
+                      <h3>What plans are available? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item17">
+                      <p>
+                        We have five basic health plans namely SHTL Standard, SHTL Classic, SHTL Silver, SHTL Gold and SHTL Gold Plus. 
+                        However, we are open to customization of plans based on your peculiar health needs. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title" data-tab="item18">
+                      <h3>Can i change my mind after i have joined? <span class="down-arrow">&#8659</span></h3>
+                    </div>
+                    <div class="accordion-content" id="item18">
+                      <p>
+                        Yes you can! With our carefully developed health plans, we are confident that our services will meet
+                        and surpass your needs. 
+                       However, in the event that you change your mind, you can contact us via your relationship manager
+                        for further discussions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</main> 
+<!--this is the footer section with contact information and links-->
+<section class="footer-top"> 
+  <div class="footer-container">       
+    <div class="row1">
+      <div class="col">       
+        <h3 class="footer-title">Healthcare Plans</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="individualplan.html">Individual Plans</a></li>       
+          <li><a class="footer-text-3" href="familyplan.html">Family Plans</a></li>       
+          <li><a class="footer-text-3" href="corporateplan.html">Corporate Plans</a></li>      
+          <li><a class="footer-text-3" href="customizedplan.html">Customized Plans</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">       
+        <h3 class="footer-title">Recources</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="enrollment.html">Enrollment</a></li>       
+          <li><a class="footer-text-3" href="download.html">Downloads</a></li>       
+          <li><a class="footer-text-3" href="faqs.html">Frequently Asked Questions</a></li>      
+          <li><a class="footer-text-3" href="career.html">Career</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">
+        <h3 class="footer-title">Quick Links </h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="aboutus.html">About Us</a></li>       
+          <li><a class="footer-text-3" href="policy.html">Privacy Policy</a></li>
+          <li><a class="footer-text-3" href="terms.html">Terms & Conditions</a></li>
+          <li><a class="footer-text-3" href="contact.html">Contact Us</a></li>       
+        </ul>           
+      </div>         
+    </div>    
+  </div>     
+</footer>
+</section> 
+<section class="footer-bottom">
+<span class="copyright_text" style="font-size: 18px; margin-top: 0.5em; float: left;">© 2022 Songhai Health Trust Limited. All rights reserved.</span>
+          <span class="media" style="float: right;">
+            <a href="https://play.google.com/store/search?q=songhai+hmo&c=apps&hl=en&gl=US"><img src="log.jpg"></a>
+            <a href="mailto:info@songhaihealthtrust.com"><img src="mail.png"></a>
+            <a href="https://www.linkedin.com/login"><img src="linkedin1.png"></a>
+            <a href="https://www.facebook.com/songhaihealth/"><img src="face.jpg"></a>
+            <a href="https://mobile.twitter.com/songhaihealth"><img src="tweet.jpg"></a>
+            <a href="https://www.instagram.com/p/CdDdbxhtbK1/?igshid=YTgzYjQ4ZTY%3D"><img src="insta.jfif"></a>
+          </span>
+</section> 
+<script type="text/javascript">
+    $(document).ready(function () {
+      $(".accordion-title").click(function (e) {
+        var accordionitem = $(this).attr("data-tab");
+        $("#" + accordionitem)
+          .slideToggle()
+          .parent()
+          .siblings()
+          .find(".accordion-content")
+          .slideUp();
+  
+        $(this).toggleClass("active-title");
+        $("#" + accordionitem)
+          .parent()
+          .siblings()
+          .find(".accordion-title")
+          .removeClass("active-title");
+  
+        $("span.down-arrow", this).toggleClass("arrow-top");
+        $("#" + accordionitem)
+          .parent()
+          .siblings()
+          .find(".accordion-title span.down-arrow")
+          .removeClass("arrow-top");
+      });
+    });
+    </script> 
+  </body>
+</html>
