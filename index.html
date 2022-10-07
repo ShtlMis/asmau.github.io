@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!--tittle>Songhai Health Trust Limited Home Page</tittle-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Health insurance in Nigeria, HMO in Nigeria, Health insurance in Abuja, HMO in Abuja, Health insurance in Lagos, HMO in Lagos,"/>
+        <meta name="description" content="Dedicated to provide reliable and affordable healthcare services to all Nigerians from all works of life.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Songhai Health Trust Limited</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bolded-Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Shadows Into Light Two" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+        <style>
+/* styling for the header */
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  width: 100%;
+  height: 75%;
+  top: 15%;
+  bottom: 10%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: none;
+}
+/* for the website header.
+two image containers */
+.row {
+  width: 100%;
+  display: inline-block;
+}
+.column {
+  width: 50%;
+  max-width: 350px;
+  float: left;
+  padding: none;
+  top: 0;
+  margin-top: 1em;
+  height: 100px; 
+}
+.column img {
+ background-color: #ffffff;
+ font-size: 22px;
+ width: 350px;
+ height: 100px;
+ bottom: 10%;
+ margin: 0;
+ margin-left: 20px;
+ vertical-align: top;
+}
+/*clears float after image container*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* styling the navigation bar */
+nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 10%;
+    height: 5%;
+    margin: none;
+    margin-bottom: 1em;
+}
+  .menu-btn {
+     background-color: #ffffff;
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     cursor: pointer;
+     border: none;
+   }
+  .menu-btn:hover {
+     background-color: none;
+     color: #008000;
+     text-decoration: overline;
+  }
+  .links,
+  .links-hidden {
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     border: none;
+     text-decoration: none;
+  }
+  .links-hidden {
+      display: block;
+  }
+  .links:hover,
+  .links-hidden:hover {
+    background-color: #ffffff;
+    color: #008000;
+    text-decoration: overline;
+  }
+   .dropdown-menu {
+     position: relative;
+     display: inline-block;
+   }   
+  .dropdown-menu:hover
+  .menu-content {
+    display: block;
+    background-color: none;
+  }  
+   .menu-content {
+     display: none;
+     position: absolute;
+     background-color: none;
+     min-width: 160px;
+     overflow: auto;
+     z-index: 1;
+   } 
+   .menu-content a {
+     color: #000080;
+     padding: 12px 16px;
+     text-decoration: none;
+     display:block;
+  }
+   .dropdown a:hover {
+     background-color: none;
+     color: #008000;
+     text-decoration: overline;
+  }
+.show {
+     display: block;
+ }   
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 732px;
+  margin: 0;
+  top: 0;
+  bottom: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+.text-sliderfade img {
+  width: 1550px;
+  height: 732px;
+  object-fit: contain;
+}
+.text-sliderfade 
+{
+  display: none;
+}  
+/* The dots/bullets/indicators */
+.dot 
+{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-color: none;
+  border-width: 5px;
+  border-style: none;
+  border-radius: 50%;
+  display: inline-block;
+  transition: border-color 0.6s ease;
+}
+.active 
+{
+  border-color: transparent;
+}
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+/* Centered text */
+.top-left .title {
+  width: 1000px;
+  font-size: 36px;
+  font-family: "Cinzel";
+  position: absolute;
+  color: #000080;
+  padding: 10px 15px;
+  top: 15px;
+  margin-left: 30px;
+}
+.top-left span h2 {
+  position: relative;
+  font-family: 'Shadows Into Light Two';
+  font-size: 28px;
+  width: 600px;
+  margin-left: 20px;
+  color: #008000;
+  margin-top: 1.5em;
+}
+.top-left span p {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Rubik';
+  color: #000000;
+} 
+.btn:link,
+.btn:visited {
+  background-color: #008000;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  border-radius: 100px;
+}
+.btn:hover,
+.btn:active {
+  background-color: #000000;
+}
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+.btn--mid {
+  font-size: 16px;
+  padding: 12px 22px;
+  width: 250px;
+}
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+  margin-top: 2em;
+}        
+  
+/* Animation */
+.fade 
+{
+  -webkit-animation-name: fade-image;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade-image;
+  animation-duration: 1.5s;
+} 
+@-webkit-keyframes fade-image
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}  
+@keyframes fade-image
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (min-width: 300px) 
+{
+  .top-left span p {font-size: 11px}
+  .top-left span h2 {font-size: 14px}
+  .top-left .title {font-size: 20px}
+}
+/* On small screens, decrease text size */
+@media only screen and (min-width: 576px) 
+{
+  .top-left span p {font-size: 14px}
+  .top-left span h2 {font-size: 16px}
+  .top-left .title {font-size: 24px}
+}
+/* On medium screens, decrease text size */
+@media only screen and (min-width: 768px) 
+{
+  .top-left span p {font-size: 18px}
+  .top-left span h2 {font-size: 20px}
+  .top-left .title {font-size: 28px}
+}
+/* On large screens, decrease text size */
+@media only screen and (min-width: 576px) 
+{
+  .top-left span p {font-size: 22px}
+  .top-left span h2 {font-size: 24px}
+  .top-left .title {font-size: 32px}
+}
+
+/* for homepage healthcare plan section */
+#healthplan-section {
+  position: relative;
+  margin: auto;
+  margin-bottom: 2em;
+  border: none;
+  width: 100%;
+  bottom: 45%;
+  height: 10%;
+}
+.plan-heading {
+  color: #000080;
+  font-size: 28px;
+  font-family: 'Bolded-Serif';
+  font-weight: 600;
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 1em;
+}
+#healthplan-section p {
+  color: #000000;
+  font-size: 26px;
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  text-align: center;
+}
+.row {
+  width: 100%;
+  display: inline-block;
+}
+.col1 {
+  width: 23%;
+  float: left;
+}
+.col1 {
+  width: 24%;
+  padding: 5px;
+  bottom: 45%;
+  height: 10%;
+  border: 1px grey;
+  display: inline-block;
+  text-align: center;
+}
+.plans img {
+  width: 260px;
+  height: 200px;
+  padding: 3px;
+  background-color: #fff;
+  margin-bottom: 1.5em;
+}
+
+/* for the homepage information section */
+#company-info {
+  position: relative;
+  margin: auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  border: none;
+  width: 100%;
+  bottom: 40%;
+  height: 5%;
+  display: inline-block;
+}
+.info-container {
+  width: 100%;
+  margin: auto;
+}
+.heading {
+  text-align: center;
+  font-family: 'Bolded-Serif';
+  font-size: 28px;
+  color: #000080;
+  font-weight: bold;
+  padding: 5px 0;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+}
+.company-reach {
+  width: 100%;
+  padding: 3px;
+  top: 55%;
+  bottom: 40%;
+  height: 5%; 
+  border: none;
+  background: #e6f2ef;
+  box-sizing: border-box;
+}
+.reach-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.counter {
+  text-align: center;
+  margin-bottom: 4em;
+}
+.counter img {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+.counter img:hover {
+  transform: scale(1.4);
+}
+.counter h3 {
+  padding: 5px 0;
+  font-size: 26px;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+.counter h4 {
+  font-family: 'Playfair Display';
+  font-size: 22px;
+  color: #000000;
+  padding-bottom: 18px;
+}
+
+/* styling for the aims section of the page */
+.songhai-aims {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    bottom: 10%;
+  }
+.songhai-aims {
+    display: flex;
+    grid-gap: 80px;
+    max-width: 1200px;
+    max-height: 2400px;
+    margin: 1em auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+.aims-column {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    display: grid;
+    grid-template-rows: max-content 420px 1fr;
+    grid-template-columns: 400px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #e6f2ef;
+}
+.aims-column img {
+    width: 100%;
+    max-width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-left: 140px;
+    margin-top: 2em;
+}
+.aims-column h4 {
+    font-size: 28px;
+    font-family: 'Cinzel';
+    color: #000080;
+    margin: 0;
+    padding: .5rem;
+    margin-top: 2em;
+}
+.aims-column p {
+    font-size: 22px;
+    font-family: 'Playfair Display';
+    color: #000000;
+    font-weight: 500;
+    margin-top: 1em;
+}
+.aims-column .content {
+    padding: 0.5rem;
+    margin-bottom: 0.5em;
+}
+
+ /* styling for the Core Values section */
+ .songhai-values {
+ position: relative;
+ width: 100%;
+ display: inline-block;
+ background: white;
+ height: 15vh;
+ text-align: center;
+ font-size: 18px;
+ font-weight: 500;
+ bottom: 10%;
+ margin-top: 0%;
+ margin-bottom: 4em;
+ margin-left: 40px;
+}
+.songhai-values h2 {
+  color: #251187;
+  font-family: 'Bolded-Serif';
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+} 
+.column1 {
+   width: 24%;
+   float: left;
+   padding: 5px;
+   bottom: 10%;
+   height: 15%; 
+   border: 2px;
+   margin-bottom: 4em;
+}
+.column1 span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3a9a2a;
+}
+.column1 p {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    vertical-align: left;
+    line-height: 20px;
+    margin:0;
+ }
+.column1 img {
+    background-color: white;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    text-align: left;
+    margin: 5px;
+    vertical-align: left; 
+    text-align: middle;
+}
+.col-img {
+  width: 38px;
+  height: 38px;
+}
+
+/* the footer is fixed to the bottom of the page */
+.row1 {
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  height: 9%;
+  bottom: 1;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  background: #e6f2ef;
+  text-align: center;
+  vertical-align: top;
+  color: #000080;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-text-3:hover {
+  color: #008000;
+  transform: scale(1.08);
+}
+.col {
+  flex-basis: 30%;
+  box-sizing: border-box;
+  border: none;
+}
+.footer-title {
+  text-align: left;
+  margin-left: 2em;
+  margin-top: 3em;
+}
+.col h3 { 
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.footer-text-3 {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.footer-bottom {
+  width: 100%;
+  height: 1%;
+  bottom: 0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background: #fff;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+}
+.row3 {
+  width: 100%;
+  display: inline;
+}
+.col3-3 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 1em;
+}
+.copyright-text {
+  display: inline;
+  width: 50%;
+  margin-left: 0px;
+}
+.media {
+  display: inline;
+  width: 30%;
+}
+.media img {
+  display: inline;
+}
+.media img {
+  background-color: #ffffff;
+  color: none;
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  text-align: left;
+  margin: 10px 15px;
+  vertical-align: left;
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+             </style>
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="column" id="company-logo">
+                    <img src="logo.jpeg" style="float: left">
+                </div>
+                <div class="column" id="contact-no" style="float: right; color: #000080; font-size: 36px; margin-left: 20px;">
+                  +(234) 803-351-1011
+           </div>
+            </div>
+            <nav>
+                <div class="navbar">
+                    <a class="links" style="color: #008000;" href="index.html">Home</a>
+                    <a class="links" href="aboutus.html">About Us </a>
+                    <div class="dropdown-menu">
+                    <button onclick="plan-list" class="menu-btn">Health Plans +</button>
+                    <div id="dropdown1" class="menu-content">
+                        <a class="links-hidden" href="individualplan.html">Individual</a>
+                        <a class="links-hidden" href="familyplan.html">Family</a>
+                        <a class="links-hidden" href="corporateplan.html">Corporate</a>
+                        <a class="links-hidden" href="customizedplan.html">Customized</a>
+                    </div>
+                    </div>
+                    <div class="dropdown-menu">
+                    <button onclick="resource-list" class="menu-btn">Resources +</button>
+                    <div id="dropdown2" class="menu-content">
+                        <a class="links-hidden" href="gallery.html">Gallery</a>
+                        <a class="links-hidden" href="enrollment.html">Enrollment</a>
+                        <a class="links-hidden" href="download.html">Downloads</a>
+                        <a class="links-hidden" href="faqs.html">FAQ</a>
+                        <a class="links-hidden" href="career.html">Careers</a>
+                    </div>
+                    </div>
+                    <a class="links" href="healthprovider.html">Health Providers</a>
+                    <a class="links" href="login.html">Log In</a>
+                    <a class="links" href="blog.html">Blog</a>
+                </div>
+            </nav>
+        </header>
+  <main>
+     <!--the healthplan image carousel-->
+     <section class="slideshow-container">
+      <!-- text slideshow starts -->
+      <div class="text-sliderfade fade">
+          <img src="slide fade 1.jpg" alt="">
+        <div class="top-left">
+          <h1 class="title"><br> Songhai Health Trust Limited  
+           <span><h2> always there when you need us..... </h2>
+            <p> We offer you the best plan</p><p> that suits your needs. </p> 
+           <a href="contact.html" class="btn btn--small">Get In Touch</a></span></h1>
+        </div>
+      </div> 
+      <div class="text-sliderfade fade">
+          <img src="slide fade 2.png " alt="">
+        <div class="top-left">
+          <h1 class="title"><br> With our Individual Healthcare Plan 
+           <span><h2> Step into the Groove and.....</h2>
+            <p> enjoy all the benefits of a</p><p> healthy carefree lifestyle </p>
+           <a href="individualplan.html" class="btn btn--small" style="margin-left: 60px;">Learn More</a></span></h1>
+        </div>
+      </div>
+      <div class="text-sliderfade fade">
+          <img src="slide fade 3.jpg" alt="">
+        <div class="top-left">
+          <h1 class="title"><br> Family Healthcare Plan
+           <span><h2> No more worries, No more stress..... </h2>
+            <p> our healthcare plans are</p><p> affordable and uncomplicated. </p>
+           <a href="familyplan.html" class="btn btn--small">Learn More</a></span></h1>
+        </div>
+      </div> 
+      <div class="text-sliderfade fade">
+          <img src="slide fade 4.png" alt="">
+        <div class="top-left">
+          <h1 class="title"><br> Our Corporate Healthcare Plan 
+           <span><h2> helps Improve work ethics..... </h2>
+            <p> and achieve a condusive,</p><p> productive work environment </p>
+           <a href="corporateplan.html" class="btn btn--small">Learn More</a></span></h1>
+        </div>
+      </div>
+      <div class="text-sliderfade fade">
+          <img src="slide fade 5.jpg" alt="">
+        <div class="top-left">
+          <h1 class="title"><br> A Customized Healthcare Plan 
+           <span><h2> specifically designed for you..... </h2>
+            <p> Imagine the possibilities,</p><p> a world of opportunities await </p>
+           <a href="customizedplan.html" class="btn btn--small">Learn More</a></span></h1>
+        </div>
+      </div>
+      <div class="text-sliderfade fade">
+          <img src="slide fade 6.jpg" alt="">
+        <div class="top-left">
+          <h1 class="title"><br> Make the smart Move 
+           <span><h2> and live a hassle free life..... </h2>
+            <p> For more information about</p><p> any of our Services, </p>
+           <a href="newsletter.html" class="btn btn--small">Subscribe</a></span></h1>
+        </div>
+      </div>
+    </div>
+    <br> 
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>    
+      </section>
+    <!--this section provides information about SHTL health plans-->
+    <section class="container" id="healthplan-section">
+      <h2 class="plan-heading"> OUR PLANS </h2>
+      <p>
+          Our healthcare plans cover promotive, preventive and curative healthcare services and are specially designed to the pay of individuals and families. <br> 
+          Explore our range of unique health plans:
+      </p>
+          <div class="row">
+          <div class="col1" id="column-1">
+          <div class="plans">
+              <img src="ace 1.jfif"><br>
+              <div class="btn">
+              <a href="individualplan.html" class="btn btn--mid">INDIVIDUAL HEALTH PLAN</a>
+            </div>
+          </div>
+          </div>
+          <div class="col1" id="column-2">
+          <div class="plans">
+              <img src="ace 2.jpeg"><br>
+              <div class="btn">
+              <a href="familyplan.html" class="btn btn--mid">FAMILY HEALTH PLAN</a>
+            </div>
+          </div>
+          </div>
+          <div class="col1" id="column-3">
+          <div class="plans">
+              <img src="ace 3.jfif"><br>
+              <div class="btn">
+              <a href="corporateplan.html" class="btn btn--mid">CORPORATE HEALTH PLAN</a>
+            </div>
+          </div>
+          </div>
+          <div class="col1" id="column-4">
+          <div class="plans">
+              <img src="ace 4.jpg"><br>
+              <div class="btn">
+              <a href="customizedplan.html" class="btn btn--mid">CUSTOMIZED HEALTH PLAN</a>
+            </div>
+          </div>
+          </div>
+          </div><br>
+      </section>
+    </section><br>
+    <!--this section provides information about our reach and the latest information and news update from within and accross the nation-->
+    <section class="info-container" id="company-info">
+      <div class="company-reach">
+       <div class="heading">
+           OUR REACH
+       </div>
+       <div class="reach-container">
+           <div class="counter">
+              <a href="healthprovider.html"><img src="provider 1.png" alt=""></a>
+               <h3 data-target="2252" class="count">0</h3>
+               <h4>Healthcare Providers</h4>
+           </div>
+           <div class="counter">
+            <a href="blog.html"><img src="clients 1.png" alt=""></a>
+               <h3 data-target="1200" class="count">0</h3>
+               <h4>Our Clients</h4>
+           </div>
+           <div class="counter">
+            <a href="healthprovider.html"><img src="map 1.jfif" alt=""></a>
+               <h3 data-target="37" class="count">0</h3>
+               <h4>Location</h4>
+           </div>
+           <div class="counter">
+            <a href="blog.html"><img src="satisfy 1.jfif" alt=""></a>
+               <h3 data-target="100"class="count">0</h3>
+               <h4>Satisfaction</h4>
+           </div>
+       </div>
+      </div>
+    </section>
+    <!--this is the section that provides information about the mission, vision and aims of songhai--> 
+    <section class="songhai-aims">  
+          <div class="aims-column">
+              <img src="mission 1.png" alt="">
+              <div class="content">
+                  <h4>OUR MISSION</h4>
+                  <p>
+                    To provide a personalized healthcare experience, through cost effective solutions, 
+                    seamless technology and transparent engagement with all stakeholders.
+                  </p>
+              </div> 
+          </div>
+          <div class="aims-column">
+              <img src="vision 1.png" alt="">
+              <div class="content">
+                  <h4>OUR VISSION</h4>
+                  <p>
+                    To become the most efficient, reliable and affordable managed healthcare service provider in Nigeria. 
+                  </p>
+              </div>  
+          </div>
+          <div class="aims-column">
+              <img src="goal 1.png" alt="">
+              <div class="content">
+                  <h4>OUR GOAL</h4>
+                  <p> 
+                    To ensure that the quality healthcare services that meet international standards are made available, 
+                    accessible and affordable, and delivered ethically to our clients, 
+                    through a network of accredited healthcare providers across the country.
+                  </p>
+              </div>  
+          </div>
+    </section>
+        <section class="songhai-values">
+          <h2 class="value-title">CORE VALUES</h2>
+         <div class="row">
+         <div class="column1">
+            <img src="iconambulance.png">
+            <p>
+             <span>S</span>..........Service
+          </p>
+         </div>
+         <div class="column1">
+            <img src="iconsign.png">
+            <p>
+               <span>H</span>..........Hope
+            </p>
+         </div>
+         <div class="column1">
+            <img src="iconfirstaid.jfif">
+            <p>
+               <span>T</span>..........Trust
+            </p>
+          </div>
+          <div class="column1">
+             <img src="iconperson.png">
+             <p>
+                <span>L</span>..........Love
+             </p>
+          </div>
+         </div><br>
+        </section>
+  </main>
+<!--this is the footer section with contact information and links-->
+<section class="footer"> 
+  <div class="footer-top">       
+    <div class="row1">
+      <div class="col">       
+        <h3 class="footer-title">Healthcare Plans</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="individualplan.html">Individual Plans</a></li>       
+          <li><a class="footer-text-3" href="familyplan.html">Family Plans</a></li>       
+          <li><a class="footer-text-3" href="corporateplan.html">Corporate Plans</a></li>      
+          <li><a class="footer-text-3" href="customizedplan.html">Customized Plans</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">       
+        <h3 class="footer-title">Recources</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="enrollment.html">Enrollment</a></li>       
+          <li><a class="footer-text-3" href="download.html">Downloads</a></li>       
+          <li><a class="footer-text-3" href="faqs.html">Frequently Asked Questions</a></li>      
+          <li><a class="footer-text-3" href="career.html">Career</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">
+        <h3 class="footer-title">Quick Links </h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="aboutus.html">About Us</a></li>       
+          <li><a class="footer-text-3" href="policy.html">Privacy Policy</a></li>
+          <li><a class="footer-text-3" href="terms.html">Terms & Conditions</a></li>
+          <li><a class="footer-text-3" href="contact.html">Contact Us</a></li>       
+        </ul>           
+      </div>         
+    </div>    
+  </div>     
+<div class="row3">
+<div class="col3-3">
+<div class="copyright-text" style="font-size: 18px; margin-top: 0.5em; float: left;">© 2022 Songhai Health Trust Limited. All rights reserved.
+</div>
+</div>
+<div class="col3-3">
+<div class="media" style="float: right;">
+  <a href="https://play.google.com/store/search?q=songhai+hmo&c=apps&hl=en&gl=US"><img src="log.jpg"></a>
+  <a href="mailto:info@songhaihealthtrust.com"><img src="mail.png"></a>
+  <a href="https://www.linkedin.com/login"><img src="linkedin1.png"></a>
+  <a href="https://www.facebook.com/songhaihealth/"><img src="face.jpg"></a>
+  <a href="https://mobile.twitter.com/songhaihealth"><img src="tweet.jpg"></a>
+  <a href="https://www.instagram.com/p/CdDdbxhtbK1/?igshid=YTgzYjQ4ZTY%3D"><img src="insta.jfif"></a>
+</div>
+</div>
+</div>
+</section> 
+<script>
+
+/* script for text and image slider */ 
+var slideIndex = 0;
+showSlides(); // call showslide method
+   
+function showSlides()
+{
+    var i;
+  
+    // get the array of divs' with classname image-sliderfade
+    var slides = document.getElementsByClassName("text-sliderfade"); 
+      
+    // get the array of divs' with classname dot
+    var dots = document.getElementsByClassName("dot"); 
+  
+    for (i = 0; i < slides.length; i++) {
+        // initially set the display to 
+        // none for every image.
+        slides[i].style.display = "none"; 
+    }
+   
+     // increase by 1, Global variable
+    slideIndex++; 
+   
+     // check for boundary
+    if (slideIndex > slides.length) 
+    {
+        slideIndex = 1;
+    }
+   
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.
+                            replace(" active", "");
+    }
+   
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  
+    // Change image every 7 seconds
+    setTimeout(showSlides, 7000); 
+}
+
+/* script for the counter section */
+const counters = document.querySelectorAll('.count');
+const speed = 600;
+
+counters.forEach((counter) => {
+  const updateCount = () => {
+    const target = parseInt(counter.getAttribute('data-target'));
+    const count = parseInt(counter.innerText);
+    const increment = Math.trunc(target / speed);
+
+    if (count < target) {
+      counter.innerText = count + increment;
+      setTimeout(updateCount, 1);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  updateCount();
+});
+  </script>
+</body>
+</html>
