@@ -147,7 +147,7 @@ nav {
 .slideshow-container {
   position: relative;
   width: 100%;
-  height: 732px;
+  height: 906px;
   margin: 0;
   top: 0;
   bottom: 55%;
@@ -157,7 +157,7 @@ nav {
 }
 .text-sliderfade img {
   max-width: 1550px;
-  height: 732px;
+  height: 906px;
   object-fit: contain;
 }
 .text-sliderfade 
@@ -264,36 +264,44 @@ nav {
   to {opacity: 1}
 }
 /* On smaller screens, decrease text size */
-@media only screen and (min-width: 300px) 
+@media only screen and (max-width: 640px) 
 {
   .top-left span p {font-size: 11px}
   .top-left span h2 {font-size: 14px}
   .top-left .title {font-size: 20px}
-  .text-sliderfade img {min-width: 300px}
+  .text-sliderfade img {max-width: 3640px}
 }
 /* On small screens, decrease text size */
-@media only screen and (min-width: 576px) 
+@media only screen and (max-width: 960px) 
 {
   .top-left span p {font-size: 14px}
   .top-left span h2 {font-size: 16px}
   .top-left .title {font-size: 24px}
-  .text-sliderfade img {min-width: 576px}
+  .text-sliderfade img {max-width: 960px}
 }
 /* On medium screens, decrease text size */
-@media only screen and (min-width: 768px) 
+@media only screen and (max-width: 1280px) 
 {
   .top-left span p {font-size: 18px}
   .top-left span h2 {font-size: 20px}
   .top-left .title {font-size: 28px}
-  .text-sliderfade img {min-width: 768px}
+  .text-sliderfade img {max-width: 1280px}
 }
 /* On large screens, decrease text size */
-@media only screen and (min-width: 992px) 
+@media only screen and (max-width: 1600px) 
 {
   .top-left span p {font-size: 22px}
   .top-left span h2 {font-size: 24px}
   .top-left .title {font-size: 32px}
-  .text-sliderfade img {min-width: 992px}
+  .text-sliderfade img {max-width: 1280px}
+}
+/* On large screens, decrease text size */
+@media only screen and (max-width: 1920px) 
+{
+  .top-left span p {font-size: 24px}
+  .top-left span h2 {font-size: 28px}
+  .top-left .title {font-size: 36px}
+  .text-sliderfade img {max-width: 1920px}
 }
 
 /* for homepage healthcare plan section */
