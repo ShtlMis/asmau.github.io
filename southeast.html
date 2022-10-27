@@ -1,0 +1,2854 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!--tittle>Songhai Health Trust Limited Online Payment Page</tittle-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hospitals in South-Eastern Nigeria | Songhai Health Trust Limited</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bolded Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script scr="index.js" type="text/javascript" defer></script>
+        <style>
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  width: 100%;
+  height: 75%;
+  top: 15%;
+  bottom: 10%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: none;
+}
+/* for the website header.
+two image containers */
+.row {
+  width: 100%;
+  display: inline-block;
+}
+.column {
+  width: 350px;
+  float: left;
+  padding: none;
+  top: 0;
+  margin-top: 1em;
+  height: 100px; 
+}
+.column img {
+ background-color: white;
+ font-size: 22px;
+ width: 350px;
+ height: 100px;
+ bottom: 10%;
+ margin: 0;
+ margin-left: 20px;
+ vertical-align: top;
+}
+/*clears float after image container*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* styling the navigation bar */
+nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 10%;
+    height: 5%;
+    margin: none;
+    margin-bottom: 1em;
+}
+  .menu-btn {
+     background-color: transparent;
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     cursor: pointer;
+     border: none;
+   }
+  .menu-btn:hover {
+     background-color: none;
+     color: #008000;
+     text-decoration: overline;
+  }
+  .links,
+  .links-hidden {
+     color: #000080;
+     padding: 16px;
+     font-size: 24px;
+     font-weight: bolder;
+     border: none;
+     text-decoration: none;
+  }
+  .links-hidden {
+      display: block;
+  }
+  .links:hover,
+  .links-hidden:hover {
+    background-color: transparent;
+  }
+   .dropdown-menu {
+     position: relative;
+     display: inline-block;
+   }   
+  .dropdown-menu:hover
+  .menu-content {
+    display: block;
+     background-color: none;
+     color: #008000;
+     text-decoration: overline;
+  }  
+   .menu-content {
+     display: none;
+     position: absolute;
+     background-color: none;
+     min-width: 160px;
+     overflow: auto;
+     z-index: 1;
+   } 
+   .menu-content a {
+     color: #000080;
+     padding: 12px 16px;
+     text-decoration: none;
+     display:block;
+  }
+   .dropdown a:hover {
+     background-color: none;
+     color: #008000;
+     text-decoration: overline;
+  }
+.show {
+     display: block;
+ }   
+
+/* styling for provider tables */
+.region {
+    font-family: 'Cinzel';
+    font-size: 38px;
+    font-weight: 500;
+    color: #000080;
+    text-align: center;
+    margin-top: 32px;
+}
+table {
+  width: 90vw;
+  margin-top: 100px;
+  font-size: 18px;
+  border: 1px solid #343a40;
+  justify-content: center;
+  margin-left: 5vw;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+td {
+  border: 1px solid #343a40; 
+  padding: 16px 24px;
+  text-align: left;
+}
+thead tr {
+  background-color: #087f5b;
+  color: #fff;
+  height: 48px;
+}
+thead #first {
+width: 25%;
+}
+thead #second {
+width: 5%;
+}
+thead #third {
+width: 20%;
+}
+thead #fourth {
+width: 10%;
+}
+thead #fifth {
+width: 15%;
+}
+thead #sixth {
+width: 15%;
+}
+thead #seventh {
+width: 10%;
+}
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+} 
+.pagination {
+ float: right;
+ color: #000000;
+ font-size: 22px;
+ margin-right: 5%;
+}
+.pagination:hover {
+    color: #000080;
+}
+.pagination li:hover{
+cursor: pointer;
+}
+.pagination li.active {
+ background-color: #327ff2;
+ color: #fff;
+ padding: 5px 3px;
+ align-items: center;
+}
+.pagination li {
+display: inline;
+margin-top: 0;
+}
+table tbody tr {
+ display: none;
+ }
+.container h3 {
+ font-size: 24px;
+ color: #000000;
+ margin-left: 4%;
+}
+.form-group {
+  color: #000000;
+  margin-left: 5%;
+}
+
+/* the footer is fixed to the bottom of the page */
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  height: 10%;
+  bottom: 0%;
+  margin-top: 8px;
+  margin-bottom: 0;
+  background: #e6f2ef;
+  vertical-align: top;
+  color: #000080;
+  line-height: 20px;
+}
+.col {
+  float: left;
+  width: 33.33%;
+}
+.footer-title {
+  text-align: left;
+  margin-left: 32px;
+  margin-top: 48px;
+  font-size: 26px;
+}
+.footer-text-3 {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 24px;
+}
+.footer-text-3:hover {
+  color: #008000;
+  transform: scale(1.08);
+}
+.col3-3 {
+  flex: 50%;
+}
+.copyright-text {
+  display: inline;
+  margin-left: 60px;
+}
+.media {
+  display: inline;
+  margin-right: 40px;
+  float: right;
+}
+.media img {
+  display: inline;
+}
+.media img {
+  background-color: #ffffff;
+  color: none;
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  text-align: left;
+  margin: 10px 15px;
+  vertical-align: left;
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+/* setting the media query of the page */
+/* on extralarge screens, decrease font size */
+@media only screen and (max-width: 1920px) {
+.column {
+  width: 350px;
+  font-size: 36px;
+}
+.column img {
+ width: 350px;
+ height: 100px;
+}
+.menu-btn {
+    padding: 16px;
+    font-size: 24px;
+}
+.links,
+.links-hidden {
+    padding: 16px;
+    font-size: 24px;
+}
+.menu-content {
+    min-width: 160px;
+} 
+.menu-content a {
+    padding: 12px 16px;
+}
+
+.footer {
+  margin-top: 8px;
+  line-height: 20px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 48px;
+  font-size: 26px;
+}
+.footer-text-3 {
+  font-size: 24px;
+}
+.copyright-text {
+  font-size: 20px;
+  margin-top: 8px;
+}
+.media img {
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  margin: 10px 15px;
+}
+  }
+ /* On larger screens, decrease font size */
+@media only screen and (max-width: 1600px) {
+.column {
+  width: 320px;
+  font-size: 36px;
+}
+.column img {
+ width: 320px;
+ height: 91px;
+}
+.menu-btn {
+    padding: 14px;
+    font-size: 22px;
+}
+.links,
+.links-hidden {
+    padding: 14px;
+    font-size: 22px;
+}
+.menu-content {
+    min-width: 140px;
+} 
+.menu-content a {
+    padding: 11px 15px;
+}
+.region {
+    font-size: 36px;
+    margin-top: 30px;
+}
+table {
+  margin-top: 90px;
+  font-size: 18px;
+  margin-bottom: 90px;
+}
+td {
+  padding: 14px 22px;
+}
+.pagination {
+ font-size: 22px;
+}
+.container h3 {
+ font-size: 22px;
+}
+.footer {
+  margin-top: 7px;
+  line-height: 18px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 44px;
+  font-size: 22px;
+}
+.footer-text-3 {
+  font-size: 22px;
+}
+.copyright-text {
+  font-size: 18px;
+  margin-top: 7px;
+}
+.media img {
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  margin: 10px 15px;
+}
+  }
+/* on large screens, decrease font size */
+@media only screen and (max-width: 1200px) {
+.column {
+  width: 280px;
+  font-size: 32px;
+}
+.column img {
+ width: 280px;
+ height: 80px;
+}
+.menu-btn {
+    padding: 12px;
+    font-size: 20px;
+}
+.links,
+.links-hidden {
+    padding: 12px;
+    font-size: 20px;
+}
+.menu-content {
+    min-width: 120px;
+} 
+.menu-content a {
+    padding: 10px 14px;
+}
+.region {
+    font-size: 34px;
+    margin-top: 28px;
+}
+table {
+  margin-top: 80px;
+  font-size: 18px;
+  margin-bottom: 80px;
+}
+td {
+  padding: 12px 20px;
+}
+.pagination {
+ font-size: 20px;
+}
+.container h3 {
+ font-size: 20px;
+}
+.footer {
+  margin-top: 6px;
+  line-height: 16px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 40px;
+  font-size: 22px;
+}
+.footer-text-3 {
+  font-size: 20px;
+}
+.copyright-text {
+  font-size: 16px;
+  margin-top: 6px;
+}
+.media img {
+  font-size: 20px;
+  width: 26px;
+  height: 26px;
+  margin: 7px 13px;
+}
+  }
+/* on  medium screens, decrease font size */
+@media only screen and (max-width: 992px) {
+.column {
+  width: 260px;
+  font-size: 28px;
+}
+.column img {
+ width: 260px;
+ height: 74px;
+}
+.menu-btn {
+    padding: 10px;
+    font-size: 18px;
+}
+.links,
+.links-hidden {
+    padding: 10px;
+    font-size: 18px;
+}
+.menu-content {
+    min-width: 100px;
+} 
+.menu-content a {
+    padding: 9px 13px;
+}
+.region {
+    font-size: 32px;
+    margin-top: 26px;
+}
+table {
+  margin-top: 70px;
+  font-size: 16px;
+  margin-bottom: 70px;
+}
+td {
+  padding: 10px 18px;
+}
+.pagination {
+ font-size: 18px;
+}
+.container h3 {
+ font-size: 18px;
+}
+.footer {
+  margin-top: 4px;
+  line-height: 12px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 36px;
+  font-size: 20px;
+}
+.footer-text-3 {
+  font-size: 18px;
+}
+.copyright-text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.media img {
+  font-size: 18px;
+  width: 24px;
+  height: 24px;
+  margin: 6px 12px;
+}
+  }
+ /* on  small screens, decrease font size */
+@media only screen and (max-width: 768px) {
+.column {
+  width: 220px;
+  font-size: 20px;
+}
+.column img {
+ width: 220px;
+ height: 62px;
+}
+.menu-btn {
+    padding: 8px;
+    font-size: 16px;
+}
+.links,
+.links-hidden {
+    padding: 8px;
+    font-size: 16px;
+}
+.menu-content {
+    min-width: 80px;
+} 
+.menu-content a {
+    padding: 8px 12px;
+}
+.region {
+    font-size: 30px;
+    margin-top: 24px;
+}
+table {
+  margin-top: 60px;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+/* changing the table Style*/
+table, thead, tbody, th, td, tr { 
+    display: block; 
+}
+thead tr { 
+                        
+    position: relative;
+    top: -9999px;
+    left: -9999px;
+}
+                
+tr { 
+    border-bottom: 1px solid #ccc; 
+}
+td { 
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+}
+td:before { 
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+    font-weight: bold;
+}
+/* end of style change */               
+td {
+  padding: 8px 16px;
+}
+.pagination {
+ font-size: 16px;
+}
+.container h3 {
+ font-size: 16px;
+}
+.col {
+  width: 100%;
+  display: inline-block;
+}
+.footer-text-3 {
+  font-size: 16px;
+}
+.copyright-text {
+  font-size: 14px;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+.media img {
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  margin: 6px 12px;
+}
+  }
+/* on smaller screens, decrease font size */
+@media only screen and (max-width: 480px) {
+.column {
+  width: 160px;
+  font-size: 16px;
+}
+.column img {
+ width: 160px;
+ height: 45px;
+}
+.menu-btn {
+    padding: 6px;
+    font-size: 14px;
+}
+.links,
+.links-hidden {
+    padding: 6px;
+    font-size: 14px;
+}
+.menu-content {
+    min-width: 60px;
+} 
+.menu-content a {
+    padding: 7px 11px;
+}
+.region {
+    font-size: 28px;
+    margin-top: 22px;
+}
+table {
+  margin-top: 50px;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+td {
+  padding: 6px 14px;
+}
+.pagination {
+ font-size: 16px;
+}
+.container h3 {
+ font-size: 16px;
+}
+.footer {
+  margin-top: 3px;
+  line-height: 8px;
+}
+.col {
+  width: 100%;
+  display: inline-block;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 32px;
+  font-size: 21px;
+  line-height: 1;
+}
+.footer-text-3 {
+  font-size: 16px;
+}
+.copyright-text {
+  font-size: 12px;
+  margin-top: 3px;
+  line-height: 1.2;
+}
+.media img {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  margin: 5px 11px;
+}
+ }
+        </style>
+    </head>
+<body>
+    <header>
+        <div class="row">
+            <div class="column" id="company-logo">
+                <img src="logo.jpeg" style="float: left">
+            </div>
+            <div class="column" id="contact-no" style="float: right; color: #000080;">
+                +(234) 803-351-1011
+         </div>
+        </div>
+        <nav>
+            <div class="navbar">
+                <a class="links" href="index.html">Home</a>
+                <a class="links" href="aboutus.html">About Us </a>
+                <div class="dropdown-menu">
+                <button onclick="plan-list" class="menu-btn">Health Plans +</button>
+                <div id="dropdown1" class="menu-content">
+                  <a class="links-hidden" href="individualplan.html">Individual</a>
+                  <a class="links-hidden" href="familyplan.html">Family</a>
+                  <a class="links-hidden" href="corporateplan.html">Corporate</a>
+                  <a class="links-hidden" href="customizedplan.html">Customized</a>
+              </div>
+              </div>
+              <div class="dropdown-menu">
+              <button onclick="resource-list" class="menu-btn">Resources +</button>
+              <div id="dropdown2" class="menu-content">
+                  <a class="links-hidden" href="gallery.html">Gallery</a>
+                    <a class="links-hidden" href="enrollment.html">Enrollment</a>
+                    <a class="links-hidden" href="download.html">Downloads</a>
+                    <a class="links-hidden" href="faqs.html">FAQ</a>
+                    <a class="links-hidden" href="career.html">Careers</a>
+                </div>
+                </div>
+                <a class="links" href="healthprovider.html">Health Providers</a>
+                <a class="links" style="color: #008000;" href="login.html">Log In</a>
+                <a class="links" href="blog.html">Blog</a>
+            </div>
+        </nav>
+    </header> 
+  <main>
+    <section class="region1">
+      <div class="container">
+          <h2 class="region"> SOUTH-EAST </h2>
+          <h3>Select Number Of Rows</h3>
+                  <div class="form-group"> 	<!--		Show Numbers Of Rows 		-->
+                       <select class  ="form-control" name="state" id="maxRows">
+                           <option value="5000">Show ALL Rows</option>
+                           <option value="10">10</option>
+                           <option value="15">15</option>
+                           <option value="20">20</option>
+                           <option value="50">50</option>
+                           <option value="70">70</option>
+                           <option value="100">100</option>
+                          </select>
+                       
+                    </div>
+      
+      <table class="table table-striped table-class" id= "table-id">
+          <thead>
+              <tr>
+                  <th id="first">Name</th>
+                  <th id="second">Status</th>
+                  <th id="third">Address</th>
+                  <th id="fourth">Phone</th>
+                  <th id="fifth">Email</th>
+                  <th id="sixth">City</th>
+                  <th id="seventh">State</th>
+              </tr>
+            </thead>
+      <tbody>
+          <tr>
+              <td>SANCTA MARIA SPECIALIST HOSPITAL & MATERINITY</td>
+              <td></td>
+              <td>22 Constitutition Crescent Aba</td>
+              <td></td>
+              <td></td>
+              <td>ABA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>JANET MEMORIAL HOSPITAL</td>
+              <td></td>
+              <td>245 Aba-Owerri Road, Aba</td>
+              <td></td>
+              <td></td>
+              <td>ABA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>ABIA STATE UNIVERSITY TEACHING HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>NEW ERA SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>213/215 Ezikiwe Road, Aba</td>
+              <td></td>
+              <td></td>
+              <td>ABA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>DELTA HOSPITAL LTD.</td>
+              <td></td>
+              <td>78, Faulks Road</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>FEDERAL MEDICAL CENTRE UMUAHIa</td>
+              <td></td>
+              <td>Umuahia, Abia State</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>OBIOMA HOSPITALAND MATERNITY</td>
+              <td></td>
+              <td>21, School Road, Umuahia</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>PRISCILLIA MEMORIAL HOSPITAL</td>
+              <td></td>
+              <td>32, Bunny Street</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>ABIA STATE SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>Ama-Achara, Umuahia</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>MENDEL HOSPITALAND DIAGNOSTIC</td>
+              <td></td>
+              <td>20 Tenant Road, Abia</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>CLEHANSAN HOSPITALAND MATERNITY</td>
+              <td></td>
+              <td>17 Osusu Rd, Aba.</td>
+              <td></td>
+              <td></td>
+              <td>ABA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>LIVING WORD HOSPITAL ABA SOUTH</td>
+              <td></td>
+              <td>5/7 Umuocham Street, Aba</td>
+              <td></td>
+              <td></td>
+              <td>ABA-SOUTH</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>LIVING WORD HOSPITAL OBINGWA</td>
+              <td></td>
+              <td>117 Ikot Ekpene Road, Aba</td>
+              <td></td>
+              <td></td>
+              <td>OBINGWA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>LIVING WORD HOSPITAL ABA NORTH</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABA-NORTH</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>EBEMMA HOSPITAL</td>
+              <td></td>
+              <td>3rd Avenue, Ubani Estate Ogbor Hill, Aba</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>HORSTMAN HOSPITAL</td>
+              <td></td>
+              <td>32, Okigwe Road, Aba</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>PRINCESS MARY SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>45, New Umuahia Road Ogbor Hill, Aba</td>
+              <td></td>
+              <td></td>
+              <td>ABA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>ST. PAUL HOSPITAL</td>
+              <td></td>
+              <td>6-12 St. Paul's Road, Umunggasi, Aba</td>
+              <td></td>
+              <td></td>
+              <td>ABA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>SEVEN DAYSADVENTIST HOSPITAL</td>
+              <td></td>
+              <td>Umuoba Road, Aba</td>
+              <td></td>
+              <td></td>
+              <td>ABA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>NEW LEAD HOSPITALAND MAT. LTD</td>
+              <td></td>
+              <td>10, Oblagu Ave/By 160 Faulks Road, Aba.</td>
+              <td></td>
+              <td></td>
+              <td>ABA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>HAMMERSMITH MEDICAL CENTRE</td>
+              <td></td>
+              <td>Plots 3 Amauzkwu Layout, Umauhia</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>ST. VINCENT`S HOSPITAL</td>
+              <td></td>
+              <td>30 Azikwe Road Umuahia</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>NEW ERA HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>90b Oji River Street Umuzukwu Layout</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>POLICE HOSPITAL, UMUAHIA</td>
+              <td></td>
+              <td>Abia State Police Command, Abia State</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>THE NAZARETH CLINICS</td>
+              <td></td>
+              <td>57 Pound Road, Aba. Abia State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>SPRING CLINIC</td>
+              <td></td>
+              <td>18 Scotland Crescent, Aba</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABIA</td>
+          </tr>
+          </tr>
+          <tr>
+              <td>NATIONAL ROOT CORPS RESEARCH INSTITUTE</td>
+              <td></td>
+              <td>Umudike, Umuahia</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>HEALING CROSS HOSPITAL</td>
+              <td></td>
+              <td>Kilometre 2 Bende Road, Umuahia, Abia State</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>EL-SHADDAI HOSPITAL</td>
+              <td></td>
+              <td>40 AHOADA STREET, UMUAHIA</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>HARVEY CLINIC</td>
+              <td></td>
+              <td>14, HOWELL'S CRESCENT, ABA</td>
+              <td></td>
+              <td></td>
+              <td>ABA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>MICHAEL OKPARA UNIVERSITY OFAG</td>
+              <td></td>
+              <td>Umudike, Abia</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>CHUKWUEBUKA HOSPITAL</td>
+              <td></td>
+              <td>50 School Road, Umuahia</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>NGOZI HOSPITAL</td>
+              <td></td>
+              <td>2 Isuochi Close, Umuahia</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>UZONDU POLY CLINIC</td>
+              <td></td>
+              <td>8 Ofali Agwu Road Amaekpu Ohafia,Abia State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>NIGERIAN CHRISTIAN HOSPITAL NLA</td>
+              <td></td>
+              <td>Km 18,Aba-Ekot-Ekpene Road Aba Abia State</td>
+              <td></td>
+              <td></td>
+              <td>ABA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>LIFE ESSENTIAL HOSIPTAL & MATERNITY</td>
+              <td></td>
+              <td>32, Uyo Street, by Okigwe road, Umuahia</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>MADONNA CATHOLIC HOSPITAL</td>
+              <td></td>
+              <td>Ohokobe Afaraukwu Aba Road, Umuahia. Abia State</td>
+              <td></td>
+              <td></td>
+              <td>UMUAHIA</td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>AMARA JANE HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABIA</td>
+          </tr>
+          <tr>
+              <td>BEACON HOSPITAL</td>
+              <td></td>
+              <td>12. Umudora Street, Awka, Anambra State.</td>
+              <td></td>
+              <td></td>
+              <td>AWKA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>DIVINE HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>9 Ken Okoli Street, Off Works Road, Awka, Anambra State.</td>
+              <td></td>
+              <td></td>
+              <td>AWKA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>NNAMDIAZIKIWE UNIVERSITY TEACHING HOSPITAL</td>
+              <td></td>
+              <td>Nnewi, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td>NNEWI</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL ONITSHA</td>
+              <td></td>
+              <td>Hospital Road, Onitsha, Anambra State.</td>
+              <td></td>
+              <td></td>
+              <td>ONITSHA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>RUSH GREEN MATERNITY HOSPITAL & CLINIC</td>
+              <td></td>
+              <td>64, Ugwunobamkpa Road, Near Isokwe Police Post, Onitsha.</td>
+              <td></td>
+              <td></td>
+              <td>ONITSHA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>NEW HOPE MEDICAL CENTRE</td>
+              <td></td>
+              <td>No 80, Modebe Avenue, Odoakpu, Onitsha, Anambra State.</td>
+              <td></td>
+              <td></td>
+              <td>ONITSHA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>VENIK SPECALIST HOSPITAL</td>
+              <td></td>
+              <td>No. 1 Olo Street, Omagba Layout Onitsha, Anambra State.</td>
+              <td></td>
+              <td></td>
+              <td>ONITSHA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>ST. LUKES HOSPITAL</td>
+              <td></td>
+              <td>No 7, Onwudiwe Street Onitsha, Anambra State.</td>
+              <td></td>
+              <td></td>
+              <td>ONITSHA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>INTENSIVE CARE HOSPITAL</td>
+              <td></td>
+              <td>No 36, Oguta Road, Onitsha, Anambra State.</td>
+              <td></td>
+              <td></td>
+              <td>ONITSHA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>COTTAGE HOSPITAL & COMPREHENSIVE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>CHRIST THE KING HOSPITAL</td>
+              <td></td>
+              <td>Off Nkwura Street, Awka, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td>AWKA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>HOLY ROSARY SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>Waterside, Along Bank of the Niger, Onitsha, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td>ONITSHA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>IFEBI MEDICAL CENTRE</td>
+              <td></td>
+              <td>No 16A, Igwebuike School Road, Awka, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td>AWKA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>BELUCHUKWU MEMORIAL HOSPITAL</td>
+              <td></td>
+              <td>Nkwo, Enugu-Ukwu, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>CHUKWUNONSO HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>Nanka, Orumba, Anambra State.</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>CHUKWUNONSO HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>Oko, Ekwulobin, Anambra</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>ST. CHARLES BORROMEO HOSPITAL</td>
+              <td></td>
+              <td>Off Limca Road, Onitsha, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td>ONITSHA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>ST. AUGUSTINES HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>Oko, Ekwulobia, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>UGOCHUKWU HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>No. 3 Obinna Street, Nkpor, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>THE LIGHT SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>No. 40, Eme Court Rd., Umudim, Nnewi, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>LIFE SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>No. 7 Ikemba Drive, Umudim, Nnewi, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>CHIMEX SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>No. 87 Ezemewi Road, Nnewichi, Nnewi, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td>NNEWI</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>KING DAVID HOSPITAL</td>
+              <td></td>
+              <td>Agulu, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>SEFTON SPECIALIST MEDICAL CENTRE</td>
+              <td></td>
+              <td>5, Onubuya Street, off Court Road, Awka</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>FEDERAL COLLEGE OF EDUCATION</td>
+              <td></td>
+              <td>Umunze, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td>UMUNZE</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>ST. CATHERINES HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>Umumze, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>CHIBUZOR HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>34,ORLU ROAD, EKWULOBIA,ANAMBRA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>CROWN HOSPITAL</td>
+              <td></td>
+              <td>UMUOJI ROAD,MKPOR, ANAMBRA STATE</td>
+              <td></td>
+              <td></td>
+              <td>MKPOR</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>GOZIE SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>10A NEW CEMETARY ROAD, ONITSHA</td>
+              <td></td>
+              <td></td>
+              <td>ONITSHA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>IMMACULATE HEART OF MARY SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>OLD ENUGU-ONITSHA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>NNAMDI AZIKWE UNIVERSITY MEDICAL CENTRE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>AWKA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>CHIDERA HOSPITAL</td>
+              <td></td>
+              <td>12 Metun Road Umuanuka, Otolo Nnewi</td>
+              <td></td>
+              <td></td>
+              <td>NNEWI</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>URBAN HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>Enugu/Onitsha Express Way</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>IYIENU HOSPITAL</td>
+              <td></td>
+              <td>Iyienu Hospital Road, Ogidi</td>
+              <td></td>
+              <td></td>
+              <td>OGIDI</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>ST VICTORIA SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>61 Orlu Ekwulobia</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>INFANT JESUS HOSPITAL & CHILDREN'S CLINIC</td>
+              <td></td>
+              <td>1 Emenike Crescent, Oremohu Street, Awada</td>
+              <td></td>
+              <td></td>
+              <td>AWADA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>BETHSAIDA SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>Plot CL6, Pond Street Housing Estate, Feggae, Onitsha</td>
+              <td></td>
+              <td></td>
+              <td>ONITSHA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>CHIDERA SPECIALIST HOSPITA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>OUR LADY OF LOURDES HOSPITAL</td>
+              <td></td>
+              <td>Ihiala, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td>IHIALA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>HIS GLORY HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>96 Arthur Eze Avenue, near Tracy Hotel, Awka</td>
+              <td></td>
+              <td></td>
+              <td>AWKA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>KANAYO SPECIALIST HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>17 Enugu Road, Onitsha</td>
+              <td></td>
+              <td></td>
+              <td>ONITSHA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>ST. HELEN'S SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>Agbou Estate Behind Kenneth Dike Sec Sch Off Obinagu, Amawbia Awka Anambra State</td>
+              <td></td>
+              <td></td>
+              <td>AWKA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>HARMONY SPECIALIST HOSPITAL & </td>
+              <td></td>
+              <td>5 Orogbu Awka Anambra State</td>
+              <td></td>
+              <td></td>
+              <td>AWKA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>DAYSPRING COTTAGE HOSPITAL</td>
+              <td></td>
+              <td>Little-Wood Estate Umuota, Obosi Anambra State</td>
+              <td></td>
+              <td></td>
+              <td>OBOSI</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>CHUKWUEMEKA ODUMEGWU OJUKWU</td>
+              <td></td>
+              <td>Awka  Amaku Anambra State</td>
+              <td></td>
+              <td></td>
+              <td>AWKA</td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>ROCK FOUNDATION HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>No 5,Igwebuike Road Awka Anambra State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>PRIME SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>No 5, Nwufo Meniru Street Beside Bishop Crother Seminary, Awka Anambra State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>MERCY SPECIALIST HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>No 4A, New American Road, Onitcha, Anambra State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>REGINA CAELI SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>KANDUDI SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>MADONNA SPECIALIST HOSPITAL NIGERIA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>ELDORADO MUILI-SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>HOPEALIVE MISSION HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>FIRST GRACELAND SPECIALIST HOSIPTAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>IDEAL HOSPITALAND MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ANAMBRA</td>
+          </tr>
+          <tr>
+              <td>ST. THERESA`S HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>18 Jameni Street Abakaliki</td>
+              <td></td>
+              <td></td>
+              <td>ABAKALIKI</td>
+              <td>EBONYI</td>
+          </tr>
+          <tr>
+              <td>CHRIST THE KING HOSPITAL</td>
+              <td></td>
+              <td>85, Afikpo Road, Abakaliki</td>
+              <td></td>
+              <td></td>
+              <td>ABAKALIKI</td>
+              <td>EBONYI</td>
+          </tr>
+          <tr>
+              <td>FEDERALTEACHING HOSPITAL, ABAKALIKI</td>
+              <td></td>
+              <td>Opposite Police Barracks</td>
+              <td></td>
+              <td></td>
+              <td>ABAKALIKI</td>
+              <td>EBONYI</td>
+          </tr>
+          <tr>
+              <td>AFIKPO MEDICAL CENTRE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>EBONYI</td>
+          </tr>
+          <tr>
+              <td>FELIX MEMORIAL HOSPITAL</td>
+              <td></td>
+              <td>Abakaliki, Ebonyi State</td>
+              <td></td>
+              <td></td>
+              <td>ABAKALIKI</td>
+              <td>EBONYI</td>
+          </tr>
+          <tr>
+              <td>POLICE CLINICS, EBONYI</td>
+              <td></td>
+              <td>Ebonyi State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>EBONYI</td>
+          </tr>
+          <tr>
+              <td>MATER MISERICODIAE HOSPITAL</td>
+              <td></td>
+              <td>Afikpo North LGA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>EBONYI</td>
+          </tr>
+          <tr>
+              <td>MILE FOUR HOSPITAL, ABAKALIKI</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ABAKALIKI</td>
+              <td>EBONYI</td>
+          </tr>
+          <tr>
+              <td>SMILE SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>EBONYI</td>
+          </tr>
+          <tr>
+              <td>NATIONAL OBSTETRIC FISTULA CENTRE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>EBONYI</td>
+          </tr>
+          <tr>
+              <td>ST. PATRICKS HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>8, Owerri Road, Asata, Enugu</td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>CHRIST THE KING HOSPITAL</td>
+              <td></td>
+              <td>No. 18 Emeka Abalu Ave. Phase 6, Trans Ekulu, Enugu</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>PEENOK MEDICAL CENTRE</td>
+              <td></td>
+              <td>24, Zik Avenue, Uwani, Enugu</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>DR. NLOGHA OKEKE MEMORIAL FOUNDATION</td>
+              <td></td>
+              <td>30, Amigbo Lane Uwani, Enugu</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>JENO HOSPITAL LTD.</td>
+              <td></td>
+              <td>23 Nnamdi Azikiwe Avenue, Trans-Ekulu, Enugu</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>MICHAEL OBAYI MEMORIAL HOSPITAL</td>
+              <td></td>
+              <td>49/51, Emmanuel Obayi Avenue, Anyanaeleigbo Achara, Nsukka</td>
+              <td></td>
+              <td></td>
+              <td>NSUKKA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>CIMAC HOSPITAL LTD.</td>
+              <td></td>
+              <td>91, Agbani Road, Enugu.</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>RISTELA HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>3, Ristela Close, Independence Layout, Off Residential Road,</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>NIGER FOUNDATION HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>OUR SAVIOUR MEDICAL CENTRE</td>
+              <td></td>
+              <td>9th Mile</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>NTASIOBI HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>AKULUE MEMORIAL HOSPITAL</td>
+              <td></td>
+              <td>16/18 Akulue Road, Onuiyi, Nsukka, Enugu</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>UNITY NGWO HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>Ngwo, Enugu, Enugu State</td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>BENEM HOSPITAL</td>
+              <td></td>
+              <td>Ngwo, Enugu, Enugu State</td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>LIFE FOUNDATION HOSPITAL</td>
+              <td></td>
+              <td>3, Agu Street, Achara Layout, Enugu</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>IBEZIM MEDICAL CLINICS</td>
+              <td></td>
+              <td>56, Ufuma Street, Achara Layout, Enugu</td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>KENECHUKWU SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>94, Nike Road, Abakpa, Enugu State</td>
+              <td></td>
+              <td></td>
+              <td>ABAKPA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>JULIUS EZENYIRIOHA MEMORIAL HOSIPTAL</td>
+              <td></td>
+              <td>32, Nike Road, Abakpa Nike, Enugu.</td>
+              <td></td>
+              <td></td>
+              <td>ABAKPA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>ST. LEO`S SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>Nike Lake Road, Abakpa, Enugu</td>
+              <td></td>
+              <td></td>
+              <td>ABAKPA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>ORIENT HOSPITAL</td>
+              <td></td>
+              <td>Agbani Town, Agbani, Enugu</td>
+              <td></td>
+              <td></td>
+              <td>AGBANI</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>MOTHER OF MERCY HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>Ihe, Awgu Lga, Enugu State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>ROYAL HOSPITAL</td>
+              <td></td>
+              <td>3 Aria Road, Gra, Enugu</td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>ANNUCIATION HOSPITAL</td>
+              <td></td>
+              <td>Emene, Enugu.</td>
+              <td></td>
+              <td></td>
+              <td>EMENE</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>ESUT TEACHING HOSPITAL, PARKLANE</td>
+              <td></td>
+              <td>G R A, Enugu</td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>ORAKWUE HOSPITAL</td>
+              <td></td>
+              <td>16 Affa Street, Uwani, Enugu</td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>UNIVERSITY OF NIGERIA TEACHING HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>82 DIV HOSPITAL</td>
+              <td></td>
+              <td>Enugu, Enugu State</td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>NATIONAL ORTHOPAEDIC HOSPITAL</td>
+              <td></td>
+              <td>Enugu, Enugu State</td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>UNN MEDICAL CENTRE, ENUGU</td>
+              <td></td>
+              <td>UNEC, Enugu Campus</td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>ALL SAINTS MEDICAL CENTRE</td>
+              <td></td>
+              <td>No 7, Edemani Road, Nsukka</td>
+              <td></td>
+              <td></td>
+              <td>NSUKKA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>UNIVERSITY OF NIGERIA, NSUKKA ME</td>
+              <td></td>
+              <td>Nsukka, Enugu State</td>
+              <td></td>
+              <td></td>
+              <td>NSUKKA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>MOTHER OF CHRIST SPECIALIST HOSIPTAL</td>
+              <td></td>
+              <td>Ogui, Enugu State</td>
+              <td></td>
+              <td></td>
+              <td>OGUI</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>UNN MEDICAL CENTRE - NSUKKA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>NSUKKA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>THE GOOD SHEPHERD SPECIALIST HOSIPTAL</td>
+              <td></td>
+              <td>CHRIST CHURCH STREET, UWANI</td>
+              <td></td>
+              <td></td>
+              <td>UWANI</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>CHINEMELU HOSPITAL</td>
+              <td></td>
+              <td>88,OGURGURU ROAD,ODENIGBO,NSUKKA</td>
+              <td></td>
+              <td></td>
+              <td>NSUKKA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>CHIGOZIE HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>11 Ekwulu Lane, Emene</td>
+              <td></td>
+              <td></td>
+              <td>EMENE</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>THE GOOD SHEPHERD HOSPITAL</td>
+              <td></td>
+              <td>8/10 Iheagu Road NRU Village, Nsukka</td>
+              <td></td>
+              <td></td>
+              <td>NSUKKA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>BISHOP SHANAHAN HOSPITAL</td>
+              <td></td>
+              <td>46 Enugu Road, Nsukka</td>
+              <td></td>
+              <td></td>
+              <td>NSUKKA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>KINGS COURT HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>28,Edenwu street New Haven, Enugu State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>EKWOMIBE MEMORIAL HOSPITA</td>
+              <td></td>
+              <td>Ngwo, Enugu State</td>
+              <td></td>
+              <td></td>
+              <td>NGWO</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>FAITH FOUNDATION HOSPITAL</td>
+              <td></td>
+              <td>27B,Ogurugo Road Nsukka,Enugu State</td>
+              <td></td>
+              <td></td>
+              <td>NSUKKA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>MOUNTARAFAT HOSPITAL</td>
+              <td></td>
+              <td>59,Aku Road Nsukka,Enugu State</td>
+              <td></td>
+              <td></td>
+              <td>NSUKKA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>TENDERCARE HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>NO.5B Ezeji Close Ugboezechi,Abakpa,Enugu State/td>
+              <td></td>
+              <td></td>
+              <td>ABAKPA</td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>ENUGU STATE UNI OF SCIENCE & TECH.</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>FREEDOM FERTILITY CENTRE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>KEME HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>AICKON SPECIALIST HOPSITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>DIVINE BLESSED ASSURANCE MEDICAL CENTRE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>MERCY OF GOD HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>PATRICK OTIJI SPECIALISTS  HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>ROSA MYSTICA HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>PAULSONIC HOSPITAL LIMITED</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>THE MERKEN HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ENUGU</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL ABOH</td>
+              <td></td>
+              <td>Aboh Mbaise</td>
+              <td></td>
+              <td></td>
+              <td>MBAISE</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>CORPUS CHRISTI MONICE MEMORIAL</td>
+              <td></td>
+              <td>Amuzi Mbaise</td>
+              <td></td>
+              <td></td>
+              <td>MBAISE</td>
+              <td>IMO</td>
+          </tr>
+          </tr>
+          <tr>
+              <td>JASMAN HOSPITAL LTD.</td>
+              <td></td>
+              <td>Udo Ezinihitte Mbaise, Imo</td>
+              <td></td>
+              <td></td>
+              <td>MBAISE</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>OBIZIE PEOPLE'S MEDICAL CENTRE</td>
+              <td></td>
+              <td>Obizi Ezinihite, Mbaise, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>MBAISE</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, OKIGWE</td>
+              <td></td>
+              <td>Okigwe, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OKIGWE</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>OUR LADY OF MERCY HOSPITAL & </td>
+              <td></td>
+              <td>102/104 Royce Road, Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>FIRST CONCEPTS HOSPITAL</td>
+              <td></td>
+              <td>105, Ikenegbu Layout, Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>ANGBOSO SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>Plot P6 Work Layout, Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>UMEZURUIKE HOSPITAL</td>
+              <td></td>
+              <td>21 Umezuruike Street, Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>TOTAL CARE MEDICAL CENTRE</td>
+              <td></td>
+              <td>148/150 Tetilow Road, Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>THE CHAPEL GRD SPEC. HOSPITAL</td>
+              <td></td>
+              <td>Plot 620 Works Layout, Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>EZEM MEDICAL CENTRE</td>
+              <td></td>
+              <td>4 Osuji Street, Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>ST. ELIZABETH HOSPITAL</td>
+              <td></td>
+              <td>10 Govt. House/Shell Camp Road, Owerri, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>AKARAUGO HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>3, Egbukole Street, Ikenegbu, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>IKENEGBU</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>LIFE SPRING SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>Plot 49, Okigwe Road Layout, Owerri, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>JONE MEDICAL CENTRE</td>
+              <td></td>
+              <td>Plot 189 Ikenegbu Layout Extension, through Chukwuma Nwoha Street, Owerri, Imo Sate</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>SALVATION HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>38, Mcc/Uratta Road, Owerri, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>IKENEGBU HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>Plot 11 & 13 Amadi Crescent, Okigwe Road Layout, Owerri, Imo</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>ST. DAVID'S HOSPITAL</td>
+              <td></td>
+              <td>14,  Mbari Street, Ikenegbu, Owerri, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>NEW CROSS HOSPITAL LTD.</td>
+              <td></td>
+              <td>5, New Cross Hospital Street, Ugwuorji, Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>ALADINMA HOSPITAL</td>
+              <td></td>
+              <td>Transfiguration  Road, Owerri, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>UCHENNA HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>10/12 Eniweruzoh Crescent Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>CHINYERE CLINIC & MATERNITY</td>
+              <td></td>
+              <td>14b, Onumonu Str., Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>CHRISTIANA SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>Egbu/Emuoba Rd., Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>CAPITAL HEALTH HOSPITAL</td>
+              <td></td>
+              <td>44 Oyima Street,Owerri, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>IVORY CLINIC</td>
+              <td></td>
+              <td>Okigwe, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OKIGWE</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>IMO STATE UNIVERSITY TEACHING HOSIPTAL</td>
+              <td></td>
+              <td>Orlu, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>ORLU</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>IMO STATE SPECIALIST HOSPITAL,</td>
+              <td></td>
+              <td>New Owerri, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>FEDERAL MEDICAL CENTRE, OWERRI</td>
+              <td></td>
+              <td>Owerri, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>AMANDA HOSPITAL</td>
+              <td></td>
+              <td>Plot 412/415 Works Layout, Owerri, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>POLICE HOSPITAL, IMO</td>
+              <td></td>
+              <td>Owerri, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>INTERNATIONAL CHRISTIAN HOSPITAL</td>
+              <td></td>
+              <td>11 WAAST AVENUE, IKENEGBU</td>
+              <td></td>
+              <td></td>
+              <td>IKENEGBU</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>CHRISTIAN MEDICAL CENTER</td>
+              <td></td>
+              <td>Nwaorieubi, Imo State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>ETITI MEDICAL CENTER</td>
+              <td></td>
+              <td>Etiti Isinweke Ihitte Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>HOLY FAMILY HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>94 Ikenegbu Layout, Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>NEW CREATION MEDICAL CONSULTANCY</td>
+              <td></td>
+              <td>19 Obazu Road, Nworji Mbieri, Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>IMO STATE UNIVERSITY TEACHING HOSIPTAL</td>
+              <td></td>
+              <td>Orlu, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>ORLU</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>VADEN SPECIALIST CLINIC & MATERNITY</td>
+              <td></td>
+              <td>4B, Solid Rock road, off World Bank Road, Owerri</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>STEPS OF FAITH HOSPITAL</td>
+              <td></td>
+              <td>No. 9, Mere Street, Owerri, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>FAMILYCARE SPECIALIST CLINICS</td>
+              <td></td>
+              <td>New Owerri, Imo State</td>
+              <td></td>
+              <td></td>
+              <td>OWERRI</td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>GEOFFREY MEMORIAL HEALTHCARE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>ZENNIA HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>OWERRI  SICKBAY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>EASTERN SUMMIT SPECIALIST CLINIC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>J B HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>MC-FORTUNE MEDICAL CENTRE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>ST. JOHN'S HOSPITAL & MATERNITy</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>HOLY ROSARY HOSPITAL, EMEKUKU</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>General Hospital, Awo - Omamma</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>IMO</td>
+          </tr>
+          <tr>
+              <td>Medical City Hospital</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>IMO</td>
+          </tr>
+      </tbody>
+      </table>
+      <!--		Start Pagination -->
+      <div class='pagination-container' >
+       <nav>
+          <ul class="pagination" style="list-style: none;">
+          <li data-page="prev" >
+              <span> << <span class="sr-only">(current)</span></span>
+          </li>
+      <!--	Here the JS Function Will Add the Rows -->
+          <li data-page="next" id="prev">
+              <span> >> <span class="sr-only">(current)</span></span>
+          </li>
+          </ul>
+       </nav>
+      </div>
+      </div> <!-- 		End of Container -->
+      </section>
+  </main>
+<!--this is the footer section with contact information and links-->
+<section class="footer"> 
+  <div class="footer-top">       
+    <div class="row">
+      <div class="col">       
+        <h3 class="footer-title">Health Plans</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="individualplan.html">Individual</a></li>       
+          <li><a class="footer-text-3" href="familyplan.html">Family</a></li>       
+          <li><a class="footer-text-3" href="corporateplan.html">Corporate</a></li>      
+          <li><a class="footer-text-3" href="customizedplan.html">Customized</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">       
+        <h3 class="footer-title">Recources</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="enrollment.html">Enrollment</a></li>       
+          <li><a class="footer-text-3" href="download.html">Downloads</a></li>       
+          <li><a class="footer-text-3" href="faqs.html">FAQ</a></li>      
+          <li><a class="footer-text-3" href="career.html">Career</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">
+        <h3 class="footer-title">Quick Links </h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="aboutus.html">About Us</a></li>       
+          <li><a class="footer-text-3" href="policy.html">Privacy Policy</a></li>
+          <li><a class="footer-text-3" href="terms.html">Terms of Use</a></li>
+          <li><a class="footer-text-3" href="contact.html">Contact Us</a></li>       
+        </ul>           
+      </div>         
+    </div>    
+  </div>     
+<div class="row">
+<div class="col3-3">
+<div class="copyright-text" style="float: left;">© 2022 Songhai Health Trust Limited. All rights reserved.
+</div>
+</div>
+<div class="col3-3" style="float: right;">
+<div class="media">
+  <a href="https://play.google.com/store/search?q=songhai+hmo&c=apps&hl=en&gl=US"><img src="log.jpg"></a>
+  <a href="mailto:info@songhaihealthtrust.com"><img src="mail.png"></a>
+  <a href="https://www.linkedin.com/login"><img src="linkedin1.png"></a>
+  <a href="https://www.facebook.com/songhaihealth/"><img src="face.jpg"></a>
+  <a href="https://mobile.twitter.com/songhaihealth"><img src="tweet.jpg"></a>
+  <a href="https://www.instagram.com/p/CdDdbxhtbK1/?igshid=YTgzYjQ4ZTY%3D"><img src="insta.jfif"></a>
+</div>
+</div>
+</div>
+</section> 
+<script>
+  getPagination('#table-id');
+           //getPagination('.table-class');
+           //getPagination('table');
+ 
+       /*					PAGINATION 
+       - on change max rows select options fade out all rows gt option value mx = 10
+       - append pagination list as per numbers of rows / max rows option (20row/10= 2pages )
+       - each pagination li on click -> fade out all tr gt max rows * li num and (10*pagenum 2 = 20 rows)
+       - fade out all tr lt max rows * li num - max rows ((10*pagenum 2 = 20) - 5)
+       - fade in all tr between (maxRows*PageNum) and (maxRows*pageNum)- MaxRows 
+       */
+      
+ 
+ function getPagination(table) {
+   var lastPage = 1;
+ 
+   $('#maxRows')
+     .on('change', function(evt) {
+       //$('.paginationprev').html('');						// reset pagination
+ 
+      lastPage = 1;
+       $('.pagination')
+         .find('li')
+         .slice(1, -1)
+         .remove();
+       var trnum = 0; // reset tr counter
+       var maxRows = parseInt($(this).val()); // get Max Rows from select option
+ 
+       if (maxRows == 5000) {
+         $('.pagination').hide();
+       } else {
+         $('.pagination').show();
+       }
+ 
+       var totalRows = $(table + ' tbody tr').length; // numbers of rows
+       $(table + ' tr:gt(0)').each(function() {
+         // each TR in  table and not the header
+         trnum++; // Start Counter
+         if (trnum > maxRows) {
+           // if tr number gt maxRows
+ 
+           $(this).hide(); // fade it out
+         }
+         if (trnum <= maxRows) {
+           $(this).show();
+         } // else fade in Important in case if it ..
+       }); //  was fade out to fade it in
+       if (totalRows > maxRows) {
+         // if tr total rows gt max rows option
+         var pagenum = Math.ceil(totalRows / maxRows); // ceil total(rows/maxrows) to get ..
+         //	numbers of pages
+         for (var i = 1; i <= pagenum; ) {
+           // for each page append pagination li
+           $('.pagination #prev')
+             .before(
+               '<li data-page="' +
+                 i +
+                 '">\
+                   <span>' +
+                 i++ +
+                 '<span class="sr-only">(current)</span></span>\
+                 </li>'
+             )
+             .show();
+         } // end for i
+       } // end if row count > max rows
+       $('.pagination [data-page="1"]').addClass('active'); // add active class to the first li
+       $('.pagination li').on('click', function(evt) {
+         // on click each page
+         evt.stopImmediatePropagation();
+         evt.preventDefault();
+         var pageNum = $(this).attr('data-page'); // get it's number
+ 
+         var maxRows = parseInt($('#maxRows').val()); // get Max Rows from select option
+ 
+         if (pageNum == 'prev') {
+           if (lastPage == 1) {
+             return;
+           }
+           pageNum = --lastPage;
+         }
+         if (pageNum == 'next') {
+           if (lastPage == $('.pagination li').length - 2) {
+             return;
+           }
+           pageNum = ++lastPage;
+         }
+ 
+         lastPage = pageNum;
+         var trIndex = 0; // reset tr counter
+         $('.pagination li').removeClass('active'); // remove active class from all li
+         $('.pagination [data-page="' + lastPage + '"]').addClass('active'); // add active class to the clicked
+         // $(this).addClass('active');					// add active class to the clicked
+       limitPagging();
+         $(table + ' tr:gt(0)').each(function() {
+           // each tr in table not the header
+           trIndex++; // tr index counter
+           // if tr index gt maxRows*pageNum or lt maxRows*pageNum-maxRows fade if out
+           if (
+             trIndex > maxRows * pageNum ||
+             trIndex <= maxRows * pageNum - maxRows
+           ) {
+             $(this).hide();
+           } else {
+             $(this).show();
+           } //else fade in
+         }); // end of for each tr in table
+       }); // end of on click pagination list
+     limitPagging();
+     })
+     .val(10)
+     .change();
+ 
+   // end of on select change
+ 
+   // END OF PAGINATION
+ }
+ 
+ function limitPagging(){
+   // alert($('.pagination li').length)
+ 
+   if($('.pagination li').length > 7 ){
+       if( $('.pagination li.active').attr('data-page') <= 3 ){
+       $('.pagination li:gt(5)').hide();
+       $('.pagination li:lt(5)').show();
+       $('.pagination [data-page="next"]').show();
+     }if ($('.pagination li.active').attr('data-page') > 3){
+       $('.pagination li:gt(0)').hide();
+       $('.pagination [data-page="next"]').show();
+       for( let i = ( parseInt($('.pagination li.active').attr('data-page'))  -2 )  ; i <= ( parseInt($('.pagination li.active').attr('data-page'))  + 2 ) ; i++ ){
+         $('.pagination [data-page="'+i+'"]').show();
+ 
+       }
+ 
+     }
+   }
+ }
+ $(function() {
+   // Just to append id number for each row
+   $('table tr:eq(0)').prepend('<th> ID </th>');
+ 
+   var id = 0;
+ 
+   $('table tr:gt(0)').each(function() {
+     id++;
+     $(this).prepend('<td>' + id + '</td>');
+   });
+ });
+ </script>
+</body>
+</html>
