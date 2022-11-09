@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--tittle>Songhai Health Trust Limited Healthcare Provider Page</tittle-->
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Healthcare Providers | Songhai Health Trust Limited</title>
+        <link rel="icon" href="log.jpg" type="image/x-icon">
+        <script scr="index.js" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bolded Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+  <style>
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  width: 100%;
+  height: 75%;
+  top: 15%;
+  bottom: 10%;
+  color: none;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: none;
+}
+/* for the website header.
+two image containers */
+.row {
+  width: 100%;
+  display: flex;
+}
+.column {
+  width: 350px;
+  flex: 50%;
+  padding: none;
+  top: 0;
+  margin-top: 1em;
+  height: 100px; 
+  justify-content: space-between;
+}
+.column img {
+ background-color: white;
+ font-size: 22px;
+ width: 350px;
+ height: 100px;
+ bottom: 10%;
+ margin: 0;
+ margin-left: 20px;
+ vertical-align: top;
+}
+#contact-no {
+   float: right;
+   background-color: none;
+   font-size: 38px;
+   color: #000080;
+   bottom: 10%;
+   margin: 0;
+   margin-top: 1%;
+  }
+/*clears float after image container*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* styling the navigation bar */
+nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 10%;
+    height: 5%;
+    margin: none;
+    margin-bottom: 1em;
+}
+.menu a {
+  color: #000080;
+  text-decoration: none;
+}
+.menu,
+.submenu {
+  list-style-type: none;
+}
+.logo img {
+  width: 140px;
+  height: 40px;
+}
+.item {
+  padding: 10px;
+}
+.item.button {
+  padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+  color: #008000;
+  text-decoration: overline;
+}
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+}
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+.menu li.subitem a {
+  padding: 15px;
+}
+.toggle {
+  order: 1;
+  font-size: 24px;
+  margin-right: 4%;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  order: 3;
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+  display: none;
+}
+.active .item {
+  display: block;
+}
+.button.secondary {
+  /* divider between buttons and menu links */
+  border-bottom: 1px #444 solid;
+}
+/* Submenu up from mobile screens */
+.submenu {
+  display: none;
+}
+.submenu-active .submenu {
+  display: block;
+}
+.has-submenu i {
+  font-size: 24px;
+}
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  line-height: 16px;
+  color: #000080;
+  padding-left: 5px;
+}
+.subitem a {
+  padding: 10px 15px;
+}
+.submenu-active {
+  background-color: none;
+  border-radius: 3px;
+}
+ 
+/* styling for Provider Services ans Image carousel slider */
+#service-section {
+   display: grid;
+   place-items: center;
+   text-align: center;
+   background: none;
+ }
+.pro-header {
+  font-size: 38px;
+  color: #000080;
+  font-weight: bolder;
+  font-family: 'Cinzel';
+  font-weight: bold;
+  text-align: center;
+  margin-top: 32px;
+}
+.services p {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 500;
+  font-family: 'Roboto';
+  text-align: center;
+  margin-bottom: 32px;
+}
+ .slider{
+  width: 90%;
+   max-width: 1100px;
+   display: flex;
+   margin-left: 5%;
+ }
+ .slider .card{
+   flex: 1;
+   margin: 0 10px;
+   background: none;
+ }
+ .slider .card .img{
+   height: 250px;
+   width: 100%;
+   margin: 5px;
+ }
+ .slider .card .img img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+ }
+ .slider .card .content{
+   padding: 10px 20px;
+ }
+ .card .content .title{
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #000000;
+   font-size: 22px;
+   font-weight: 400;
+ }
+ .card .content p{
+   text-align: justify;
+   margin: 10px 0;
+ }
+ .card .content .btn{
+   display: block;
+   text-align: left;
+   margin: 10px 0;
+ }
+ .card .content .btn button{
+   background: #022873;
+   color: #fff;
+   border: none;
+   outline: none;
+   font-size: 18px;
+   padding: 5px 8px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.2s;
+ }
+ .card .content .btn button:hover{
+   transform: scale(0.9);
+ }
+
+ /* styling for Provider Service List page*/
+ #healthcare-providers {
+/*  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%); */
+  background: url(radiology.jpg);
+  background-attachment: fixed;
+  background-size:cover;
+  margin: 0;
+}
+.container-provider {
+    width: 100%;
+    position: relative;
+}
+.container-provider {
+    top: 40%;
+    bottom: 10%;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    overflow: hidden;
+}
+.accordion{
+  width: 40vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  border: 1px solid #fff4;
+  overflow: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  padding: 10px;
+  background-color: #18884C;
+  margin-left: 30%;
+}
+.accordion__label {
+  padding: 14px 20px;
+}
+.accordion__label{
+  display: block;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.1s;
+}
+.accordion__label:hover {
+  background-color: #fffff9;
+  color: #ffff;
+}
+.accordion__input {
+  display: none;
+}
+
+/* the footer is fixed to the bottom of the page */
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  height: 10%;
+  bottom: 0%;
+  margin-top: 8px;
+  margin-bottom: 0;
+  background: #e6f2ef;
+  vertical-align: top;
+  color: #000080;
+  line-height: 20px;
+}
+.col {
+  float: left;
+  width: 33.33%;
+}
+.footer-title {
+  text-align: left;
+  margin-left: 32px;
+  margin-top: 48px;
+  font-size: 26px;
+}
+.footer-text-3 {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 24px;
+}
+.footer-text-3:hover {
+  color: #008000;
+  transform: scale(1.08);
+}
+.col3-3 {
+  flex: 50%;
+}
+.copyright-text {
+  display: inline;
+  margin-left: 60px;
+}
+.media {
+  display: inline;
+  margin-right: 40px;
+  float: right;
+}
+.media img {
+  display: inline;
+}
+.media img {
+  background-color: #ffffff;
+  color: none;
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  text-align: left;
+  margin: 10px 15px;
+  vertical-align: left;
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+
+/* setting the media query of the page */
+/* Tablet menu */
+@media all and (min-width: 320px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    nav {
+      background: #e6f2ef;
+    }
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+    /* Button up from tablet screen */
+    .menu li.button a {
+      padding: 10px 15px;
+      margin: 5px 0;
+    }
+    .button .menu a {
+      background: #0080ff;
+      border: 1px #0082ff;
+    }
+    .button.secondary {
+      border: 0;
+    }
+    .button.secondary a {
+      background: transparent;
+      border: 1px #0080ff solid;
+    }
+    .button a:hover {
+      text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+      background: #0082ff;
+      border-color: #000080;
+    }
+  }
+  /* Desktop menu */
+  @media all and (min-width: 769px) {
+    .menu {
+      float: left;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      background: none;
+    }
+    .subitem {
+      text-align: left;
+    }
+    nav {
+      background: none;
+    }
+    .logo {
+      display: none;
+    }
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+    .button {
+      order: 2;
+    }
+    .submenu-active .submenu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 68px;
+      background: none;
+    }
+    .toggle {
+      display: none;
+    }
+    .submenu-active {
+      border-radius: 0;
+    }
+  }
+/* on extralarge screens, decrease font size */
+@media only screen and (max-width: 1920px) {
+.pro-header {
+  font-size: 38px;
+  margin-top: 32px;
+}
+.services p {
+  font-size: 22px;
+  margin-bottom: 32px;
+}
+.slider{
+   max-width: 1100px;
+ }
+ .slider .card .img{
+   height: 250px;
+   width: 100%;
+   margin: 5px;
+ }
+ .slider .card .content{
+   padding: 10px 20px;
+ }
+ .card .content .title{
+   font-size: 22px;
+ }
+ .card .content p{
+   margin: 10px 0;
+ }
+ .card .content .btn{
+   margin: 10px 0;
+ }
+ .card .content .btn button{
+   font-size: 18px;
+   padding: 5px 8px;
+ }
+.container-provider {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.accordion{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 10px;
+}
+.accordion__label {
+  padding: 14px 20px;
+}
+.accordion__label{
+  font-size: 22px;
+}
+.footer {
+  margin-top: 8px;
+  line-height: 20px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 48px;
+  font-size: 26px;
+}
+.footer-text-3 {
+  font-size: 24px;
+}
+.copyright-text {
+  font-size: 20px;
+  margin-top: 8px;
+}
+.media img {
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  margin: 10px 15px;
+}
+  }
+ /* On larger screens, decrease font size */
+@media only screen and (max-width: 1600px) {
+  .column {
+    width: 320px;
+    font-size: 36px;
+  }
+  .column img {
+   width: 320px;
+   height: 91px;
+  }
+  #contact-no {
+   font-size: 34px;
+  }
+.pro-header {
+  font-size: 36px;
+  margin-top: 32px;
+}
+.services p {
+  font-size: 22px;
+  margin-bottom: 32px;
+}
+.slider{
+   max-width: 920px;
+ }
+ .slider .card .img{
+   height: 209px;
+   width: 100%;
+   margin: 5px;
+ }
+ .slider .card .content{
+   padding: 10px 20px;
+ }
+ .card .content .title{
+   font-size: 22px;
+ }
+ .card .content p{
+   margin: 10px 0;
+ }
+ .card .content .btn{
+   margin: 10px 0;
+ }
+ .card .content .btn button{
+   font-size: 18px;
+   padding: 5px 8px;
+ }
+.container-provider {
+    margin-top: 58px;
+    margin-bottom: 58px;
+}
+.accordion{
+  margin-top: 14px;
+  margin-bottom: 14px;
+  padding: 9px;
+}
+.accordion__label {
+  padding: 14px 20px;
+}
+.accordion__label{
+  font-size: 22px;
+}
+.footer {
+  margin-top: 7px;
+  line-height: 18px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 44px;
+  font-size: 22px;
+}
+.footer-text-3 {
+  font-size: 22px;
+}
+.copyright-text {
+  font-size: 18px;
+  margin-top: 7px;
+}
+.media img {
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  margin: 10px 15px;
+}
+  }
+/* on large screens, decrease font size */
+@media only screen and (max-width: 1200px) {
+  .column {
+    width: 280px;
+    font-size: 30px;
+  }
+  .column img {
+   width: 280px;
+   height: 80px;
+  }
+  #contact-no {
+   font-size: 30px;
+  }
+.pro-header {
+  font-size: 34px;
+  margin-top: 30px;
+}
+.services p {
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+.slider{
+   max-width: 687px;
+ }
+ .slider .card .img{
+   height: 156px;
+   margin: 5px;
+ }
+ .slider .card .content{
+   padding: 8px 18px;
+ }
+ .card .content .title{
+   font-size: 20px;
+ }
+ .card .content p{
+   margin: 8px 0;
+ }
+ .card .content .btn{
+   margin: 8px 0;
+ }
+ .card .content .btn button{
+   font-size: 18px;
+   padding: 5px 8px;
+ }
+.container-provider {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.accordion{
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 8px;
+}
+.accordion__label {
+  padding: 12px 18px;
+}
+.accordion__label{
+  font-size: 20px;
+}
+.footer {
+  margin-top: 6px;
+  line-height: 16px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 40px;
+  font-size: 22px;
+}
+.footer-text-3 {
+  font-size: 20px;
+}
+.copyright-text {
+  font-size: 16px;
+  margin-top: 6px;
+}
+.media img {
+  font-size: 20px;
+  width: 26px;
+  height: 26px;
+  margin: 7px 13px;
+}
+  }
+/* on  medium screens, decrease font size */
+@media only screen and (max-width: 992px) {
+  .column {
+    width: 260px;
+    font-size: 28px;
+  }
+  .column img {
+   width: 260px;
+   height: 74px;
+  }
+  #contact-no {
+   font-size: 28px;
+  }
+  .toggle {
+  font-size: 20px;
+}
+.item {
+  font-size: 20px;
+}
+.menu li a {
+  padding: 3px 0px;
+}
+.menu li.subitem a {
+  padding: 3px;
+}
+.pro-header {
+  font-size: 32px;
+  margin-top: 28px;
+}
+.services p {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.slider{
+   max-width: 568px;
+   margin-left: 20%;
+ }
+ .slider .card .img{
+   height: 129px;
+   width: 100%;
+   margin: 5px;
+ }
+ .slider .card .content{
+   padding: 6px 16px;
+ }
+ .card .content .title{
+   font-size: 15px;
+ }
+ .card .content p{
+   margin: 6px 0;
+ }
+ .card .content .btn{
+   margin: 6px 0;
+ }
+ .card .content .btn button{
+   font-size: 16px;
+   padding: 5px 8px;
+ }
+.container-provider {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.accordion{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7px;
+}
+.accordion__label {
+  padding: 10px 16px;
+}
+.accordion__label{
+  font-size: 18px;
+}
+.footer {
+  margin-top: 4px;
+  line-height: 12px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 36px;
+  font-size: 20px;
+}
+.footer-text-3 {
+  font-size: 18px;
+}
+.copyright-text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.media img {
+  font-size: 18px;
+  width: 24px;
+  height: 24px;
+  margin: 6px 12px;
+}
+  }
+@media only screen and (max-width: 880px) {
+  .slider{
+   max-width: 568px;
+   margin-left: 12%;
+ }
+}
+
+ /* on  small screens, decrease font size */
+@media only screen and (max-width: 768px) {
+.topnav {
+  display: none;
+}
+.pro-header {
+  font-size: 30px;
+  margin-top: 26px;
+}
+.services p {
+  font-size: 26px;
+  margin-bottom: 28px;
+}
+.slider{
+   max-width: 440px;
+   margin-left: 18%;
+ }
+ .slider .card .img{
+   height: 100px;
+   width: 100%;
+   margin: 5px;
+ }
+ .slider .card .content{
+   padding: 4px 12px;
+ }
+ .card .content .title{
+   font-size: 16px;
+ }
+ .card .content p{
+   margin: 4px 0;
+ }
+ .card .content .btn{
+   margin: 4px 0;
+ }
+ .card .content .btn button{
+   font-size: 16px;
+   padding: 4px 6px;
+ }
+.container-provider {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.accordion{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 6px;
+}
+.accordion__label {
+  padding: 8px 14px;
+}
+.accordion__label{
+  font-size: 16px;
+}
+.col {
+  width: 100%;
+  display: inline-block;
+}
+.footer-title {
+  text-align: center;
+}
+.footer-text-3 {
+  text-align: center;
+}
+.copyright-text {
+  font-size: 14px;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+.media img {
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  margin: 6px 12px;
+}
+  }
+@media only screen and (max-width: 624px) {
+  .slider{
+   margin-left: 6%;
+ }
+}
+
+/* on smaller screens, decrease font size */
+@media only screen and (max-width: 480px) {
+
+.pro-header {
+  font-size: 28px;
+  margin-top: 24px;
+}
+.services p {
+  font-size: 24px;
+  margin-bottom: 26px;
+}
+.slider{
+   max-width: 300px;
+   margin-left: 8%;
+ }
+ .slider .card .img{
+   height: 62px;
+   width: 100%;
+   margin: 5px;
+ }
+ .slider .card .content{
+   padding: 3px 10px;
+ }
+ .card .content .title{
+   font-size: 16px;
+ }
+ .card .content p{
+   margin: 3px 0;
+ }
+ .card .content .btn{
+   margin: 3px 0;
+ }
+ .card .content .btn button{
+   font-size: 16px;
+   padding: 3px 5px;
+ }
+.container-provider {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.accordion{
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 5px;
+}
+.accordion__label {
+  padding: 6px 12px;
+}
+.accordion__label{
+  font-size: 16px;
+}
+.footer {
+  margin-top: 3px;
+  line-height: 8px;
+}
+.col {
+  width: 100%;
+  display: inline-block;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 32px;
+  font-size: 21px;
+  line-height: 1;
+}
+.footer-text-3 {
+  font-size: 16px;
+}
+.copyright-text {
+  font-size: 12px;
+  margin-top: 3px;
+  line-height: 1.2;
+}
+.media img {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  margin: 5px 11px;
+}
+ }
+  </style>
+</head>
+<body>
+  <div class="topnav">
+    <div class="row">
+        <div class="column" id="company-logo">
+            <img src="logo.jpeg" style="float: left">
+        </div>
+        <div class="column" id="contact-no" style="float: right; color: #000080;">
+            +(234) 803-351-1011
+        </div>
+    </div>
+  </div>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="logo"><a href="#"><img src="logo.jpeg"></a></li>
+          <li class="item"><a href="index.html">Home</a></li>
+          <li class="item"><a href="aboutus.html">About Us</a></li>
+          <li class="item has-submenu">
+            <a tabindex="0">Health Plans +</a>
+            <ul class="submenu">
+              <li class="subitem"><a href="individualplan.html">Individual</a></li>
+              <li class="subitem"><a href="familyplan.html">Family</a></li>
+              <li class="subitem"><a href="corporateplan.html">Corporate</a></li>
+              <li class="subitem"><a href="customizedplan.html">Customized</a></li>
+            </ul>
+          </li>
+          <li class="item has-submenu">
+            <a tabindex="0">Resources +</a>
+            <ul class="submenu">
+              <li class="subitem"><a href="gallery.html">Gallery</a></li>
+              <li class="subitem"><a href="enrollment.html">Enrollment</a></li>
+              <li class="subitem"><a href="download.html">Downloads</a></li>
+              <li class="subitem"><a href="faqs.html">FAQ</a></li>
+              <li class="subitem"><a href="career.html">Careers</a></li>
+            </ul>
+          </li>
+          <li class="item"><a href="healthprovider.html">Health Providers</a></li>
+          <li class="item"><a href="login.html">Log In</a></li>
+          <li class="item"><a href="blog.html">Blog</a></li>
+          <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+    </header> 
+  <main>
+<section class="container" id="service-section">
+  <h2 class="pro-header"> HEALTHCARE PROVIDERS </h2>
+  <div class="services">
+      <p style="text-align: center;">At SHTL, you will benefit the following services from our healthcare providers accross the  nation</p>
+  <div class="service-img-panel">
+    <div class="slider owl-carousel">
+      <div class="card">
+         <div class="img">
+         <img src="child.jfif"></div>
+      <div class="content">
+         <div class="title">Child Health Services</div>
+      </div>
+      </div>
+      <div class="card">
+         <div class="img">
+         <img src="radiology.jpg"></div>
+      <div class="content">
+         <div class="title">Radiological Services</div>
+      </div>
+      </div>
+      <div class="card">
+        <div class="img">
+        <img src="surgical.jpg"></div>
+     <div class="content">
+        <div class="title">Surgical Services</div>
+     </div>
+     </div>
+     <div class="card">
+        <div class="img">
+        <img src="emergency.png"></div>
+     <div class="content">
+        <div class="title">Medical Emergency Services</div>
+     </div>
+     </div>
+     <div class="card">
+      <div class="img">
+      <img src="maternity1.jfif"></div>
+   <div class="content">
+      <div class="title">Maternity Services</div>
+   </div>
+   </div>
+   <div class="card">
+      <div class="img">
+      <img src="eyecare.jpg"></div>
+   <div class="content">
+      <div class="title">Eye Care</div>
+   </div>
+   </div>
+  <div class="card">
+    <div class="img">
+    <img src="dental1.jfif"></div>
+ <div class="content">
+    <div class="title">Dental Care</div>
+ </div>
+ </div>
+ <div class="card">
+    <div class="img">
+    <img src="inpatient2.jfif"></div>
+ <div class="content">
+    <div class="title">In-Patient Services</div>
+ </div>
+ </div>
+ <div class="card">
+   <div class="img">
+   <img src="outpatient2.jpg"></div>
+ <div class="content">
+   <div class="title">Out-Patient Services</div>
+ </div>
+ </div>
+  </section> 
+  <section id="healthcare-providers">
+    <div class="container-provider">
+      <div class="accordion">
+        <div>
+          <input type="checkbox" id="section2" class="accordion__input">
+          <label for="section2" class="accordion__label"><a href="northcentral.html" style="text-decoration: none;">NORTH-CENTRAL REGION</a></label>
+        </div>
+      </div>
+      <div class="accordion">
+        <div>
+          <input type="checkbox" id="section2" class="accordion__input">
+          <label for="section2" class="accordion__label"><a href="northeast.html" style="text-decoration: none;">NORTH-EAST REGION</a></label>
+        </div>
+      </div>
+      <div class="accordion">
+        <div>
+          <input type="checkbox" id="section2" class="accordion__input">
+          <label for="section2" class="accordion__label"><a href="northwest.html" style="text-decoration: none;">NORTH-WEST REGION</a></label>
+        </div>
+      </div>
+      <div class="accordion">
+        <div>
+          <input type="checkbox" id="section2" class="accordion__input">
+          <label for="section2" class="accordion__label"><a href="southsouth.html" style="text-decoration: none;">SOUTH-SOUTH REGION</a></label>
+        </div>
+      </div>
+      <div class="accordion">
+        <div>
+          <input type="checkbox" id="section2" class="accordion__input">
+          <label for="section2" class="accordion__label"><a href="southeast.html" style="text-decoration: none;">SOUTH-EAST REGION</a></label>
+        </div>
+      </div>
+      <div class="accordion">
+        <div>
+          <input type="checkbox" id="section2" class="accordion__input">
+          <label for="section2" class="accordion__label"><a href="southwest.html" style="text-decoration: none;">SOUTH-WEST REGION</a></label>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+<!--this is the footer section with contact information and links-->
+<section class="footer"> 
+  <div class="footer-top">       
+    <div class="row">
+      <div class="col">       
+        <h3 class="footer-title">Health Plans</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="individualplan.html">Individual</a></li>       
+          <li><a class="footer-text-3" href="familyplan.html">Family</a></li>       
+          <li><a class="footer-text-3" href="corporateplan.html">Corporate</a></li>      
+          <li><a class="footer-text-3" href="customizedplan.html">Customized</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">       
+        <h3 class="footer-title">Recources</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="enrollment.html">Enrollment</a></li>       
+          <li><a class="footer-text-3" href="download.html">Downloads</a></li>       
+          <li><a class="footer-text-3" href="faqs.html">FAQ</a></li>      
+          <li><a class="footer-text-3" href="career.html">Career</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">
+        <h3 class="footer-title">Quick Links </h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="aboutus.html">About Us</a></li>       
+          <li><a class="footer-text-3" href="policy.html">Privacy Policy</a></li>
+          <li><a class="footer-text-3" href="terms.html">Terms of Use</a></li>
+          <li><a class="footer-text-3" href="contact.html">Contact Us</a></li>       
+        </ul>           
+      </div>         
+    </div>    
+  </div>     
+<div class="row">
+<div class="col3-3">
+<div class="copyright-text" style="float: left;">© 2022 Songhai Health Trust Limited. All rights reserved.
+</div>
+</div>
+<div class="col3-3" style="float: right;">
+<div class="media">
+  <a href="https://play.google.com/store/search?q=songhai+hmo&c=apps&hl=en&gl=US"><img src="log.jpg"></a>
+  <a href="mailto:info@songhaihealthtrust.com"><img src="mail.png"></a>
+  <a href="https://www.linkedin.com/login"><img src="linkedin1.png"></a>
+  <a href="https://www.facebook.com/songhaihealth/"><img src="face.jpg"></a>
+  <a href="https://mobile.twitter.com/songhaihealth"><img src="tweet.jpg"></a>
+  <a href="https://www.instagram.com/p/CdDdbxhtbK1/?igshid=YTgzYjQ4ZTY%3D"><img src="insta.jfif"></a>
+</div>
+</div>
+</div>
+</section>  
+<script type="text/javascript">
+const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".menu");
+const items = document.querySelectorAll(".item");
+
+/* Toggle mobile menu */
+function toggleMenu() {
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+  } else {
+    menu.classList.add("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+  }
+}
+
+/* Activate Submenu */
+function toggleItem() {
+  if (this.classList.contains("submenu-active")) {
+    this.classList.remove("submenu-active");
+  } else if (menu.querySelector(".submenu-active")) {
+    menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    this.classList.add("submenu-active");
+  } else {
+    this.classList.add("submenu-active");
+  }
+}
+
+/* Close Submenu From Anywhere */
+function closeSubmenu(e) {
+  if (menu.querySelector(".submenu-active")) {
+    let isClickInside = menu
+      .querySelector(".submenu-active")
+      .contains(e.target);
+
+    if (!isClickInside && menu.querySelector(".submenu-active")) {
+      menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    }
+  }
+}
+/* Event Listeners */
+toggle.addEventListener("click", toggleMenu, false);
+for (let item of items) {
+  if (item.querySelector(".submenu")) {
+    item.addEventListener("click", toggleItem, false);
+  }
+  item.addEventListener("keypress", toggleItem, false);
+}
+document.addEventListener("click", closeSubmenu, false); 
+
+  /* script for carousel slider */
+  $(".slider").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000, //3000ms = 3s;
+    autoplayHoverPause: true,
+  });
+
+  /* script for accordion */
+  $(document).ready(function () {
+      $(".accordion-title").click(function (e) {
+        var accordionitem = $(this).attr("data-tab");
+        $("#" + accordionitem)
+          .slideToggle()
+          .parent()
+          .siblings()
+          .find(".accordion-content")
+          .slideUp();
+  
+        $(this).toggleClass("active-title");
+        $("#" + accordionitem)
+          .parent()
+          .siblings()
+          .find(".accordion-title")
+          .removeClass("active-title");
+  
+        $("span.down-arrow", this).toggleClass("arrow-top");
+        $("#" + accordionitem)
+          .parent()
+          .siblings()
+          .find(".accordion-title span.down-arrow")
+          .removeClass("arrow-top");
+      });
+    });
+</script> 
+  </body>
+</html>

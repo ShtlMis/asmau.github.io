@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--tittle>Songhai Health Trust Limited Home Page</tittle-->
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="keywords" content="Health insurance in Nigeria, HMO in Nigeria, Health insurance in Abuja, HMO in Abuja, Health insurance in Lagos, HMO in Lagos,"/>
+          <meta name="description" content="Dedicated to provide reliable and affordable healthcare services to all Nigerians from all works of life.">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <title>Songhai Health Trust Limited</title>
+          <link rel="icon" href="log.jpg" type="image/x-icon">
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Bolded-Serif" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Shadows Into Light Two" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+          <style>
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  width: 100%;
+  height: 75%;
+  top: 15%;
+  bottom: 10%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: none;
+}
+/* for the website header.
+two image containers */
+.row {
+  width: 100%;
+  display: inline-block;
+}
+.column {
+  width: 50%;
+  max-width: 350px;
+  float: left;
+  padding: none;
+  top: 0;
+  margin-top: 1em;
+  height: 100px; 
+}
+.column img {
+ background-color: #ffffff;
+ font-size: 22px;
+ width: 350px;
+ height: 100px;
+ bottom: 10%;
+ margin: 0;
+ margin-left: 20px;
+ vertical-align: top;
+}
+#contact-no {
+   float: right;
+   background-color: none;
+   font-size: 38px;
+   color: #000080;
+   bottom: 10%;
+   margin: 0;
+   margin-top: 1%;
+  }
+/*clears float after image container*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* styling the navigation bar */
+nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 10%;
+    height: 5%;
+    margin: none;
+    margin-bottom: 1em;
+}
+.menu a {
+  color: #000080;
+  text-decoration: none;
+}
+.menu,
+.submenu {
+  list-style-type: none;
+}
+.logo img {
+  width: 140px;
+  height: 40px;
+}
+.item {
+  padding: 10px;
+}
+.item.button {
+  padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+  color: #008000;
+  text-decoration: overline;
+}
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+}
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+.menu li.subitem a {
+  padding: 15px;
+}
+.toggle {
+  order: 1;
+  font-size: 24px;
+  margin-right: 4%;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  order: 3;
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+  display: none;
+}
+.active .item {
+  display: block;
+}
+.button.secondary {
+  /* divider between buttons and menu links */
+  border-bottom: 1px #444 solid;
+}
+/* Submenu up from mobile screens */
+.submenu {
+  display: none;
+}
+.submenu-active .submenu {
+  display: block;
+}
+.has-submenu i {
+  font-size: 24px;
+}
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  line-height: 16px;
+  color: #000080;
+  padding-left: 5px;
+}
+.subitem a {
+  padding: 10px 15px;
+}
+.submenu-active {
+  background-color: none;
+  border-radius: 3px;
+}  
+
+/* Slideshow container */
+* {box-sizing:border-box}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a background color */
+.prev:hover, .next:hover {
+  background-color: transparent;
+}
+/* Caption text */
+.text {
+  padding: 8px 12px;
+  position: absolute;
+  top: 8%;
+  width: 100%;
+  text-align: left;
+  margin-left: 2%;
+}
+.text h1 {
+  font-size: 38px;
+  font-family: "Cinzel";
+  color: #000080;
+}
+.text h2 {
+  font-family: 'Shadows Into Light Two';
+  font-size: 32px;
+  color: #008000;
+}
+.text p {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Rubik';
+  color: #000000;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: transparent;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* styling the button */
+.btn:link,
+.btn:visited {
+  background-color: #008000;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  border-radius: 100px;
+}
+.btn:hover,
+.btn:active {
+  background-color: #000000;
+}
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+.btn--mid {
+  font-size: 14px;
+  padding: 8px 12px;
+  width: 250px;
+}
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+  margin-top: 32px;
+}          
+
+/* for homepage healthcare plan section */
+#healthplan-section {
+  position: relative;
+  margin: auto;
+  margin-bottom: 32px;
+  border: none;
+  width: 100%;
+  bottom: 45%;
+  height: 10%;
+}
+.plan-heading {
+  color: #000080;
+  font-size: 30px;
+  font-family: 'Bolded-Serif';
+  font-weight: bold;
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+#healthplan-section p {
+  color: #000000;
+  font-size: 28px;
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  text-align: center;
+}
+.row {
+  width: 100%;
+  display: inline-block;
+}
+.col1 {
+  width: 25%;
+  float: left;
+}
+.col1 {
+  width: 23%;
+  padding: 5px;
+  bottom: 45%;
+  height: 10%;
+  border: 1px grey;
+  display: inline-block;
+  text-align: center;
+  margin-left: 1%;
+}
+.plans img {
+  width: 260px;
+  height: 200px;
+  padding: 3px;
+  background-color: #fff;
+  margin-bottom: 1.5em;
+}
+
+/* for the homepage information section */
+#info-section {
+  position: relative;
+  margin: auto;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  border: none;
+  background: #e6f2ef;
+  height: 5%;
+  width: 100%;
+  display: inline-block;
+}
+.heading {
+  text-align: center;
+  font-family: 'Bolded-Serif';
+  font-size: 28px;
+  color: #000080;
+  font-weight: bold;
+  padding: 5px 0;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+.col3 {
+  width: 25%;
+  float: left;
+}
+.col3 {
+  width: 23%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 64px;
+  margin-left: 1%;
+}
+.col3 img {
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  border-radius: 30px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.col3 img:hover {
+  transform: scale(1.4);
+}
+.col3 h3 {
+  padding: 5px 0;
+  font-size: 26px;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.col3 h4 {
+  font-family: 'Playfair Display';
+  font-size: 22px;
+  color: #000000;
+  padding-bottom: 18px;
+}
+
+/* styling for the aims section of the page */
+#aims-section {
+  position: relative;
+  margin: auto;
+  margin-bottom: 32px;
+  border: none;
+  width: 100%;
+  bottom: 85%;
+  height: 10%;
+}
+.row {
+  width: 100%;
+  display: inline-block;
+}
+.col2 {
+  width: 33%;
+  float: left;
+}
+.col2 {
+  width: 30%;
+  padding: 5px;
+  bottom: 85%;
+  height: 65vh;
+  background: #eeeeee;
+  display: inline-block;
+  text-align: center;
+  margin-left: 2%;
+}
+.col2 h4 {
+  color: #000080;
+  font-size: 28px;
+  font-family: 'Bolded-Serif';
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  margin-top: 32px;
+  padding: 8px;
+  margin: 0;
+}
+.col2 img {
+    width: 100%;
+    max-width: 160px;
+    height: 160px;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    margin-top: 32px;
+}
+.col2 .content {
+    padding: 16px;
+    margin-bottom: 8px;
+}
+.col2 p {
+  color: #000000;
+  font-size: 26px;
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  text-align: center;
+  margin-top: 16px;
+}
+
+
+/* styling for the Core Values section */
+.songhai-values {
+ position: relative;
+ width: 96%;
+ display: inline-block;
+ background: #ffffff;
+ height: 15vh;
+ text-align: center;
+ font-size: 18px;
+ font-weight: 500;
+ bottom: 10%;
+ margin-top: 0%;
+ margin-bottom: 64px;
+ margin-left: 40px;
+}
+.songhai-values h2 {
+  color: #251187;
+  font-family: 'Bolded-Serif';
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+} 
+.column1 {
+  width: 25%;
+  float: left;
+}
+.column1 {
+   width: 23%;
+   padding: 5px;
+   bottom: 10%;
+   height: 5%; 
+   border: 2px;
+   margin-bottom: 64px;
+   margin-left: 1%;
+   text-align: center;
+   align-items: center;
+}
+.column1 span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3a9a2a;
+}
+.column1 p {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    vertical-align: left;
+    line-height: 20px;
+    margin:0;
+ }
+.column1 img {
+    background-color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    text-align: left;
+    margin: 5px;
+    vertical-align: left; 
+    text-align: middle;
+}
+
+/* the footer is fixed to the bottom of the page */
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  height: 10%;
+  bottom: 0%;
+  margin-top: 8px;
+  margin-bottom: 0;
+  background: #e6f2ef;
+  vertical-align: top;
+  color: #000080;
+  line-height: 20px;
+}
+.col {
+  float: left;
+  width: 33.33%;
+}
+.footer-title {
+  text-align: left;
+  margin-left: 32px;
+  margin-top: 48px;
+  font-size: 26px;
+}
+.footer-text-3 {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 24px;
+}
+.footer-text-3:hover {
+  color: #008000;
+  transform: scale(1.08);
+}
+.col3-3 {
+  flex: 50%;
+}
+.copyright-text {
+  display: inline;
+  margin-left: 60px;
+}
+.media {
+  display: inline;
+  margin-right: 40px;
+  float: right;
+}
+.media img {
+  display: inline;
+}
+.media img {
+  background-color: #ffffff;
+  color: none;
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  text-align: left;
+  margin: 10px 15px;
+  vertical-align: left;
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+
+/* setting the media query of the page */
+/* Tablet menu */
+@media all and (min-width: 320px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    nav {
+      background: #e6f2ef;
+    }
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+    /* Button up from tablet screen */
+    .menu li.button a {
+      padding: 10px 15px;
+      margin: 5px 0;
+    }
+    .button .menu a {
+      background: #0080ff;
+      border: 1px #0082ff;
+    }
+    .button.secondary {
+      border: 0;
+    }
+    .button.secondary a {
+      background: transparent;
+      border: 1px #0080ff solid;
+    }
+    .button a:hover {
+      text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+      background: #0082ff;
+      border-color: #000080;
+    }
+  }
+  /* Desktop menu */
+  @media all and (min-width: 769px) {
+    .menu {
+      float: left;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      background: none;
+    }
+    .subitem {
+      text-align: left;
+    }
+    nav {
+      background: none;
+    }
+    .logo {
+      display: none;
+    }
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+    .button {
+      order: 2;
+    }
+    .submenu-active .submenu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 68px;
+      background: none;
+    }
+    .toggle {
+      display: none;
+    }
+    .submenu-active {
+      border-radius: 0;
+    }
+  }
+/* on extralarge screens, decrease font size */
+@media only screen and (max-width: 1920px) {
+
+.footer {
+  margin-top: 8px;
+  line-height: 20px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 48px;
+  font-size: 26px;
+}
+.footer-text-3 {
+  font-size: 24px;
+}
+.copyright-text {
+  font-size: 20px;
+  margin-top: 8px;
+}
+.media img {
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  margin: 10px 15px;
+}
+  }
+ /* On larger screens, decrease font size */
+@media only screen and (max-width: 1600px) {
+  .column {
+    width: 320px;
+    font-size: 36px;
+  }
+  .column img {
+   width: 320px;
+   height: 91px;
+  }
+  #contact-no {
+   font-size: 34px;
+  }
+.text h1 {
+  font-size: 32px;
+}
+.text h2 {
+  font-size: 28px;
+}
+.text p {
+  font-size: 24px;
+}
+.plan-heading {
+  font-size: 28px;
+}
+#healthplan-section p {
+  font-size: 26px;
+}
+.col3 img {
+  max-width: 83px;
+  height: 83px;
+  border-radius: 26px;
+}
+.col3 h3 {
+  font-size: 26px;
+}
+.col3 h4 {
+  font-size: 22px;
+}
+.col2 img {
+    max-width: 150px;
+    height: 150px;
+}
+.col2 h4 {
+    font-size: 26px;
+}
+.col2 p {
+    font-size: 20px;
+}
+.songhai-values h2 {
+  font-size: 26px;
+} 
+.column1 span {
+    font-size: 26px;
+}
+.column1 p {
+    font-size: 20px;
+ }
+.column1 img {
+    font-size: 24px;
+    width: 36px;
+    height: 36px;
+}
+.footer {
+  margin-top: 7px;
+  line-height: 18px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 44px;
+  font-size: 22px;
+}
+.footer-text-3 {
+  font-size: 22px;
+}
+.copyright-text {
+  font-size: 18px;
+  margin-top: 7px;
+}
+.media img {
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  margin: 10px 15px;
+}
+  }
+/* on large screens, decrease font size */
+@media only screen and (max-width: 1200px) {
+  .column {
+    width: 280px;
+    font-size: 30px;
+  }
+  .column img {
+   width: 280px;
+   height: 80px;
+  }
+  #contact-no {
+   font-size: 30px;
+  }
+.text h1 {
+  font-size: 24px;
+}
+.btn--small {
+  font-size: 12px;
+  padding: 4px 6px;
+  margin-top: 4px;
+} 
+.text h2 {
+  font-size: 20px;
+}
+.text p {
+  font-size: 18px;
+}
+.plan-heading {
+  font-size: 26px;
+}
+#healthplan-section p {
+  font-size: 24px;
+}
+.col1 {
+  width: 48%;
+} 
+.col3 img {
+  max-width: 63px;
+  height: 63px;
+  border-radius: 22px;
+}
+.col3 h3 {
+  font-size: 24px;
+}
+.col3 h4 {
+  font-size: 20px;
+}
+.col2 img {
+    max-width: 140px;
+    height: 140px;
+}
+.col2 h4 {
+    font-size: 24px;
+}
+.col2 p {
+    font-size: 20px;
+}
+.btn--mid {
+  margin-bottom: 32px;
+}
+.songhai-values h2 {
+  font-size: 24px;
+} 
+.column1 {
+   width: 48%;
+}
+.column1 span {
+    font-size: 24px;
+}
+.column1 p {
+    font-size: 20px;
+ }
+.column1 img {
+    font-size: 23px;
+    width: 34px;
+    height: 34px;
+}
+.footer {
+  margin-top: 6px;
+  line-height: 16px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 40px;
+  font-size: 22px;
+}
+.footer-text-3 {
+  font-size: 20px;
+}
+.copyright-text {
+  font-size: 16px;
+  margin-top: 6px;
+}
+.media img {
+  font-size: 20px;
+  width: 26px;
+  height: 26px;
+  margin: 7px 13px;
+}
+  }
+/* on  medium screens, decrease font size */
+@media only screen and (max-width: 992px) {
+  .column {
+    width: 260px;
+    font-size: 28px;
+  }
+  .column img {
+   width: 260px;
+   height: 74px;
+  }
+  #contact-no {
+   font-size: 28px;
+  }
+  .toggle {
+  font-size: 20px;
+}
+.item {
+  font-size: 20px;
+}
+.menu li a {
+  padding: 3px 0px;
+}
+.menu li.subitem a {
+  padding: 3px;
+}
+.text h1 {
+  font-size: 20px;
+}
+.text h2 {
+  font-size: 18px;
+}
+.text p {
+  font-size: 16px;
+}
+.plan-heading {
+  font-size: 24px;
+}
+#healthplan-section p {
+  font-size: 22px;
+}
+.col1 {
+  width: 48%;
+} 
+.col3 img {
+  max-width: 52px;
+  height: 52px;
+  border-radius: 18px;
+}
+.col3 h3 {
+  font-size: 24px;
+}
+.col3 h4 {
+  font-size: 20px;
+}
+.col2 img {
+    max-width: 130px;
+    height: 130px;
+}
+.col2 h4 {
+    font-size: 22px;
+}
+.col2 p {
+    font-size: 18px;
+}
+.songhai-values h2 {
+  font-size: 22px;
+} 
+.column1 span {
+    font-size: 22px;
+}
+.column1 p {
+    font-size: 18px;
+ }
+.column1 img {
+    font-size: 22px;
+    width: 32px;
+    height: 32px;
+}
+.footer {
+  margin-top: 4px;
+  line-height: 12px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 36px;
+  font-size: 20px;
+}
+.footer-text-3 {
+  font-size: 18px;
+}
+.copyright-text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.media img {
+  font-size: 18px;
+  width: 24px;
+  height: 24px;
+  margin: 6px 12px;
+}
+  }
+ /* on  small screens, decrease font size */
+@media only screen and (max-width: 768px) {
+.topnav {
+  display: none;
+}
+.text h1 {
+  font-size: 16px;
+}
+.btn--small {
+  font-size: 8px;
+  padding: 2px 3px;
+  margin-top: 2px;
+} 
+.text h2 {
+  font-size: 14px;
+}
+.text p {
+  font-size: 12px;
+}
+.plan-heading {
+  font-size: 22px;
+}
+#healthplan-section p {
+  font-size: 20px;
+}
+.col1 {
+  width: 100%;
+}
+.col3 {
+  width: 50%;
+}
+.col3 img {
+  max-width: 40px;
+  height: 40px;
+  border-radius: 14px;
+}
+.col3 h3 {
+  font-size: 22px;
+}
+.col3 h4 {
+  font-size: 18px;
+}
+.col2 {
+  width: 98%;
+  margin-bottom: 32px;
+  height: 45vh;
+}
+.col2 img {
+    max-width: 120px;
+    height: 120px;
+}
+.col2 h4 {
+    font-size: 20px;
+}
+.col2 p {
+    font-size: 18px;
+}
+.songhai-values h2 {
+  font-size: 20px;
+} 
+.column1 {
+   margin-left: 0;
+}
+.column1 span {
+    font-size: 20px;
+}
+.column1 p {
+    font-size: 18px;
+ }
+.column1 img {
+    font-size: 21px;
+    width: 30px;
+    height: 30px;
+}
+.col {
+  width: 100%;
+  display: inline-block;
+}
+.footer-title {
+  text-align: center;
+}
+.footer-text-3 {
+  text-align: center;
+}
+.copyright-text {
+  font-size: 14px;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+.media img {
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  margin: 6px 12px;
+}
+  }
+
+/* on smaller screens, decrease font size */
+@media only screen and (max-width: 480px) {
+.text {
+  top: 1%;
+  margin-left: 1%;
+}
+.text h1 {
+  font-size: 14px;
+}
+.text h2 {
+  font-size: 10px;
+}
+.text p {
+  font-size: 10px;
+}  
+.plan-heading {
+  font-size: 20px;
+}
+#healthplan-section p {
+  font-size: 18px;
+} 
+.plans img {
+  width: 220px;
+  height: 169px;
+}      
+.col1 {
+  width: 100%;
+}
+.col3 {
+  width: 100%;
+}
+.col3 img {
+  max-width: 25px;
+  height: 25px;
+  border-radius: 10px;
+}
+.col3 h3 {
+  font-size: 22px;
+}
+.col3 h4 {
+  font-size: 16px;
+}
+.col2 {
+  width: 100%;
+}
+.col2 img {
+    max-width: 60px;
+    height: 60px;
+}
+.col2 h4 {
+    font-size: 18px;
+}
+.col2 p {
+    font-size: 16px;
+}
+.songhai-values h2 {
+  font-size: 18px;
+} 
+.column1 span {
+    font-size: 18px;
+}
+.column1 p {
+    font-size: 16px;
+ }
+.column1 img {
+    font-size: 20px;
+    width: 28px;
+    height: 28px;
+}
+.footer {
+  margin-top: 3px;
+  line-height: 8px;
+}
+.col {
+  width: 100%;
+  display: inline-block;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 32px;
+  font-size: 21px;
+  line-height: 1;
+}
+.footer-text-3 {
+  font-size: 16px;
+}
+.copyright-text {
+  font-size: 12px;
+  margin-top: 3px;
+  line-height: 1.2;
+}
+.media img {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  margin: 5px 11px;
+}
+ }
+/* on very small screens, decrease font size */
+@media only screen and (max-width: 330px) {
+  .column1 {
+    width: 98%;
+  }
+}
+        </style>
+    </head>
+<body>
+  <div class="topnav">
+    <div class="row">
+        <div class="column" id="company-logo">
+            <img src="logo.jpeg" style="float: left">
+        </div>
+        <div class="column" id="contact-no" style="float: right; color: #000080;">
+            +(234) 803-351-1011
+        </div>
+    </div>
+  </div>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li class="logo"><a href="#"><img src="logo.jpeg"></a></li>
+          <li class="item"><a href="index.html">Home</a></li>
+          <li class="item"><a href="aboutus.html">About Us</a></li>
+          <li class="item has-submenu">
+            <a tabindex="0">Health Plans +</a>
+            <ul class="submenu">
+              <li class="subitem"><a href="individualplan.html">Individual</a></li>
+              <li class="subitem"><a href="familyplan.html">Family</a></li>
+              <li class="subitem"><a href="corporateplan.html">Corporate</a></li>
+              <li class="subitem"><a href="customizedplan.html">Customized</a></li>
+            </ul>
+          </li>
+          <li class="item has-submenu">
+            <a tabindex="0">Resources +</a>
+            <ul class="submenu">
+              <li class="subitem"><a href="gallery.html">Gallery</a></li>
+              <li class="subitem"><a href="enrollment.html">Enrollment</a></li>
+              <li class="subitem"><a href="download.html">Downloads</a></li>
+              <li class="subitem"><a href="faqs.html">FAQ</a></li>
+              <li class="subitem"><a href="career.html">Careers</a></li>
+            </ul>
+          </li>
+          <li class="item"><a href="healthprovider.html">Health Providers</a></li>
+          <li class="item"><a href="login.html">Log In</a></li>
+          <li class="item"><a href="blog.html">Blog</a></li>
+          <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+    </header> 
+    <main>
+       <!--the healthplan image carousel-->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="slide fade 1.jpg" style="width:100%">
+      <div class="text">
+        <h1>Songhai Health Trust Limited</h1>
+        <h2>always there when you need us.....</h2>
+        <p>We offer you the best plan that suits your needs</p>
+        <a href="contact.html" class="btn btn--small">Get In Touch</a>
+      </div>
+    </div>  
+    <div class="mySlides fade">
+      <img src="slide fade 2.png" style="width:100%">
+      <div class="text">
+        <h1>With Our Individual Healthcare Plan</h1>
+        <h2>step into the groove and.....</h2>
+        <p>enjoy all the benefits of a healthy, carefree lyfestyle</p>
+        <a href="individualplan.html" class="btn btn--small">Learn More</a>
+      </div>
+    </div>  
+    <div class="mySlides fade">
+      <img src="slide fade 3.jpg" style="width:100%">
+      <div class="text">
+        <h1>Family Healthcare Plan</h1>
+        <h2>No more worries, no more stress.....</h2>
+        <p>Our healthcare plans are affordable and uncomplicated</p>
+        <a href="familyplan.html" class="btn btn--small">Learn More</a>
+      </div>
+    </div>
+    <div class="mySlides fade">
+      <img src="slide fade 4.png" style="width:100%">
+      <div class="text">
+        <h1>Our Corporate Healthcare Plan</h1>
+        <h2>helps improve work etthics...</h2>
+        <p>and acheive a condusive, productive work environment</p>
+        <a href="corporateplan.html" class="btn btn--small">Learn More</a>
+      </div>
+    </div>  
+    <div class="mySlides fade">
+      <img src="slide fade 5.jpg" style="width:100%">
+      <div class="text">
+        <h1>A Customized health plan</h1>
+        <h2>specifically designed for you.....</h2>
+        <p>imagine the possibilities, a world of opprtunity awaits</p>
+        <a href="customizedplan.html" class="btn btn--small">Learn More</a>
+      </div>
+    </div>  
+    <div class="mySlides fade">
+      <img src="slide fade 6.jpg" style="width:100%">
+      <div class="text">
+        <h1>Make the smart move</h1>
+        <h2>and live a hassle free life......</h2>
+        <p>For more information about our services,</p>
+        <a href="newsletter.html" class="btn btn--small">Subscribe</a>
+      </div>
+    </div> 
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+  <!--this section provides information about SHTL health plans-->
+  <section class="container" id="healthplan-section">
+      <h2 class="plan-heading"> OUR PLANS </h2>
+      <p>
+          Our healthcare plans cover promotive, preventive and curative healthcare services and are specially designed to the pay of individuals and families. <br> 
+          Explore our range of unique health plans:
+      </p>
+          <div class="row">
+          <div class="col1" id="column-1">
+          <div class="plans">
+              <img src="ace 1.jfif"><br>
+              <div class="btn">
+              <a href="individualplan.html" class="btn btn--mid">INDIVIDUAL HEALTH PLAN</a>
+            </div>
+          </div>
+          </div>
+          <div class="col1" id="column-2">
+          <div class="plans">
+              <img src="ace 2.png"><br>
+              <div class="btn">
+              <a href="familyplan.html" class="btn btn--mid">FAMILY HEALTH PLAN</a>
+            </div>
+          </div>
+          </div>
+          <div class="col1" id="column-3">
+          <div class="plans">
+              <img src="ace 3.jfif"><br>
+              <div class="btn">
+              <a href="corporateplan.html" class="btn btn--mid">CORPORATE HEALTH PLAN</a>
+            </div>
+          </div>
+          </div>
+          <div class="col1" id="column-4">
+          <div class="plans">
+              <img src="ace 4.jpg"><br>
+              <div class="btn">
+              <a href="customizedplan.html" class="btn btn--mid">CUSTOMIZED HEALTH PLAN</a>
+            </div>
+          </div>
+          </div>
+          </div><br>
+  </section>
+  <!--this section provides information about our reach and the latest information and news update from within and accross the nation-->
+  <section class="info-container" id="info-section">
+      <div class="company-reach">
+       <div class="heading">
+           OUR REACH
+       </div>
+       <div class="row" id="reach-container">
+           <div class="col3" id="counter">
+              <a href="healthprovider.html"><img src="provider 1.png" alt=""></a>
+               <h3 data-target="2252" class="count">0</h3>
+               <h4>Healthcare Providers</h4>
+           </div>
+           <div class="col3" id="counter">
+            <a href="blog.html"><img src="clients 1.png" alt=""></a>
+               <h3 data-target="1200" class="count">0</h3>
+               <h4>Our Clients</h4>
+           </div>
+           <div class="col3" id="counter">
+            <a href="healthprovider.html"><img src="map 1.jfif" alt=""></a>
+               <h3 data-target="37" class="count">0</h3>
+               <h4>Location</h4>
+           </div>
+           <div class="col3" id="counter">
+            <a href="blog.html"><img src="satisfy 1.jfif" alt=""></a>
+               <h3 data-target="100"class="count">0</h3>
+               <h4>Satisfaction</h4>
+           </div>
+       </div>
+      </div>
+  </section>
+  <!--this is the section that provides information about the mission, vision and aims of songhai--> 
+          <section class="aims-container" id="aims-section">  
+              <div class="row">
+                <div class="col2" id="aims-column">
+                    <img src="mission 1.png" alt="">
+                    <div class="content">
+                        <h4>OUR MISSION</h4>
+                        <p>
+                          To provide a personalized healthcare experience, through cost effective solutions, 
+                          seamless technology and transparent engagement with all stakeholders.
+                        </p>
+                        <p>
+  
+                        </p>
+                    </div>
+                </div>
+                <div class="col2" id="aims-column">
+                    <img src="vision 1.png" alt="">
+                    <div class="content">
+                        <h4>OUR VISION</h4>
+                        <p>
+                          To become the most efficient, reliable and affordable managed healthcare service provider in Nigeria. 
+                        </p>
+                        <p>
+  
+                        </p>
+                    </div>
+                </div>
+                <div class="col2" id="aims-column">
+                    <img src="goal 1.png" alt="">
+                    <div class="content">
+                        <h4>OUR GOAL</h4>
+                        <p> 
+                          To ensure that quality healthcare services that meet international standards are made available, 
+                          accessible and affordable, and delivered ethically to our clients, 
+                          through a network of accredited healthcare providers across the country.
+                        </p>
+                    </div>  
+                </div>
+              </div>
+          </section>
+          <section class="songhai-values">
+              <h2 class="value-title">CORE VALUES</h2>
+             <div class="row">
+             <div class="column1">
+                <img src="iconambulance.png">
+                <p>
+                 <span>S</span>..........Service
+              </p>
+             </div>
+             <div class="column1">
+                <img src="iconsign.png">
+                <p>
+                   <span>H</span>..........Hope
+                </p>
+             </div>
+             <div class="column1">
+                <img src="iconfirstaid.jfif">
+                <p>
+                   <span>T</span>..........Trust
+                </p>
+              </div>
+              <div class="column1">
+                 <img src="iconperson.png">
+                 <p>
+                    <span>L</span>..........Love
+                 </p>
+              </div>
+             </div><br>
+          </section> 
+    </main>
+<!--this is the footer section with contact information and links-->
+<section class="footer"> 
+  <div class="footer-top">       
+    <div class="row">
+      <div class="col">       
+        <h3 class="footer-title">Health Plans</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="individualplan.html">Individual</a></li>       
+          <li><a class="footer-text-3" href="familyplan.html">Family</a></li>       
+          <li><a class="footer-text-3" href="corporateplan.html">Corporate</a></li>      
+          <li><a class="footer-text-3" href="customizedplan.html">Customized</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">       
+        <h3 class="footer-title">Recources</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="enrollment.html">Enrollment</a></li>       
+          <li><a class="footer-text-3" href="download.html">Downloads</a></li>       
+          <li><a class="footer-text-3" href="faqs.html">FAQ</a></li>      
+          <li><a class="footer-text-3" href="career.html">Career</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">
+        <h3 class="footer-title">Quick Links </h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="aboutus.html">About Us</a></li>       
+          <li><a class="footer-text-3" href="policy.html">Privacy Policy</a></li>
+          <li><a class="footer-text-3" href="terms.html">Terms of Use</a></li>
+          <li><a class="footer-text-3" href="contact.html">Contact Us</a></li>       
+        </ul>           
+      </div>         
+    </div>    
+  </div>     
+<div class="row">
+<div class="col3-3">
+<div class="copyright-text" style="float: left;">© 2022 Songhai Health Trust Limited. All rights reserved.
+</div>
+</div>
+<div class="col3-3" style="float: right;">
+<div class="media">
+  <a href="https://play.google.com/store/search?q=songhai+hmo&c=apps&hl=en&gl=US"><img src="log.jpg"></a>
+  <a href="mailto:info@songhaihealthtrust.com"><img src="mail.png"></a>
+  <a href="https://www.linkedin.com/login"><img src="linkedin1.png"></a>
+  <a href="https://www.facebook.com/songhaihealth/"><img src="face.jpg"></a>
+  <a href="https://mobile.twitter.com/songhaihealth"><img src="tweet.jpg"></a>
+  <a href="https://www.instagram.com/p/CdDdbxhtbK1/?igshid=YTgzYjQ4ZTY%3D"><img src="insta.jfif"></a>
+</div>
+</div>
+</div>
+</section> 
+<script>
+const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".menu");
+const items = document.querySelectorAll(".item");
+
+/* Toggle mobile menu */
+function toggleMenu() {
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+  } else {
+    menu.classList.add("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+  }
+}
+
+/* Activate Submenu */
+function toggleItem() {
+  if (this.classList.contains("submenu-active")) {
+    this.classList.remove("submenu-active");
+  } else if (menu.querySelector(".submenu-active")) {
+    menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    this.classList.add("submenu-active");
+  } else {
+    this.classList.add("submenu-active");
+  }
+}
+
+/* Close Submenu From Anywhere */
+function closeSubmenu(e) {
+  if (menu.querySelector(".submenu-active")) {
+    let isClickInside = menu
+      .querySelector(".submenu-active")
+      .contains(e.target);
+
+    if (!isClickInside && menu.querySelector(".submenu-active")) {
+      menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    }
+  }
+}
+/* Event Listeners */
+toggle.addEventListener("click", toggleMenu, false);
+for (let item of items) {
+  if (item.querySelector(".submenu")) {
+    item.addEventListener("click", toggleItem, false);
+  }
+  item.addEventListener("keypress", toggleItem, false);
+}
+document.addEventListener("click", closeSubmenu, false);
+
+/* script for text and image slider */ 
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      // Change image every 7 seconds
+      setTimeout(showSlides, 7000); 
+    }
+    
+    /* script for the counter of the reach section of the page*/
+    const counters = document.querySelectorAll('.count');
+    const speed = 600;
+    
+    counters.forEach((counter) => {
+      const updateCount = () => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const count = parseInt(counter.innerText);
+        const increment = Math.trunc(target / speed);
+    
+        if (count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 1);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+      </script>
+</body>
+</html>
