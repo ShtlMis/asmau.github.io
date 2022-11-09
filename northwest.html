@@ -1,0 +1,3588 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!--tittle>Songhai Health Trust Limited Online Payment Page</tittle-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hospitals in North-Western Nigeria | Songhai Health Trust Limited</title>
+        <link rel="icon" href="log.jpg" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bolded Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script scr="index.js" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+        <style>
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  width: 100%;
+  height: 75%;
+  top: 15%;
+  bottom: 10%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: none;
+}
+/* for the website header.
+two image containers */
+.row {
+  width: 100%;
+  display: inline-block;
+}
+.column {
+  width: 350px;
+  float: left;
+  padding: none;
+  top: 0;
+  margin-top: 1em;
+  height: 100px; 
+}
+.column img {
+ background-color: white;
+ font-size: 22px;
+ width: 350px;
+ height: 100px;
+ bottom: 10%;
+ margin: 0;
+ margin-left: 20px;
+ vertical-align: top;
+}
+#contact-no {
+   float: right;
+   background-color: none;
+   font-size: 38px;
+   color: #000080;
+   bottom: 10%;
+   margin: 0;
+   margin-top: 1%;
+  }
+/*clears float after image container*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* styling the navigation bar */
+nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 10%;
+    height: 5%;
+    margin: none;
+    margin-bottom: 1em;
+}
+.menu a {
+  color: #000080;
+  text-decoration: none;
+}
+.menu,
+.submenu {
+  list-style-type: none;
+}
+.logo img {
+  width: 140px;
+  height: 40px;
+}
+.item {
+  padding: 10px;
+}
+.item.button {
+  padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+  color: #008000;
+  text-decoration: overline;
+}
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+}
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+.menu li.subitem a {
+  padding: 15px;
+}
+.toggle {
+  order: 1;
+  font-size: 24px;
+  margin-right: 4%;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  order: 3;
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+  display: none;
+}
+.active .item {
+  display: block;
+}
+.button.secondary {
+  /* divider between buttons and menu links */
+  border-bottom: 1px #444 solid;
+}
+/* Submenu up from mobile screens */
+.submenu {
+  display: none;
+}
+.submenu-active .submenu {
+  display: block;
+}
+.has-submenu i {
+  font-size: 24px;
+}
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  line-height: 16px;
+  color: #000080;
+  padding-left: 5px;
+}
+.subitem a {
+  padding: 10px 15px;
+}
+.submenu-active {
+  background-color: none;
+  border-radius: 3px;
+}   
+
+/* styling for provider tables */
+.region {
+    font-family: 'Cinzel';
+    font-size: 38px;
+    font-weight: bold;
+    color: #000080;
+    text-align: center;
+    margin-top: 32px;
+}
+table {
+  width: 90vw;
+  margin-top: 100px;
+  font-size: 18px;
+  border: 1px solid #343a40;
+  justify-content: center;
+  margin-left: 5vw;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+td {
+  border: 1px solid #343a40; 
+  padding: 16px 24px;
+  text-align: left;
+}
+thead tr {
+  background-color: #087f5b;
+  color: #fff;
+  height: 48px;
+}
+thead #first {
+width: 25%;
+}
+thead #second {
+width: 5%;
+}
+thead #third {
+width: 20%;
+}
+thead #fourth {
+width: 10%;
+}
+thead #fifth {
+width: 15%;
+}
+thead #sixth {
+width: 15%;
+}
+thead #seventh {
+width: 10%;
+}
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+} 
+.pagination {
+ float: right;
+ color: #000000;
+ font-size: 22px;
+ margin-right: 5%;
+}
+.pagination:hover {
+    color: #000080;
+}
+.pagination li:hover{
+cursor: pointer;
+}
+.pagination li.active {
+ background-color: #327ff2;
+ color: #fff;
+ padding: 5px 3px;
+ align-items: center;
+}
+.pagination li {
+display: inline;
+margin-top: 0;
+}
+table tbody tr {
+ display: none;
+ }
+.container h3 {
+ font-size: 24px;
+ color: #000000;
+ margin-left: 4%;
+}
+.form-group {
+  color: #000000;
+  margin-left: 5%;
+}
+
+/* the footer is fixed to the bottom of the page */
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  height: 10%;
+  bottom: 0%;
+  margin-top: 8px;
+  margin-bottom: 0;
+  background: #e6f2ef;
+  vertical-align: top;
+  color: #000080;
+  line-height: 20px;
+}
+.col {
+  float: left;
+  width: 33.33%;
+}
+.footer-title {
+  text-align: left;
+  margin-left: 32px;
+  margin-top: 48px;
+  font-size: 26px;
+}
+.footer-text-3 {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 24px;
+}
+.footer-text-3:hover {
+  color: #008000;
+  transform: scale(1.08);
+}
+.col3-3 {
+  flex: 50%;
+}
+.copyright-text {
+  display: inline;
+  margin-left: 60px;
+}
+.media {
+  display: inline;
+  margin-right: 40px;
+  float: right;
+}
+.media img {
+  display: inline;
+}
+.media img {
+  background-color: #ffffff;
+  color: none;
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  text-align: left;
+  margin: 10px 15px;
+  vertical-align: left;
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+/* setting the media query of the page */
+/* Tablet menu */
+@media all and (min-width: 320px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    nav {
+      background: #e6f2ef;
+    }
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+    /* Button up from tablet screen */
+    .menu li.button a {
+      padding: 10px 15px;
+      margin: 5px 0;
+    }
+    .button .menu a {
+      background: #0080ff;
+      border: 1px #0082ff;
+    }
+    .button.secondary {
+      border: 0;
+    }
+    .button.secondary a {
+      background: transparent;
+      border: 1px #0080ff solid;
+    }
+    .button a:hover {
+      text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+      background: #0082ff;
+      border-color: #000080;
+    }
+  }
+  /* Desktop menu */
+  @media all and (min-width: 769px) {
+    .menu {
+      float: left;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      background: none;
+    }
+    .subitem {
+      text-align: left;
+    }
+    nav {
+      background: none;
+    }
+    .logo {
+      display: none;
+    }
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+    .button {
+      order: 2;
+    }
+    .submenu-active .submenu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 68px;
+      background: none;
+    }
+    .toggle {
+      display: none;
+    }
+    .submenu-active {
+      border-radius: 0;
+    }
+  }
+/* on extralarge screens, decrease font size */
+@media only screen and (max-width: 1920px) {
+
+.footer {
+  margin-top: 8px;
+  line-height: 20px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 48px;
+  font-size: 26px;
+}
+.footer-text-3 {
+  font-size: 24px;
+}
+.copyright-text {
+  font-size: 20px;
+  margin-top: 8px;
+}
+.media img {
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  margin: 10px 15px;
+}
+  }
+ /* On larger screens, decrease font size */
+@media only screen and (max-width: 1600px) {
+    .column {
+    width: 320px;
+    font-size: 36px;
+  }
+  .column img {
+   width: 320px;
+   height: 91px;
+  }
+  #contact-no {
+   font-size: 34px;
+  }
+.region {
+    font-size: 36px;
+    margin-top: 30px;
+}
+table {
+  margin-top: 90px;
+  font-size: 18px;
+  margin-bottom: 90px;
+}
+td {
+  padding: 14px 22px;
+}
+.pagination {
+ font-size: 22px;
+}
+.container h3 {
+ font-size: 22px;
+}
+.footer {
+  margin-top: 7px;
+  line-height: 18px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 44px;
+  font-size: 22px;
+}
+.footer-text-3 {
+  font-size: 22px;
+}
+.copyright-text {
+  font-size: 18px;
+  margin-top: 7px;
+}
+.media img {
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  margin: 10px 15px;
+}
+  }
+/* on large screens, decrease font size */
+@media only screen and (max-width: 1200px) {
+    .column {
+    width: 280px;
+    font-size: 30px;
+  }
+  .column img {
+   width: 280px;
+   height: 80px;
+  }
+  #contact-no {
+   font-size: 30px;
+  }
+.region {
+    font-size: 34px;
+    margin-top: 28px;
+}
+table {
+  margin-top: 80px;
+  font-size: 18px;
+  margin-bottom: 80px;
+}
+td {
+  padding: 12px 20px;
+}
+.pagination {
+ font-size: 20px;
+}
+.container h3 {
+ font-size: 20px;
+}
+.footer {
+  margin-top: 6px;
+  line-height: 16px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 40px;
+  font-size: 22px;
+}
+.footer-text-3 {
+  font-size: 20px;
+}
+.copyright-text {
+  font-size: 16px;
+  margin-top: 6px;
+}
+.media img {
+  font-size: 20px;
+  width: 26px;
+  height: 26px;
+  margin: 7px 13px;
+}
+  }
+/* on  medium screens, decrease font size */
+@media only screen and (max-width: 992px) {
+    .column {
+    width: 260px;
+    font-size: 28px;
+  }
+  .column img {
+   width: 260px;
+   height: 74px;
+  }
+  #contact-no {
+   font-size: 28px;
+  }
+  .toggle {
+  font-size: 20px;
+}
+.item {
+  font-size: 20px;
+}
+.menu li a {
+  padding: 3px 0px;
+}
+.menu li.subitem a {
+  padding: 3px;
+}
+.region {
+    font-size: 32px;
+    margin-top: 26px;
+}
+table {
+  margin-top: 70px;
+  font-size: 16px;
+  margin-bottom: 70px;
+}
+td {
+  padding: 10px 18px;
+}
+.pagination {
+ font-size: 18px;
+}
+.container h3 {
+ font-size: 18px;
+}
+.footer {
+  margin-top: 4px;
+  line-height: 12px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 36px;
+  font-size: 20px;
+}
+.footer-text-3 {
+  font-size: 18px;
+}
+.copyright-text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.media img {
+  font-size: 18px;
+  width: 24px;
+  height: 24px;
+  margin: 6px 12px;
+}
+  }
+ /* on  small screens, decrease font size */
+@media only screen and (max-width: 768px) {
+.topnav {
+    display: none;
+}
+.region {
+    font-size: 30px;
+    margin-top: 24px;
+}
+table {
+  margin-top: 60px;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+/* changing the table Style*/
+table, thead, tbody, th, td, tr { 
+    display: block; 
+}
+thead tr {                     
+    display: none;
+}
+                
+tr { 
+    border-bottom: 1px solid #ccc; 
+}
+td { 
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+}
+td:before { 
+    position: relative;
+    left: 6px;
+    width: 45%; 
+    padding-right: 5%; 
+    white-space: nowrap;
+    font-weight: 500;
+}
+td:nth-child(1):before { content: ""; }
+td:nth-child(2):before { content: "Name:"; }
+td:nth-child(3):before { content: "Status:"; }
+td:nth-child(4):before { content: "Address:"; }
+td:nth-child(5):before { content: "Phone:"; }
+td:nth-child(6):before { content: "Email:"; }
+td:nth-child(7):before { content: "City:"; }
+td:nth-child(8):before { content: "State:"; }
+/* end of style change */  
+td {
+  padding: 8px 16px;
+}
+.pagination {
+ font-size: 16px;
+}
+.container h3 {
+ font-size: 16px;
+}
+.col {
+  width: 100%;
+  display: inline-block;
+}
+.footer-title {
+  text-align: center;
+}
+.footer-text-3 {
+  text-align: center;
+}
+.copyright-text {
+  font-size: 14px;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+.media img {
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  margin: 6px 12px;
+}
+  }
+/* on smaller screens, decrease font size */
+@media only screen and (max-width: 480px) {
+
+.region {
+    font-size: 28px;
+    margin-top: 22px;
+}
+table {
+  margin-top: 50px;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+td {
+  padding: 6px 14px;
+}
+.pagination {
+ font-size: 16px;
+}
+.container h3 {
+ font-size: 16px;
+}
+.footer {
+  margin-top: 3px;
+  line-height: 8px;
+}
+.col {
+  width: 100%;
+  display: inline-block;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 32px;
+  font-size: 21px;
+  line-height: 1;
+}
+.footer-text-3 {
+  font-size: 16px;
+}
+.copyright-text {
+  font-size: 12px;
+  margin-top: 3px;
+  line-height: 1.2;
+}
+.media img {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  margin: 5px 11px;
+}
+ }
+        </style>
+    </head>
+<body>
+    <div class="topnav">
+        <div class="row">
+            <div class="column" id="company-logo">
+                <img src="logo.jpeg" style="float: left">
+            </div>
+            <div class="column" id="contact-no" style="float: right; color: #000080;">
+                +(234) 803-351-1011
+            </div>
+        </div>
+      </div>
+        <header>
+          <nav>
+            <ul class="menu">
+              <li class="logo"><a href="#"><img src="logo.jpeg"></a></li>
+              <li class="item"><a href="index.html">Home</a></li>
+              <li class="item"><a href="aboutus.html">About Us</a></li>
+              <li class="item has-submenu">
+                <a tabindex="0">Health Plans +</a>
+                <ul class="submenu">
+                  <li class="subitem"><a href="individualplan.html">Individual</a></li>
+                  <li class="subitem"><a href="familyplan.html">Family</a></li>
+                  <li class="subitem"><a href="corporateplan.html">Corporate</a></li>
+                  <li class="subitem"><a href="customizedplan.html">Customized</a></li>
+                </ul>
+              </li>
+              <li class="item has-submenu">
+                <a tabindex="0">Resources +</a>
+                <ul class="submenu">
+                  <li class="subitem"><a href="gallery.html">Gallery</a></li>
+                  <li class="subitem"><a href="enrollment.html">Enrollment</a></li>
+                  <li class="subitem"><a href="download.html">Downloads</a></li>
+                  <li class="subitem"><a href="faqs.html">FAQ</a></li>
+                  <li class="subitem"><a href="career.html">Careers</a></li>
+                </ul>
+              </li>
+              <li class="item"><a href="healthprovider.html">Health Providers</a></li>
+              <li class="item"><a href="login.html">Log In</a></li>
+              <li class="item"><a href="blog.html">Blog</a></li>
+              <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </header> 
+  <main>
+    <section class="region1">
+      <div class="container">
+          <h2 class="region"> NORTH-WEST </h2>
+          <h3>Select Number Of Rows</h3>
+                  <div class="form-group"> 	<!--		Show Numbers Of Rows 		-->
+                       <select class  ="form-control" name="state" id="maxRows">
+                           <option value="5000">Show ALL Rows</option>
+                           <option value="10">10</option>
+                           <option value="15">15</option>
+                           <option value="20">20</option>
+                           <option value="50">50</option>
+                           <option value="70">70</option>
+                           <option value="100">100</option>
+                          </select>
+                       
+                    </div>
+      
+      <table class="table table-striped table-class" id= "table-id">
+          <thead>
+              <tr>
+                  <th id="first">Name</th>
+                  <th id="second">Status</th>
+                  <th id="third">Address</th>
+                  <th id="fourth">Phone</th>
+                  <th id="fifth">Email</th>
+                  <th id="sixth">City</th>
+                  <th id="seventh">State</th>
+              </tr>
+            </thead>
+      <tbody>
+          <tr>
+              <td>GENERAL HOSPITAL, DUTSE</td>
+              <td></td>
+              <td>Dutse, Jigawa State</td>
+              <td></td>
+              <td></td>
+              <td>DUTSE</td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>JAHUN GENERAL HOSPITAL</td>
+              <td></td>
+              <td>Jahun, Jigawa State</td>
+              <td></td>
+              <td></td>
+              <td>JAHUN</td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, HADEJIA</td>
+              <td></td>
+              <td>Hadejia, Jigawa State</td>
+              <td></td>
+              <td></td>
+              <td>HADEJIA</td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, GUMEL</td>
+              <td></td>
+              <td>Gumel, Jigawa State</td>
+              <td></td>
+              <td></td>
+              <td>GUMEL</td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, KAZAURE</td>
+              <td></td>
+              <td>Kazaure, Jigawa State</td>
+              <td></td>
+              <td></td>
+              <td>KAZAURE</td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, RINGIM</td>
+              <td></td></td>
+              <td></td>
+              <td></td>
+              <td>RINGIM</td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>FEDERAL MEDICAL CENTRE, BIRNIN KUDU</td>
+              <td></td>
+              <td>Brnin Kudu, Jigawa State</td>
+              <td></td>
+              <td></td>
+              <td>BIRNIN KUDU</td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>POLICE CLINICS, JIGAWA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL BABURA</td>
+              <td></td>
+              <td>Babura, Jigawa State</td>
+              <td></td>
+              <td></td>
+              <td>BABURA</td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>RASHEED SHEKONI SPECIALIST HOSIPTAL</td>
+              <td></td>
+              <td>Dutse, Jigawa State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>ALBARKA CLINICS</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>SAMBO HOSPITAL LIMITED</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, KAFIN HAUSA</td>
+              <td></td>
+              <td>Kafin Hausa, Jigawa State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>HUSSAINI CUSTOM HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>JIGAWA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL  ARGUNGU</td>
+              <td></td>
+              <td>Argungu, Kebbi State</td>
+              <td></td>
+              <td></td>
+              <td>ARGUNGU</td>
+              <td>KEBBI</td>
+          </tr>
+          <tr>
+              <td>FEDERAL MEDICAL CENTER - BIRNIN KEBBI</td>
+              <td></td>
+              <td>Birnin Kebbi, Kebbi State</td>
+              <td></td>
+              <td></td>
+              <td>BIRNIN KEBBI</td>
+              <td>KEBBI</td>
+          </tr>
+          <tr>
+              <td>SIR YAHAYA MEMORIAL HOSPITAL</td>
+              <td></td>
+              <td>Ahmadu Bello Way, Birnin Kebbi</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KEBBI</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, YAURI</td>
+              <td></td>
+              <td>Yauri, Kebbi State</td>
+              <td></td>
+              <td></td>
+              <td>YAURI</td>
+              <td>KEBBI</td>
+          </tr>
+          <tr>
+              <td>223 LT TK BN MRS ZURU</td>
+              <td></td>
+              <td>Zuru, Kebbi State</td>
+              <td></td>
+              <td></td>
+              <td>ZURU</td>
+              <td>KEBBI</td>
+          </tr>
+          <tr>
+              <td>NAKOWA CLINIC LTD</td>
+              <td></td>
+              <td>Sokoto - Kontagora Road, Yauri, Kebbi State</td>
+              <td></td>
+              <td></td>
+              <td>YAURI</td>
+              <td>KEBBI</td>
+          </tr>
+          <tr>
+              <td>MARTHA BAMAIYI GENERAL HOSPITAL</td>
+              <td></td>
+              <td>Zuru Bye-Pass Behind First Bank, Zuru, Kebbi State</td>
+              <td></td>
+              <td></td>
+              <td>ZURU</td>
+              <td>KEBBI</td>
+          </tr>
+          <tr>
+              <td>D D G MEDICAL CENTRE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KEBBI</td>
+          </tr>
+          <tr>
+              <td> ASHMED SPECIALIST HOSPITAL, BIRNIN KEBBI</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>BIRNIN KEBBI</td>
+              <td>KEBBI</td>
+          </tr>
+          <tr>
+              <td>AIR FORCE MEDICAL CENTRE MANDO</td>
+              <td></td>
+              <td>Airforce Base, Mando, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ABDUL-AZEEZ MEMORIAL HOSPITAL</td>
+              <td></td>
+              <td>D.B. 10, Kabala West Road, Near Amaboni Hotal Tudun Wada,Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>GIWA HOSPITAL & SPECIALIST CLINIC</td>
+              <td></td>
+              <td>2. Giwa Road Abakpa Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          </tr>
+          <tr>
+              <td>ALBA CLINICAND MEDICAL CENTRE</td>
+              <td></td>
+              <td>25, Constitution Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SEFA SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>3, College Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>COVENANT HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>Au 6, Benin Street Kaduna.</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>BELMONT SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>S.S. 5 Nasarawa Road, Kaduna </td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>JOWAKO HOSPITAL</td>
+              <td></td>
+              <td>F 15 Jos Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>CHASEL HOSPITAL</td>
+              <td></td>
+              <td>15, Isa Kaita Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>GARKUWA SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>1a Sultan Road, Off Isa Kaita Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>IYALI HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>7, Kagoro Close, Off Gwari Crescent, Ungwar Rimi Gra, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>RIMI CLINICS & MATERNITY NIG. LT</td>
+              <td></td>
+              <td>24, Kubaka Road, Off Ja Abdulkadir Road, Ungwan Rimi, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SALEM HOSPITAL CLINICS & MAT.</td>
+              <td></td>
+              <td>B4 School Road, Ungwar Rimi, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>BARAU DIKKO TEACHING HOSPITAL</td>
+              <td></td>
+              <td>Lafia Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>JINYA SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>No 7, Bida Road Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>KABALA HOSPITAL</td>
+              <td></td>
+              <td>F 1a Market Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SALAMATU HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>2, Bimin Yero Road, Off Kabala West, Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SHEHU KANGIWA MEDICAL CENTRE</td>
+              <td></td>
+              <td>(Sick Bay), Kaduna Polytechnic, T/Wada Kaduna</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>YUSUF DANTSOHO HOSPITAL</td>
+              <td></td>
+              <td>T/Wada, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>MANEKS HOSPITAL LTD.</td>
+              <td></td>
+              <td>A1 Block 5, Makera Road, Kakuri Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>AMINA HOSPITAL LTD.</td>
+              <td></td>
+              <td>Gwari Avenue, Kachia Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>GILTOEARIS SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>17/19 Maiduwa Road, Near Barnawa Market, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>C JAY MEDICAL CENTRE</td>
+              <td></td>
+              <td>Near Dambo International College, No 13, Kubani Crescent, Barnawa Kd</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>GWAMNAAWAN HOSPITAL</td>
+              <td></td>
+              <td>Nasarawa, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SABON-TASHA BENGOLA HOSPITAL</td>
+              <td></td>
+              <td>Opp. Command Sec. School, Ung. S</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>44 ARMED FORCES REFERENCE  HOSPITAL</td>
+              <td></td>
+              <td>Sokoto Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>FEDERAL NEUROPSYCHIATRIC HOSPITAL</td>
+              <td></td>
+              <td>Barnawa, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ALMADINA CLINIC ZARIA</td>
+              <td></td>
+              <td>No. 28 Queen Elizabeth Road, Gra Zairia</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>LADIYA HOSPITAL</td>
+              <td></td>
+              <td>64, Benin Street, Zaira</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SALAMA INFIRMARY HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>Sokoto Road, Kwangla, Zaira</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ST. LUKE'S ANGLICAN HOSPITAL</td>
+              <td></td>
+              <td>Wusasa Zaira</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>HAJIA GAMBO SAWABA GENERAL HOSPITAL</td>
+              <td></td>
+              <td>Kofar-Gayan, Zaria</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>AHMADU BELLO UNIVERSITY HEALTH CLINIC</td>
+              <td></td>
+              <td>Samaru Zaria</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>DSS CLINIC</td>
+              <td></td>
+              <td>Kaduna, Kaduna State</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>NIGERIAN DEFENCE ACADEMY</td>
+              <td></td>
+              <td>Kawo, Kaduna State</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, GIWA</td>
+              <td></td>
+              <td>Giwa, Kaduna State</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, GIWA</td>
+              <td></td>
+              <td>Kafanchan, Kaduna State.</td>
+              <td></td>
+              <td></td>
+              <td>KAFANCHAN</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SAVANNAH POLY CLINIC</td>
+              <td></td>
+              <td>Samaru, Zaria.</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>MENDS SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>No 5, Abba Kyari Close, Ungwan Rimi GRA, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>CRYSTAL CLINIC & MATERNITY</td>
+              <td></td>
+              <td>M2 Poly Road, T/Wada, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ABI CLINICS & HOSPITAL</td>
+              <td></td>
+              <td>BZ 104 Ogori Road, Sardauna Crescent, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>MULTI CLINIC NIG. LTD.</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>MONARCH SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>N/k 12, Arochukwu Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>DANA CLINIC</td>
+              <td></td>
+              <td>Old Airport Road, Mando, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>PRIME SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>Az 16 Bakori Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ANNA-KITCH MEDICAL CENTRE</td>
+              <td></td>
+              <td>15, Wusasa Road, Zaria</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>NEW ERA HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>8, Funtua Street, Kafanchan</td>
+              <td></td>
+              <td></td>
+              <td>KAFANCHAN</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>MULTI CLINIC NIG. LTD</td>
+              <td></td>
+              <td>26A Yahaya Road, Unguwa Rimi G.R.A., Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>OXFORD HOSPITAL</td>
+              <td></td>
+              <td>38, Airforce Road, Samaru RD, Makera, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>RESTORATION HOSPITAL INC.</td>
+              <td></td>
+              <td> AL 1, Wushishi RD, BU Lagos St., Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>HITAF SPECIALIST</td>
+              <td></td>
+              <td>D5 Garbajar Abdulkadir Rd, Off Rimi drive, U/Rimi, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL MAKARFI</td>
+              <td></td>
+              <td>Makarfi Town, Kaduna State</td>
+              <td></td>
+              <td></td>
+              <td>MAKARFI</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ST GERARD CATHOLIC HOSPITAL</td>
+              <td></td>
+              <td>Kakuri Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>NATIONAL TEACHERS INSTITUTE STA</td>
+              <td></td>
+              <td>Km 5 Kaduna-Zaria Expressway, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>A B U TEACHING HOSPITAL, SHIKA</td>
+              <td></td>
+              <td>Shika, Zaria, Kaduna State</td>
+              <td></td>
+              <td></td>
+              <td>zaria</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>BIBA HOSPITAL</td>
+              <td></td>
+              <td>AE 7, Matazu Close, off Rigachukwu Road, T/Wada, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>AL MANSUR SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>No. 7A Wurno Road Opposite KSMC, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>POLICE CLINICS, KADUNA</td>
+              <td></td>
+              <td>Kaduna  State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>JIBRIN MAI-GWARI HOSPITAL</td>
+              <td></td>
+              <td>Birnin Gwari, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ABU TEACHING HOSPITAL SHIKA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>BARKA SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td> AU5 Gamagira Road, Barkin Ruwa, U/Sanusi, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>DR. GWAMNAAWAN GEN. HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>HOREB SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>4 Force Road Maraba Estate, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>JEMA`A HOSPITAL</td>
+              <td></td>
+              <td>90 Sarkin Pawa Road, Samaru, Zaria, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>JICON HOSPITAL & SPECIALIST CLINIC</td>
+              <td></td>
+              <td>No. 4 Danwaire Street, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>MARABA CLINIC & MATERNITY</td>
+              <td></td>
+              <td>No. 1 Balarabe Kubau Road, T/Wada, Zaria, Kaduna State</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>MAYFAIR CLINIC NIGERIA LTD.</td>
+              <td></td>
+              <td>No 8 Crescent Rd Sabon Gari, Zaria</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SABY HOSPITAL</td>
+              <td></td>
+              <td>HI Kagoma Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SAIDU DANGE RAILWAY ZARIA</td>
+              <td></td>
+              <td>Sokoto Road Railway Hospital, Zaria</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>WILBASUN HOSPITALAND MATERNITY</td>
+              <td></td>
+              <td>No. MB28 Massallaci Road, Narayi, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>DIAMOND SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>4 MM Lawan Jaafaru Isa Road, GRA, Off Isa Kaita Road</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ZARIA CLINIC & MEDICAL CENTRE</td>
+              <td></td>
+              <td>16 Hospital Road T/Wada, Zaria</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SALVATION HOSPITALAND MATERNITY</td>
+              <td></td>
+              <td>2B Algbria Crescent, Barnawa, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>FOMWAN HOSPITA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>MUSAKA SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>10B Nagwamatse Road, U/Rimi, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ALBARKA HOSPITAL</td>
+              <td></td>
+              <td>BZ170, Offa Road by Sardauna Crescent, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ST LOUIS HOSPITAL</td>
+              <td></td>
+              <td>Zonkwa Kaduna Road, Zangon Kataf</td>
+              <td></td>
+              <td></td>
+              <td>ZONKWA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>DABO MOHAMMED LERE MEMORIAL</td>
+              <td></td>
+              <td>Along Jos Road, Saminaka</td>
+              <td></td>
+              <td></td>
+              <td>SAMINAKA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>DEFENCE INDUSTRY CORPORATION CLINIC</td>
+              <td></td>
+              <td>Ahmadu Bello Way, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>MUSLIM SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>Wusasa, Zaria</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>AERO MEDICAL CENTRE</td>
+              <td></td>
+              <td>Nigeria College of Aviation Technology, Zaria</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>HARMONY HOSPITAL</td>
+              <td></td>
+              <td>38 Nuhu Aliyu Crescent, Barnawa Layout, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>BRIGHTWAY MEDICAL CLINIC</td>
+              <td></td>
+              <td>1 Narayi Road, Mountain Road, Kudenda</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>JODEB HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>5, Yoruba Road, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>CRYSTAL CLINIC & MATERNITY</td>
+              <td></td>
+              <td>No 6 Makera Road, Opp, Kaduna South LGA Secretariat, Kakuri</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>PAL HOSPITAL</td>
+              <td></td>
+              <td>15, River Road, Behind Diamond Bank, GRA, Zaria</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>NAT. INST. FOR CHEMICATECH MEDICAL CENTRE</td>
+              <td></td>
+              <td>Medical Center, Basawa, Zaria,</td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>DIALOGUE SEPCIALIST CLINICS LTD.</td>
+              <td></td>
+              <td>No 1, Kukan Road, U/Dosa, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>AL-MADINAT SPECIALIST HOSPITAL </td>
+              <td></td>
+              <td>No 30, College Road, Anguwan dosa, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>DAN GIWA MEMORIAL HOSPITAL</td>
+              <td></td>
+              <td>By Noruin Guest House, Maraban Rido kaduna, Kaduna State</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>GARDEN CITY SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>No 2, Sultan Road, Unguwan Rimi, Kaduna</td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ADONAI RAPHA MEDICAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>AL-MUNIFF HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>MEDICAL CENTER KADUNA STATE UNIVERSITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>NATIONAL EAR CARE CENTER</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>EL BARAU MEDICAL & DIAGNOSTIC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>MSK SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ASHMED SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>FRONTIERS CONSULTANTS CLINICS</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>KAKAKI HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>KAWO ISLAMIC HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>RAPHA SPECIALIST HOSPITAL LTD.</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>AT-TATBIQ ISLAM MEDICAL CENTRE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL KACHIA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KACHIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>HIKMAH SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SALEM MEDICAL CENTRE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ZAKARI SPECIALIST CLINIC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL SABON TASHA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>NEW CITY HOSPITAL & DIAGNOSTICS</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>GRACELAND HAGWOP HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SENGYURO MEMORIAL HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>FIRST CARE MULTI SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>KINKINAU SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>AMAL HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ASHMED SPECIALIST HOSPITAL, ZARIA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>ZARIA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ASHMED SPECIALIST HOSPITAL LTD</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>ANNUR MEDICAL CENTRE & SPECIAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>Gugoh Hospital</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>Manaal</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>R.J.Y Perfect Clinic & Maternity</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KADUNA</td>
+          </tr>
+          <tr>
+              <td>SIR MOHAMMED SANUSI SPECIALIST</td>
+              <td></td>
+              <td>Yan Kaba, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>KHADIJAT MEMORIAL HOSPITAL</td>
+              <td></td>
+              <td>No. 20 Katsina Road, Off Hajj Camp Road, Opp Customs Barrack</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>MOS-METRO CLINIC</td>
+              <td></td>
+              <td>Sabon Gari, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>UNICARE CLINICAND MATERNITY</td>
+              <td></td>
+              <td>Katsina Road, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>TOPCARE SPECIALIST MEDICAL CENTRE</td>
+              <td></td>
+              <td>No; 118 Hadejia Rd, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>IVORY CLINICAND MATERNITY</td>
+              <td></td>
+              <td>Aminu Kano, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>PREMIER CLINICS</td>
+              <td></td>
+              <td>Gyadi Gyadi, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>SAYMAYS SPECIALIST HOSPITAL LTD</td>
+              <td></td>
+              <td>Zoo Road, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>INTERNATIONAL CLINIC & HOSPITAL</td>
+              <td></td>
+              <td>40, Niger Street, Airport Road, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>AL-AMEEN MEDICAL CENTRE</td>
+              <td></td>
+              <td>Maiduguri Road, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>WARSHI HOSPITAL</td>
+              <td></td>
+              <td>Dakata, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>ZAKS CLINIC & MATERNITY LTD.</td>
+              <td></td>
+              <td>Opp. Corner Dankura, Behind PDP HQ. Zoo Road, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>BAREWA CLINIC & MATERNITY</td>
+              <td></td>
+              <td>11, Zaria Road, Kano.\</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>DSS CLINIC</td>
+              <td></td>
+              <td>Kano, Kano State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>NIGERIA CUSTOMS SERVICE MED. CENTRE</td>
+              <td></td>
+              <td>Katsina Rd, Customs Barracks, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>ARMED FORCES SPEC. HOSPITAL</td>
+              <td></td>
+              <td>2, Ashton Road, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>349 NIGERIANAIRFORCE HOSPITAL</td>
+              <td></td>
+              <td>NAF Base, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, GWARZO</td>
+              <td></td>
+              <td>P.O. BOX 10911 Kano,</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>MURTALA MOHAMMED SPEC. HOSPITAL</td>
+              <td></td>
+              <td>Kano City, Kano State</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, WUDIL</td>
+              <td></td>
+              <td>Wudil, Kano, Kano State</td>
+              <td></td>
+              <td></td>
+              <td>WUDIL</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>MOHAMMED ABDULLAHI WASE SPECIALIST</td>
+              <td></td>
+              <td>Nasarawa, Kano, Kano State</td>
+              <td></td>
+              <td></td>
+              <td>NASARAWA</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, DANBATTA</td>
+              <td></td>
+              <td>Danbata, Kano, Kano State</td>
+              <td></td>
+              <td></td>
+              <td>DANBATTA</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>SHEIKH MOHAMMED JIDA GENERAL HOSPITAL</td>
+              <td></td>
+              <td>Sabon Gari, Kano, Kano State</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>AMINU KANO TEACHING HOSPITAL</td>
+              <td></td>
+              <td>Gyadi Gyadi, Kano, Kano State</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>BAYERO UNIVERSITY HEALTH CENTRE</td>
+              <td></td>
+              <td>Kano, Kano State</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>NATIONAL ORTHOPAEDIC HOSPITAL,</td>
+              <td></td>
+              <td>Kano, Kano State</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>GODIYA CLINICS & MATERINITY</td>
+              <td></td>
+              <td>Plot 177/177 Na''''ibawa Zaria Road Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>STANDARD SPECIAL HOSPITAL</td>
+              <td></td>
+              <td>No 8A, Lamido Crescent Nassarawa Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>CORDIAL  HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td>No 68, Sarkin Yaki Nomansland Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>EXCELLENCE CLINIC & MATERNITY LTD</td>
+              <td></td>
+              <td>No 32, Tarauni Gardens Maiduguri Road Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>GOOD PASTURE CLINIC</td>
+              <td></td>
+              <td>No 6, Citta Avenue, Noman''''''''s Land, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>LAFIYA SURGERY</td>
+              <td></td>
+              <td>No 52, Ogoja Street, Sabon Gari, Kano</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, BICHI</td>
+              <td></td>
+              <td>Bichi, Kano State</td>
+              <td></td>
+              <td></td>
+              <td>BICHI</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>AL NOURY SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>MODULA CLINIC & MATERNITY</td>
+              <td></td>
+              <td>59, New Road, Sabon Gari, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>ECWA HOSPITAL</td>
+              <td></td>
+              <td>Off Airport Road, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>SHARADA INDUSTRIAL CLINIC</td>
+              <td></td>
+              <td>60 Ahmed Nuhu Street, Close to Corner Freedom Radio, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, MINJIBIR</td>
+              <td></td>
+              <td>Minjibir, Kano State</td>
+              <td></td>
+              <td></td>
+              <td>MANJIBIR</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>AMITY HOSPITAL & MEDICAL SERVICES</td>
+              <td></td>
+              <td>10, 13 Link off court Rd, Hausawa, Kano State</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>GAYA GENERAL HOSPITAL</td>
+              <td></td>
+              <td>25, Constitution Rd, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>NOL INTERNATIONAL HOSPITAL & DIAGNOSTIC CENTRE</td>
+              <td></td>
+              <td>1A Sultan Road Nassarawa GRA, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>GETWELL WOMENAND CHILDREN HOSIPTAL</td>
+              <td></td>
+              <td>KS-4, Sabo Garba Housing Estate (Near Block B ) Gwarzo Road, Kano State.</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>DAWAKIN KUDU GENERAL HOSIPTAL</td>
+              <td></td>
+              <td>Dawakin Kudu, Kano</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>TUNIK HOSPITAL</td>
+              <td></td>
+              <td>Nomansland, Kano, Kano State.</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>ABUBAKAR IMAM UROLOGY CENTRE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>KANYA  CLINICS & HOSPITAL</td>
+              <td></td>
+              <td>Panshekara, Kano, Kano State.</td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>WAZIRI SHEHU GIDADO GENERAL HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>GREENLAND CLINICS & MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>OASIS CLINIC MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>CITY CLINICAND MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>KARAYE COMPREHENSIVE HEALTH CLINIC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>NORTHWEST UNIVERSITY TEACHING HOSIPTAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>BEST CHOICE CLINIC & MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>AMEER CLINICS & MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>KURA GENERAL HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>PRIMEALLIANCE MULTICARE SPECIALIST</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>RANO GENERAL HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>SOFTCARE HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>TIGA GENERAL HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>RIMIN GADO COMPREHENSIVE HEALTHCARE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>TSANYAWA COMPREHENSIVE PHC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>DALA MCH</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>GARKO PHC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>GETSO MCH CLINIC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>CAIRO SPECIALIST CLINIC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>NEWAGE SPECIALIST MEDICAL CENTRE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>IMAN WALI GENERAL HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>DESTINY SURGERY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>YAKUBU DAN-NONO MERMORIAL HOSIPTAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>MUHAMMED BUHARI SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>KHALIFA SHEIKH ISIYAKA RABIU SPECIALIST</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>MGK HEALTHCARE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>PALACE CLINIC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>TOP CARE HOSPITAL & MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>UNIVERSAL SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>AIRFORCE COMPREHENSIVE SCHOOL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>NOR CLINIC & MATERNITY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>UNIQUE CARE HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>KHADIJAT MEMORIAL HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>MDS HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>NAGODA CLINICS</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>ASYMCO HEALTH CLINIC, KANO</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>KANO HOSPITAL PHARMACY & DIAGNOSTIC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KANO</td>
+          </tr>
+          <tr>
+              <td>BAKORI CLINIC & MATERNITY</td>
+              <td></td>
+              <td>No.2 Katsina Road, Bakori</td>
+              <td></td>
+              <td></td>
+              <td>BAKORI</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, DAURA</td>
+              <td></td>
+              <td>Daura, Katsina State</td>
+              <td></td>
+              <td></td>
+              <td>DAURA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, DUTSINMA</td>
+              <td></td>
+              <td>Dutsinma, Katsina State</td>
+              <td></td>
+              <td></td>
+              <td>DUTSINMA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>SARKIN MASKA SHEHU HOSPITAL</td>
+              <td></td>
+              <td>Funtua, Katsina State</td>
+              <td></td>
+              <td></td>
+              <td>FUNTUA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>KHADIJAT MEDICAL CENTER</td>
+              <td></td>
+              <td>No. 53 Katsina Road Funtua</td>
+              <td></td>
+              <td></td>
+              <td>FUNTUA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>BISTIT HOSPITAL</td>
+              <td></td>
+              <td>No. 36 Katsina Road</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>NAKOWA HOSPITAL & ULTRA SOUND</td>
+              <td></td>
+              <td>Sokoto Road, Funtua</td>
+              <td></td>
+              <td></td>
+              <td>FUNTUA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL KANKARA</td>
+              <td></td>
+              <td> Health Service Mgt. Board</td>
+              <td></td>
+              <td></td>
+              <td>KANKARA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, KANKIYA</td>
+              <td></td>
+              <td>Kankiya, Katsina State</td>
+              <td></td>
+              <td></td>
+              <td>KANKIYA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>FEDERAL MEDICAL CENTER, KATSINA</td>
+              <td></td>
+              <td>Murtala Mohammed Way</td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>FEDERAL COLLEGE OF EDUCATION</td>
+              <td></td>
+              <td>Katsina, Katsina State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL MANI</td>
+              <td></td>
+              <td>Mani-Mashi Road Katsina</td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>PRIMARY HEALTH CARE CENTER </td>
+              <td></td>
+              <td>Mashi, Katsina</td>
+              <td></td>
+              <td></td>
+              <td>MASHI</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>KATSINA GENERAL HOSPITAL</td>
+              <td></td>
+              <td>Katsina, Katsina State</td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL, MALUMFASHI</td>
+              <td></td>
+              <td>MaluMfashi, Katsina State</td>
+              <td></td>
+              <td></td>
+              <td>MALUMFASHI</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>IBRAHIM COOMASSIE MODERN POLIC</td>
+              <td></td>
+              <td>Katsina State Police Command, Katsina</td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td> NEW FUNTUA CLINIC</td>
+              <td></td>
+              <td>3 Jabir Roundabout, Zaria Road, Funtua</td>
+              <td></td>
+              <td></td>
+              <td>FUNTUA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>UNIVERSITY CLINIC</td>
+              <td></td>
+              <td>Federal University, Take- off Campus, federal University Dutsinma, Katsina State</td>
+              <td></td>
+              <td></td>
+              <td>DUTSINMA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>K DARA SPECIALIST CLINIC LIMITED</td>
+              <td></td>
+              <td>Gidan Dawa</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>TURAI UMAR YAR`ADUA MATERNITY CLINIC</td>
+              <td></td>
+              <td>Gidan Dawa off Hassan Usman Katsina Road, Katsina</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL MUSAWA</td>
+              <td></td>
+              <td>Hospital Rd, Shaishawu Musawa, Katsina</td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>ST VINCENT CATHOLIC CHURCH</td>
+              <td></td>
+              <td>Along Funtua Road, Gidan Dawa, Malumfachi, Katsina State</td>
+              <td></td>
+              <td></td>
+              <td>MALUMFASHI</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>ALHERI CLINIC</td>
+              <td></td>
+              <td>Lawrence Onoja Road, Kofar Kaura, New Layout katsina, Katsina State</td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>AJS ULTRA MODERN CLINIC & DIAGNOSTICS</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>GENERAL AMADI RIMI SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL JIBIA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>JIBIA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>AISHA MEMORIAL MEDICARE CLINIC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>MAARUF MEDICAL CENTRE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL INGAWA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>INGAWA</td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>NOORU KAREEM CLINIC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>AZAMS SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>263 NIGERIAN AIRFORCE REFERENCE HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>SAUKI ULTRAMODERN HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>HERITAGE SPECIALIST CLINIC & DIAGNOSTIC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>TRIPOD MEDICAL CENTER</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>KATSINA</td>
+          </tr>
+          <tr>
+              <td>SOKOTO CLINIC</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>SHEPHERD SPECIALIST CLINIC</td>
+              <td></td>
+              <td>No. 32 Zaria Rd. Ung. Rogo Area</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>SPECIALIST HOSPITAL</td>
+              <td></td>
+              <td>Abdullahi Fodiyo Road, Sokoto</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>MADALLA LAFIYA SPECIAL CLINIC LTD</td>
+              <td></td>
+              <td>25, Shuni Road, Mararaba, Sokoto</td>
+              <td></td>
+              <td></td>
+              <td>MARARABA</td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>USMAN DANFODIO UNIVERSITY TEACHING HOSIPTAL</td>
+              <td></td>
+              <td>Behind Standard Trust Bank, Kano Rd. Sokoto</td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>8 DIVISION MEDICAL SERVICES</td>
+              <td></td>
+              <td>Sokoto, Sokoto State</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>USMAN DANFODIO UNIVERSITY HEALTH CLINIC</td>
+              <td></td>
+              <td>University main campus, Sokoto</td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>LIBERTY CLINIC</td>
+              <td></td>
+              <td>11, Gummi Road, Hajiya Halima Estate, Sokoto</td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>POLICE CLINIC </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>UBANDOMA SOECIALIST CLINIC</td>
+              <td></td>
+              <td># 24, Besse Road, Rujin Sambo Area, Sokoto</td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>CALIPHATE MULTISPECIALTY HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL WURNO</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>WURNO</td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>GENERAL HOSPITAL TAMBUWAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>PHCACHIDA</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>CITI PREMIER MOTHER & CHILD HOSPITAL</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>HOLY FAMILY MATERNITY HOME</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+          </tr>
+          <tr>
+              <td>ASHMED SPECIALIST HOSPITAL,SOKOTO</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>SOKOTO</td>
+          </tr>
+      </tbody>
+      </table>
+      <!--		Start Pagination -->
+      <div class='pagination-container' >
+       <nav>
+          <ul class="pagination" style="list-style: none;">
+          <li data-page="prev" >
+              <span> << <span class="sr-only">(current)</span></span>
+          </li>
+      <!--	Here the JS Function Will Add the Rows -->
+          <li data-page="next" id="prev">
+              <span> >> <span class="sr-only">(current)</span></span>
+          </li>
+          </ul>
+       </nav>
+      </div>
+      </div> <!-- 		End of Container -->
+      </section>
+  </main>
+<!--this is the footer section with contact information and links-->
+<section class="footer"> 
+  <div class="footer-top">       
+    <div class="row">
+      <div class="col">       
+        <h3 class="footer-title">Health Plans</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="individualplan.html">Individual</a></li>       
+          <li><a class="footer-text-3" href="familyplan.html">Family</a></li>       
+          <li><a class="footer-text-3" href="corporateplan.html">Corporate</a></li>      
+          <li><a class="footer-text-3" href="customizedplan.html">Customized</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">       
+        <h3 class="footer-title">Recources</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="enrollment.html">Enrollment</a></li>       
+          <li><a class="footer-text-3" href="download.html">Downloads</a></li>       
+          <li><a class="footer-text-3" href="faqs.html">FAQ</a></li>      
+          <li><a class="footer-text-3" href="career.html">Career</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">
+        <h3 class="footer-title">Quick Links </h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="aboutus.html">About Us</a></li>       
+          <li><a class="footer-text-3" href="policy.html">Privacy Policy</a></li>
+          <li><a class="footer-text-3" href="terms.html">Terms of Use</a></li>
+          <li><a class="footer-text-3" href="contact.html">Contact Us</a></li>       
+        </ul>           
+      </div>         
+    </div>    
+  </div>     
+<div class="row">
+<div class="col3-3">
+<div class="copyright-text" style="float: left;">© 2022 Songhai Health Trust Limited. All rights reserved.
+</div>
+</div>
+<div class="col3-3" style="float: right;">
+<div class="media">
+  <a href="https://play.google.com/store/search?q=songhai+hmo&c=apps&hl=en&gl=US"><img src="log.jpg"></a>
+  <a href="mailto:info@songhaihealthtrust.com"><img src="mail.png"></a>
+  <a href="https://www.linkedin.com/login"><img src="linkedin1.png"></a>
+  <a href="https://www.facebook.com/songhaihealth/"><img src="face.jpg"></a>
+  <a href="https://mobile.twitter.com/songhaihealth"><img src="tweet.jpg"></a>
+  <a href="https://www.instagram.com/p/CdDdbxhtbK1/?igshid=YTgzYjQ4ZTY%3D"><img src="insta.jfif"></a>
+</div>
+</div>
+</div>
+</section> 
+<script>
+const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".menu");
+const items = document.querySelectorAll(".item");
+
+/* Toggle mobile menu */
+function toggleMenu() {
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+  } else {
+    menu.classList.add("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+  }
+}
+
+/* Activate Submenu */
+function toggleItem() {
+  if (this.classList.contains("submenu-active")) {
+    this.classList.remove("submenu-active");
+  } else if (menu.querySelector(".submenu-active")) {
+    menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    this.classList.add("submenu-active");
+  } else {
+    this.classList.add("submenu-active");
+  }
+}
+
+/* Close Submenu From Anywhere */
+function closeSubmenu(e) {
+  if (menu.querySelector(".submenu-active")) {
+    let isClickInside = menu
+      .querySelector(".submenu-active")
+      .contains(e.target);
+
+    if (!isClickInside && menu.querySelector(".submenu-active")) {
+      menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    }
+  }
+}
+/* Event Listeners */
+toggle.addEventListener("click", toggleMenu, false);
+for (let item of items) {
+  if (item.querySelector(".submenu")) {
+    item.addEventListener("click", toggleItem, false);
+  }
+  item.addEventListener("keypress", toggleItem, false);
+}
+document.addEventListener("click", closeSubmenu, false);
+
+/* scripting the pagination of the page */
+  getPagination('#table-id');
+           //getPagination('.table-class');
+           //getPagination('table');
+ 
+       /*					PAGINATION 
+       - on change max rows select options fade out all rows gt option value mx = 10
+       - append pagination list as per numbers of rows / max rows option (20row/10= 2pages )
+       - each pagination li on click -> fade out all tr gt max rows * li num and (10*pagenum 2 = 20 rows)
+       - fade out all tr lt max rows * li num - max rows ((10*pagenum 2 = 20) - 5)
+       - fade in all tr between (maxRows*PageNum) and (maxRows*pageNum)- MaxRows 
+       */
+      
+ 
+ function getPagination(table) {
+   var lastPage = 1;
+ 
+   $('#maxRows')
+     .on('change', function(evt) {
+       //$('.paginationprev').html('');						// reset pagination
+ 
+      lastPage = 1;
+       $('.pagination')
+         .find('li')
+         .slice(1, -1)
+         .remove();
+       var trnum = 0; // reset tr counter
+       var maxRows = parseInt($(this).val()); // get Max Rows from select option
+ 
+       if (maxRows == 5000) {
+         $('.pagination').hide();
+       } else {
+         $('.pagination').show();
+       }
+ 
+       var totalRows = $(table + ' tbody tr').length; // numbers of rows
+       $(table + ' tr:gt(0)').each(function() {
+         // each TR in  table and not the header
+         trnum++; // Start Counter
+         if (trnum > maxRows) {
+           // if tr number gt maxRows
+ 
+           $(this).hide(); // fade it out
+         }
+         if (trnum <= maxRows) {
+           $(this).show();
+         } // else fade in Important in case if it ..
+       }); //  was fade out to fade it in
+       if (totalRows > maxRows) {
+         // if tr total rows gt max rows option
+         var pagenum = Math.ceil(totalRows / maxRows); // ceil total(rows/maxrows) to get ..
+         //	numbers of pages
+         for (var i = 1; i <= pagenum; ) {
+           // for each page append pagination li
+           $('.pagination #prev')
+             .before(
+               '<li data-page="' +
+                 i +
+                 '">\
+                   <span>' +
+                 i++ +
+                 '<span class="sr-only">(current)</span></span>\
+                 </li>'
+             )
+             .show();
+         } // end for i
+       } // end if row count > max rows
+       $('.pagination [data-page="1"]').addClass('active'); // add active class to the first li
+       $('.pagination li').on('click', function(evt) {
+         // on click each page
+         evt.stopImmediatePropagation();
+         evt.preventDefault();
+         var pageNum = $(this).attr('data-page'); // get it's number
+ 
+         var maxRows = parseInt($('#maxRows').val()); // get Max Rows from select option
+ 
+         if (pageNum == 'prev') {
+           if (lastPage == 1) {
+             return;
+           }
+           pageNum = --lastPage;
+         }
+         if (pageNum == 'next') {
+           if (lastPage == $('.pagination li').length - 2) {
+             return;
+           }
+           pageNum = ++lastPage;
+         }
+ 
+         lastPage = pageNum;
+         var trIndex = 0; // reset tr counter
+         $('.pagination li').removeClass('active'); // remove active class from all li
+         $('.pagination [data-page="' + lastPage + '"]').addClass('active'); // add active class to the clicked
+         // $(this).addClass('active');					// add active class to the clicked
+       limitPagging();
+         $(table + ' tr:gt(0)').each(function() {
+           // each tr in table not the header
+           trIndex++; // tr index counter
+           // if tr index gt maxRows*pageNum or lt maxRows*pageNum-maxRows fade if out
+           if (
+             trIndex > maxRows * pageNum ||
+             trIndex <= maxRows * pageNum - maxRows
+           ) {
+             $(this).hide();
+           } else {
+             $(this).show();
+           } //else fade in
+         }); // end of for each tr in table
+       }); // end of on click pagination list
+     limitPagging();
+     })
+     .val(10)
+     .change();
+ 
+   // end of on select change
+ 
+   // END OF PAGINATION
+ }
+ 
+ function limitPagging(){
+   // alert($('.pagination li').length)
+ 
+   if($('.pagination li').length > 7 ){
+       if( $('.pagination li.active').attr('data-page') <= 3 ){
+       $('.pagination li:gt(5)').hide();
+       $('.pagination li:lt(5)').show();
+       $('.pagination [data-page="next"]').show();
+     }if ($('.pagination li.active').attr('data-page') > 3){
+       $('.pagination li:gt(0)').hide();
+       $('.pagination [data-page="next"]').show();
+       for( let i = ( parseInt($('.pagination li.active').attr('data-page'))  -2 )  ; i <= ( parseInt($('.pagination li.active').attr('data-page'))  + 2 ) ; i++ ){
+         $('.pagination [data-page="'+i+'"]').show();
+ 
+       }
+ 
+     }
+   }
+ }
+ $(function() {
+   // Just to append id number for each row
+   $('table tr:eq(0)').prepend('<th> ID </th>');
+ 
+   var id = 0;
+ 
+   $('table tr:gt(0)').each(function() {
+     id++;
+     $(this).prepend('<td>' + id + '</td>');
+   });
+ });
+ </script>
+</body>
+</html>
