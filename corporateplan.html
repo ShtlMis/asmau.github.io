@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!--tittle>Songhai Health Trust Limited Corporate Healthcare Plan Page</tittle-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Corporate Plan | Songhai Health Trust Limited</title>
+        <link rel="icon" href="log.jpg" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Bolded Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script scr="index.js" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+        <style>
+          body {
+            width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  width: 100%;
+  height: 75%;
+  top: 15%;
+  bottom: 10%;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: none;
+}
+/* for the website header.
+two image containers */
+.row {
+  width: 100%;
+  display: inline-block;
+}
+.column {
+  width: 350px;
+  float: left;
+  padding: none;
+  top: 0;
+  margin-top: 1em;
+  height: 100px; 
+}
+.column img {
+ background-color: white;
+ font-size: 22px;
+ width: 350px;
+ height: 100px;
+ bottom: 10%;
+ margin: 0;
+ margin-left: 20px;
+ vertical-align: top;
+}
+#contact-no {
+   float: right;
+   background-color: none;
+   font-size: 38px;
+   color: #000080;
+   bottom: 10%;
+   margin: 0;
+   margin-top: 1%;
+  }
+/*clears float after image container*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* styling the navigation bar */
+nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 10%;
+    height: 5%;
+    margin: none;
+    margin-bottom: 1em;
+}
+.menu a {
+  color: #000080;
+  text-decoration: none;
+}
+.menu,
+.submenu {
+  list-style-type: none;
+}
+.logo img {
+  width: 140px;
+  height: 40px;
+}
+.item {
+  padding: 10px;
+}
+.item.button {
+  padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+  color: #008000;
+  text-decoration: overline;
+}
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+}
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+.menu li.subitem a {
+  padding: 15px;
+}
+.toggle {
+  order: 1;
+  font-size: 24px;
+  margin-right: 4%;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  order: 3;
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+  display: none;
+}
+.active .item {
+  display: block;
+}
+.button.secondary {
+  /* divider between buttons and menu links */
+  border-bottom: 1px #444 solid;
+}
+/* Submenu up from mobile screens */
+.submenu {
+  display: none;
+}
+.submenu-active .submenu {
+  display: block;
+}
+.has-submenu i {
+  font-size: 24px;
+}
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  line-height: 16px;
+  color: #000080;
+  padding-left: 5px;
+}
+.subitem a {
+  padding: 10px 15px;
+}
+.submenu-active {
+  background-color: none;
+  border-radius: 3px;
+}   
+/* Styling for Healthcare Plan pages. */
+ /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+/* 
+      MAIN COLOR: #087f5b
+      GREY COLOR: #343a40
+      */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.plan-img-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+  margin-top: 48px;
+}
+.plan-img-text h1 {
+  font-size: 38px;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+  font-family: 'Cinzel';
+  font-weight: bold;
+  color: #000080;
+}
+.plan-img-text img {
+  width: 950px;
+  height: 593px;
+  align-items: center;
+  border: 1px solid #c0c0c0;
+  border-radius: 150px;
+}
+.plan-img-text img:hover {
+  transform: scale(1.05);
+}
+.healthplan {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 6.4px;
+}
+.healthplan p {
+  font-size: 24px;
+  color: #000000;
+  font-family: 'Roboto';
+}
+.btn:link,
+.btn:visited {
+  background-color: #099268;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  display: inline-block;
+  border-radius: 100px;
+}
+.btn:hover,
+.btn:active {
+  background-color: #000000;
+}
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+  width: 120px;
+  text-align: center;
+}
+
+/* styling for the table segment */
+.table_container {
+  width: 100%;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+}
+table {
+  width: 80%;
+  margin-top: 100px;
+  font-size: 18px;
+  border: 1px solid #343a40;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+th,
+td {
+  border: 1px solid #343a40; 
+  padding: 16px 24px;
+  text-align: left;
+}
+thead tr {
+  background-color: #087f5b;
+  color: #fff;
+}
+
+thead th {
+  width: 25%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+/* the footer is fixed to the bottom of the page */
+.footer {
+  width: 100%;
+  display: inline-block;
+}
+.footer {
+  height: 10%;
+  bottom: 0%;
+  margin-top: 8px;
+  margin-bottom: 0;
+  background: #e6f2ef;
+  vertical-align: top;
+  color: #000080;
+  line-height: 20px;
+}
+.col {
+  float: left;
+  width: 33.33%;
+}
+.footer-title {
+  text-align: left;
+  margin-left: 32px;
+  margin-top: 48px;
+  font-size: 26px;
+}
+.footer-text-3 {
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 24px;
+}
+.footer-text-3:hover {
+  color: #008000;
+  transform: scale(1.08);
+}
+.col3-3 {
+  flex: 50%;
+}
+.copyright-text {
+  display: inline;
+  margin-left: 60px;
+}
+.media {
+  display: inline;
+  margin-right: 40px;
+  float: right;
+}
+.media img {
+  display: inline;
+}
+.media img {
+  background-color: #ffffff;
+  color: none;
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  text-align: left;
+  margin: 10px 15px;
+  vertical-align: left;
+}
+.media img:hover {
+  transform: scale(1.8);
+}
+
+/* setting the media query of the page */
+/* Tablet menu */
+@media all and (min-width: 320px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    nav {
+      background: #e6f2ef;
+    }
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+    /* Button up from tablet screen */
+    .menu li.button a {
+      padding: 10px 15px;
+      margin: 5px 0;
+    }
+    .button .menu a {
+      background: #0080ff;
+      border: 1px #0082ff;
+    }
+    .button.secondary {
+      border: 0;
+    }
+    .button.secondary a {
+      background: transparent;
+      border: 1px #0080ff solid;
+    }
+    .button a:hover {
+      text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+      background: #0082ff;
+      border-color: #000080;
+    }
+  }
+  /* Desktop menu */
+  @media all and (min-width: 769px) {
+    .menu {
+      float: left;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      background: none;
+    }
+    .subitem {
+      text-align: left;
+    }
+    nav {
+      background: none;
+    }
+    .logo {
+      display: none;
+    }
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+    .button {
+      order: 2;
+    }
+    .submenu-active .submenu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 68px;
+      background: none;
+    }
+    .toggle {
+      display: none;
+    }
+    .submenu-active {
+      border-radius: 0;
+    }
+  }
+/* on extralarge screens, decrease font size */
+@media only screen and (max-width: 1920px) {
+.plan-img-text {
+  margin-top: 48px;
+}
+.plan-img-text h1 {
+  font-size: 38px;
+}
+.plan-img-text img {
+  width: 950px;
+  height: 593px;
+  border-radius: 150px;
+}
+.healthplan p {
+  font-size: 24px;
+}
+table {
+  margin-top: 100px;
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+th,
+td {
+  padding: 16px 24px;
+}
+.footer {
+  margin-top: 8px;
+  line-height: 20px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 48px;
+  font-size: 26px;
+}
+.footer-text-3 {
+  font-size: 24px;
+}
+.copyright-text {
+  font-size: 20px;
+  margin-top: 8px;
+}
+.media img {
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  margin: 10px 15px;
+}
+  }
+ /* On larger screens, decrease font size */
+@media only screen and (max-width: 1600px) {
+  .column {
+    width: 320px;
+    font-size: 36px;
+  }
+  .column img {
+   width: 320px;
+   height: 91px;
+  }
+  #contact-no {
+   font-size: 34px;
+  }
+.plan-img-text {
+  margin-top: 44px;
+}
+.plan-img-text h1 {
+  font-size: 36px;
+}
+.plan-img-text img {
+  width: 792px;
+  height: 494px;
+  border-radius: 125px;
+}
+.healthplan p {
+  font-size: 24px;
+}
+table {
+  margin-top: 90px;
+  font-size: 18px;
+  margin-bottom: 90px;
+}
+th,
+td {
+  padding: 14px 22px;
+}
+.footer {
+  margin-top: 7px;
+  line-height: 18px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 44px;
+  font-size: 22px;
+}
+.footer-text-3 {
+  font-size: 22px;
+}
+.copyright-text {
+  font-size: 18px;
+  margin-top: 7px;
+}
+.media img {
+  font-size: 22px;
+  width: 28px;
+  height: 28px;
+  margin: 10px 15px;
+}
+  }
+/* on large screens, decrease font size */
+@media only screen and (max-width: 1200px) {
+  .column {
+    width: 280px;
+    font-size: 30px;
+  }
+  .column img {
+   width: 280px;
+   height: 80px;
+  }
+  #contact-no {
+   font-size: 30px;
+  }
+.plan-img-text {
+  margin-top: 40px;
+}
+.plan-img-text h1 {
+  font-size: 34px;
+}
+.plan-img-text img {
+  width: 594px;
+  height: 370px;
+  border-radius: 94px;
+}
+.healthplan p {
+  font-size: 22px;
+}
+table {
+  margin-top: 80px;
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+th,
+td {
+  padding: 12px 20px;
+}
+.footer {
+  margin-top: 6px;
+  line-height: 16px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 40px;
+  font-size: 22px;
+}
+.footer-text-3 {
+  font-size: 20px;
+}
+.copyright-text {
+  font-size: 16px;
+  margin-top: 6px;
+}
+.media img {
+  font-size: 20px;
+  width: 26px;
+  height: 26px;
+  margin: 7px 13px;
+}
+  }
+/* on  medium screens, decrease font size */
+@media only screen and (max-width: 992px) {
+  .column {
+    width: 260px;
+    font-size: 28px;
+  }
+  .column img {
+   width: 260px;
+   height: 74px;
+  }
+  #contact-no {
+   font-size: 28px;
+  }
+  .toggle {
+  font-size: 20px;
+}
+.item {
+  font-size: 20px;
+}
+.menu li a {
+  padding: 3px 0px;
+}
+.menu li.subitem a {
+  padding: 3px;
+}
+.plan-img-text {
+  margin-top: 36px;
+}
+.plan-img-text h1 {
+  font-size: 32px;
+}
+.plan-img-text img {
+  width: 491px;
+  height: 306px;
+  border-radius: 78px;
+}
+.healthplan p {
+  font-size: 20px;
+} 
+table {
+  margin-top: 70px;
+  font-size: 16px;
+  margin-bottom: 70px;
+}
+th,
+td {
+  padding: 10px 18px;
+}
+.footer {
+  margin-top: 4px;
+  line-height: 12px;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 36px;
+  font-size: 20px;
+}
+.footer-text-3 {
+  font-size: 18px;
+}
+.copyright-text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.media img {
+  font-size: 18px;
+  width: 24px;
+  height: 24px;
+  margin: 6px 12px;
+}
+  }
+ /* on  small screens, decrease font size */
+@media only screen and (max-width: 768px) {
+.topnav {
+  display: none;
+}
+.plan-img-text {
+  margin-top: 32px;
+}
+.plan-img-text h1 {
+  font-size: 30px;
+}
+.plan-img-text img {
+  width: 380px;
+  height: 237px;
+  border-radius: 60px;
+}
+.healthplan p {
+  font-size: 20px;
+}
+table {
+  margin-top: 60px;
+  font-size: 10px;
+  margin-bottom: 60px;
+}
+th,
+td {
+  padding: 4px 8px;
+}
+.col {
+  width: 100%;
+  display: inline-block;
+}
+.footer-title {
+  text-align: center;
+}
+.footer-text-3 {
+  text-align: center;
+}
+.copyright-text {
+  font-size: 14px;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+.media img {
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  margin: 6px 12px;
+}
+  }
+/* on smaller screens, decrease font size */
+@media only screen and (max-width: 480px) {
+
+.plan-img-text {
+  margin-top: 28px;
+}
+.plan-img-text h1 {
+  font-size: 22px;
+}
+.plan-img-text img {
+  width: 238px;
+  height: 140px;
+  border-radius: 38px;
+}
+.healthplan p {
+  font-size: 18px;
+}
+/* changing the table Style*/
+table, thead, tbody, th, td, tr { 
+    display: block; 
+}
+thead tr {                     
+    display: none;
+}
+                
+tr { 
+    border-bottom: 1px solid #ccc; 
+}
+td { 
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+}
+td:before { 
+    position: relative;
+    left: 6px;
+    width: 45%; 
+    padding-right: 5%; 
+    white-space: nowrap;
+    font-weight: 500;
+}
+td:nth-child(1):before { content: ""; }
+td:nth-child(2):before { content: "STANDARD:"; }
+td:nth-child(3):before { content: "CLASSIC:"; }
+td:nth-child(4):before { content: "SILVER:"; }
+td:nth-child(5):before { content: "GOLD:"; }
+td:nth-child(6):before { content: "GOLD +:"; }
+/* end of style change */               
+.footer {
+  margin-top: 3px;
+  line-height: 8px;
+}
+.col {
+  width: 100%;
+  display: inline-block;
+}
+.footer-title {
+  margin-left: 32px;
+  margin-top: 32px;
+  font-size: 21px;
+  line-height: 1;
+}
+.footer-text-3 {
+  font-size: 16px;
+}
+.copyright-text {
+  font-size: 12px;
+  margin-top: 3px;
+  line-height: 1.2;
+}
+.media img {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  margin: 5px 11px;
+}
+ }
+        </style>
+    </head>
+    <body>
+      <div class="topnav">
+        <div class="row">
+            <div class="column" id="company-logo">
+                <img src="logo.jpeg" style="float: left">
+            </div>
+            <div class="column" id="contact-no" style="float: right; color: #000080;">
+                +(234) 803-351-1011
+            </div>
+        </div>
+      </div>
+        <header>
+          <nav>
+            <ul class="menu">
+              <li class="logo"><a href="#"><img src="logo.jpeg"></a></li>
+              <li class="item"><a href="index.html">Home</a></li>
+              <li class="item"><a href="aboutus.html">About Us</a></li>
+              <li class="item has-submenu">
+                <a tabindex="0">Health Plans +</a>
+                <ul class="submenu">
+                  <li class="subitem"><a href="individualplan.html">Individual</a></li>
+                  <li class="subitem"><a href="familyplan.html">Family</a></li>
+                  <li class="subitem"><a href="corporateplan.html">Corporate</a></li>
+                  <li class="subitem"><a href="customizedplan.html">Customized</a></li>
+                </ul>
+              </li>
+              <li class="item has-submenu">
+                <a tabindex="0">Resources +</a>
+                <ul class="submenu">
+                  <li class="subitem"><a href="gallery.html">Gallery</a></li>
+                  <li class="subitem"><a href="enrollment.html">Enrollment</a></li>
+                  <li class="subitem"><a href="download.html">Downloads</a></li>
+                  <li class="subitem"><a href="faqs.html">FAQ</a></li>
+                  <li class="subitem"><a href="career.html">Careers</a></li>
+                </ul>
+              </li>
+              <li class="item"><a href="healthprovider.html">Health Providers</a></li>
+              <li class="item"><a href="login.html">Log In</a></li>
+              <li class="item"><a href="blog.html">Blog</a></li>
+              <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </header> 
+        <main>
+            <div class="plan-img-text">    
+            <h1>CORPORATE HEALTHCARE PLAN</h1> 
+            <div>   
+            <img class="ind-pic" src="plan img 3.jfif">
+           </div>
+         <div class="healthplan">
+            <p> The unpredictable nature of employee healthcare expenses makes  </p>
+             <p>it difficult for employers to budget for employee healthcare. </p>
+        
+           <p>We strive to provide employers and employees with a variety of managed </p> 
+          <p>care plans that would enhance access to quality healthcare services.</p>
+          </div>
+          <div class="plan-price">    
+            <a href="contact.html" class="btn btn--small">Buy Now</a>
+          </div>
+        </div>  
+          <div class="table_container">      
+          <table>        
+            <thead>        
+                <tr>
+                <th>COVERED SERVICES</th>
+                <th>STANDARD</th>
+                <th>CLASSIC</th>
+                <th>SILVER</th>
+                <th>GOLD</th>
+                <th>GOLD PLUS</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <th>MEDICAL EMMERGENCY SERVICES: Acute Heart Failure, Shock</th>
+                <td>&#10004</td><td>&#10004</td>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>OUT PATIENT SERVICES</th>
+                <td>General Consultation</td>
+                <td>General + Specialist Consultation</td>
+                <td>General + Specialist Consultation</td><td>General + Specialist Consultation</td>
+                <td>General + Specialist Consultation</td>
+                </tr>
+                <tr>
+                <th>INPATIENT MEDICAL SERVICES</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>  
+                </tr>
+                <tr>
+                <th>ALLERGIES</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>MEASLES</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                <td>&#10004</td>
+                </tr>
+                <tr>
+                <th>CHICKEN POX</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>PARASITIC AND ALLERGIC SKIN CONDITIONS</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Scabies, Tinea Infection, Acne, Eczema, Seborrheic</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Dermatitis</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>URINARY TRACT INFECTION</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Uncomplicated & Complicated Urinary Tract Infection</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>PEPTIC ULCER DISEASE</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Acute Axacerbation of Peptic Ulcer Disease, GERD</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Indigestion</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>UPPER & LOWER RESPIRATORY TRACT INFECTION</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Pneumonia, Bronchitis, Influenza, Viral Croup,</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Bronchiolitis</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>ASTHMA</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>CORYZA</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>DIARRHEA DISEASES</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>CADIO-VASCULAR CONDITIONS</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Hypertension, Myocardial Infarction, Cerebrovascular Accident (stroke),</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Cardiomyopathies, Chronic Heart Failure</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>BLOOD TRANSFUSION</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>HIV/AIDS-Investigation for confirmation</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Treatment of opportunistic infections</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>INVESTIGATIONS</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>PVC, MP, WIDAL, FBC+DIFF, PREGNANCY TEST</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>ESR, RBS/FBS, URINALYSIS, M/C/S</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>E/U/CR, BLOOD GROUP AND GENOTYPE, HBSAg.</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>HBV/HCV, H, PYLORI</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>COOMB's TEST, BLOOD CULTURE, PERIPHERAL</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>BLOOD FILM, CLOTTING PROFILE, BLEEDING TIME, INR</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>D-TIMER, FECAL OCCULT BLOOD, FERRITIN LEVELSM HbA1c</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>LFT, KFT</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>MATERNITY AND CHILD SERVICES</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>Confirmation of Pregnancy</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Antenatal Care (from 12 weeks)</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Management of Labour & Delivery</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Surgical Intervention</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Post-Natal Care</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Febrile Convulsions</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Routine immunization Services</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Additional Immunization under 5yrs</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>ICU/SCBU (1st 24hrs and monetary limit)</th>
+                <td>&#10006</td><td>&#10006</td><td>Limit: 50,000</td><td>Limit: 70,000</td><td>Limit: 100,000</td>
+                </tr>
+                <tr>
+                <th>SURGICAL SERVICES</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>Minor Procedures</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <td>Intermidiate Procedures</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <td>Major Procedures</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Surgical Limit = 50,000 for individual & 70,000 for family plans</th>
+                <td>Surgical Limit = 140,000 for individual & 150,000 for family plans</td><td>Surgical Limit = 220,000 for individual & 530,000 for family plans</td><td>Surgical Limit = 270,000 for individual & 440,000 for family plans</td><td>Surgical Limit. To be determined</td>
+                </tr>
+                <tr>
+                <td>EYE SERVICES</th>
+                    <td></td><td></td><td></td><td></td><td></td>
+      
+                </tr>
+                <tr>
+                <th>Basic Eye Examination (only)</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>MANAGEMENT OF COMMON EYE AILMENTS</th><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>stye, Conjuctivities, Ocular Allergies, Keratitis</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Optical Lens Limit (biennial)</th>
+                <td>&#10006</td><td>10,000</td><td>15,000</td><td>25,000</td><td>To be determined</td>
+                </tr>
+                <tr>
+                <th>Eye Surgeries (Minor & Intermidiate)</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Major Eye Surgery</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>DENTAL CARE</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>TREATMENT OF MINOR AILMENTS</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>Gingivitis, Scurvy, Tooth pain</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Routine pain management</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Simple Extraction</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Surgical Extraction</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Amalgam Filling</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Scaling and Polishing</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Denture and Bridges</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Root Canal Therapy</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>RADIOLOGICAL SERVICES</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>X-rays and Ultrasound</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>CT Scan & MRI (%co-payment)</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>To be determined</td>
+                </tr>
+                <tr>
+                <th>Echocardiography</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>To be determined</td>
+                </tr>
+                <tr>
+                <th>Electrocardiography</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>To be determined</td>
+                </tr>
+                <tr>
+                <th>Doppler Scan</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>To be determined</td>
+                </tr>
+                <tr>
+                <th>PHYSIOTHERAPY</th>
+                <td>3 sessions</td><td>5 sessions</td><td>8 sessions</td><td>10 sessions</td><td>20 sessions</td>
+                </tr>
+                <tr>
+                <th>CANCER CARE</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>General Outpatient Consultation</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Specialist Consultation</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Cancer Screening only (PSA & Mammography)</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Surgical Treatment of Cancer (subject to global limit)</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>MEDICAL CHECKUP</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>Routine Physical</th>
+                <td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Annual Medical Examination</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>DRUG TYPES COVERED</th>
+                <td>Generic</td><td>Generic</td><td>Generic</td><td>Generic</td><td>Generic</td>
+                </tr>
+                <tr>
+                <th>ADDED BENEFITS</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>Renal dialysis (subject to policy limit)</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>Infertility consultation, investigation & non-hormonal</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>drug management</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>CHRONIC DISEASE MANAGEMENT</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>INTERNATIONAL HEALTH INSURANCE</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>GPA (Group Personal Accident)</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>TRAVEL INSURANCE</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>HIGH END HOSPITALS</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>GYM MEMBERSHIP</th>
+                <td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10006</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>MENTAL HEALTH SERVICES</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <th>Out-patient care for 6 weeks</th>
+                <td>&#10006</td><td>&#10004</td><td>&#10004</td><td>&#10004</td><td>&#10004</td>
+                </tr>
+                <tr>
+                <th>EXCLUSIONS: to be hilighted in the policy document</th>
+                <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                </tbody>
+            </thead>
+            </table>
+        </main>
+<!--this is the footer section with contact information and links-->
+<section class="footer"> 
+  <div class="footer-top">       
+    <div class="row">
+      <div class="col">       
+        <h3 class="footer-title">Health Plans</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="individualplan.html">Individual</a></li>       
+          <li><a class="footer-text-3" href="familyplan.html">Family</a></li>       
+          <li><a class="footer-text-3" href="corporateplan.html">Corporate</a></li>      
+          <li><a class="footer-text-3" href="customizedplan.html">Customized</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">       
+        <h3 class="footer-title">Recources</h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="enrollment.html">Enrollment</a></li>       
+          <li><a class="footer-text-3" href="download.html">Downloads</a></li>       
+          <li><a class="footer-text-3" href="faqs.html">FAQ</a></li>      
+          <li><a class="footer-text-3" href="career.html">Career</a></li>       
+        </ul>         
+      </div>       
+      <div class="col">
+        <h3 class="footer-title">Quick Links </h3>       
+        <ul style="list-style-type: none;">       
+          <li><a class="footer-text-3" href="aboutus.html">About Us</a></li>       
+          <li><a class="footer-text-3" href="policy.html">Privacy Policy</a></li>
+          <li><a class="footer-text-3" href="terms.html">Terms of Use</a></li>
+          <li><a class="footer-text-3" href="contact.html">Contact Us</a></li>       
+        </ul>           
+      </div>         
+    </div>    
+  </div>     
+<div class="row">
+<div class="col3-3">
+<div class="copyright-text" style="float: left;">© 2022 Songhai Health Trust Limited. All rights reserved.
+</div>
+</div>
+<div class="col3-3" style="float: right;">
+<div class="media">
+  <a href="https://play.google.com/store/search?q=songhai+hmo&c=apps&hl=en&gl=US"><img src="log.jpg"></a>
+  <a href="mailto:info@songhaihealthtrust.com"><img src="mail.png"></a>
+  <a href="https://www.linkedin.com/login"><img src="linkedin1.png"></a>
+  <a href="https://www.facebook.com/songhaihealth/"><img src="face.jpg"></a>
+  <a href="https://mobile.twitter.com/songhaihealth"><img src="tweet.jpg"></a>
+  <a href="https://www.instagram.com/p/CdDdbxhtbK1/?igshid=YTgzYjQ4ZTY%3D"><img src="insta.jfif"></a>
+</div>
+</div>
+</div>
+</section> 
+<script>
+  const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".menu");
+const items = document.querySelectorAll(".item");
+
+/* Toggle mobile menu */
+function toggleMenu() {
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+  } else {
+    menu.classList.add("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+  }
+}
+
+/* Activate Submenu */
+function toggleItem() {
+  if (this.classList.contains("submenu-active")) {
+    this.classList.remove("submenu-active");
+  } else if (menu.querySelector(".submenu-active")) {
+    menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    this.classList.add("submenu-active");
+  } else {
+    this.classList.add("submenu-active");
+  }
+}
+
+/* Close Submenu From Anywhere */
+function closeSubmenu(e) {
+  if (menu.querySelector(".submenu-active")) {
+    let isClickInside = menu
+      .querySelector(".submenu-active")
+      .contains(e.target);
+
+    if (!isClickInside && menu.querySelector(".submenu-active")) {
+      menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    }
+  }
+}
+/* Event Listeners */
+toggle.addEventListener("click", toggleMenu, false);
+for (let item of items) {
+  if (item.querySelector(".submenu")) {
+    item.addEventListener("click", toggleItem, false);
+  }
+  item.addEventListener("keypress", toggleItem, false);
+}
+document.addEventListener("click", closeSubmenu, false);
+</script>
+</body>
+</html>
