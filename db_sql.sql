@@ -3,7 +3,7 @@
 -- Database: `db_contact`
 --
 
-CREATE DATABASE IF NOT EXISTS 'db_songhai' DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+CREATE DATABASE IF NOT EXISTS 'db_songhai' DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE 'db_songhai';
 
 -- --------------------------------------------------------
@@ -15,9 +15,8 @@ USE 'db_songhai';
 DROP TABLE IF EXISTS 'tbl_test';
 CREATE TABLE 'tbl_test' (
   'fldPhone' int(15) NOT NULL,
-  'fldName' varchar(50) NOT NULL,
-  'fldEmail' varchar(30) NOT NULL,
-  'fldOrganization' varchar(60) NOT NULL,
+  'fldName' varchar(60) NOT NULL,
+  'fldEmail' varchar(50) NOT NULL,
   'fldMessage' text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
