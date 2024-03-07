@@ -18,7 +18,7 @@ CREATE TABLE 'tbl_test' (
   'fldName' varchar(60) NOT NULL,
   'fldEmail' varchar(50) NOT NULL,
   'fldMessage' text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Indexes for dumped tables
